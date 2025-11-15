@@ -1,3 +1,0 @@
-,dataset_version,dataset_name,dataset_type,round,num_epochs,feature_type,fmeasure_rel,fmeasure_norel,ap,ap_norel,Top,learning_rate,weight_decay,hidden_embedding,optimizer_type,encoder_type
-0,esbm,dbpedia,rdf,0,50,transe_nodes,0.2885333333333334,0.30355555555555563,0.1726266666666667,0.18388666666666664,5,0.01,0.01,64,Adam,RGCN
-1,esbm,dbpedia,rdf,0,50,transe_nodes,0.5198666666666667,0.5465317738791423,0.34998751322751326,0.38042802322163427,10,0.01,0.01,64,Adam,RGCN
