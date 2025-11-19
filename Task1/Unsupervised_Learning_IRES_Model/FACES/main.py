@@ -205,32 +205,24 @@ def calculate_loss(G, z,relation_types):
 
 
 def evaluate_model(model, G, entity_dataset, features, edge_index, edge_types, k):
+    # This function is assumed to be unused in the main loop, but if used, it needs 8 return values
     model.eval()
     z = model.encode(features, edge_index, edge_types) if config.encoder() == 'RGCN' else model.encode(features,
-                                                                                                        edge_index)
-   
-   
-   
-   
-    #reconstructed_adj_weighted = torch.matmul(z_norm, z_norm.t())
+                                                                                                       edge_index)
+    
     reconstructed_adj_weighted = torch.mm(z, z.t())
-    #fscore, fscore_norel = evaluate.evaluate(config.data_path(), entity_dataset, G, k, reconstructed_adj_weighted, reconstructed_adj_weighted)
-   
-   
-    # We now get 4 return values, but this function only needs one.
-    # Add dataset_name=config.dataset()
-    fscore, fscore_norel, _, _ = evaluate.evaluate(
+    
+    # FIX: Capture all 8 return values 
+    fscore, fscore_norel, ap, ap_norel, ndcg, _, _, _ = evaluate.evaluate(
         config.data_path(), 
         entity_dataset, 
         G, 
         k, 
         reconstructed_adj_weighted, 
-        z,
-        dataset_name=config.dataset()  # <-- THE FIX
+        z, 
+        dataset_name=config.dataset()
     )
-   
-    #print(fscore_norel)
-   
+    
     return fscore_norel
 
 
@@ -248,23 +240,12 @@ def train_model(model, G, edge_index, edge_types, features,entity_dataset,relati
         
         model.eval()
         z = model.encode(features, edge_index, edge_types)
-        #reconstructed_adj_weighted = torch.mm(z, z.t())
-        #print(evaluate_model(model, G, entity_dataset, features, edge_index, edge_types, 5))
-        #print(evaluate_model(model, G, entity_dataset, features, edge_index, edge_types, 10))
-        #fscore, fscore_norel = evaluate.evaluate(config.data_path(), entity_dataset, G, 5, reconstructed_adj_weighted,z)
-        #print(fscore_norel)
+        
         loss = calculate_loss(G, z,relation_types)
-        #print(loss)
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1)
         optimizer.step()
 
-        #reconstructed_adj_weighted = torch.mm(z, z.t())
-
-        
-        #fscore, fscore_norel,ap,ap_average = evaluate.evaluate(config.data_path(), entity_dataset, G, 5, reconstructed_adj_weighted,z)
-        #print(fscore_norel)
-        
         if config.scheduler() == 'ReduceLROnPlateau':
             scheduler.step(loss)
         else:
@@ -280,69 +261,92 @@ def save_model_and_results(model, G, features, edge_index, edge_types, results_d
     #torch.save(model, os.path.join(config.model_path(), model_metadata))
     model.eval()
     z = model.encode(features, edge_index, edge_types) if config.encoder() == 'RGCN' else model.encode(features,  edge_index)
-    #z = torch.nn.functional.normalize(z, p=2, dim=1)
-    
-
-    #norms = torch.norm(z, p=1, dim=1, keepdim=True) # Compute the L2 norm for each row
-    #z = z / norms # Divide each row by its norm
-    #z = torch.sigmoid(z) 
-    
-    #min_vals = torch.min(z, dim=1).values
-    #shifts = torch.where(min_vals < 0, -min_vals, torch.zeros_like(min_vals))
-    #z = z + shifts.unsqueeze(1)
  
-
-    
     reconstructed_adj_weighted = torch.mm(z, z.t())
-    #print(z[0])
-    #print(reconstructed_adj_weighted[0])
     
     fscore5 = None
     fscore10 = None
+    map_5=None
+    map_10=None
+    ndcg5 = None
+    ndcg10 = None
     
-    
-    
+    # FIX: Define variables for detailed results outside the loop
+    detailed_rel_results = pd.DataFrame()
+    detailed_norel_results = pd.DataFrame()
+    detailed_ndcg_results = pd.DataFrame()
     
     for k in [5, 10]:
         
-        fscore, fscore_norel ,ap,ap_norel= evaluate.evaluate(
-            config.data_path(), 
+        eval_path = '/content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/Temp'
+        
+        # FIX: Now capturing 8 return values (5 means + 3 DataFrames)
+        fscore, fscore_norel ,ap,ap_norel, ndcg, results_rel_df_k, results_norel_df_k, results_ndcg_df_k = evaluate.evaluate(
+            eval_path, 
             entity_dataset, 
             G, 
             k, 
             reconstructed_adj_weighted,
-            z,
-            dataset_name=config.dataset()  # <-- THIS IS THE MISSING PIECE
+            z, 
+            dataset_name=config.dataset()
         )
-        #fscore, fscore_norel ,ap,ap_norel= evaluate.evaluate(config.data_path(), entity_dataset, G, k, reconstructed_adj_weighted,z)
-        #fscore, fscore_norel = evaluate.evaluate(config.data_path(), entity_dataset, G, k, reconstructed_adj_weighted, reconstructed_adj_weighted)
         
+        # --- Aggregation for Detailed Saving ---
+        if k == 5:
+            detailed_rel_results = pd.concat([detailed_rel_results, results_rel_df_k])
+            detailed_norel_results = pd.concat([detailed_norel_results, results_norel_df_k])
+            detailed_ndcg_results = pd.concat([detailed_ndcg_results, results_ndcg_df_k])
+        elif k == 10:
+            detailed_rel_results = pd.concat([detailed_rel_results, results_rel_df_k])
+            detailed_norel_results = pd.concat([detailed_norel_results, results_norel_df_k])
+            detailed_ndcg_results = pd.concat([detailed_ndcg_results, results_ndcg_df_k])
+        # --------------------------------------
         
         if k == 5:
             fscore5 = fscore_norel
             map_5=ap_norel
-            print(map_5)
+            ndcg5 = ndcg 
+            print(f"MAP_5: {map_5}")
             
         else:
             fscore10 = fscore_norel
             map_10=ap_norel
-            print(map_10)
+            ndcg10 = ndcg 
+            print(f"MAP_10: {map_10}")
         
 
+        # FIX: Include NDCG in the results row being saved
         resultsirow = {'dataset_version': config.benchmark(), 'dataset_name': config.dataset(),
                        'dataset_type': config.format(),
                        'round': round_num, 'num_epochs': config.num_epochs(),
                        'feature_type': config.target_feature(), 'fmeasure_rel': fscore,
-                       'fmeasure_norel': fscore_norel, 'ap':ap,'ap_norel':ap_norel,'Top': k, 'learning_rate': config.learning_rate(),
+                       'fmeasure_norel': fscore_norel, 'ap':ap,'ap_norel':ap_norel,'ndcg':ndcg, 'Top': k, 'learning_rate': config.learning_rate(),
                        'weight_decay': config.weight_decay(), 'hidden_embedding': config.hidden_embeddings(),
                        'optimizer_type': config.optimizer(), 'encoder_type': config.encoder()}
         results_df.loc[len(results_df)] = resultsirow
         results_df.to_csv(os.path.join(config.results_path(), result_metadata))
         
+    # --- STEP 3: Saving Detailed Entity Data for Reporting/Wilcoxon ---
+    
+    # Save a detailed log file containing per-entity, per-K results
+    detailed_filename = f"detailed_IRES_FACES_metrics_R{round_num}.csv"
+    detailed_path = os.path.join(config.results_path(), detailed_filename)
+    
+    # We combine the most critical columns (euri, Top, F_norel, MAP_norel, NDCG) into one file
+    final_detailed_df = detailed_norel_results.merge(
+        detailed_ndcg_results[['euri', 'Top', 'ndcg']], 
+        on=['euri', 'Top'], 
+        how='left'
+    )
+    # Filter to only save the essential columns for comparison and reporting
+    final_detailed_df = final_detailed_df[['euri', 'Top', 'fmeasure_norel', 'ave_precision_norel', 'ndcg']]
+    final_detailed_df.to_csv(detailed_path, index=False)
+    print(f"Saved detailed entity metrics to: {detailed_path}")
+    
+    # -----------------------------------------------------------------
         
-        
-        
-    return fscore5, fscore10 , map_5, map_10
+    # FIX: Return all 6 metrics (F5, F10, MAP5, MAP10, NDCG5, NDCG10)
+    return fscore5, fscore10 , map_5, map_10, ndcg5, ndcg10
 
 
 config = Config()
@@ -367,11 +371,12 @@ def main(trial=None, best_fscore5=None, best_fscore10=None):
     entity_dataset, G, nodes, entity_node_id, relation_id, edge_relation_id, adj, transe_save, features_transe = load_graph()
     pg_data, features = setup_features(G, relation_id, edge_relation_id, adj, transe_save, features_transe)
     pg_data, features, adjacency_matrix, relation_types, num_relations = prepare_data(G, pg_data, features,
-                                                                                         relation_id, adj)
+                                                                                      relation_id, adj)
+    # FIX: Added 'ndcg' column
     results_df = pd.DataFrame(
         columns=['dataset_version', 'dataset_name', 'dataset_type',
                  'round', 'num_epochs', 'feature_type', 'fmeasure_rel',
-                 'fmeasure_norel','ap','ap_norel', 'Top', 'learning_rate',
+                 'fmeasure_norel','ap','ap_norel','ndcg', 'Top', 'learning_rate',
                  'weight_decay', 'hidden_embedding',
                  'optimizer_type', 'encoder_type'])
 
@@ -379,15 +384,24 @@ def main(trial=None, best_fscore5=None, best_fscore10=None):
     fscores_10 = []
     map_5=[]
     map_10=[]
+    ndcg_5=[] 
+    ndcg_10=[] 
+    
     for i in range(config.num_executions()):
         model, edge_types = create_model(num_relations, adjacency_matrix, edge_relation_id, features)
         model = train_model(model, G, pg_data.edge_index, edge_types, features,entity_dataset,relation_types)
-        fscore5, fscore10, map5, map10 = save_model_and_results(model, G, features, pg_data.edge_index, edge_types, results_df,
-                                                entity_dataset, i)
+        
+        # FIX: Capture all 6 return values
+        fscore5, fscore10, map5, map10, ndcg5, ndcg10 = save_model_and_results(
+            model, G, features, pg_data.edge_index, edge_types, results_df, entity_dataset, i
+        )
+        
         fscores_5.append(fscore5)
         fscores_10.append(fscore10)
         map_5.append(map5)
         map_10.append(map10)
+        ndcg_5.append(ndcg5) 
+        ndcg_10.append(ndcg10) 
         
         if trial and (mean(fscores_5) - best_fscore5 < -0.05 or mean(fscores_10) - best_fscore10 < -0.05):
             raise optuna.TrialPruned()
@@ -395,7 +409,7 @@ def main(trial=None, best_fscore5=None, best_fscore10=None):
     
     print(f'Fscore_5: {mean(fscores_5)}, Fscore_10: {mean(fscores_10)}')
     print(f'MAP_5: {mean(map_5)}, MAP_10: {mean(map_10)}')
-    
+    print(f'NDCG_5: {mean(ndcg_5)}, NDCG_10: {mean(ndcg_10)}') 
 
     
     return mean(fscores_5), mean(fscores_10)

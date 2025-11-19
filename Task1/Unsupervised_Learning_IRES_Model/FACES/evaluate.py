@@ -1,3 +1,4 @@
+import math 
 from functools import lru_cache
 import rdflib.term
 from collections import Counter
@@ -34,7 +35,7 @@ def calculate_neighbor_community_sizes(G, z, entity_node_id, k):
         for neighbor in neighbor_nodes:
             idx = entity_node_id[neighbor]
             top_k_communities = torch.topk(z[idx], k, largest=True).indices.tolist()
-            for community in top_k_communities:
+            for community in community_counts:
                 if community in community_counts:
                     community_counts[community] += 1
                 else:
@@ -49,45 +50,79 @@ def calculate_entropy(z):
     entropy = -torch.sum(z_safe * torch.log(z_safe), dim=1)
     return entropy
 
-def average_precision(ground_truth_summary,predicted_summary):
+def average_precision(ground_truth_summary, predicted_summary_list):
+    """
+    Calculates Average Precision for a single entity based on a ranked list.
+    """
     relevant_count = 0
     cumulative_precision = 0
-    for i, summary in enumerate(predicted_summary):
+    
+    for i, summary in enumerate(predicted_summary_list):
         if summary in ground_truth_summary:
             relevant_count += 1
             precision_at_i = relevant_count / (i + 1)
             cumulative_precision += precision_at_i
 
-    if relevant_count > 0:
+    if len(ground_truth_summary) > 0:
         average_precision = cumulative_precision / len(ground_truth_summary)
     else:
         average_precision=0
     return average_precision
 
+# --- NDCG Calculation ---
+def ndcg_score(ground_truth_summary, predicted_summary, k):
+    """
+    Calculates NDCG@k for a single entity. Relevance is binary (1 if present, 0 otherwise).
+    """
+    if not ground_truth_summary:
+        return 0.0
+
+    # 1. Calculate DCG (Discounted Cumulative Gain)
+    dcg = 0.0
+    for i in range(min(k, len(predicted_summary))):
+        triple = predicted_summary[i]
+        relevance = 1 if triple in ground_truth_summary else 0
+        dcg += relevance / math.log2(i + 2)
+
+    # 2. Calculate IDCG (Ideal Discounted Cumulative Gain)
+    idcg = 0.0
+    num_relevant = len(ground_truth_summary)
+    
+    for i in range(min(k, num_relevant)):
+        idcg += 1 / math.log2(i + 2)
+
+    # 3. Calculate NDCG
+    if idcg == 0:
+        return 0.0
+    
+    ndcg = dcg / idcg
+    return ndcg
+
+
 def evaluate(path, entity_dataset, G, k, node_weights, z, dataset_name="esbm"):
     """
-    Evaluate by finding summaries for entities in a dataset and calculating F-score.
+    Evaluate by finding summaries for entities in a dataset and calculating F-score, MAP, and NDCG.
     """
     
     entity_node_id, relation_names, relation_frequency = graph_stat(G)
 
     results = []
     results_norel = []
+    results_ndcg = [] 
 
     skipped_entities = 0
     processed_entities = 0
     
-    # --- NEW FACES Ground Truth Loading (Using Absolute Path) ---
+    # --- FACES Ground Truth Loading: FIXED PATH ---
     faces_ground_truth = None
     if dataset_name == 'faces':
-        # Use the absolute path where generate_and_verify.py saved the file
+        # ABSOLUTE PATH FIX
         gt_path = '/content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/Temp/faces_groundtruth.json'
         
         try:
             with open(gt_path, 'r') as f:
                 faces_ground_truth_raw = json.load(f)
             
-            # Normalize keys and convert values to sets of tuples
             faces_ground_truth = {}
             for k_raw, v in faces_ground_truth_raw.items():
                 k_norm = k_raw.strip()
@@ -100,12 +135,12 @@ def evaluate(path, entity_dataset, G, k, node_weights, z, dataset_name="esbm"):
                 faces_ground_truth[k_norm] = gt_set
                 
         except FileNotFoundError:
-            print(f"[evaluate] ERROR: Cannot find FACES ground truth at {gt_path}")
+            print(f"[evaluate] ERROR: Cannot find FACES ground truth at {gt_path}. Ensure it was generated.")
             faces_ground_truth = {}
         except Exception as e:
             print(f"[evaluate] ERROR: Loading FACES ground truth failed: {e}")
             faces_ground_truth = {}
-    # --- End New Loading ---
+    # --- End Fixed Loading ---
 
     def make_targetentity(euri_value):
         if not isinstance(euri_value, str):
@@ -120,7 +155,6 @@ def evaluate(path, entity_dataset, G, k, node_weights, z, dataset_name="esbm"):
             skipped_entities += 1
             continue
 
-        # Normalize URI lookup
         targetentity_bare = row['euri'].strip()
         targetentity_wrapped = make_targetentity(targetentity_bare)
 
@@ -137,18 +171,20 @@ def evaluate(path, entity_dataset, G, k, node_weights, z, dataset_name="esbm"):
 
         processed_entities += 1
         
-        # Get edges
         out_edges = list(G.out_edges(targetentity, data=True))
 
         if not out_edges:
             if dataset_name == 'faces':
                 results.append({'eid': index, 'euri': targetentity, 'fmeasure': 0.0, 'ave_precision': 0.0, 'Top': k})
                 results_norel.append({'eid': index, 'euri': targetentity, 'fmeasure_norel': 0.0, 'ave_precision_norel': 0.0, 'Top': k})
+                results_ndcg.append({'eid': index, 'euri': targetentity, 'ndcg': 0.0, 'Top': k})
             else:
                 for i in range(6):
                     results.append({'eid': index, 'euri': targetentity, 'fmeasure': 0.0, 'ave_precision': 0.0, 'Top': k})
                     results_norel.append({'eid': index, 'euri': targetentity, 'fmeasure_norel': 0.0, 'ave_precision_norel': 0.0, 'Top': k})
+                    results_ndcg.append({'eid': index, 'euri': targetentity, 'ndcg': 0.0, 'Top': k})
             continue
+
 
         random.shuffle(out_edges)
         all_edges = []
@@ -166,15 +202,17 @@ def evaluate(path, entity_dataset, G, k, node_weights, z, dataset_name="esbm"):
             all_edges.append((edge, weight))
 
         if not all_edges:
-            if dataset_name == 'faces':
+             if dataset_name == 'faces':
                 results.append({'eid': index, 'euri': targetentity, 'fmeasure': 0.0, 'ave_precision': 0.0, 'Top': k})
                 results_norel.append({'eid': index, 'euri': targetentity, 'fmeasure_norel': 0.0, 'ave_precision_norel': 0.0, 'Top': k})
-            else:
+                results_ndcg.append({'eid': index, 'euri': targetentity, 'ndcg': 0.0, 'Top': k})
+             else:
                 for i in range(6):
                     results.append({'eid': index, 'euri': targetentity, 'fmeasure': 0.0, 'ave_precision': 0.0, 'Top': k})
                     results_norel.append({'eid': index, 'euri': targetentity, 'fmeasure_norel': 0.0, 'ave_precision_norel': 0.0, 'Top': k})
-            continue
-
+                    results_ndcg.append({'eid': index, 'euri': targetentity, 'ndcg': 0.0, 'Top': k})
+             continue
+             
         try:
             for edge in G.in_edges(targetentity, data=True):
                 other_node = edge[1] if edge[0] == targetentity else edge[0]
@@ -216,64 +254,86 @@ def evaluate(path, entity_dataset, G, k, node_weights, z, dataset_name="esbm"):
 
         summary_edges = summary_edges[:k]
 
-        pval = []
+        # --- Prepare Ranked LIST (S, P, O) and Unranked SET (S, P, O) ---
+        pval_list = [] # RANKED LIST for MAP/NDCG
         for edge in summary_edges:
             relation = edge[2].get('relation') if isinstance(edge[2], dict) else edge[2]['relation']
             s = edge[0].strip().strip('<>')
             p = relation.strip().strip('<>')
             o = edge[1].strip().strip('<>')
-            pval.append((s, p, o))
+            pval_list.append((s, p, o))
         
-        pval = set(pval)
+        pval_set = set(pval_list) # UNRANKED SET for F-Score
+        
+        # --- Prepare Ranked LIST (S, O) for NoRel Metrics ---
+        pval_norel_list = [(item[0], item[2]) for item in pval_list]
+
 
         if dataset_name == 'faces':
             target_key = targetentity.strip('<>')
             tval = faces_ground_truth.get(target_key, set())
             
-            # Fallback: if key not found, try wrapping/unwrapping
             if not tval:
-                 tval = faces_ground_truth.get(f"<{target_key}>", set())
+                tval = faces_ground_truth.get(f"<{target_key}>", set())
 
-            fscore = utils.fmeasure_score(tval, pval)
-            Ap = average_precision(tval, pval)
+            # MAP Rel Calculation (uses full triples)
+            fscore = utils.fmeasure_score(tval, pval_set)
+            Ap = average_precision(tval, pval_list) 
+            ndcg = ndcg_score(tval, pval_list, k) 
+            
             results.append({'eid': index, 'euri': targetentity, 'fmeasure': fscore, 'ave_precision': Ap, 'Top': k})
+            results_ndcg.append({'eid': index, 'euri': targetentity, 'ndcg': ndcg, 'Top': k})
 
-            pval_norel = {(item[0], item[-1]) for item in pval}
+            # MAP NoRel Calculation (uses S, O pairs)
             tval_norel = {(item[0], item[-1]) for item in tval}
-            fscore_norel = utils.fmeasure_score(tval_norel, set(pval_norel))
-            Ap_norel = average_precision(tval_norel, set(pval_norel))
+            fscore_norel = utils.fmeasure_score(tval_norel, set(pval_norel_list)) 
+            Ap_norel = average_precision(tval_norel, pval_norel_list) 
             results_norel.append({'eid': index, 'euri': targetentity, 'fmeasure_norel': fscore_norel, 'ave_precision_norel': Ap_norel, 'Top': k})
 
         else:
+            # ESBM evaluation logic (unchanged, but includes NDCG/MAP updates)
             for i in range(6):
-                tval = import_top_summary(path, index, i, k, targetentity)
-                fscore = utils.fmeasure_score(tval, pval)
-                Ap = average_precision(tval, pval)
-                results.append({'eid': index, 'euri': targetentity, 'fmeasure': fscore, 'ave_precision': Ap, 'Top': k})
+                tval_set = import_top_summary(path, index, i, k, targetentity)
+                tval_norel = {(item[0], item[-1]) for item in tval_set}
+                
+                # Rel metrics
+                fscore = utils.fmeasure_score(tval_set, pval_set)
+                Ap = average_precision(tval_set, pval_list) 
+                ndcg = ndcg_score(tval_set, pval_list, k) 
 
-            pval_norel = {(item[0], item[-1]) for item in pval}
-            for i in range(6):
-                tval = import_top_summary(path, index, i, k, targetentity)
-                tval_norel = {(item[0], item[-1]) for item in tval}
-                fscore_norel = utils.fmeasure_score(tval_norel, set(pval_norel))
-                Ap_norel = average_precision(tval_norel, set(pval_norel))
+                results.append({'eid': index, 'euri': targetentity, 'fmeasure': fscore, 'ave_precision': Ap, 'Top': k})
+                results_ndcg.append({'eid': index, 'euri': targetentity, 'ndcg': ndcg, 'Top': k})
+                
+                # NoRel metrics
+                fscore_norel = utils.fmeasure_score(tval_norel, set(pval_norel_list))
+                Ap_norel = average_precision(tval_norel, pval_norel_list) 
+                
                 results_norel.append({'eid': index, 'euri': targetentity, 'fmeasure_norel': fscore_norel, 'ave_precision_norel': Ap_norel, 'Top': k})
 
     results_df = pd.DataFrame(results)
     results_norel_df = pd.DataFrame(results_norel)
+    results_ndcg_df = pd.DataFrame(results_ndcg)
 
     if results_df.empty:
         print(f"[evaluate] No results computed. processed_entities={processed_entities}, skipped_entities={skipped_entities}")
-        return 0.0, 0.0, 0.0, 0.0
+        # MUST return 8 values now
+        return 0.0, 0.0, 0.0, 0.0, 0.0, results_df, results_norel_df, results_ndcg_df
 
     if 'euri' not in results_df.columns:
         results_df['euri'] = results_df.get('euri', results_df.get('eid', 0)).astype(str)
     if 'euri' not in results_norel_df.columns:
         results_norel_df['euri'] = results_norel_df.get('euri', results_norel_df.get('eid', 0)).astype(str)
+    if 'euri' not in results_ndcg_df.columns:
+        results_ndcg_df['euri'] = results_ndcg_df.get('euri', results_ndcg_df.get('eid', 0)).astype(str)
+
 
     averages = results_df.groupby('euri')['fmeasure'].mean()
     averages_norel = results_norel_df.groupby('euri')['fmeasure_norel'].mean()
     averages_ap = results_df.groupby('euri')['ave_precision'].mean()
     averages_norel_ap = results_norel_df.groupby('euri')['ave_precision_norel'].mean()
+    averages_ndcg = results_ndcg_df.groupby('euri')['ndcg'].mean()
 
-    return (averages.mean(), averages_norel.mean(), averages_ap.mean(), averages_norel_ap.mean())
+
+    # FINAL RETURN: 5 mean values + 3 detailed DataFrames
+    return (averages.mean(), averages_norel.mean(), averages_ap.mean(), averages_norel_ap.mean(), averages_ndcg.mean(), 
+            results_df, results_norel_df, results_ndcg_df)
