@@ -1,0 +1,11 @@
+scipy
+numpy==1.22
+gensim==3.8.3
+nltk==3.6.6
+torch
+psutil==5.8.0
+SPARQLWrapper==1.8.5
+transformers
+
+# Run the installation
+! pip install -r step1_requirements.txt
