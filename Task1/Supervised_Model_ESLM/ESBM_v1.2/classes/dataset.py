@@ -19,6 +19,7 @@ from classes.helpers import Utils
 
 UTILS = Utils()
 
+
 class ESBenchmark:
     def __init__(self, ds_name, file_n=6, topk=5, weighted_adjacency_matrix=False):
         self.topk = topk
@@ -51,7 +52,7 @@ class ESBenchmark:
 
         train_data, valid_data, test_data = [], [], []
         for i in range(5):  # 5-folds
-            fold_path = os.path.join(split_path, 'Fold' + str(i))
+            fold_path = os.path.join(split_path, f'Fold{i}')
             train_eids = self.read_split(fold_path, 'train')
             valid_eids = self.read_split(fold_path, 'valid')
             test_eids = self.read_split(fold_path, 'test')
@@ -69,10 +70,7 @@ class ESBenchmark:
             """Triple Indexing"""
             @staticmethod
             def triple(sub, pred, obj):
-                sub = sub.toPython()
-                pred = pred.toPython()
-                obj = obj.toPython()
-                triples.append((sub, pred, obj))
+                triples.append((sub.toPython(), pred.toPython(), obj.toPython()))
 
         index_sink = IndexSink()
         parser = NTriplesParser(index_sink)
@@ -84,19 +82,16 @@ class ESBenchmark:
     def get_labels(self, num):
         """Get entity label from knowledge base"""
         triples = self.get_triples(num)
-
-        if self.ds_name in ["dbpedia", "faces"]:
-            endpoint = "http://dbpedia.org/sparql"
-        elif self.ds_name == "lmdb":
-            endpoint = "https://api.triplydb.com/datasets/Triply/linkedmdb/services/linkedmdb/sparql"
+        endpoint = "http://dbpedia.org/sparql" if self.ds_name in ["dbpedia", "faces"] else \
+                   "https://api.triplydb.com/datasets/Triply/linkedmdb/services/linkedmdb/sparql"
 
         triples_tuple = []
         for sub, pred, obj in triples:
             if UTILS.is_uri(obj):
-                if self.ds_name == "dbpedia" or self.ds_name == "faces":
-                    obj_literal = UTILS.get_label_of_entity(obj, endpoint)
-                elif self.ds_name == "lmdb":
+                if self.ds_name == "lmdb":
                     obj_literal = UTILS.get_label_of_entity_lmdb("entity", obj, endpoint)
+                else:
+                    obj_literal = UTILS.get_label_of_entity(obj, endpoint)
             else:
                 obj_literal = obj.title() if isinstance(obj, str) else obj
 
@@ -113,12 +108,12 @@ class ESBenchmark:
     def get_literals(self, num):
         """Get literal value from literal txt"""
         triples_literal = []
-        path = os.path.join(os.getcwd(), f"data_inputs/literals/{self.ds_name}")
+        # UPDATED PATH TO MATCH YOUR FOLDER STRUCTURE
+        path = os.path.join(os.getcwd(), f"classes/data_inputs/literals/{self.ds_name}")
         with open(os.path.join(path, f"{num}_literal.txt"), encoding="utf-8") as reader:
             for literal in reader:
                 values = literal.strip().split("\t")
-                triple_literal_tuple = (values[0], values[1], values[2])
-                triples_literal.append(triple_literal_tuple)
+                triples_literal.append((values[0], values[1], values[2]))
         return triples_literal
 
     def get_training_dataset(self):
