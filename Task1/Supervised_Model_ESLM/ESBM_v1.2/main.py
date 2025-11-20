@@ -57,8 +57,8 @@ def main(args):
             print(f"Dataset: {ds_name}")
             if config.enrichment:
                 entity2vec, pred2vec, entity2ix, pred2ix = load_dglke(ds_name)
-                entity_dict = entity2vec
-                pred_dict = pred2vec
+                entity_dict = entity2vec  # memmap array
+                pred_dict = pred2vec      # memmap array
 
             for topk in config.topk:
                 dataset = ESBenchmark(ds_name, 6, topk, False)
@@ -120,9 +120,9 @@ def main(args):
                                     s, p, o = triple
                                     o_emb = np.zeros([400,])
                                     if str(o).startswith("http://") and o in entity2ix:
-                                        o_emb = entity_dict.get(entity2ix[o], np.zeros([400,]))
-                                    p_emb = pred_dict.get(pred2ix[p], np.zeros([400,])) if p in pred2ix else np.zeros([400,])
-                                    s_emb = entity_dict.get(entity2ix[s], np.zeros([400,])) if s in entity2ix else np.zeros([400,])
+                                        o_emb = entity_dict[entity2ix[o]]
+                                    p_emb = pred_dict[pred2ix[p]] if p in pred2ix else np.zeros([400,])
+                                    s_emb = entity_dict[entity2ix[s]] if s in entity2ix else np.zeros([400,])
                                     s_embs.append(s_emb)
                                     p_embs.append(p_emb)
                                     o_embs.append(o_emb)
@@ -149,12 +149,12 @@ def main(args):
                         avg_train_loss = train_loss / train_data_size
                         training_time = format_time(time.time() - t_start)
 
-                        # Validation
+                        # Validation (similar fix)
                         t_start = time.time()
                         valid_data_size = len(valid_data[fold][0])
                         valid_data_samples = valid_data[fold][0]
                         model.eval()
-                        valid_loss, valid_acc = 0, 0
+                        valid_loss = 0
                         with torch.no_grad():
                             for eid in valid_data_samples:
                                 triples = dataset.get_triples(eid)
@@ -182,9 +182,9 @@ def main(args):
                                         s, p, o = triple
                                         o_emb = np.zeros([400,])
                                         if str(o).startswith("http://") and o in entity2ix:
-                                            o_emb = entity_dict.get(entity2ix[o], np.zeros([400,]))
-                                        p_emb = pred_dict.get(pred2ix[p], np.zeros([400,])) if p in pred2ix else np.zeros([400,])
-                                        s_emb = entity_dict.get(entity2ix[s], np.zeros([400,])) if s in entity2ix else np.zeros([400,])
+                                            o_emb = entity_dict[entity2ix[o]]
+                                        p_emb = pred_dict[pred2ix[p]] if p in pred2ix else np.zeros([400,])
+                                        s_emb = entity_dict[entity2ix[s]] if s in entity2ix else np.zeros([400,])
                                         s_embs.append(s_emb)
                                         p_embs.append(p_emb)
                                         o_embs.append(o_emb)
@@ -217,7 +217,7 @@ def main(args):
 
         print("Training completed.")
 
-    # Testing
+    # Testing (similar fix for memmap)
     if do_test:
         print("Predicting on progress ....")
         for ds_name in config.ds_name:
@@ -231,7 +231,6 @@ def main(args):
                 test_data = dataset.get_testing_dataset()
 
                 for fold in range(config.k_fold):
-                    test_data_size = len(test_data[fold][0])
                     test_data_samples = test_data[fold][0]
                     model = ESLMKGE(model_name, model_base) if config.enrichment else ESLM(model_name, model_base)
                     models_path = os.path.join(main_model_dir, f"eslm_checkpoint-{ds_name}-{topk}-{fold}")
@@ -268,9 +267,9 @@ def main(args):
                                     s, p, o = triple
                                     o_emb = np.zeros([400,])
                                     if str(o).startswith("http://") and o in entity2ix:
-                                        o_emb = entity_dict.get(entity2ix[o], np.zeros([400,]))
-                                    p_emb = pred_dict.get(pred2ix[p], np.zeros([400,])) if p in pred2ix else np.zeros([400,])
-                                    s_emb = entity_dict.get(entity2ix[s], np.zeros([400,])) if s in entity2ix else np.zeros([400,])
+                                        o_emb = entity_dict[entity2ix[o]]
+                                    p_emb = pred_dict[pred2ix[p]] if p in pred2ix else np.zeros([400,])
+                                    s_emb = entity_dict[entity2ix[s]] if s in entity2ix else np.zeros([400,])
                                     s_embs.append(s_emb)
                                     p_embs.append(p_emb)
                                     o_embs.append(o_emb)
@@ -312,15 +311,12 @@ if __name__ == "__main__":
     parser.add_argument("--model", type=str, default="", help="")
     parser.add_argument("--max_length", type=int, default=40, help="")
     parser.add_argument("--epochs", type=int, default=10, help="")
-    parser.add_argument("--learning_rate", type=float, default=5e-5, help="")  # changed to float
+    parser.add_argument("--learning_rate", type=float, default=5e-5, help="")
 
-    # --- Add these two new arguments ---
     parser.add_argument("--dataset", type=str, default="dbpedia,lmdb,faces",
                         help="comma-separated datasets to use, e.g. dbpedia,lmdb")
     parser.add_argument("--kfolds", type=int, default=5,
                         help="number of folds for k-fold cross-validation")
-    # -----------------------------------
 
     args = parser.parse_args()
     main(args)
-
