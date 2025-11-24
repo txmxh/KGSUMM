@@ -1,4 +1,4 @@
-33137	actor_netflix_id	
+33137	actor_netflix_id	-
 33137	type	actor
 33137	type	Person
 33137	actor_actorid	33137
@@ -57,4 +57,4 @@
 33137	performance	121429
 33137	performance	93828
 33137	performance	61135
-33137	actor_nytimes_id	
+33137	actor_nytimes_id	-

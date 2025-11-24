@@ -8,4 +8,4 @@ SPARQLWrapper==1.8.5
 transformers
 
 # Run the installation
-! pip install -r step1_requirements.txt
+!pip install -r step1_requirements.txt

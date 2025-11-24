@@ -83,7 +83,7 @@ class ESBenchmark:
         """Get entity label from knowledge base"""
         triples = self.get_triples(num)
         endpoint = "http://dbpedia.org/sparql" if self.ds_name in ["dbpedia", "faces"] else \
-                   "https://api.triplydb.com/datasets/Triply/linkedmdb/services/linkedmdb/sparql"
+                    "https://api.triplydb.com/datasets/Triply/linkedmdb/services/linkedmdb/sparql"
 
         triples_tuple = []
         for sub, pred, obj in triples:
@@ -110,10 +110,25 @@ class ESBenchmark:
         triples_literal = []
         # UPDATED PATH TO MATCH YOUR FOLDER STRUCTURE
         path = os.path.join(os.getcwd(), f"classes/data_inputs/literals/{self.ds_name}")
-        with open(os.path.join(path, f"{num}_literal.txt"), encoding="utf-8") as reader:
-            for literal in reader:
-                values = literal.strip().split("\t")
-                triples_literal.append((values[0], values[1], values[2]))
+        file_path = os.path.join(path, f"{num}_literal.txt")
+        
+        try:
+            with open(file_path, encoding="utf-8") as reader:
+                for literal in reader:
+                    # Strip leading/trailing whitespace, then split by tab (\t)
+                    values = literal.strip().split("\t")
+                    
+                    # FIX: Check that the line contains exactly 3 parts before accessing index 2
+                    if len(values) == 3:
+                        triples_literal.append((values[0], values[1], values[2]))
+                    elif literal.strip(): # Check if the line was non-empty but malformed
+                        # This optional warning helps debug data issues
+                        print(f"Warning: Skipping malformed line for entity {num} in {self.ds_name} data: expected 3 fields, found {len(values)} in line: '{literal.strip()}'")
+
+        except FileNotFoundError:
+            print(f"Error: Literal file not found for entity {num} at {file_path}")
+            return [] # Return empty list if file not found
+
         return triples_literal
 
     def get_training_dataset(self):

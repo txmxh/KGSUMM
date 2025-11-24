@@ -40,5 +40,5 @@
 67878	page	9202a8c04000641f8000000012ca2cfe
 67878	type	Person
 67878	type	actor
-67878	actor_nytimes_id	
-67878	actor_netflix_id	
+67878	actor_nytimes_id	-
+67878	actor_netflix_id	-

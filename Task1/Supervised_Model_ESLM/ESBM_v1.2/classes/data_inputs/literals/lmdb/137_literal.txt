@@ -16,7 +16,7 @@
 52869	performance	149944
 52869	label	Sara Berner (Actor)
 52869	page	9202a8c04000641f8000000006b4f1f3
-52869	actor_nytimes_id	
+52869	actor_nytimes_id	-
 44517	actor	52869
 38388	actor	52869
 43693	actor	52869
@@ -29,4 +29,4 @@
 12394	actor	52869
 40943	actor	52869
 15323	actor	52869
-52869	actor_netflix_id	
+52869	actor_netflix_id	-

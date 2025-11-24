@@ -45,8 +45,8 @@
 32500	performance	152804
 32500	performance	152821
 32500	page	9202a8c04000641f800000000026d739
-32500	actor_nytimes_id	
+32500	actor_nytimes_id	-
 32500	actor_name	Byron Long
 32500	type	Person
 32500	type	actor
-32500	actor_netflix_id	
+32500	actor_netflix_id	-

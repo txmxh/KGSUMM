@@ -1,5 +1,5 @@
 47469	actor_name	Alice Braga
-47469	actor_nytimes_id	
+47469	actor_nytimes_id	-
 47469	performance	59117
 47469	performance	123172
 47469	performance	91784
@@ -27,6 +27,6 @@
 18644	actor	47469
 19258	actor	47469
 47469	page	9202a8c04000641f8000000000dc5776
-47469	actor_netflix_id	
+47469	actor_netflix_id	-
 47469	label	Alice Braga (Actor)
 47469	actor_actorid	47469

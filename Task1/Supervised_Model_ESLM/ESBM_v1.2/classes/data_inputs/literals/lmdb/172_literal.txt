@@ -1,4 +1,4 @@
-30423	actor_netflix_id	
+30423	actor_netflix_id	-
 30423	actor_actorid	30423
 30423	label	Rowan Atkinson (Actor)
 30423	type	actor
@@ -21,7 +21,7 @@
 30423	performance	108617
 30423	performance	16484
 30423	performance	18468
-30423	actor_nytimes_id	
+30423	actor_nytimes_id	-
 30423	actor_name	Rowan Atkinson
 30423	page	9202a8c04000641f800000000011db88
 39079	actor	30423

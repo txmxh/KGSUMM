@@ -1,9 +1,9 @@
 29369	page	9202a8c04000641f8000000000006567
 29369	label	Arnold Schwarzenegger (Actor)
-29369	actor_nytimes_id	
+29369	actor_nytimes_id	-
 29369	actor_actorid	29369
 29369	actor_name	Arnold Schwarzenegger
-29369	actor_netflix_id	
+29369	actor_netflix_id	-
 29369	performance	48657
 29369	performance	130707
 29369	performance	27714

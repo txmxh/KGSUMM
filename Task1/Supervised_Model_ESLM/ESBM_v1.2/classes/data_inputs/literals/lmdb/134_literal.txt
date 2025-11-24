@@ -14,7 +14,7 @@
 43841	actor	39725
 44657	actor	39725
 2116	actor	39725
-39725	actor_nytimes_id	
+39725	actor_nytimes_id	-
 39725	label	Tom Hollander (Actor)
 39725	actor_actorid	39725
 39725	actor_name	Tom Hollander
@@ -37,4 +37,4 @@
 39725	performance	149302
 39725	performance	59230
 39725	page	9202a8c04000641f800000000072977e
-39725	actor_netflix_id	
+39725	actor_netflix_id	-

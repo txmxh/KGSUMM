@@ -1,4 +1,4 @@
-30569	actor_netflix_id	
+30569	actor_netflix_id	-
 30569	page	9202a8c04000641f800000000012b866
 2047	actor	30569
 247	actor	30569
@@ -47,4 +47,4 @@
 30569	performance	22297
 30569	performance	63428
 30569	actor_actorid	30569
-30569	actor_nytimes_id	
+30569	actor_nytimes_id	-

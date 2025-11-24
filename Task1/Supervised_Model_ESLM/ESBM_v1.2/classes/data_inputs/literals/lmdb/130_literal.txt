@@ -1,9 +1,9 @@
 34577	type	actor
 34577	type	Person
 34577	actor_actorid	34577
-34577	actor_nytimes_id	
+34577	actor_nytimes_id	-
 34577	page	9202a8c04000641f80000000003be85d
-34577	actor_netflix_id	
+34577	actor_netflix_id	-
 34577	performance	43959
 34577	performance	22244
 34577	performance	40313

@@ -19,10 +19,10 @@
 18780	actor	30598
 10692	actor	30598
 42230	actor	30598
-30598	actor_nytimes_id	
+30598	actor_nytimes_id	-
 30598	type	Person
 30598	type	actor
-30598	actor_netflix_id	
+30598	actor_netflix_id	-
 30598	page	9202a8c04000641f800000000012d8fa
 30598	actor_name	Tom Courtenay
 30598	performance	113132

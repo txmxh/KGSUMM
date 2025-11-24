@@ -1,5 +1,5 @@
 38875	label	James Hong (Actor)
-38875	actor_netflix_id	
+38875	actor_netflix_id	-
 38875	performance	67745
 38875	performance	4330
 38875	performance	47271
@@ -21,7 +21,7 @@
 38875	performance	114242
 38875	performance	46588
 38875	performance	186592
-38875	actor_nytimes_id	
+38875	actor_nytimes_id	-
 284	actor	38875
 38069	actor	38875
 87571	actor	38875

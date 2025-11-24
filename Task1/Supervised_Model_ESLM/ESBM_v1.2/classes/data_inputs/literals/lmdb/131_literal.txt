@@ -1,5 +1,5 @@
 36141	actor_actorid	36141
-36141	actor_nytimes_id	
+36141	actor_nytimes_id	-
 36141	actor_name	Francis Ng
 36141	label	Francis Ng (Actor)
 36141	performance	50061
@@ -49,4 +49,4 @@
 36141	page	9202a8c04000641f80000000004d578b
 36141	type	Person
 36141	type	actor
-36141	actor_netflix_id	
+36141	actor_netflix_id	-

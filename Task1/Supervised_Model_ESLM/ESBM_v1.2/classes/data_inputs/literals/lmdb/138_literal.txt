@@ -1,6 +1,6 @@
-62725	actor_netflix_id	
+62725	actor_netflix_id	-
 62725	page	9202a8c04000641f800000000b91415f
-62725	actor_nytimes_id	
+62725	actor_nytimes_id	-
 62725	actor_name	Rod Daily
 62725	label	Rod Daily (Actor)
 62725	actor_actorid	62725

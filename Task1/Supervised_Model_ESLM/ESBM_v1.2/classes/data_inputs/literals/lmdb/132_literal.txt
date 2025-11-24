@@ -1,5 +1,5 @@
 38225	actor_name	Dante Basco
-38225	actor_nytimes_id	
+38225	actor_nytimes_id	-
 38225	performance	122675
 38225	performance	152327
 38225	performance	121760
@@ -31,7 +31,7 @@
 59607	actor	38225
 38225	label	Dante Basco (Actor)
 38225	actor_actorid	38225
-38225	actor_netflix_id	
+38225	actor_netflix_id	-
 38225	type	Person
 38225	type	actor
 38225	page	9202a8c04000641f8000000000646474

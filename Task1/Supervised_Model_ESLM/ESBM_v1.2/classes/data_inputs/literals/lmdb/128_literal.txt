@@ -28,8 +28,8 @@
 32648	performance	68310
 32648	type	actor
 32648	type	Person
-32648	actor_netflix_id	
+32648	actor_netflix_id	-
 32648	label	Tomokazu Seki (Actor)
 32648	page	9202a8c04000641f800000000028c1a8
 32648	actor_name	Tomokazu Seki
-32648	actor_nytimes_id	
+32648	actor_nytimes_id	-

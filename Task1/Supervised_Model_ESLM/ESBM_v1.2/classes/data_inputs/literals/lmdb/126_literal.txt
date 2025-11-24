@@ -2,7 +2,7 @@
 31707	type	actor
 31707	type	Person
 31707	actor_name	Margaret Colin
-31707	actor_netflix_id	
+31707	actor_netflix_id	-
 31707	label	Margaret Colin (Actor)
 62913	actor	31707
 1924	actor	31707
@@ -30,5 +30,5 @@
 31707	performance	184537
 31707	performance	15213
 31707	performance	119763
-31707	actor_nytimes_id	
+31707	actor_nytimes_id	-
 31707	page	9202a8c04000641f80000000001d8847

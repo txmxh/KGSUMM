@@ -1,4 +1,4 @@
-43265	actor_nytimes_id	
+43265	actor_nytimes_id	-
 43265	performance	28494
 43265	performance	97710
 43265	performance	4223
@@ -99,7 +99,7 @@
 43265	performance	122850
 43265	performance	104800
 43265	performance	27568
-43265	actor_netflix_id	
+43265	actor_netflix_id	-
 14559	actor	43265
 12792	actor	43265
 47951	actor	43265
