@@ -2,34 +2,66 @@ import os
 import re
 import numpy as np
 import datetime
+from urllib.parse import urlparse
 
 # Functions for data loading and preprocessing
-def load_dglke(ds_name):
-    """Load pre-trained graph embeddings"""
-    input_entity_dict = f"{ds_name}-esbm/entities.tsv"
-    input_relation_dict = f"{ds_name}-esbm/relations.tsv" 
-    entity2ix = build_dictionary(input_entity_dict)
-    pred2ix = build_dictionary(input_relation_dict)
-    entity2vec = np.load(f'{ds_name}-kge-model/ComplEx_{ds_name}/{ds_name}_ComplEx_entity.npy', mmap_mode='r')
-    pred2vec = np.load(f'{ds_name}-kge-model/ComplEx_{ds_name}/{ds_name}_ComplEx_relation.npy', mmap_mode='r')
-    #entity2vec = np.load(f'{ds_name}-kge-model/DistMult_{ds_name}/{ds_name}_DistMult_entity.npy', mmap_mode='r')
-    #pred2vec = np.load(f'{ds_name}-kge-model/DistMult_{ds_name}/{ds_name}_DistMult_relation.npy', mmap_mode='r')
-    return entity2vec, pred2vec, entity2ix, pred2ix
-
 def build_dictionary(input_dict):
+    """Build dictionary from TSV index file (e.g., entities.tsv)"""
     
-    f = open(input_dict, "r")
-    content = f.readlines()
+    try:
+        f = open(input_dict, "r", encoding="utf-8")
+        content = f.readlines()
+        f.close()
+    except FileNotFoundError as e:
+        # Re-raise the error with the correct path context for debugging
+        raise FileNotFoundError(f"Error loading dictionary: {input_dict}. Please ensure index files are present.") from e
+        
     idx2dict = dict()
     for items in content:
         items = items.replace("\n", "")
         items = items.split("\t")
-        idx = int(items[0])
-        dict_value = items[1]
-        idx2dict[dict_value]=idx
-    f.close()
+        if len(items) >= 2: # Guard against malformed lines in index files
+            idx = int(items[0])
+            dict_value = items[1]
+            idx2dict[dict_value]=idx
+    
     return idx2dict
 
+# Load DGLKE (where the file path error occurs)
+def load_dglke(ds_name):
+    """Load pre-trained graph embeddings, prioritizing local FACES structure."""
+    
+    project_root = os.getcwd() # Should be the /FACES/ folder
+    
+    # Construct paths to the required KGE index files (entities.tsv, relations.tsv)
+    # Assumes index files are under 'data_kge/{ds_name}-esbm'
+    index_base_path = os.path.join(project_root, 'data_kge', f'{ds_name}-esbm')
+
+    # Construct paths to the required KGE vector files (.npy)
+    # Assumes vectors are under 'faces-kge-model/ComplEx_{ds_name}'
+    vector_base_path = os.path.join(project_root, 'faces-kge-model', f'ComplEx_{ds_name}')
+    
+    # 1. Load Dictionaries (Index Files)
+    input_entity_dict = os.path.join(index_base_path, "entities.tsv")
+    input_relation_dict = os.path.join(index_base_path, "relations.tsv")
+
+    entity2ix = build_dictionary(input_entity_dict)
+    pred2ix = build_dictionary(input_relation_dict)
+    
+    # 2. Load Vectors
+    entity_vec_file = os.path.join(vector_base_path, f'{ds_name}_ComplEx_entity.npy')
+    pred_vec_file = os.path.join(vector_base_path, f'{ds_name}_ComplEx_relation.npy')
+    
+    try:
+        entity2vec = np.load(entity_vec_file, mmap_mode='r')
+        pred2vec = np.load(pred_vec_file, mmap_mode='r')
+    except FileNotFoundError as e:
+        print(f"CRITICAL ERROR: KGE Vector file not found for {ds_name}. Looked at: {entity_vec_file}")
+        raise FileNotFoundError(f"Missing KGE vector file for {ds_name}. Please ensure {os.path.basename(entity_vec_file)} is correctly placed.") from e
+
+    return entity2vec, pred2vec, entity2ix, pred2ix
+
+# --- Rest of your functions (format_triples, writer, etc.) follow ---
 def format_triples(triples): 
     formatted_triples=[]
     for triple in triples:
@@ -141,8 +173,8 @@ def get_all_data(db_path, num, top_n, file_n):
     return gold_list, triples_dict, triple_tuples
 
 def format_time(elapsed):
-        """Takes a time in seconds and returns a string hh:mm:ss"""
-        # Round to the nearest second.
-        elapsed_rounded = int(round((elapsed)))
-        # Format as hh:mm:ss
-        return str(datetime.timedelta(seconds=elapsed_rounded))
+    """Takes a time in seconds and returns a string hh:mm:ss"""
+    # Round to the nearest second.
+    elapsed_rounded = int(round((elapsed)))
+    # Format as hh:mm:ss
+    return str(datetime.timedelta(seconds=elapsed_rounded))
