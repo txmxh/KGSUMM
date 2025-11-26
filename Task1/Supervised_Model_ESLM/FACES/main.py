@@ -72,7 +72,6 @@ def main(args):
     # Training part
     if do_train == True:
         print("Training on progress ....")
-        # THIS LOOP WILL NOW ONLY RUN FOR 'faces'
         for ds_name in config.ds_name: 
             print(f"Dataset: {ds_name}")
             if config.enrichment:
@@ -83,9 +82,17 @@ def main(args):
                 pred2ix_size = len(pred2ix)
                 entity2ix_size = len(entity2ix)
             for topk in config.topk:
-                dataset = ESBenchmark(ds_name, 6, topk, False)
+                # NOTE: file_n is set to 5 to match gold files indexed 0..4
+                dataset = ESBenchmark(ds_name, 5, topk, False)
                 train_data, valid_data = dataset.get_training_dataset()
-                for fold in range(config.k_fold):
+
+                max_folds = config.k_fold
+
+                for fold in range(max_folds):
+                    # --- GPU Memory Clear at Fold Start ---
+                    if torch.cuda.is_available():
+                        torch.cuda.empty_cache()
+
                     train_data_size = len(train_data[fold][0])
                     train_data_samples = train_data[fold][0]
                     print(f"fold: {fold+1}, total entities: {train_data_size}", f"topk: top{topk}")
@@ -116,7 +123,7 @@ def main(args):
                         },
                     ]
                     optimizer = optim.AdamW(optimizer_parameters, lr=config.learning_rate)
-                    num_training_steps = train_data_size * config.epochs
+                    num_training_steps = max(1, train_data_size * config.epochs)
                     scheduler = get_linear_schedule_with_warmup(
                         optimizer,
                         num_warmup_steps=0,
@@ -124,21 +131,32 @@ def main(args):
                     )
                     
                     for epoch in range(config.epochs):
+                        # --- GPU Memory Clear at Epoch Start ---
+                        if torch.cuda.is_available():
+                            torch.cuda.empty_cache()
+                        
                         model.train()
                         model.to(config.device)
                         #Training part
                         t_start = time.time()
                         train_loss = 0
+                        
+                        # Loop through training samples
                         for num, eid in enumerate(train_data_samples):
                             # CRITICAL DATA ALIGNMENT FIX: 
-                            # Ensure KGE and target tensor lengths match the cleaned text inputs.
-                            raw_triples = dataset.get_triples(eid) # Raw list (M)
-                            literals = dataset.get_literals(eid) # Clean list (N)
-                            triples_formatted = format_triples(literals) # Formatted text list (N)
-                            triples_to_embed = raw_triples[:len(literals)] # Filtered raw triples (N)
+                            raw_triples = dataset.get_triples(eid)
+                            literals = dataset.get_literals(eid)
+                            triples_formatted = format_triples(literals)
+                            triples_to_embed = raw_triples[:len(literals)]
                             
-                            labels = dataset.prepare_labels(eid)
-                            
+                            try:
+                                labels = dataset.prepare_labels(eid)
+                            except FileNotFoundError:
+                                continue # Gold file missing: skip entity
+
+                            if not labels or not triples_to_embed:
+                                continue # Skip if no valid data/labels found
+
                             input_ids_list = []
                             attention_masks_list = []
                             for triple in triples_formatted:
@@ -165,24 +183,18 @@ def main(args):
                                     o_emb = np.zeros([400,])
                                     if o.startswith("http://") and o in entity2ix:
                                         oidx = entity2ix[o]
-                                        try:
-                                            o_emb = entity_dict[oidx]
-                                        except:
-                                            pass
+                                        try: o_emb = entity_dict[oidx]
+                                        except: pass
                                     p_emb = np.zeros([400,])
                                     if p in pred2ix:
                                         pidx=pred2ix[p]
-                                        try:
-                                            p_emb = pred_dict[pidx]
-                                        except:
-                                            pass
+                                        try: p_emb = pred_dict[pidx]
+                                        except: pass
                                     s_emb = np.zeros([400,])
                                     if s in entity2ix:
                                         sidx=entity2ix[s]
-                                        try:
-                                            s_emb = entity_dict[sidx]
-                                        except:
-                                            pass
+                                        try: s_emb = entity_dict[sidx]
+                                        except: pass
                                     s_embs.append(s_emb)
                                     o_embs.append(o_emb)
                                     p_embs.append(p_emb)
@@ -190,7 +202,6 @@ def main(args):
                                 o_tensor = torch.tensor(np.array(o_embs),dtype=torch.float).unsqueeze(1)
                                 p_tensor = torch.tensor(np.array(p_embs),dtype=torch.float).unsqueeze(1)
                                 kg_embeds = torch.cat((s_tensor, p_tensor, o_tensor), 2).to(device)
-                                ### end apply kge
                             
                             input_ids_tensor = torch.tensor(input_ids_list).to(device)
                             attention_masks_tensor = torch.tensor(attention_masks_list).to(device)
@@ -205,9 +216,7 @@ def main(args):
 
                             # Reshaping the logits
                             reshaped_logits = outputs
-                            # Ensure your targets tensor is of shape [N, 1]
                             reshaped_targets = targets.unsqueeze(-1)
-                            # Now compute the loss
                             loss = criterion(reshaped_logits, reshaped_targets)
                             
                             optimizer.zero_grad()
@@ -217,7 +226,7 @@ def main(args):
 
                             train_loss += loss.item()
                         
-                        avg_train_loss = train_loss/train_data_size
+                        avg_train_loss = train_loss / max(1, train_data_size)
                         training_time = format_time(time.time() - t_start)
                         
                         # Evaluation part (Validation)
@@ -226,8 +235,9 @@ def main(args):
                         valid_data_samples = valid_data[fold][0]
                         model.eval()
                         
+                        valid_loss = 0
+                        valid_count = 0
                         with torch.no_grad():
-                            valid_loss = 0
                             for eid in valid_data_samples:
                                 # CRITICAL DATA ALIGNMENT FIX: 
                                 raw_triples = dataset.get_triples(eid)
@@ -235,8 +245,14 @@ def main(args):
                                 triples_formatted = format_triples(literals)
                                 triples_to_embed = raw_triples[:len(literals)] 
                                 
-                                labels = dataset.prepare_labels(eid)
+                                try:
+                                    labels = dataset.prepare_labels(eid)
+                                except FileNotFoundError:
+                                    continue
                                 
+                                if not labels or not triples_to_embed:
+                                    continue # Skip if no valid data/labels found
+
                                 input_ids_list = []
                                 attention_masks_list = []
                                 for triple in triples_formatted:
@@ -256,30 +272,24 @@ def main(args):
                                 ### apply kge
                                 if config.enrichment:
                                     p_embs, o_embs, s_embs = [], [], []
-                                    for triple in triples_to_embed: # USE FILTERED LIST
+                                    for triple in triples_to_embed: 
                                         s, p, o = triple
                                         o = str(o)
                                         o_emb = np.zeros([400,])
                                         if o.startswith("http://") and o in entity2ix:
                                             oidx = entity2ix[o]
-                                            try:
-                                                o_emb = entity_dict[oidx]
-                                            except:
-                                                pass
+                                            try: o_emb = entity_dict[oidx]
+                                            except: pass
                                         p_emb = np.zeros([400,])
                                         if p in pred2ix:
                                             pidx=pred2ix[p]
-                                            try:
-                                                p_emb = pred_dict[pidx]
-                                            except:
-                                                pass
+                                            try: p_emb = pred_dict[pidx]
+                                            except: pass
                                         s_emb = np.zeros([400,])
                                         if s in entity2ix:
                                             sidx=entity2ix[s]
-                                            try:
-                                                s_emb = entity_dict[sidx]
-                                            except:
-                                                pass
+                                            try: s_emb = entity_dict[sidx]
+                                            except: pass
                                         s_embs.append(s_emb)
                                         o_embs.append(o_emb)
                                         p_embs.append(p_emb)
@@ -287,7 +297,6 @@ def main(args):
                                     o_tensor = torch.tensor(np.array(o_embs),dtype=torch.float).unsqueeze(1)
                                     p_tensor = torch.tensor(np.array(p_embs),dtype=torch.float).unsqueeze(1)
                                     kg_embeds = torch.cat((s_tensor, p_tensor, o_tensor), 2).to(device)
-                                    ### end apply kge
 
                                 input_ids_tensor = torch.tensor(input_ids_list).to(device)
                                 attention_masks_tensor = torch.tensor(attention_masks_list).to(device)
@@ -300,11 +309,11 @@ def main(args):
 
                                 # Reshaping the logits
                                 reshaped_logits = outputs
-                                # Ensure your targets tensor is of shape [N, 1]
                                 reshaped_targets = targets.unsqueeze(-1)
                                 valid_loss += criterion(reshaped_logits, reshaped_targets).item()
+                                valid_count += 1
                                 
-                        avg_valid_loss = valid_loss/valid_data_size
+                        avg_valid_loss = valid_loss/max(1, valid_count)
                         validation_time = format_time(time.time() - t_start)
                         
                         # Save checkpoint
@@ -318,27 +327,31 @@ def main(args):
                             'training_time': training_time,
                             'validation_time': validation_time
                             }, os.path.join(models_dir, f"checkpoint_latest_{fold}.pt"))
-                        print(f"epoch:{epoch}, train-loss:{avg_train_loss}")
+                        
+                        # CLEAN OUTPUT: Print only the essential losses
+                        print(f"Epoch {epoch}: Train Loss={avg_train_loss:.6f}, Valid Loss={avg_valid_loss:.6f}")
         print("Training model is completed.")
 
     # Testing part (with CSV saving)
     if do_test == True:
         print("Predicting on progress ....")
         
-        all_predictions = [] # List to collect all prediction results
+        all_predictions = [] 
 
         for ds_name in config.ds_name:
             if config.enrichment:
-                # KGE initialization is done here, using the current ds_name
                 entity2vec, pred2vec, entity2ix, pred2ix = load_dglke(ds_name)
                 entity_dict = entity2vec
                 pred_dict = pred2vec
                 pred2ix_size = len(pred2ix)
                 entity2ix_size = len(entity2ix)
             for topk in config.topk:
-                dataset = ESBenchmark(ds_name, 6, topk, False)
+                dataset = ESBenchmark(ds_name, 5, topk, False)
                 test_data = dataset.get_testing_dataset()
-                for fold in range(config.k_fold):
+                
+                max_folds = config.k_fold
+
+                for fold in range(max_folds):
                     test_data_size = len(test_data[fold][0])
                     test_data_samples = test_data[fold][0]
                     if config.enrichment:
@@ -366,7 +379,13 @@ def main(args):
                             triples_formatted = format_triples(literals)
                             triples_to_embed = raw_triples[:len(literals)] 
 
-                            labels = dataset.prepare_labels(eid)
+                            try:
+                                labels = dataset.prepare_labels(eid)
+                            except FileNotFoundError:
+                                continue # Gold file missing: skip entity
+
+                            if not labels or not triples_to_embed:
+                                continue # Skip if no valid data/labels found
 
                             input_ids_list = []
                             attention_masks_list = []
@@ -393,24 +412,18 @@ def main(args):
                                     o_emb = np.zeros([400,])
                                     if o.startswith("http://") and o in entity2ix:
                                         oidx = entity2ix[o]
-                                        try:
-                                            o_emb = entity_dict[oidx]
-                                        except:
-                                            pass
+                                        try: o_emb = entity_dict[oidx]
+                                        except: pass
                                     p_emb = np.zeros([400,])
                                     if p in pred2ix:
                                         pidx=pred2ix[p]
-                                        try:
-                                            p_emb = pred_dict[pidx]
-                                        except:
-                                            pass
+                                        try: p_emb = pred_dict[pidx]
+                                        except: pass
                                     s_emb = np.zeros([400,])
                                     if s in entity2ix:
                                         sidx=entity2ix[s]
-                                        try:
-                                            s_emb = entity_dict[sidx]
-                                        except:
-                                            pass
+                                        try: s_emb = entity_dict[sidx]
+                                        except: pass
                                     s_embs.append(s_emb)
                                     o_embs.append(o_emb)
                                     p_embs.append(p_emb)
@@ -418,8 +431,7 @@ def main(args):
                                 o_tensor = torch.tensor(np.array(o_embs),dtype=torch.float).unsqueeze(1)
                                 p_tensor = torch.tensor(np.array(p_embs),dtype=torch.float).unsqueeze(1)
                                 kg_embeds = torch.cat((s_tensor, p_tensor, o_tensor), 2).to(device)
-                                ### end apply kge
-                                
+
                             input_ids_tensor = torch.tensor(input_ids_list).to(device)
                             attention_masks_tensor = torch.tensor(attention_masks_list).to(device)
                             
@@ -474,7 +486,7 @@ def main(args):
         print("Evaluation on progress ...")
         for ds_name in config.ds_name:
             for topk in config.topk:
-                dataset = ESBenchmark(ds_name, 6, topk, False)
+                dataset = ESBenchmark(ds_name, 5, topk, False)
                 print(ds_name)
                 evaluation(dataset, topk, model_name)
         print("Evaluation is done ...")
