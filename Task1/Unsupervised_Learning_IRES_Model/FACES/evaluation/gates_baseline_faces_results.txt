@@ -1,0 +1,12 @@
+
+******************************************
+Evaluating with settings:
+ benchmark directory: /content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/FACES/Dataset/FACES
+ summarizer output directory: /content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/FACES/Dataset/output_summaries/faces
+
+dsFile:true	/content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/FACES/Dataset/FACES/dbpedia_data
+dsFile:true	/content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/FACES/Dataset/FACES/lmdb_data
+=================
+For all 0 entities: 
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "edu.nju.ws.seval.utils.ThreeTuple.getFirst()" because "topkInfo" is null
+	at edu.nju.ws.seval.SummEvalMain.main(SummEvalMain.java:143)
