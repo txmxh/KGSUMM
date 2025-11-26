@@ -1,0 +1,21 @@
+========================================
+ QUANTITATIVE EVALUATION RESULTS (IRES vs. Baseline)
+========================================
+
+## Metrics @ Top 5
+Average F1-Measure: 0.7280
+Average MAP: 0.5743
+Average NDCG: N/A (Unranked Set)
+Test used: Wilcoxon
+Test statistic: 0.0000
+p-value: 0.0000
+
+## Metrics @ Top 10
+Average F1-Measure: 0.6960
+Average MAP: 0.4945
+Average NDCG: N/A (Unranked Set)
+Test used: Wilcoxon
+Test statistic: 0.0000
+p-value: 0.0000
+
+Total Evaluation Runtime (seconds): 0.35
