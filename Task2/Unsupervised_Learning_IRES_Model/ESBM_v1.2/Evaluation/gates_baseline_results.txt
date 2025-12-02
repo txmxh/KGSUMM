@@ -1,0 +1,24 @@
+
+******************************************
+Evaluating with settings:
+ benchmark directory: /content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/ESBM_v1.2/Dataset/ESBM_benchmark_v1.2
+ summarizer output directory: /content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/ESBM_v1.2/Dataset/output_summaries
+
+dsFile:true	/content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/ESBM_v1.2/Dataset/ESBM_benchmark_v1.2/dbpedia_data
+=================
+Dataset: dbpedia
+Warning: Not all 125 entities have output files! xx_top5.nt from 125 entities , xx_rank.nt from 124 entities.
+Results(dbpedia@top5):	F-measure=0.40053333333333324, NDCG=0.777528980908831
+Warning: Not all 125 entities have output files! xx_top10.nt from 125 entities , xx_rank.nt from 124 entities.
+Results(dbpedia@top10):	F-measure=0.5566666666666666, NDCG=0.8746058427473639
+dsFile:true	/content/KGSUMM/Task1/Unsupervised_Learning_IRES_Model/ESBM_v1.2/Dataset/ESBM_benchmark_v1.2/lmdb_data
+=================
+Dataset: lmdb
+Results(lmdb@top5):	F-measure=0.4426666666666666, NDCG=0.7951625367402153
+Results(lmdb@top10):	F-measure=0.5056666666666666, NDCG=0.8696452713362587
+=================
+For all 175 entities: 
+Warning: Not all 175 entities have output files! xx_top5.nt from 175 entities , xx_rank.nt from 174 entities.
+Results(all@top5):	F-measure=0.41257142857142853, NDCG=0.782567139717798
+Warning: Not all 175 entities have output files! xx_top10.nt from 175 entities , xx_rank.nt from 174 entities.
+Results(all@top10):	F-measure=0.5420952380952381, NDCG=0.8731885366299053
