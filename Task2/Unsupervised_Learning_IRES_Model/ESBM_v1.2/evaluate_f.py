@@ -5,7 +5,7 @@ from collections import Counter
 import pandas as pd
 import networkx as nx
 import netlsd
-import utils
+import utils_f
 import random
 import numpy as np
 import torch

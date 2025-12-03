@@ -10,7 +10,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import scipy.sparse as sp
 import numpy as np
-from utils import normalize_adj, normalize_features
+from utils_f import normalize_adj, normalize_features
 
 class GraphAttentionLayer(nn.Module):
     """

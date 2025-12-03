@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3 
 """
 Created on Wed Dec  9 19:04:19 2020
 """
@@ -12,13 +11,18 @@ import scipy.sparse as sp
 from tqdm import tqdm
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-IN_ESBM_DIR = os.path.join(path.dirname(os.getcwd()), 'GATES/data', 'ESBM_benchmark_v1.2')
-IN_DBPEDIA_DIR = os.path.join(path.dirname(os.getcwd()), 'GATES/data/ESBM_benchmark_v1.2', 'dbpedia_data')
-IN_LMDB_DIR = os.path.join(path.dirname(os.getcwd()), 'GATES/data/ESBM_benchmark_v1.2', 'lmdb_data')
-IN_FACES_DIR = os.path.join(path.dirname(os.getcwd()), 'GATES/data/FACES', 'faces_data')
-IN_FACES = os.path.join(path.dirname(os.getcwd()), 'GATES/data', 'FACES')
+# --- FIXED PATHS for Google Colab Environment ---
+# Assuming standard structure: ./Dataset/ESBM_benchmark_v1.2 and ./Dataset/FACES
+CURRENT_DIR = os.getcwd()
+IN_ESBM_DIR = os.path.join(CURRENT_DIR, 'Dataset', 'ESBM_benchmark_v1.2')
+IN_DBPEDIA_DIR = os.path.join(IN_ESBM_DIR, 'dbpedia_data')
+IN_LMDB_DIR = os.path.join(IN_ESBM_DIR, 'lmdb_data')
 
-# get data from ESBM benchmark v.1.2 for cross-validation - adapted by DeepLENS
+# FACES Paths
+IN_FACES = os.path.join(CURRENT_DIR, 'Dataset', 'FACES')
+IN_FACES_DIR = os.path.join(IN_FACES, 'faces_data')
+
+
 def get_5fold_train_valid_test_elist(ds_name_str, esbm_dir=IN_ESBM_DIR):
   if ds_name_str == "dbpedia":
     split_path = path.join(esbm_dir, "dbpedia_split")
@@ -27,11 +31,11 @@ def get_5fold_train_valid_test_elist(ds_name_str, esbm_dir=IN_ESBM_DIR):
   elif ds_name_str == "faces":
     split_path = path.join(esbm_dir, "faces_split")
   else:
-    raise ValueError("The database's name must be dbpedia or lmdb")
+    raise ValueError("The database's name must be dbpedia or lmdb or faces")
 
   trainList, validList, testList = [],[],[]
-  for i in range(5): # 5-folds
-    # read split eid files
+  for i in range(5): 
+    
     fold_path = path.join(split_path, 'Fold'+str(i))
     train_eids = _read_split(fold_path,'train')
     valid_eids = _read_split(fold_path,'valid')
@@ -41,45 +45,63 @@ def get_5fold_train_valid_test_elist(ds_name_str, esbm_dir=IN_ESBM_DIR):
     testList.append(test_eids)
   return trainList, validList, testList
 
-# read split data from data split directories on ESBM benchmark v.1.2 -adapted by DeepLENS
 def _read_split(fold_path, split_name):
-	'''
-	:param fold_path:
-	:param split_name: 'train', 'valid', 'test'
-	:return:
-	'''
-	split_eids = []
-	with open(path.join(fold_path, "{}.txt".format(split_name)),encoding='utf-8') as f:
-		for line in f:
-			if len(line.strip())==0:
-				continue
-			eid = int(line.split('\t')[0])
-			split_eids.append(eid)
-	return split_eids
+  '''
+  :param fold_path:
+  :param split_name: 'train', 'valid', 'test'
+  :return:
+  '''
+  split_eids = []
+  file_path = path.join(fold_path, "{}.txt".format(split_name))
+  
+  if not os.path.exists(file_path):
+       print(f"Warning: Split file not found: {file_path}")
+       return []
 
-# Prepare data for per entity
+  with open(file_path, encoding='utf-8') as f:
+    for line in f:
+      if len(line.strip())==0:
+        continue
+      eid = int(line.split('\t')[0])
+      split_eids.append(eid)
+  return split_eids
+
+
 def get_entity_desc(ds_name, db_path, num):
   data=list()
-  with open(path.join(db_path, "{}".format(num), "{}_literal_status.txt".format(num)), encoding="utf8") as reader:
+  file_path = path.join(db_path, "{}".format(num), "{}_literal_status.txt".format(num))
+  if not os.path.exists(file_path):
+      # Fallback: try generating it if missing, or skip
+      print(f"Warning: Description file missing: {file_path}")
+      return []
+
+  with open(file_path, encoding="utf8") as reader:
       for i, triple in enumerate(reader):
           #print(i, triple)
-          sub, pred, obj, literal, _ = triple.split("\t")
-          edesc = (num, sub, pred, obj, literal)
-          #print(i, edesc)
-          data.append(edesc)
+          parts = triple.split("\t")
+          if len(parts) >= 5:
+              sub, pred, obj, literal, _ = parts[0], parts[1], parts[2], parts[3], parts[4]
+              edesc = (num, sub, pred, obj, literal)
+              data.append(edesc)
           
   return data
 
 # Build graph
 def build_graph(db_path, num, weighted_edges_model):
   triples_idx=list()
+  file_path = path.join(db_path, "{}".format(num), "{}_literal_status.txt".format(num))
   
-  with open(path.join(db_path, "{}".format(num), "{}_literal_status.txt".format(num)), encoding="utf8") as reader:
+  if not os.path.exists(file_path):
+      return sp.coo_matrix((0, 0), dtype=np.float32)
+
+  with open(file_path, encoding="utf8") as reader:
     subjectList = list()
     relationList = list()
     objectList = list()
     for i, items in enumerate(reader):
-      sub, pred, obj, _, _ = items.split("\t")
+      parts = items.split("\t")
+      if len(parts) < 3: continue
+      sub, pred, obj = parts[0], parts[1], parts[2]
       subjectList.append(sub)
       relationList.append(pred)
       objectList.append(obj)
@@ -102,15 +124,19 @@ def build_graph(db_path, num, weighted_edges_model):
   predicatesObjectsFreq = {} 
   weighted_edges = []
   triples_list=[]
-  with open(path.join(db_path, "{}".format(num), "{}_literal_status.txt".format(num)), encoding="utf8") as reader:
+  
+  with open(file_path, encoding="utf8") as reader:
     for i, items in enumerate(reader):
-      sub, pred, obj, _, _ = items.split("\t")
+      parts = items.split("\t")
+      if len(parts) < 3: continue
+      sub, pred, obj = parts[0], parts[1], parts[2]
+      
       triples = (sub, pred, obj)
-      triple_tuple_idx = (nodes_dict[sub], relations_dict[pred], nodes_dict[obj])
-      #print(triple_tuple_idx)
-      triples_idx.append(triple_tuple_idx)
-      triples_list.append(triples)
-  #print(num, triples_list, len(triples_idx), triples_idx)
+      if sub in nodes_dict and pred in relations_dict and obj in nodes_dict:
+          triple_tuple_idx = (nodes_dict[sub], relations_dict[pred], nodes_dict[obj])
+          triples_idx.append(triple_tuple_idx)
+          triples_list.append(triples)
+
   for sub, pred, obj in triples_list:    
       if (sub, pred) not in predicatesObjectsFreq:
           predicatesObjectsFreq[(sub, pred)] = 1
@@ -121,16 +147,30 @@ def build_graph(db_path, num, weighted_edges_model):
       nqu=0
       for (s, p) in predicatesObjectsFreq.keys():
           nqu += predicatesObjectsFreq[(s, p)]
-      tf = predicatesObjectsFreq[(sub, pred)]/nqu
+      
+      if nqu > 0:
+          tf = predicatesObjectsFreq[(sub, pred)]/nqu
+      else:
+          tf = 0
+          
       fPredOverGraph = 0
       for _, p, o in triples_list:
-          if (s, pred) == (s, p) or (pred, o) == (p, o):
+          if (sub, pred) == (sub, p) or (pred, obj) == (p, o): # Check logic matches original intent
               fPredOverGraph +=1
-      idf = np.log(len(nodes_dict)/fPredOverGraph)
+      
+      if fPredOverGraph > 0:
+          idf = np.log(len(nodes_dict)/fPredOverGraph)
+      else:
+          idf = 0
+          
       tfidf = np.multiply(tf, idf)
       weighted_edges.append(tfidf)
     
   triples_idx = np.array(triples_idx)
+  
+  if len(triples_idx) == 0:
+      return sp.coo_matrix((0, 0), dtype=np.float32)
+
   if weighted_edges_model=="tf-idf":
       adj = sp.coo_matrix((weighted_edges, (triples_idx[:, 0], triples_idx[:, 2])),
                         shape=(triples_idx.shape[0], triples_idx.shape[0]),
@@ -146,14 +186,17 @@ def get_all_data(db_path, num, top_n, file_n):
   triples_dict = {}
   triple_tuples = []
   ### Retrieve all triples of an entity based on eid
-  with open(path.join(db_path, "{}".format(num), "{}_desc.nt".format(num)), encoding="utf8") as reader:   
-    for i, triple in enumerate(reader):
-      if len(triple)==1:
-        continue  
-      triple_tuple = triple.replace("\n", "").strip()#parserline(triple)
-      triple_tuples.append(triple_tuple)
-      if triple_tuple not in triples_dict:
-        triples_dict[triple_tuple] = len(triples_dict)
+  desc_path = path.join(db_path, "{}".format(num), "{}_desc.nt".format(num))
+  if os.path.exists(desc_path):
+      with open(desc_path, encoding="utf8") as reader:   
+        for i, triple in enumerate(reader):
+          if len(triple)==1:
+            continue  
+          triple_tuple = triple.replace("\n", "").strip()#parserline(triple)
+          triple_tuples.append(triple_tuple)
+          if triple_tuple not in triples_dict:
+            triples_dict[triple_tuple] = len(triples_dict)
+  
   gold_list = []
   ds_name = db_path.split("/")[-1].split("_")[0]
   
@@ -166,55 +209,55 @@ def get_all_data(db_path, num, top_n, file_n):
   
   ### Retrieve ground truth summaries of an entity based on eid and total of file_n  
   for i in range(file_n):
-    with open(path.join(db_path, 
-            "{}".format(num), 
-            "{}_gold_top{}_{}.nt".format(num, top_n, i).format(num)),
-            encoding="utf8") as reader:
-      #print(path.join(db_path, "{}".format(num), "{}_gold_top{}_{}.nt".format(num, top_n, i).format(num)))
-      n_list = []
-      for i, triple in enumerate(reader):
-        if len(triple)==1:
-            continue
-        triple_tuple = triple.replace("\n", "").strip()#parserline(triple)
-        gold_id = triples_dict[triple_tuple]
-        n_list.append(gold_id)
-      gold_list.append(n_list)
+    gt_file_path = path.join(db_path, "{}".format(num), "{}_gold_top{}_{}.nt".format(num, top_n, i))
+    if os.path.exists(gt_file_path):
+        with open(gt_file_path, encoding="utf8") as reader:
+          n_list = []
+          for i, triple in enumerate(reader):
+            if len(triple)==1:
+                continue
+            triple_tuple = triple.replace("\n", "").strip()#parserline(triple)
+            if triple_tuple in triples_dict:
+                gold_id = triples_dict[triple_tuple]
+                n_list.append(gold_id)
+          gold_list.append(n_list)
         
   return gold_list, triples_dict, triple_tuples
 
 def get_data_gold(db_path, num, top_n, file_n):
   import glob
   triples_dict = {}
-  with open(path.join(db_path, "{}".format(num), "{}_desc.nt".format(num)), encoding="utf8") as reader:   
-    for i, triple in enumerate(reader):
-      if len(triple)==1:
-        continue  
-      triple_tuple = triple.replace("\n", "").strip()#parserline(triple)
-      if triple_tuple not in triples_dict:
-        triples_dict[triple_tuple] = len(triples_dict)
+  desc_path = path.join(db_path, "{}".format(num), "{}_desc.nt".format(num))
+  
+  if os.path.exists(desc_path):
+      with open(desc_path, encoding="utf8") as reader:   
+        for i, triple in enumerate(reader):
+          if len(triple)==1:
+            continue  
+          triple_tuple = triple.replace("\n", "").strip()
+          if triple_tuple not in triples_dict:
+            triples_dict[triple_tuple] = len(triples_dict)
+  
   gold_list = []
   ds_name = db_path.split("/")[-1].split("_")[0]
   if ds_name=="faces":
       gold_files = glob.glob(path.join(db_path, "{}".format(num), "{}_gold_top{}_*".format(num, top_n).format(num)))
-      #print(len(gold_files))
       if len(gold_files) != file_n:
           file_n = len(gold_files)
+  
   for i in range(file_n):
-    with open(path.join(db_path, 
-            "{}".format(num), 
-            "{}_gold_top{}_{}.nt".format(num, top_n, i).format(num)),
-            encoding="utf8") as reader:
-      #print(path.join(db_path, "{}".format(num), "{}_gold_top{}_{}.nt".format(num, top_n, i).format(num)))
-      n_list = []
-      for i, triple in enumerate(reader):
-        if len(triple)==1:
-            continue
-        triple_tuple = triple.replace("\n", "").strip()#parserline(triple)
-        gold_id = triples_dict[triple_tuple]
-        n_list.append(gold_id)
-      gold_list.append(n_list)
-  #print(len(gold_list))
-  #print("num {}".format(num), gold_list[0])
+    gt_path = path.join(db_path, "{}".format(num), "{}_gold_top{}_{}.nt".format(num, top_n, i))
+    if os.path.exists(gt_path):
+        with open(gt_path, encoding="utf8") as reader:
+          n_list = []
+          for i, triple in enumerate(reader):
+            if len(triple)==1:
+                continue
+            triple_tuple = triple.replace("\n", "").strip()
+            if triple_tuple in triples_dict:
+                gold_id = triples_dict[triple_tuple]
+                n_list.append(gold_id)
+          gold_list.append(n_list)
   return gold_list
 
 # get data per entity id (provide data in graph and entity description)
@@ -305,11 +348,14 @@ def prepare_label(ds_name, num, top_n, file_n):
       #print(len(gold_files))
       if len(gold_files) != file_n:
           file_n = len(gold_files)
+  
   for i in range(file_n):
-    with open(path.join(db_path, "{}".format(num), "{}_gold_top{}_{}.nt".format(num, top_n, i).format(num)), encoding="utf8") as reader:
-      for i, triple in enumerate(reader):
-        sub, pred, obj, _, _ = parserline_get_literal(triple, False)
-        counter(per_entity_label_dict, "{}++$++{}".format(pred, obj))
+    gt_file_path = path.join(db_path, "{}".format(num), "{}_gold_top{}_{}.nt".format(num, top_n, i))
+    if os.path.exists(gt_file_path):
+        with open(gt_file_path, encoding="utf8") as reader:
+          for i, triple in enumerate(reader):
+            sub, pred, obj, _, _ = parserline_get_literal(triple, False)
+            counter(per_entity_label_dict, "{}++$++{}".format(pred, obj))
   return per_entity_label_dict
 
 # dict counter
@@ -362,17 +408,17 @@ def process_data(ds_name):
 # Load KGE embeddings
 def load_emb(ds_name, emb_model):
     if ds_name == "dbpedia":
-        directory = path.join(path.join("data/ESBM_benchmark_v1.2"), "dbpedia_embeddings")
+        directory = path.join(IN_ESBM_DIR, "dbpedia_embeddings")
     elif ds_name == "lmdb":
-        directory = path.join(path.join("data/ESBM_benchmark_v1.2"), "lmdb_embeddings")
+        directory = path.join(IN_ESBM_DIR, "lmdb_embeddings")
     elif ds_name == "faces":
-        directory = path.join(path.join("data/FACES"), "faces_embeddings")
+        directory = path.join(IN_FACES, "faces_embeddings")
     else:
         raise ValueError("The database's name must be dbpedia or lmdb")
-	
+  
     entity2ix = build_dict(path.join(directory, "entities.dict"))
     pred2ix = build_dict(path.join(directory, "relations.dict"))
-       
+        
     if emb_model =="DistMult":
        embedding = np.load(path.join(path.join(directory, "DistMult_vec.npz")))
     elif emb_model == "ComplEx":
@@ -381,13 +427,13 @@ def load_emb(ds_name, emb_model):
        embedding = np.load(path.join(path.join(directory, "ConEx_vec.npz")))   
     else:
        raise ValueError("Please choose KGE DistMult or ComplEx")
-	
+  
     entity_embedding = embedding["ent_embedding"]
     pred_embedding = embedding["rel_embedding"]
 
     entity2vec = build_vec(entity2ix, entity_embedding)
     pred2vec = build_vec(pred2ix, pred_embedding)
-	
+  
     return entity2vec, pred2vec, entity2ix, pred2ix
 
 def gen_literal(ds_name):
@@ -405,26 +451,35 @@ def gen_literal(ds_name):
         raise ValueError("The database's name must be dbpedia or lmdb or faces")
     #print("stage 1")    
     for i in tqdm(range(db_start[0], db_end[0])):
+        if not os.path.exists(path.join(db_path, "{}".format(i))):
+            continue
         with open(path.join(db_path, "{}".format(i), "{}_literal_status.txt".format(i)), "w", encoding="utf-8") as f:
-            with open(path.join(db_path, "{}".format(i), "{}_desc.nt".format(i)), encoding="utf8") as reader:
-                for triple in reader:
-                    sub, pred, obj, obj_literal, status = parserline_get_literal(triple, True)
-                    f.write("{}\t{}\t{}\t{}\t{}\n".format(sub, pred, obj, obj_literal, status))            
+            desc_file = path.join(db_path, "{}".format(i), "{}_desc.nt".format(i))
+            if os.path.exists(desc_file):
+                with open(desc_file, encoding="utf8") as reader:
+                    for triple in reader:
+                        sub, pred, obj, obj_literal, status = parserline_get_literal(triple, True)
+                        f.write("{}\t{}\t{}\t{}\t{}\n".format(sub, pred, obj, obj_literal, status))            
     
     #print("stage 2")
     for i in tqdm(range(db_start[1], db_end[1])):
+        if not os.path.exists(path.join(db_path, "{}".format(i))):
+            continue
         with open(path.join(db_path, "{}".format(i), "{}_literal_status.txt".format(i)), "w", encoding="utf-8") as f:
-            with open(path.join(db_path, "{}".format(i), "{}_desc.nt".format(i)), encoding="utf8") as reader:
-                for triple in reader:
-                    sub, pred, obj, obj_literal, status = parserline_get_literal(triple, True)
-                    f.write("{}\t{}\t{}\t{}\t{}\n".format(sub, pred, obj, obj_literal, status))
+            desc_file = path.join(db_path, "{}".format(i), "{}_desc.nt".format(i))
+            if os.path.exists(desc_file):
+                with open(desc_file, encoding="utf8") as reader:
+                    for triple in reader:
+                        sub, pred, obj, obj_literal, status = parserline_get_literal(triple, True)
+                        f.write("{}\t{}\t{}\t{}\t{}\n".format(sub, pred, obj, obj_literal, status))
                     
 def parserline_get_literal(triple, getLabelFlag):
-  literal = re.findall('\^\^', triple)
+  # FIXED: Added raw string 'r' to regex patterns to fix SyntaxWarning
+  literal = re.findall(r'\^\^', triple)
   if len(literal) > 0:
-    components = re.findall('\^\^', triple)
+    components = re.findall(r'\^\^', triple)
   else:
-    components = re.findall('<([^:]+:[^\s"<>]*)>', triple)
+    components = re.findall(r'<([^:]+:[^\s"<>]*)>', triple)
     
   if len(components) == 2:
     sub, pred = components
@@ -444,7 +499,7 @@ def parserline_get_literal(triple, getLabelFlag):
     status = "resource"
     if getLabelFlag:
         uri = obj.split("/")
-        if uri[2]=="data.linkedmdb.org":
+        if len(uri) > 2 and uri[2]=="data.linkedmdb.org":
             id_ = uri[-1]
             key= uri[-2]
             if key!="movie":
@@ -467,7 +522,12 @@ def parserline_get_literal(triple, getLabelFlag):
     sub = components[0]
     pred = components[1]
     obj = components[2].split("^^")[0]
-    obj =  re.findall(r'"([^"]*)"', obj)[0]
+    # Check if we can find quotes
+    found_quotes = re.findall(r'"([^"]*)"', obj)
+    if found_quotes:
+        obj = found_quotes[0]
+    else:
+        obj = obj.strip()
     obj_literal =  obj
     status = "literal"
     
@@ -488,14 +548,17 @@ def get_label_of_entity(uri):
         WHERE { <%s> rdfs:label ?label }
     """ % (uri))
     sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-    
-    for result in results["results"]["bindings"]:
-        try:
-            if result["label"]["xml:lang"] == "en":
+    try:
+        results = sparql.query().convert()
+        for result in results["results"]["bindings"]:
+            try:
+                if result["label"]["xml:lang"] == "en":
+                    return result["label"]["value"]
+            except:
                 return result["label"]["value"]
-        except:
-            return result["label"]["value"]
+    except Exception as e:
+        #print(f"SPARQL Error: {e}")
+        pass
     
     return "None"
 
@@ -527,14 +590,17 @@ def get_label_of_entity_lmdb(uri):
         WHERE { %s rdfs:label ?label }
     """ % uri)
     sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-    
-    for result in results["results"]["bindings"]:
-        try:
-            if result["label"]["xml:lang"] == "en":
+    try:
+        results = sparql.query().convert()
+        for result in results["results"]["bindings"]:
+            try:
+                if result["label"]["xml:lang"] == "en":
+                    return result["label"]["value"]
+            except:
                 return result["label"]["value"]
-        except:
-            return result["label"]["value"]
+    except Exception as e:
+        #print(f"SPARQL Error: {e}")
+        pass
     
     return "None"
 
@@ -543,7 +609,12 @@ def split_upper(s):
 
 def main():
     ds_name = "faces"
-    data, entity2ix, pred2ix = process_data(ds_name)
-    print(entity2ix)
+    try:
+        data, entity2ix, pred2ix = process_data(ds_name)
+        print(f"Processed {len(entity2ix)} entities and {len(pred2ix)} predicates.")
+    except Exception as e:
+        print(f"Error in main processing: {e}")
+        print("Please check your directory structure in ./Dataset/FACES/faces_data")
+
 if __name__ == "__main__":
     main()

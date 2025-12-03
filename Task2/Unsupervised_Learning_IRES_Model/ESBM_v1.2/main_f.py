@@ -16,7 +16,7 @@ import time
 import math
 
 from data_loader_f import split_data, load_emb
-from train import train_iter
+from train_f import train_iter
 from generate_summary_f import generate_summary, ensembled_generating_summary
 
 IN_DBPEDIA_DIR = os.path.join(path.dirname(os.getcwd()), 'GATES/data/ESBM_benchmark_v1.2', 'dbpedia_data')

@@ -11,9 +11,9 @@ import numpy as np
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 
-from model import GATES
-from utils import tensor_from_data, tensor_from_weight, _eval_Fmeasure, accuracy
-from data_loader import get_data_gold
+from model_f import GATES
+from utils_f import tensor_from_data, tensor_from_weight, _eval_Fmeasure, accuracy
+from data_loader_f import get_data_gold
 
 import math
 import time

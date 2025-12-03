@@ -12,9 +12,9 @@ from tqdm import tqdm
 from numpy import array
 from numpy import argmax
 
-from utils import tensor_from_data, tensor_from_weight, _eval_Fmeasure, _eval_ndcg_scores
-from data_loader import get_data_gold
-from model import GATES
+from utils_f import tensor_from_data, tensor_from_weight, _eval_Fmeasure, _eval_ndcg_scores
+from data_loader_f import get_data_gold
+from model_f import GATES
 
 def generate_summary(ds_name, test_adjs, test_facts, test_labels, pred_dict, entity_dict, pred2ix_size, pred_emb_dim, ent_emb_dim, device, use_epoch, db_dir,  \
                      dropout, entity2ix_size, hidden_layers, nheads, word_emb, word_emb_calc, topk, file_n, concat_model, print_to, weighted_edges_method):

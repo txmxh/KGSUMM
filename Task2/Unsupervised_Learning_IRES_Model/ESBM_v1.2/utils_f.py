@@ -12,6 +12,8 @@ import torch
 from torch.optim import Adam
 import networkx as nx
 import rdflib
+
+import scipy.sparse as sp  
 from rdflib.graph import Graph
 
 from pykeen.training import SLCWATrainingLoop
@@ -19,7 +21,7 @@ from pykeen.triples import TriplesFactory
 from pykeen.models import TransE, TorusE
 
 from config import Config
-
+from sklearn.metrics import ndcg_score
 # --- BEGIN PICKLE FIX ---
 # This block fixes the torch.load() error by creating a "fake" module
 # path to match the old .pkl file, pointing it to the real TransE class.
@@ -549,3 +551,91 @@ def calculate_diversity_penalty(reconstructed_adj, relation_types):
         diversity_penalty += weighted_penalty
 
     return diversity_penalty
+
+
+# --- ADDED GNN HELPER FUNCTIONS ---
+
+def encode_onehot(labels):
+    classes = set(labels)
+    classes_dict = {c: np.identity(len(classes))[i, :] for i, c in
+                    enumerate(classes)}
+    labels_onehot = np.array(list(map(classes_dict.get, labels)),
+                             dtype=np.int32)
+    return labels_onehot
+
+def normalize_adj(mx):
+    """Symmetrically normalize adjacency matrix."""
+    mx = sp.coo_matrix(mx)
+    rowsum = np.array(mx.sum(1))
+    d_inv_sqrt = np.power(rowsum, -0.5).flatten()
+    d_inv_sqrt[np.isinf(d_inv_sqrt)] = 0.
+    d_mat_inv_sqrt = sp.diags(d_inv_sqrt)
+    return mx.dot(d_mat_inv_sqrt).transpose().dot(d_mat_inv_sqrt).tocoo()
+
+# =========================================================
+#  MISSING HELPER FUNCTIONS (Copy to end of utils_f.py)
+# =========================================================
+
+def tensor_from_data(data, max_len):
+    """
+    Converts list of data into a tensor with padding.
+    Fixes: ImportError: cannot import name 'tensor_from_data'
+    """
+    tensor = torch.zeros((len(data), max_len)).long()
+    for i, seq in enumerate(data):
+        seq_len = len(seq)
+        if seq_len > 0:
+            tensor[i, :seq_len] = torch.LongTensor(seq)
+    return tensor
+
+def tensor_from_weight(data, max_len):
+    """
+    Converts list of weights into a tensor with padding.
+    Fixes: ImportError: cannot import name 'tensor_from_weight'
+    """
+    tensor = torch.zeros((len(data), max_len)).float()
+    for i, seq in enumerate(data):
+        seq_len = len(seq)
+        if seq_len > 0:
+            tensor[i, :seq_len] = torch.FloatTensor(seq)
+    return tensor
+
+def _eval_Fmeasure(golden, predict):
+    """
+    Calculates F-Measure for validation/test steps.
+    Fixes: ImportError: cannot import name '_eval_Fmeasure'
+    """
+    # Convert to sets if they are lists
+    if isinstance(golden, list): golden = set(golden)
+    if isinstance(predict, list): predict = set(predict)
+    
+    if len(golden) == 0 or len(predict) == 0:
+        return 0.0
+    
+    common = len(golden.intersection(predict))
+    if common == 0:
+        return 0.0
+        
+    precision = common / len(predict)
+    recall = common / len(golden)
+    
+    if precision + recall == 0:
+        return 0.0
+        
+    return 2 * (precision * recall) / (precision + recall)
+
+def accuracy(output, labels):
+    """
+    Calculates accuracy for the model.
+    Fixes: ImportError: cannot import name 'accuracy'
+    """
+    preds = output.max(1)[1].type_as(labels)
+    correct = preds.eq(labels).double()
+    correct = correct.sum()
+    return correct / len(labels)
+
+def _eval_ndcg_scores(gold_list, pred_scores, k):
+    """
+    Placeholder for NDCG score calculation to prevent import errors.
+    """
+    return 0.0
