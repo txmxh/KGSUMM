@@ -1,0 +1,12 @@
+Starting Training 
+Training model is processed to dbpedia
+hyperparameters:
+Loss function: BCELoss()
+Learning rate: 0.01
+Dropout: 0.0
+n Epochs: 50
+Regularization: False
+nhead: 1
+Hidden layers: 2
+Text embedding: fasttext
+KGE model: DistMult
