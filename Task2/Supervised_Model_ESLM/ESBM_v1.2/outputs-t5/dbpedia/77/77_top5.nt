@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Saint-Raphaël,_Var> <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/France> .
+<http://dbpedia.org/resource/Saint-Raphaël,_Var> <http://dbpedia.org/ontology/region> <http://dbpedia.org/resource/Provence-Alpes-Côte_d'Azur> .
+<http://dbpedia.org/resource/Saint-Raphaël,_Var> <http://www.w3.org/2000/01/rdf-schema#label> "Saint-Raphaël, Var"@en .
+<http://dbpedia.org/resource/Saint-Raphaël,_Var> <http://xmlns.com/foaf/0.1/name> "Saint-Raphaël"@en .
+<http://dbpedia.org/resource/Saint-Raphaël,_Var> <http://dbpedia.org/ontology/minimumElevation> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .

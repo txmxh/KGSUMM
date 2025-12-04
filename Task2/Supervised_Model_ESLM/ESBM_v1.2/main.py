@@ -336,7 +336,7 @@ def main(args):
         print("Prediction and evaluation completed.")
 
         # Consolidated CSV saving logic (Colab ready)
-        output_dir = "/content/KGSUMM/Task1/Supervised_Model_ESLM/ESBM_v1.2/Outputs/"
+        output_dir = "/content/KGSUMM/Task2/Supervised_Model_ESLM/ESBM_v1.2/Outputs/"
         os.makedirs(output_dir, exist_ok=True)
         
         df_predictions = pd.DataFrame(all_predictions)
