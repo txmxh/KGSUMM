@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Family_Feud> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> <http://en.wikipedia.org/wiki/Family_Feud> .
+<http://dbpedia.org/resource/Family_Feud> <http://dbpedia.org/property/director> <http://dbpedia.org/resource/Marc_Breslow> .
+<http://dbpedia.org/resource/Family_Feud> <http://dbpedia.org/property/location> <http://dbpedia.org/resource/Sunset_Bronson_Studios> .
+<http://dbpedia.org/resource/Family_Feud> <http://dbpedia.org/ontology/format> <http://dbpedia.org/resource/Game_show> .
+<http://dbpedia.org/resource/Family_Feud> <http://dbpedia.org/property/location> <http://dbpedia.org/resource/NBC_Studios_(New_York)> .

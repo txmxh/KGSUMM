@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Friends> <http://dbpedia.org/ontology/executiveProducer> <http://dbpedia.org/resource/Michael_Curtis_(TV_producer)> .
+<http://dbpedia.org/resource/Friends> <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> <http://en.wikipedia.org/wiki/Friends> .
+<http://dbpedia.org/resource/Friends> <http://xmlns.com/foaf/0.1/homepage> <http://warnervideo.com/friends15/> .
+<http://dbpedia.org/resource/Friends> <http://dbpedia.org/ontology/creator> <http://dbpedia.org/resource/David_Crane_(producer)> .
+<http://dbpedia.org/resource/Friends> <http://dbpedia.org/ontology/creator> <http://dbpedia.org/resource/Marta_Kauffman> .

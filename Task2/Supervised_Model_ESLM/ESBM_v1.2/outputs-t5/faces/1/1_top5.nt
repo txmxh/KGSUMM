@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/property/profession> <http://dbpedia.org/resource/Community_organizing> .
+<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Michelle_Obama> .
+<http://dbpedia.org/resource/Barack_Obama> <http://xmlns.com/foaf/0.1/homepage> <http://www.barackobama.com> .
+<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/property/almaMater> <http://dbpedia.org/resource/Occidental_College> .
+<http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/property/website> <http://www.barackobama.com> .
