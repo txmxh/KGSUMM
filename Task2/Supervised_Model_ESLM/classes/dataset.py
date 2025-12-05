@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 27 15:58:42 2021
-
-@author: asep
-"""
 import os
 import sys
 import numpy as np
@@ -12,13 +7,12 @@ import random
 import torch
 import torch.nn as nn
 from sklearn.model_selection import KFold
-from rdflib.plugins.parsers.ntriples import Sink, NTriplesParser
+from rdflib import Graph
 import glob
 
 from classes.helpers import Utils
 
 UTILS = Utils()
-
 
 class ESBenchmark:
     def __init__(self, ds_name, file_n=6, topk=5, weighted_adjacency_matrix=False):
@@ -51,7 +45,7 @@ class ESBenchmark:
             raise ValueError("The database name must be dbpedia, lmdb, or faces")
 
         train_data, valid_data, test_data = [], [], []
-        for i in range(5):  # 5-folds
+        for i in range(5):
             fold_path = os.path.join(split_path, f'Fold{i}')
             train_eids = self.read_split(fold_path, 'train')
             valid_eids = self.read_split(fold_path, 'valid')
@@ -63,20 +57,22 @@ class ESBenchmark:
         return train_data, valid_data, test_data
 
     def get_triples(self, num):
-        """Get triples"""
+        """Get triples using Standard Graph Parser"""
         triples = []
-
-        class IndexSink(Sink):
-            """Triple Indexing"""
-            @staticmethod
-            def triple(sub, pred, obj):
-                triples.append((sub.toPython(), pred.toPython(), obj.toPython()))
-
-        index_sink = IndexSink()
-        parser = NTriplesParser(index_sink)
-        with open(os.path.join(self.db_path, f"{num}", f"{num}_desc.nt"), 'rb') as reader:
-            parser.parse(reader)
-
+        g = Graph()
+        file_path = os.path.join(self.db_path, f"{num}", f"{num}_desc.nt")
+        
+        try:
+            # Parse the NT file using the standard Graph API
+            g.parse(file_path, format="nt")
+            for s, p, o in g:
+                # Convert rdflib terms to Python strings to match original format
+                triples.append((s.toPython(), p.toPython(), o.toPython()))
+        except Exception as e:
+            # Optionally print warning if file is missing/corrupt
+            # print(f"Warning: Could not parse triples for {num}: {e}")
+            pass
+            
         return triples
 
     def get_labels(self, num):
@@ -108,26 +104,20 @@ class ESBenchmark:
     def get_literals(self, num):
         """Get literal value from literal txt"""
         triples_literal = []
-        # UPDATED PATH TO MATCH YOUR FOLDER STRUCTURE
+        # Ensure path points to where your main.py expects inputs
         path = os.path.join(os.getcwd(), f"classes/data_inputs/literals/{self.ds_name}")
         file_path = os.path.join(path, f"{num}_literal.txt")
         
         try:
             with open(file_path, encoding="utf-8") as reader:
                 for literal in reader:
-                    # Strip leading/trailing whitespace, then split by tab (\t)
                     values = literal.strip().split("\t")
-                    
-                    # FIX: Check that the line contains exactly 3 parts before accessing index 2
                     if len(values) == 3:
                         triples_literal.append((values[0], values[1], values[2]))
-                    elif literal.strip(): # Check if the line was non-empty but malformed
-                        # This optional warning helps debug data issues
-                        print(f"Warning: Skipping malformed line for entity {num} in {self.ds_name} data: expected 3 fields, found {len(values)} in line: '{literal.strip()}'")
-
+                    elif literal.strip(): 
+                        pass 
         except FileNotFoundError:
-            print(f"Error: Literal file not found for entity {num} at {file_path}")
-            return [] # Return empty list if file not found
+            return [] 
 
         return triples_literal
 
@@ -158,23 +148,23 @@ class ESBenchmark:
         return test_data
 
     def prepare_labels(self, num):
-        """Create gold label dictionary from gold summary triples"""
+        """Create gold label dictionary using Standard Graph Parser"""
         per_entity_label_dict = {}
-        triples = []
-
-        class IndexSink(Sink):
-            @staticmethod
-            def triple(sub, pred, obj):
-                triples.append((sub.toPython(), pred.toPython(), obj.toPython()))
-
-        index_sink = IndexSink()
+        
         for i in range(self.file_n):
-            parser = NTriplesParser(index_sink)
             path = os.path.join(self.db_path, f"{num}")
-            with open(os.path.join(path, f"{num}_gold_top{self.topk}_{i}.nt"), 'rb') as reader:
-                parser.parse(reader)
-            for _, pred, obj in triples:
-                UTILS.counter(per_entity_label_dict, f"{pred}++$++{obj}")
+            gold_file = os.path.join(path, f"{num}_gold_top{self.topk}_{i}.nt")
+            
+            if os.path.exists(gold_file):
+                g = Graph()
+                try:
+                    g.parse(gold_file, format="nt")
+                    for s, p, o in g:
+                        pred_str = p.toPython()
+                        obj_str = o.toPython()
+                        UTILS.counter(per_entity_label_dict, f"{pred_str}++$++{obj_str}")
+                except Exception:
+                    pass
 
         return per_entity_label_dict
 
@@ -186,6 +176,30 @@ class ESBenchmark:
             if triple not in triples_dict:
                 triples_dict[triple] = len(triples_dict)
         return triples_dict
+
+    def get_gold_indices(self, num, summary_index):
+        """
+        Get indices of gold standard triples.
+        Required by generate_scores.py
+        """
+        triples_dict = self.triples_dictionary(num)
+        gold_indices = []
+        
+        gold_file_path = os.path.join(self.db_path, f"{num}", f"{num}_gold_top{self.topk}_{summary_index}.nt")
+        
+        if os.path.exists(gold_file_path):
+            g = Graph()
+            try:
+                g.parse(gold_file_path, format="nt")
+                for s, p, o in g:
+                    # Construct tuple matching triples_dictionary format
+                    triple = (s.toPython(), p.toPython(), o.toPython())
+                    if triple in triples_dict:
+                        gold_indices.append(triples_dict[triple])
+            except Exception:
+                pass
+        
+        return gold_indices
 
     @staticmethod
     def read_split(fold_path, split_name):
