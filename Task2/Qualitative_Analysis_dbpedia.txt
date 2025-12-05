@@ -1,0 +1,86 @@
+============================================================
+QUALITATIVE ANALYSIS: DBPEDIA (Top-5)
+============================================================
+
+>> Loading Unsupervised (IRES) Model from: /content/KGSUMM/Task2/Unsupervised_Model_IRES
+   - Loading Graph Data...
+>> Generating IRES Scores...
+>> Loading Supervised (ESLM) Predictions...
+
+
+==================== ENTITY ID: 1 ====================
+URI: <http://dbpedia.org/resource/Adrian_Griffin>
+
+[GOLD STANDARD] (Union of human summaries)
+  * <http://dbpedia.org/ontology/callsignMeaning> -> "Warrnambool And You"
+  * <http://www.w3.org/2000/01/rdf-schema#label> -> "3WAY FM"@en
+  * <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> -> <http://schema.org/RadioStation>
+  * <http://dbpedia.org/ontology/broadcastArea> -> <http://dbpedia.org/resource/Victoria_(Australia)>
+  * <http://xmlns.com/foaf/0.1/name> -> "3WAY FM"@en
+  ... (and more)
+
+[UNSUPERVISED IRES]
+    <http://xmlns.com/foaf/0.1/name> -> "Adrian Griffin"@en  (Score: 0.8338)
+    <http://purl.org/dc/terms/subject> -> <http://dbpedia.org/resource/Category:Shooting_guards>  (Score: 0.8247)
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> -> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>  (Score: 0.8174)
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> -> <http://dbpedia.org/ontology/Agent>  (Score: 0.8174)
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> -> <http://dbpedia.org/class/yago/AfricanAmericanBasketballPlayers>  (Score: 0.8169)
+
+[SUPERVISED ESLM]
+    Broadcast Area -> Warrnambool
+    Broadcast Area -> Victoria (Australia)
+    homepage -> 3wayfm.org.au
+    Slogan -> Great Ocean Radio
+    Call Sign Meaning -> 3 - Victoria
+
+
+==================== ENTITY ID: 5 ====================
+URI: <http://dbpedia.org/resource/E._K._Mawlong>
+
+[GOLD STANDARD] (Union of human summaries)
+  * <http://dbpedia.org/ontology/birthDate> -> "1988-01-01"^^<http://www.w3.org/2001/XMLSchema#date>
+  * <http://purl.org/dc/elements/1.1/description> -> "American baseball player"@en
+  * <http://dbpedia.org/ontology/position> -> <http://dbpedia.org/resource/Starting_pitcher>
+  * <http://dbpedia.org/ontology/debutTeam> -> <http://dbpedia.org/resource/Houston_Astros>
+  * <http://purl.org/dc/terms/subject> -> <http://dbpedia.org/resource/Category:Gold_Glove_Award_winners>
+  ... (and more)
+
+[UNSUPERVISED IRES]
+    <http://dbpedia.org/ontology/birthDate> -> "1946-02-01"^^<http://www.w3.org/2001/XMLSchema#date>  (Score: 0.9309)
+    <http://purl.org/dc/elements/1.1/description> -> "Indian politician"@en  (Score: 0.8954)
+    <http://dbpedia.org/ontology/birthPlace> -> <http://dbpedia.org/resource/East_Khasi_Hills_district>  (Score: 0.8950)
+    <http://dbpedia.org/ontology/birthPlace> -> <http://dbpedia.org/resource/Mawmih>  (Score: 0.8909)
+    <http://purl.org/dc/terms/subject> -> <http://dbpedia.org/resource/Category:People_from_East_Khasi_Hills_district>  (Score: 0.8891)
+
+[SUPERVISED ESLM]
+    type -> Baseball Player
+    Birth Place -> Tulsa, Oklahoma
+    subject -> Houston Astros Players
+    givenName -> Dallas
+    label -> Dallas Keuchel
+
+
+==================== ENTITY ID: 10 ====================
+URI: <http://dbpedia.org/resource/2009–10_Swiss_Cup>
+
+[GOLD STANDARD] (Union of human summaries)
+  * <http://www.w3.org/2000/01/rdf-schema#label> -> "Roderick Carr"@en
+  * <http://dbpedia.org/ontology/occupation> -> <http://dbpedia.org/resource/Secretary_of_State_for_Transport>
+  * <http://xmlns.com/foaf/0.1/name> -> "Sir Charles Roderick Carr"@en
+  * <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> -> <http://dbpedia.org/class/yago/RoyalNavalAirServiceAviators>
+  * <http://dbpedia.org/ontology/birthYear> -> "1891-01-01"^^<http://www.w3.org/2001/XMLSchema#gYear>
+  ... (and more)
+
+[UNSUPERVISED IRES]
+    <http://xmlns.com/foaf/0.1/name> -> "Swiss Cup"@en  (Score: 0.6443)
+    <http://purl.org/dc/terms/subject> -> <http://dbpedia.org/resource/Category:2009–10_domestic_association_football_cups>  (Score: 0.6353)
+    <http://dbpedia.org/ontology/time> -> "14:00 CEST"  (Score: 0.6212)
+    <http://www.w3.org/2000/01/rdf-schema#label> -> "2009–10 Swiss Cup"@en  (Score: 0.6136)
+    <http://purl.org/dc/terms/subject> -> <http://dbpedia.org/resource/Category:Swiss_Cup>  (Score: 0.6135)
+
+[SUPERVISED ESLM]
+    Award -> Distinguished Flying Cross (United Kingdom)
+    Award -> Order Of The British Empire
+    Award -> Order Of The Bath
+    Battle -> World War I
+    Birth Place -> Feilding

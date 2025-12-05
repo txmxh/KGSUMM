@@ -206,6 +206,10 @@ def save_model_and_results(model, G, features, edge_index, edge_types, results_d
     model_metadata = config.model_metadata(round_num)
     result_metadata = config.result_metadata(round_num)
 
+    # --- FIX: UNCOMMENTED THIS LINE TO ENABLE SAVING ---
+    torch.save(model, os.path.join(config.model_path(), model_metadata))
+    # --------------------------------------------------
+
     if torch.cuda.is_available():
         torch.cuda.synchronize()
     start_time = time.time()
