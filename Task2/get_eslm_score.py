@@ -108,6 +108,28 @@ def calc_map(preds, gold, k):
             score += hits / (i + 1)
     return score / min(len(gold), k)
 
+# --- ADDED: F-Measure Helper ---
+def calc_f_measure(preds, gold, k):
+    """Calculates F-Measure @ K"""
+    if not gold or not preds: return 0.0
+    
+    # Only consider top-k predictions
+    active_preds = set(preds[:k])
+    gold_set = set(gold)
+    
+    # True Positives
+    tp = len(active_preds.intersection(gold_set))
+    
+    # Precision & Recall
+    precision = tp / len(active_preds) if len(active_preds) > 0 else 0.0
+    recall = tp / len(gold_set) if len(gold_set) > 0 else 0.0
+    
+    # F-Measure formula
+    if precision + recall == 0:
+        return 0.0
+    return 2 * (precision * recall) / (precision + recall)
+# -------------------------------
+
 # =============================================================
 # 4. MAIN EXECUTION
 # =============================================================
@@ -118,8 +140,8 @@ def run_metrics():
     # List to store results for CSV
     results_data = []
 
-    print(f"\n{'DATASET':<10} | {'TOP-K':<5} | {'NDCG':<8} | {'MAP':<8}")
-    print("-" * 45)
+    print(f"\n{'DATASET':<10} | {'TOP-K':<5} | {'F-MEASURE':<10} | {'NDCG':<8} | {'MAP':<8}")
+    print("-" * 60)
 
     for ds_name in DATASETS:
         files = pred_files[ds_name]
@@ -146,7 +168,7 @@ def run_metrics():
                 
                 if subset.empty: continue
 
-                ndcg_vals, map_vals = [], []
+                ndcg_vals, map_vals, f1_vals = [], [], []
                 
                 try:
                     benchmark = ESBenchmark(ds_name, 6, k, False)
@@ -174,8 +196,10 @@ def run_metrics():
                     if not preds or not gold:
                         ndcg_vals.append(0.0)
                         map_vals.append(0.0)
+                        f1_vals.append(0.0)
                         continue
 
+                    # NDCG
                     relevance = [1 if p in gold else 0 for p in preds[:k]]
                     if len(relevance) > 0 and sum(relevance) > 0:
                         scores = list(range(len(preds[:k]), 0, -1))
@@ -183,22 +207,29 @@ def run_metrics():
                     else:
                         val_ndcg = 0.0
 
+                    # MAP
                     val_map = calc_map(preds, gold, k)
+                    
+                    # F-Measure
+                    val_f1 = calc_f_measure(preds, gold, k)
                     
                     ndcg_vals.append(val_ndcg)
                     map_vals.append(val_map)
+                    f1_vals.append(val_f1)
 
                 if ndcg_vals:
                     mean_ndcg = np.mean(ndcg_vals)
                     mean_map = np.mean(map_vals)
+                    mean_f1 = np.mean(f1_vals)
                     
                     # Print to console
-                    print(f"{ds_name:<10} | {k:<5} | {mean_ndcg:.4f}   | {mean_map:.4f}")
+                    print(f"{ds_name:<10} | {k:<5} | {mean_f1:.4f}     | {mean_ndcg:.4f}   | {mean_map:.4f}")
                     
                     # Add to list for saving
                     results_data.append({
                         "Dataset": ds_name,
                         "Top-K": k,
+                        "F-Measure": round(mean_f1, 4),
                         "NDCG": round(mean_ndcg, 4),
                         "MAP": round(mean_map, 4)
                     })
