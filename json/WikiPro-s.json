@@ -1,0 +1,448 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "WikiPro-s",
+  "description": "WikiPro-s is member of WikES dataset generator for the Entity Summarization task.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "@misc{javadi2024wiki, title={Wiki Entity Summarization Benchmark}, author={Saeedeh Javadi and Atefeh Moradan and Mohammad Sorkhpar and Klim Zaporojets and Davide Mottin and Ira Assent},year={2024},eprint={2406.08435}, archivePrefix={arXiv}, primaryClass={cs.IR}}",
+  "datePublished": "2024-06-12T00:00:00",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://github.com/msorkhpar/wiki-entity-summarization",
+  "version": "1.0.5",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "WikiPro-s",
+      "contentUrl": "https://github.com/msorkhpar/wiki-entity-summarization/releases/download/1.0.5/WikiPro-s.zip",
+      "encodingFormat": "application/zip",
+      "sha256": "8e0c7da12a3379b512096835fc5ec371c0a371068a93b5567e3c415f894db891"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "predicates.csv",
+      "containedIn": {
+        "@id": "WikiPro-s"
+      },
+      "contentUrl": "WikiPro-s-predicates.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "entities.csv",
+      "containedIn": {
+        "@id": "WikiPro-s"
+      },
+      "contentUrl": "WikiPro-s-entities.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "root-entities.csv",
+      "containedIn": {
+        "@id": "WikiPro-s"
+      },
+      "contentUrl": "WikiPro-s-root-entities.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "triples.csv",
+      "containedIn": {
+        "@id": "WikiPro-s"
+      },
+      "contentUrl": "WikiPro-s-triples.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "ground-truths.csv",
+      "containedIn": {
+        "@id": "WikiPro-s"
+      },
+      "contentUrl": "WikiPro-s-ground-truths.csv",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "entities",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "entities/id",
+          "name": "id",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "entities.csv"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "entities/entity",
+          "name": "entity",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "entities.csv"
+            },
+            "extract": {
+              "column": "entity"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "entities/wikidata_label",
+          "name": "wikidata_label",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "entities.csv"
+            },
+            "extract": {
+              "column": "wikidata_label"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "entities/wikidata_description",
+          "name": "wikidata_description",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "entities.csv"
+            },
+            "extract": {
+              "column": "wikidata_description"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "entities/wikipedia_id",
+          "name": "wikipedia_id",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "entities.csv"
+            },
+            "extract": {
+              "column": "wikipedia_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "entities/wikipedia_title",
+          "name": "wikipedia_title",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "entities.csv"
+            },
+            "extract": {
+              "column": "wikipedia_title"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "root-entities",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "root_entities/entity",
+          "name": "entity",
+          "dataType": "sc:Integer",
+          "references": {
+            "field": {
+              "@id": "entities/id"
+            }
+          },
+          "source": {
+            "fileSet": {
+              "@id": "root-entities.csv"
+            },
+            "extract": {
+              "column": "entity"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "root_entities/category",
+          "name": "category",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "root-entities.csv"
+            },
+            "extract": {
+              "column": "category"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "predicates",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "predicates/id",
+          "name": "id",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "predicates.csv"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "predicates/predicate",
+          "name": "predicate",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "predicates.csv"
+            },
+            "extract": {
+              "column": "predicate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "predicates/predicate_label",
+          "name": "predicate_label",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "predicates.csv"
+            },
+            "extract": {
+              "column": "predicate_label"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "predicates/predicate_desc",
+          "name": "predicate_desc",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "predicates.csv"
+            },
+            "extract": {
+              "column": "predicate_desc"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "triples",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "triples/subject",
+          "name": "subject",
+          "dataType": "sc:Integer",
+          "references": {
+            "field": {
+              "@id": "entities/id"
+            }
+          },
+          "source": {
+            "fileSet": {
+              "@id": "triples.csv"
+            },
+            "extract": {
+              "column": "subject"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "triples/predicate",
+          "name": "predicate",
+          "dataType": "sc:Integer",
+          "references": {
+            "field": {
+              "@id": "predicates/id"
+            }
+          },
+          "source": {
+            "fileSet": {
+              "@id": "triples.csv"
+            },
+            "extract": {
+              "column": "predicate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "triples/object",
+          "name": "object",
+          "dataType": "sc:Integer",
+          "references": {
+            "field": {
+              "@id": "entities/id"
+            }
+          },
+          "source": {
+            "fileSet": {
+              "@id": "triples.csv"
+            },
+            "extract": {
+              "column": "object"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "ground-truths",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "ground_truths/root_entity",
+          "name": "root_entity",
+          "dataType": "sc:Integer",
+          "references": {
+            "field": {
+              "@id": "entities/id"
+            }
+          },
+          "source": {
+            "fileSet": {
+              "@id": "ground-truths.csv"
+            },
+            "extract": {
+              "column": "root_entity"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "ground_truths/subject",
+          "name": "subject",
+          "dataType": "sc:Integer",
+          "references": {
+            "field": {
+              "@id": "entities/id"
+            }
+          },
+          "source": {
+            "fileSet": {
+              "@id": "ground-truths.csv"
+            },
+            "extract": {
+              "column": "subject"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "ground_truths/predicate",
+          "name": "predicate",
+          "dataType": "sc:Integer",
+          "references": {
+            "field": {
+              "@id": "predicates/id"
+            }
+          },
+          "source": {
+            "fileSet": {
+              "@id": "ground-truths.csv"
+            },
+            "extract": {
+              "column": "predicate"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "ground_truths/object",
+          "name": "object",
+          "dataType": "sc:Integer",
+          "references": {
+            "field": {
+              "@id": "entities/id"
+            }
+          },
+          "source": {
+            "fileSet": {
+              "@id": "ground-truths.csv"
+            },
+            "extract": {
+              "column": "object"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
