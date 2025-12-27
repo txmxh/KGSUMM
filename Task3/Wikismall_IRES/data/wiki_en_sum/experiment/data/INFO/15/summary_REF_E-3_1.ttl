@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Berry_railway_station>
+      a       <http://dbpedia.org/ontology/Station> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Berry railway station"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "-34.780037"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "150.69637"^^<http://www.w3.org/2001/XMLSchema#float> .

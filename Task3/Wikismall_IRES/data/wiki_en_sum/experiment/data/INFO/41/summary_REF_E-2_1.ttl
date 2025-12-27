@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Spawn_%28film%29>
+      a       <http://dbpedia.org/ontology/Film> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Mark_A.Z._Dipp%C3%A9> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/D._B._Sweeney> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Alan_B._McElroy> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Spawn"@en .

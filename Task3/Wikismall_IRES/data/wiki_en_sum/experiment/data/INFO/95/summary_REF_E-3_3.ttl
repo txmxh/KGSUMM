@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Stone_and_Sun>
+      a       <http://schema.org/Book> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Stone and Sun"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Graham_Edwards_%28writer%29> ;
+      <http://dbpedia.org/ontology/isbn>
+              "0-00-651072-8"@en ;
+      <http://dbpedia.org/ontology/literaryGenre>
+              <http://dbpedia.org/resource/Fantasy_literature> ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/HarperCollins> .

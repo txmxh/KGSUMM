@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/Grant_&_Eisenhofer_P.A.>
+      <http://dbpedia.org/ontology/legalForm>
+              <http://dbpedia.org/resource/Professional_association> ;
+      <http://dbpedia.org/ontology/numberOfLawyers>
+              "50"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/numberOfOffices>
+              "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.gelaw.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Grant & Eisenhofer P.A."@en .

@@ -1,0 +1,24 @@
+<http://dbpedia.org/resource/Irma_Vep>
+      a       <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Film> , <http://schema.org/Movie> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Irma Vep"@en ;
+      <http://dbpedia.org/ontology/cinematography>
+              <http://dbpedia.org/resource/Eric_Gautier> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Olivier_Assayas> ;
+      <http://dbpedia.org/ontology/distributor>
+              <http://dbpedia.org/resource/Dacia_Films> ;
+      <http://dbpedia.org/ontology/editing>
+              <http://dbpedia.org/resource/Luc_Barnier> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Georges_Benayoun> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1996-11-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/runtime>
+              "5820.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Jean-Pierre_L%C3%A9aud> , <http://dbpedia.org/resource/Maggie_Cheung> , <http://dbpedia.org/resource/Nathalie_Richard> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Olivier_Assayas> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Irma Vep"@en .

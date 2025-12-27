@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Tri-Cities_Regional_Airport>
+      a       <http://dbpedia.org/ontology/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Tri-Cities Regional Airport"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Blountville,_Tennessee> ;
+      <http://dbpedia.org/ontology/runwaySurface>
+              "Asphalt"@en .

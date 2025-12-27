@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/IGrafx>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "IGrafx"@en ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Computer_software> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Incorporation_%28business%29> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.igrafx.com/> .

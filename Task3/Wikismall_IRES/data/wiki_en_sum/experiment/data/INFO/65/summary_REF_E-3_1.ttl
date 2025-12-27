@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Seahpo_Peak>
+      a       <http://schema.org/Mountain> ;
+      <http://dbpedia.org/ontology/elevation>
+              "2229.0024"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/Whatcom_County,_Washington> ;
+      <http://www.georss.org/georss/point>
+              "48.81944444444444 -121.54861111111111"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Seahpo Peak"@en .

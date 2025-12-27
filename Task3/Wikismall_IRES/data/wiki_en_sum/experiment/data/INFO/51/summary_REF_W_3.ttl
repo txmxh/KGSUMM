@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Himmelfahrt>
+      a       <http://schema.org/MusicAlbum> ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Megaherz> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Industrial_metal> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Himmelfahrt"@en .

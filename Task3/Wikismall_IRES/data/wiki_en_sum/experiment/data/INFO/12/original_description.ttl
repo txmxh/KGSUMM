@@ -1,0 +1,26 @@
+<http://dbpedia.org/resource/Chickasaw_Municipal_Airport>
+      a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/Infrastructure> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://schema.org/Airport> , <http://dbpedia.org/ontology/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Chickasaw Municipal Airport"@en ;
+      <http://dbpedia.org/ontology/elevation>
+              "351.0"^^<http://www.w3.org/2001/XMLSchema#double> , "351.1296"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/iataLocationIdentifier>
+              "CHK"@en ;
+      <http://dbpedia.org/ontology/icaoLocationIdentifier>
+              "KCHK"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Grady_County,_Oklahoma> , <http://dbpedia.org/resource/Chickasha,_Oklahoma> ;
+      <http://dbpedia.org/ontology/runwayDesignation>
+              "18/36"@en , "02/20"@en , "17/35"@en ;
+      <http://dbpedia.org/ontology/runwayLength>
+              "865.632"^^<http://www.w3.org/2001/XMLSchema#double> , "769.62"^^<http://www.w3.org/2001/XMLSchema#double> , "1554.7848"^^<http://www.w3.org/2001/XMLSchema#double> , "866.0"^^<http://www.w3.org/2001/XMLSchema#double> , "770.0"^^<http://www.w3.org/2001/XMLSchema#double> , "1555.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/runwaySurface>
+              "Asphalt"@en , "Turf"@en ;
+      <http://www.georss.org/georss/point>
+              "35.09722222222222 -97.9675"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "35.09722"^^<http://www.w3.org/2001/XMLSchema#float> , "35.09722"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-97.9675"^^<http://www.w3.org/2001/XMLSchema#float> , "-97.9675"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Chickasaw Municipal Airport"@en .

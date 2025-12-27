@@ -1,0 +1,22 @@
+<http://dbpedia.org/resource/Interstate_85_in_Virginia>
+      a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/Infrastructure> , <http://dbpedia.org/ontology/RouteOfTransportation> , <http://dbpedia.org/ontology/Road> , <http://dbpedia.org/ontology/Place> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Interstate 85 in Virginia"@en ;
+      <http://dbpedia.org/ontology/county>
+              <http://dbpedia.org/resource/Petersburg,_Virginia> , <http://dbpedia.org/resource/Dinwiddie_County,_Virginia> , <http://dbpedia.org/resource/Brunswick_County,_Virginia> , <http://dbpedia.org/resource/Mecklenburg_County,_Virginia> ;
+      <http://dbpedia.org/ontology/length>
+              "110465.37216"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/routeEnd>
+              <http://dbpedia.org/resource/Petersburg,_Virginia> ;
+      <http://dbpedia.org/ontology/routeEndDirection>
+              "North"@en ;
+      <http://dbpedia.org/ontology/routeJunction>
+              <http://dbpedia.org/resource/Alberta,_Virginia> , <http://dbpedia.org/resource/Petersburg,_Virginia> , <http://dbpedia.org/resource/McKenney,_Virginia> , <http://dbpedia.org/resource/South_Hill,_Virginia> ;
+      <http://dbpedia.org/ontology/routeNumber>
+              "85"@en ;
+      <http://dbpedia.org/ontology/routeStart>
+              <http://dbpedia.org/resource/Bracey,_Virginia> ;
+      <http://dbpedia.org/ontology/routeStartDirection>
+              "South"@en ;
+      <http://dbpedia.org/ontology/routeTypeAbbreviation>
+              "I"@en .

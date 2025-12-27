@@ -1,0 +1,28 @@
+<http://dbpedia.org/resource/Russian_Amerika>
+      a       <http://dbpedia.org/ontology/WrittenWork> , <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Book> , <http://dbpedia.org/ontology/Book> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Russian Amerika"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Stoney_Compton> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/dcc>
+              "813/.6 22"@en ;
+      <http://dbpedia.org/ontology/isbn>
+              "ISBN 978-1416521167 (first edition, hardback)"@en ;
+      <http://dbpedia.org/ontology/language>
+              <http://dbpedia.org/resource/English_language> ;
+      <http://dbpedia.org/ontology/lcc>
+              "PS3603.O49 R87 2007"@en ;
+      <http://dbpedia.org/ontology/literaryGenre>
+              <http://dbpedia.org/resource/Alternate_history> ;
+      <http://dbpedia.org/ontology/mediaType>
+              <http://dbpedia.org/resource/Hardcover> ;
+      <http://dbpedia.org/ontology/numberOfPages>
+              "464"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> ;
+      <http://dbpedia.org/ontology/oclc>
+              "76898100"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Baen_Books> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Russian Amerika"@en .

@@ -1,0 +1,15 @@
+<http://dbpedia.org/resource/TransdevTSL_Brisbane_Ferries>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "TransdevTSL Brisbane Ferries"@en ;
+      <http://dbpedia.org/ontology/formationYear>
+              "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Public_transport> ;
+      <http://dbpedia.org/ontology/locationCity>
+              <http://dbpedia.org/resource/Brisbane> ;
+      <http://dbpedia.org/ontology/locationCountry>
+              <http://dbpedia.org/resource/Australia> ;
+      <http://dbpedia.org/ontology/regionServed>
+              <http://dbpedia.org/resource/Brisbane_River> ;
+      <http://dbpedia.org/ontology/service>
+              <http://dbpedia.org/resource/Ferry> .

@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Ottapalam_Seventh-day_Adventist_Higher_Secondary_School>
+      a       <http://schema.org/School> ;
+      <http://dbpedia.org/ontology/denomination>
+              <http://dbpedia.org/resource/Seventh-day_Adventist_Church> ;
+      <http://dbpedia.org/ontology/state>
+              <http://dbpedia.org/resource/Kerala> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Ottapalam Seventh-day Adventist Higher Secondary School"@en .

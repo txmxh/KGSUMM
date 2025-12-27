@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/Timberlake_High_School>
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/foundingYear>
+              "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Spirit_Lake,_Idaho> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/State_school> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Timberlake High School"@en .

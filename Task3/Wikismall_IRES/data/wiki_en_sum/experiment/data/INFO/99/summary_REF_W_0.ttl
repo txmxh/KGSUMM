@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/The_Apocalypse_Troll>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Apocalypse Troll"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/David_Weber> .

@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Bma_magazine>
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Street_press> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "bma magazine"@en .

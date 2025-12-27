@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Timberlake_High_School>
+      a       <http://dbpedia.org/ontology/School> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://www.georss.org/georss/point>
+              "47.95253 -116.86488"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Timberlake High School"@en .

@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/Murphy_Lake_%28Cook_County,_Illinois%29>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Murphy Lake (Cook County, Illinois)"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/elevation>
+              "189.8904"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Park_Ridge,_Illinois> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Reservoir> .

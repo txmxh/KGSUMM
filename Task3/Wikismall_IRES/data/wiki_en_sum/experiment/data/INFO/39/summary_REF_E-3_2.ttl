@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/DeSales_University>
+      a       <http://dbpedia.org/ontology/University> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "40.54"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-75.377"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "DeSales University"@en .

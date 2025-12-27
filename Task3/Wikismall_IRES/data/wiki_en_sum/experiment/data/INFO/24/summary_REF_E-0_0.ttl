@@ -1,0 +1,9 @@
+<http://dbpedia.org/resource/Synergy_Group>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Synergy Group"@en ;
+      <http://dbpedia.org/ontology/keyPerson>
+              <http://dbpedia.org/resource/Chief_executive_officer> , <http://dbpedia.org/resource/Germ%C3%A1n_Efromovich> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Rio_de_Janeiro> , <http://dbpedia.org/resource/Brazil> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Airline> .

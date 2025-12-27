@@ -1,0 +1,28 @@
+<http://dbpedia.org/resource/The_Curse_%28album%29>
+      a       <http://schema.org/CreativeWork> , <http://dbpedia.org/ontology/MusicalWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Album> , <http://schema.org/MusicAlbum> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Curse (album)"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Atreyu_%28band%29> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Metalcore> ;
+      <http://dbpedia.org/ontology/previousWork>
+              <http://dbpedia.org/resource/Suicide_Notes_and_Butterfly_Kisses> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Garth_Richardson> ;
+      <http://dbpedia.org/ontology/recordLabel>
+              <http://dbpedia.org/resource/Victory_Records> ;
+      <http://dbpedia.org/ontology/recordedIn>
+              <http://dbpedia.org/resource/The_Warehouse_Studio> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "2004-06-09"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/review>
+              "http://www.rollingstone.com/artists/atreyu/albums/album/6072338/review/6294692/the_curse"^^<http://www.w3.org/2001/XMLSchema#anyURI> , "http://berontakzine.com/reviews/2005/atreyu-the-curse/"^^<http://www.w3.org/2001/XMLSchema#anyURI> , "http://www.popmatters.com/music/reviews/a/atreyu-curse.shtml"^^<http://www.w3.org/2001/XMLSchema#anyURI> , "http://www.aversionline.com/reviews/15/"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+      <http://dbpedia.org/ontology/runtime>
+              "2765.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/subsequentWork>
+              <http://dbpedia.org/resource/A_Death-Grip_on_Yesterday> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Album> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Curse"@en .

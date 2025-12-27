@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/TransdevTSL_Brisbane_Ferries>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Public_transport> ;
+      <http://dbpedia.org/ontology/locationCity>
+              <http://dbpedia.org/resource/Brisbane> ;
+      <http://dbpedia.org/ontology/locationCountry>
+              <http://dbpedia.org/resource/Australia> ;
+      <http://dbpedia.org/ontology/service>
+              <http://dbpedia.org/resource/Ferry> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "TransdevTSL Brisbane Ferries"@en .

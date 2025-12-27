@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Beaver,_Utah>
+      a       <http://schema.org/City> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Beaver, Utah"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Utah> ;
+      <http://dbpedia.org/ontology/postalCode>
+              "84713"@en ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.beaverutah.net/> .

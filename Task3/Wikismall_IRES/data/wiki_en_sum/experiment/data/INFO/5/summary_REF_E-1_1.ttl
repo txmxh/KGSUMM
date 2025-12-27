@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Prospasta>
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Insect> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Prospasta"@en .

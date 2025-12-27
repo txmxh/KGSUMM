@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Gostinu>
+      a       <http://dbpedia.org/ontology/PopulatedPlace> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Gostinu"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Romania> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Giurgiu_County> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "2419"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/timeZone>
+              <http://dbpedia.org/resource/Eastern_European_Summer_Time> .

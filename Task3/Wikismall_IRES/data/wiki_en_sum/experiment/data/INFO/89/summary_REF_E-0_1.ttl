@@ -1,0 +1,9 @@
+<http://dbpedia.org/resource/Zgliczyn-Glinki>
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Poland> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Masovian_Voivodeship> , <http://dbpedia.org/resource/Gmina_Radzan%C3%B3w,_M%C5%82awa_County> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Village> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Zgliczyn-Glinki"@en .

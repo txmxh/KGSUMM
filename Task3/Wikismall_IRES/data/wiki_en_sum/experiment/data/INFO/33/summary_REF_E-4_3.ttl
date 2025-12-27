@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Cothill_House>
+      a       <http://schema.org/School> ;
+      <http://dbpedia.org/ontology/motto>
+              "Dum Spiro Spero (While  I Breathe, I Hope)"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Cothill House, Cothill"@en .

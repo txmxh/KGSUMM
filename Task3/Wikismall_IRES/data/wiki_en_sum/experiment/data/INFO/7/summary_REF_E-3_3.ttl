@@ -1,0 +1,14 @@
+<http://dbpedia.org/resource/Ypthima_chenui>
+      a       <http://dbpedia.org/ontology/Animal> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Ypthima chenui"@en ;
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Insect> ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Nymphalidae> ;
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Ypthima> ;
+      <http://dbpedia.org/ontology/order>
+              <http://dbpedia.org/resource/Lepidoptera> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Arthropod> .

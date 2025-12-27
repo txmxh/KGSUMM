@@ -1,0 +1,34 @@
+<http://dbpedia.org/resource/Lake_Manitoba>
+      a       <http://dbpedia.org/ontology/Lake> , <http://dbpedia.org/ontology/BodyOfWater> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/LakeBodyOfWater> , <http://dbpedia.org/ontology/NaturalPlace> , <http://schema.org/Place> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://schema.org/BodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Lake Manitoba"@en , "Lake manitoba"@en ;
+      <http://dbpedia.org/ontology/areaOfCatchment>
+              5.463E10 ;
+      <http://dbpedia.org/ontology/areaTotal>
+              4.624E9 ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/St._Laurent,_Manitoba> , <http://dbpedia.org/resource/Steep_Rock,_Manitoba> , <http://dbpedia.org/resource/Sandy_Bay_First_Nation> , <http://dbpedia.org/resource/Fairford,_Manitoba> ;
+      <http://dbpedia.org/ontology/depth>
+              "7.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/elevation>
+              "247.4976"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/inflow>
+              <http://dbpedia.org/resource/Waterhen_River> ;
+      <http://dbpedia.org/ontology/length>
+              "200000.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Manitoba> ;
+      <http://dbpedia.org/ontology/outflow>
+              <http://dbpedia.org/resource/Fairford_River> ;
+      <http://dbpedia.org/ontology/volume>
+              1.41E10 ;
+      <http://dbpedia.org/ontology/width>
+              "45000.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://www.georss.org/georss/point>
+              "51.0 -98.83333333333333"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "51.0"^^<http://www.w3.org/2001/XMLSchema#float> , "51.0"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-98.833336"^^<http://www.w3.org/2001/XMLSchema#float> , "-98.833336"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Lake Manitoba"@en .

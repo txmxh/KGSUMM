@@ -1,0 +1,4 @@
+<http://dbpedia.org/resource/Flame_Bowerbird>
+      a       <http://dbpedia.org/ontology/Bird> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Flame Bowerbird"@en .

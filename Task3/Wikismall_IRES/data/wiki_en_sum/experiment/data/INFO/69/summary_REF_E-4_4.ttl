@@ -1,0 +1,14 @@
+<http://dbpedia.org/resource/Lake_Manitoba>
+      a       <http://dbpedia.org/ontology/Lake> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Lake Manitoba"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              4.624E9 ;
+      <http://dbpedia.org/ontology/inflow>
+              <http://dbpedia.org/resource/Waterhen_River> ;
+      <http://dbpedia.org/ontology/length>
+              "200000.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Manitoba> ;
+      <http://dbpedia.org/ontology/outflow>
+              <http://dbpedia.org/resource/Fairford_River> .

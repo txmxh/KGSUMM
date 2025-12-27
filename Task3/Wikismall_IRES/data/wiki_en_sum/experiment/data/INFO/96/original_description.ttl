@@ -1,0 +1,26 @@
+<http://dbpedia.org/resource/The_Chrysanthemum_and_the_Sword>
+      a       <http://dbpedia.org/ontology/WrittenWork> , <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Book> , <http://dbpedia.org/ontology/Book> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Chrysanthemum And The Sword"@en , "The chrysanthemum and the sword"@en , "The Chrysanthemum and the Sword"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Ruth_Benedict> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/dcc>
+              "952 19"@en ;
+      <http://dbpedia.org/ontology/isbn>
+              "ISBN 0-395-50075-3 9780395500750"@en ;
+      <http://dbpedia.org/ontology/language>
+              <http://dbpedia.org/resource/English_language> ;
+      <http://dbpedia.org/ontology/lcc>
+              "DS821 .B46 1989"@en ;
+      <http://dbpedia.org/ontology/mediaType>
+              <http://dbpedia.org/resource/Hardcover> ;
+      <http://dbpedia.org/ontology/numberOfPages>
+              "324"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> ;
+      <http://dbpedia.org/ontology/oclc>
+              "412839"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Houghton_Mifflin_Harcourt> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Chrysanthemum and the Sword: Patterns of Japanese Culture"@en , "The Chrysanthemum and the Sword"@en .

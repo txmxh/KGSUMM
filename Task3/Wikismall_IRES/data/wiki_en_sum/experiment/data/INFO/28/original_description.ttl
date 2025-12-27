@@ -1,0 +1,20 @@
+<http://dbpedia.org/resource/Blippy>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Organisation> , <http://schema.org/Organization> , <http://dbpedia.org/ontology/Company> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Blippy"@en ;
+      <http://dbpedia.org/ontology/formationYear>
+              "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/foundationPlace>
+              <http://dbpedia.org/resource/2009> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Computer_software> , <http://dbpedia.org/resource/Personal_finance> ;
+      <http://dbpedia.org/ontology/keyPerson>
+              <http://dbpedia.org/resource/Philip_J._Kaplan> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Palo_Alto,_California> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Rich_Internet_application> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://blippy.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Blippy"@en .

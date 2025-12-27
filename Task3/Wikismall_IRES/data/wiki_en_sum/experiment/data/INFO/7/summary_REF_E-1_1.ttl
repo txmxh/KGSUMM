@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Ypthima_chenui>
+      a       <http://dbpedia.org/ontology/Insect> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Ypthima chenui"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Nilgiri Fourring"@en .

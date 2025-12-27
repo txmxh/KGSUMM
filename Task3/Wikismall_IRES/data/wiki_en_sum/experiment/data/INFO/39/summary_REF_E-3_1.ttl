@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/DeSales_University>
+      a       <http://dbpedia.org/ontology/University> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "DeSales University"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://www.georss.org/georss/point>
+              "40.54 -75.377"@en .

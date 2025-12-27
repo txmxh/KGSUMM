@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Berry_railway_station>
+      a       <http://dbpedia.org/ontology/Station> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Berry railway station"@en ;
+      <http://www.georss.org/georss/point>
+              "-34.780037 150.696364"@en .

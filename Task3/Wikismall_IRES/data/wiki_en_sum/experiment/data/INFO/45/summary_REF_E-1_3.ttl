@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Irma_Vep>
+      a       <http://schema.org/Movie> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Irma Vep"@en ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Olivier_Assayas> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Jean-Pierre_L%C3%A9aud> , <http://dbpedia.org/resource/Nathalie_Richard> , <http://dbpedia.org/resource/Maggie_Cheung> .

@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/My_Beautiful_Dark_Twisted_Fantasy>
+      a       <http://dbpedia.org/ontology/MusicalWork> ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Kanye_West> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Hip_hop_music> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Columbia_Records> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "2010-11-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "My Beautiful Dark Twisted Fantasy"@en .

@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Chickasaw_Municipal_Airport>
+      a       <http://schema.org/Airport> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Chickasha,_Oklahoma> ;
+      <http://www.georss.org/georss/point>
+              "35.09722222222222 -97.9675"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Chickasaw Municipal Airport"@en .

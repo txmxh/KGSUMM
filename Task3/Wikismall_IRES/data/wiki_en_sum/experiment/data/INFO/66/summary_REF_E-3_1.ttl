@@ -1,0 +1,14 @@
+<http://dbpedia.org/resource/Sig%C3%B6ldul%C3%B3n>
+      a       <http://dbpedia.org/ontology/Lake> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Sig\\u00F6ldul\\u00F3n"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.4E7 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Iceland> ;
+      <http://dbpedia.org/ontology/inflow>
+              <http://dbpedia.org/resource/Tungna%C3%A1> ;
+      <http://dbpedia.org/ontology/outflow>
+              <http://dbpedia.org/resource/Tungna%C3%A1> ;
+      <http://www.georss.org/georss/point>
+              "64.15222222222222 -19.05527777777778"@en .

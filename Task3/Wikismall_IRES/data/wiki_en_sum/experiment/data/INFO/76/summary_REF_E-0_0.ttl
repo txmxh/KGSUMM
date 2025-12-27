@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Alexander_Ivanovich_Sokolov>
+      a       <http://dbpedia.org/ontology/Artist> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Alexander Ivanovich Sokolov"@en ;
+      <http://dbpedia.org/ontology/field>
+              <http://dbpedia.org/resource/Painting> , <http://dbpedia.org/resource/Art_education> ;
+      <http://dbpedia.org/ontology/movement>
+              <http://dbpedia.org/resource/Realist_visual_arts> ;
+      <http://dbpedia.org/ontology/nationality>
+              <http://dbpedia.org/resource/Russians> .

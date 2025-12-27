@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Kaiyuan,_Yunnan>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/People%27s_Republic_of_China> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Yunnan> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "23.711"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "103.246"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Kaiyuan City"@en .

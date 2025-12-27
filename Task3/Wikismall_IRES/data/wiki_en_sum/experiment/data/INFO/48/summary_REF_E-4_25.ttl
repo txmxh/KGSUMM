@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/The_Monster_%281994_film%29>
+      a       <http://schema.org/Movie> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Roberto_Benigni> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Roberto_Benigni> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1996-04-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Michel_Blanc> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Il Mostro"@en .

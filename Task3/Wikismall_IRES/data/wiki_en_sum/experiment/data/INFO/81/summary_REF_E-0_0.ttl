@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Kaiyuan,_Yunnan>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Kaiyuan, Yunnan"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/People%27s_Republic_of_China> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Honghe_Hani_and_Yi_Autonomous_Prefecture> , <http://dbpedia.org/resource/Yunnan> .

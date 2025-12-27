@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/ADC_Telecommunications>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/keyPerson>
+              <http://dbpedia.org/resource/Robert_E._Switz> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Eden_Prairie,_Minnesota> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.adc.com/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "ADC Telecommunications"@en .

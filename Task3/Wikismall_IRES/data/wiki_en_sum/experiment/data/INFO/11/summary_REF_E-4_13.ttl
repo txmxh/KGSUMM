@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Tri-Cities_Regional_Airport>
+      a       <http://dbpedia.org/ontology/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Tri-Cities Regional Airport"@en ;
+      <http://dbpedia.org/ontology/icaoLocationIdentifier>
+              "KTRI"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Tennessee> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.triflight.com/> .

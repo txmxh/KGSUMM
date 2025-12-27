@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Russian_Amerika>
+      a       <http://schema.org/Book> ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Stoney_Compton> ;
+      <http://dbpedia.org/ontology/isbn>
+              "ISBN 978-1416521167 (first edition, hardback)"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Baen_Books> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Russian Amerika"@en .

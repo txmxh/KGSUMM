@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Shoshone_Range>
+      a       <http://dbpedia.org/ontology/MountainRange> ;
+      <http://www.georss.org/georss/point>
+              "40.3504725 -116.88453972222223"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Shoshone Range"@en .

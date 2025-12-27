@@ -1,0 +1,20 @@
+<http://dbpedia.org/resource/The_Underground_Tapes>
+      a       <http://schema.org/CreativeWork> , <http://dbpedia.org/ontology/MusicalWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Album> , <http://schema.org/MusicAlbum> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Underground Tapes"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Saukrates> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Canadian_hip_hop> ;
+      <http://dbpedia.org/ontology/previousWork>
+              <http://dbpedia.org/resource/Brick_House_%28EP%29> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Saukrates> , <http://dbpedia.org/resource/Mr._Attic> , <http://dbpedia.org/resource/Mike_Caren> ;
+      <http://dbpedia.org/ontology/recordLabel>
+              <http://dbpedia.org/resource/Capitol_Hill_Music> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1999-06-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/review>
+              "http://www.mvremix.com/urban/reviews/1999/saukrateslp.shtml"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Underground Tapes"@en .

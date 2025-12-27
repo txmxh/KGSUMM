@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Dick_Fisher_Airport>
+      a       <http://dbpedia.org/ontology/Airport> ;
+      <http://dbpedia.org/ontology/faaLocationIdentifier>
+              "69OR"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Gaston,_Oregon> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Dick Fisher Airport"@en .

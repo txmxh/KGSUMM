@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/The_Monster_%281994_film%29>
+      a       <http://schema.org/Movie> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Monster (1994 film)"@en ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Yves_Attal> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Roberto_Benigni> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1994-10-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Michel_Blanc> .

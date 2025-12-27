@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Ottapalam_Seventh-day_Adventist_Higher_Secondary_School>
+      a       <http://schema.org/School> ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Ottapalam> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Ottapalam Seventh-day Adventist Higher Secondary School"@en .

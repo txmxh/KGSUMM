@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Are_We_Nearly_There_Yet%3F_%28album%29>
+      a       <http://dbpedia.org/ontology/Album> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Are We Nearly There Yet? (album)"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Television_Personalities> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Independent_music> .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Russian_Amerika>
+      a       <http://dbpedia.org/ontology/Book> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Russian Amerika"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Stoney_Compton> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/literaryGenre>
+              <http://dbpedia.org/resource/Alternate_history> .

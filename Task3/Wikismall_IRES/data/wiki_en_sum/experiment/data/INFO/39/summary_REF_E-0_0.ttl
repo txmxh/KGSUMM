@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/DeSales_University>
+      a       <http://dbpedia.org/ontology/University> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "DeSales University"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Center_Valley,_Pennsylvania> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/facultySize>
+              "96"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Private_school> .

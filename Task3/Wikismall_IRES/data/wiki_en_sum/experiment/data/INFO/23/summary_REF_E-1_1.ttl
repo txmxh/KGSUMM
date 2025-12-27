@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Arcadis_AYH>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Water> , <http://dbpedia.org/resource/Civil_engineering> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/United_Kingdom> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.arcadis-ayh.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "ARCADIS AYH"@en .

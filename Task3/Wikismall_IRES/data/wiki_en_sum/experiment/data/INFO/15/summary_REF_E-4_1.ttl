@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Berry_railway_station>
+      a       <http://dbpedia.org/ontology/Station> ;
+      <http://dbpedia.org/ontology/agencyStationCode>
+              "BRY"@en ;
+      <http://dbpedia.org/ontology/isHandicappedAccessible>
+              "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://dbpedia.org/ontology/numberOfTracks>
+              "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/railwayPlatforms>
+              "1"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Berry"@en .

@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Robert_Millar_%28soccer%29>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Robert Millar (soccer)"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Robert Millar"@en , "Bob Millar"@en .

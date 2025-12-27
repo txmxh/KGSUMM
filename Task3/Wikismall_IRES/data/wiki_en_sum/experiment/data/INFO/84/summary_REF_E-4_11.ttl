@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Huanipaca_District>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://dbpedia.org/ontology/areaTotal>
+              4.3262E8 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Peru> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Apur%C3%ADmac_Region> ;
+      <http://dbpedia.org/ontology/timeZone>
+              <http://dbpedia.org/resource/Time_in_Peru> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Huanipaca"@en .

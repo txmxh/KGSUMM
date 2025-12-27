@@ -1,0 +1,7 @@
+<http://dbpedia.org/resource/Michael_Madigan>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Michael Madigan"@en ;
+      <http://dbpedia.org/ontology/orderInOffice>
+              "Speaker of the Illinois House of Representatives"@en ;
+      <http://dbpedia.org/ontology/party>
+              <http://dbpedia.org/resource/Democratic_Party_%28United_States%29> .

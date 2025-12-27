@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Ginery_Twichell>
+      a       <http://dbpedia.org/ontology/Congressman> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1811-08-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Athol,_Massachusetts> ;
+      <http://dbpedia.org/ontology/deathDate>
+              "1883-07-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Ginery"@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Twichell"@en .

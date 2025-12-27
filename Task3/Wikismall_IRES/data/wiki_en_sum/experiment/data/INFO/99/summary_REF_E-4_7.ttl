@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/The_Apocalypse_Troll>
+      a       <http://dbpedia.org/ontology/Book> ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/David_Weber> ;
+      <http://dbpedia.org/ontology/lcc>
+              "PS3573.E217 A8 1999"@en ;
+      <http://dbpedia.org/ontology/literaryGenre>
+              <http://dbpedia.org/resource/Science_fiction> ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Baen_Books> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Apocalypse Troll"@en .

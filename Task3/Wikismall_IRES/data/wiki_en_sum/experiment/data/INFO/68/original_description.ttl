@@ -1,0 +1,20 @@
+<http://dbpedia.org/resource/Murphy_Lake_%28Cook_County,_Illinois%29>
+      a       <http://dbpedia.org/ontology/Lake> , <http://dbpedia.org/ontology/BodyOfWater> , <http://schema.org/LakeBodyOfWater> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/NaturalPlace> , <http://schema.org/Place> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://schema.org/BodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Murphy Lake (Cook County, Illinois)"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/elevation>
+              "189.8904"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Illinois> , <http://dbpedia.org/resource/Park_Ridge,_Illinois> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Reservoir> ;
+      <http://www.georss.org/georss/point>
+              "42.013333333333335 -87.85666666666667"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "42.013332"^^<http://www.w3.org/2001/XMLSchema#float> , "42.013332"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-87.85667"^^<http://www.w3.org/2001/XMLSchema#float> , "-87.85667"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Murphy Lake"@en .

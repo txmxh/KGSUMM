@@ -1,0 +1,14 @@
+<http://dbpedia.org/resource/Inquiry:_An_Interdisciplinary_Journal_of_Philosophy>
+      a       <http://dbpedia.org/ontology/AcademicJournal> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Inquiry: An Interdisciplinary Journal of Philosophy"@en ;
+      <http://dbpedia.org/ontology/academicDiscipline>
+              <http://dbpedia.org/resource/Philosophy> ;
+      <http://dbpedia.org/ontology/firstPublicationYear>
+              "1958"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/frequencyOfPublication>
+              "Bimonthly"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Routledge> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Inquiry"@en .

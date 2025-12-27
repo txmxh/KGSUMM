@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Chickasaw_Municipal_Airport>
+      a       <http://dbpedia.org/ontology/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Chickasaw Municipal Airport"@en ;
+      <http://dbpedia.org/ontology/iataLocationIdentifier>
+              "CHK"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Chickasha,_Oklahoma> ;
+      <http://dbpedia.org/ontology/runwaySurface>
+              "Asphalt"@en .

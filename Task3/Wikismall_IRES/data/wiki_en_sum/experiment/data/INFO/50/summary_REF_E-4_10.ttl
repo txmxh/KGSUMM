@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/The_Underground_Tapes>
+      a       <http://dbpedia.org/ontology/Album> ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Saukrates> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Canadian_hip_hop> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Mr._Attic> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1999-06-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Underground Tapes"@en .

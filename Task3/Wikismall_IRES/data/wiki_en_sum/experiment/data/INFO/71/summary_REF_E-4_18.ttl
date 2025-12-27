@@ -1,0 +1,14 @@
+<http://dbpedia.org/resource/Arne_Selmosson>
+      a       <http://dbpedia.org/ontology/Athlete> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1931-03-29"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/deathDate>
+              "2002-02-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/position>
+              "Striker"@en ;
+      <http://dbpedia.org/ontology/team>
+              <http://dbpedia.org/resource/S.S._Lazio> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Arne"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Arne Selmosson"@en .

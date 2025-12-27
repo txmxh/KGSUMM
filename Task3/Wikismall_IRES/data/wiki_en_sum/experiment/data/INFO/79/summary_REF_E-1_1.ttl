@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Robert_Millar_%28soccer%29>
+      a       <http://dbpedia.org/ontology/SoccerManager> ;
+      <http://dbpedia.org/ontology/managerClub>
+              <http://dbpedia.org/resource/United_States_men%27s_national_soccer_team> ;
+      <http://dbpedia.org/ontology/position>
+              "Inside left"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Robert Millar"@en .

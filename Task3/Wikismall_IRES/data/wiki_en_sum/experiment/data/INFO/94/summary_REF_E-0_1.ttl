@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Europace>
+      a       <http://dbpedia.org/ontology/AcademicJournal> ;
+      <http://dbpedia.org/ontology/abbreviation>
+              "Europace"@en ;
+      <http://dbpedia.org/ontology/academicDiscipline>
+              <http://dbpedia.org/resource/Cardiology> ;
+      <http://dbpedia.org/ontology/firstPublicationYear>
+              "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/impactFactor>
+              "1.839"^^<http://www.w3.org/2001/XMLSchema#double> .

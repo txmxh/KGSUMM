@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Sabratha>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Libya> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Az_Zawiyah> ;
+      <http://www.georss.org/georss/point>
+              "32.79222222222222 12.484166666666667"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sabratah"@en .

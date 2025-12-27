@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Brockville_Collegiate_Institute>
+      a       <http://dbpedia.org/ontology/School> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.ucdsb.on.ca/Schools/School+Directory/Secondary/bci/homepage.htm> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Brockville Collegiate Institute"@en .

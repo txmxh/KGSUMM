@@ -1,0 +1,22 @@
+<http://dbpedia.org/resource/Sig%C3%B6ldul%C3%B3n>
+      a       <http://dbpedia.org/ontology/Lake> , <http://dbpedia.org/ontology/BodyOfWater> , <http://schema.org/LakeBodyOfWater> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/NaturalPlace> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://schema.org/BodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Sig\\u00F6ldul\\u00F3n"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.4E7 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Iceland> ;
+      <http://dbpedia.org/ontology/inflow>
+              <http://dbpedia.org/resource/Tungna%C3%A1> ;
+      <http://dbpedia.org/ontology/outflow>
+              <http://dbpedia.org/resource/Tungna%C3%A1> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Reservoir> ;
+      <http://www.georss.org/georss/point>
+              "64.15222222222222 -19.05527777777778"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "64.15222"^^<http://www.w3.org/2001/XMLSchema#float> , "64.15222"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-19.055277"^^<http://www.w3.org/2001/XMLSchema#float> , "-19.055277"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sig\\u00F6ldul\\u00F3n"@en .

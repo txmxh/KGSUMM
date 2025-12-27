@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Irma_Vep>
+      a       <http://dbpedia.org/ontology/Film> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Olivier_Assayas> ;
+      <http://dbpedia.org/ontology/distributor>
+              <http://dbpedia.org/resource/Dacia_Films> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1996-11-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Maggie_Cheung> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Irma Vep"@en .

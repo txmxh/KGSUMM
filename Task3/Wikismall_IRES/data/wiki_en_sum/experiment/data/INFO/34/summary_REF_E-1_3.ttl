@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Timberlake_High_School>
+      a       <http://dbpedia.org/ontology/School> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Timberlake High School"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Spirit_Lake,_Idaho> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.lakeland272.org/tlhs/index.htm> .

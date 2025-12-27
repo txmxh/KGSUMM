@@ -1,0 +1,4 @@
+<http://dbpedia.org/resource/Sandyback_stingaree>
+      a       <http://dbpedia.org/ontology/Fish> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sandyback stingaree"@en .

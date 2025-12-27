@@ -1,0 +1,26 @@
+<http://dbpedia.org/resource/Human_Desire>
+      a       <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Film> , <http://schema.org/Movie> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Human Desire"@en ;
+      <http://dbpedia.org/ontology/cinematography>
+              <http://dbpedia.org/resource/Burnett_Guffey> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Cinema_of_the_United_States> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Fritz_Lang> ;
+      <http://dbpedia.org/ontology/distributor>
+              <http://dbpedia.org/resource/Columbia_Pictures> ;
+      <http://dbpedia.org/ontology/language>
+              <http://dbpedia.org/resource/English_language> ;
+      <http://dbpedia.org/ontology/musicComposer>
+              <http://dbpedia.org/resource/Daniele_Amfitheatrof> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1954-08-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/runtime>
+              "5460.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Broderick_Crawford> , <http://dbpedia.org/resource/Gloria_Grahame> , <http://dbpedia.org/resource/Glenn_Ford> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/%C3%89mile_Zola> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Human Desire"@en .

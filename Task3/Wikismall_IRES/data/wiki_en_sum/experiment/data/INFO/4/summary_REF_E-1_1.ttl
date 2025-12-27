@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Ribeiroia_ondatrae>
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Trematoda> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Ribeiroia ondatrae"@en .

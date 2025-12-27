@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/The_Apocalypse_Troll>
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/David_Weber> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Apocalypse Troll"@en .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Uganda_Junior_Staff_College>
+      a       <http://dbpedia.org/ontology/University> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Uganda Junior Staff College"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Jinja,_Uganda> ;
+      <http://dbpedia.org/ontology/head>
+              <http://dbpedia.org/resource/Lieutenant_Colonel> ;
+      <http://www.georss.org/georss/point>
+              "0.45 33.205"@en .

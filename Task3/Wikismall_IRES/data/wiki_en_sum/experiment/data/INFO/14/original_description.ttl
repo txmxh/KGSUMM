@@ -1,0 +1,24 @@
+<http://dbpedia.org/resource/Dick_Fisher_Airport>
+      a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/Infrastructure> , <http://www.opengis.net/gml/_Feature> , <http://schema.org/Airport> , <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Dick Fisher Airport"@en ;
+      <http://dbpedia.org/ontology/elevation>
+              "91.44"^^<http://www.w3.org/2001/XMLSchema#double> , "91.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/faaLocationIdentifier>
+              "69OR"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Gaston,_Oregon> , <http://dbpedia.org/resource/Oregon> ;
+      <http://dbpedia.org/ontology/runwayDesignation>
+              "18/36"@en ;
+      <http://dbpedia.org/ontology/runwayLength>
+              "243.0"^^<http://www.w3.org/2001/XMLSchema#double> , "243.84"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/runwaySurface>
+              "Turf"@en ;
+      <http://www.georss.org/georss/point>
+              "45.41261472222222 -123.13677361111111"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "45.412613"^^<http://www.w3.org/2001/XMLSchema#float> , "45.412613"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-123.13677"^^<http://www.w3.org/2001/XMLSchema#float> , "-123.13677"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Dick Fisher Airport"@en .

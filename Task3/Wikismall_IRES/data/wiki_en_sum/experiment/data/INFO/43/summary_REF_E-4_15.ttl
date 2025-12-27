@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Snuff_%28film%29>
+      a       <http://dbpedia.org/ontology/Film> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Snuff (film)"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Argentina> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Michael_Findlay> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Allan_Shackleton> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Michael_Findlay> .

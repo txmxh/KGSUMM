@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Villanova_School_of_Business>
+      a       <http://schema.org/CollegeOrUniversity> ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Villanova> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.villanova.edu/business/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Villanova School of Business"@en .

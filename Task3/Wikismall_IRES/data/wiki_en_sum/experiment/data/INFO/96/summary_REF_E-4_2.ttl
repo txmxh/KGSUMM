@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/The_Chrysanthemum_and_the_Sword>
+      a       <http://dbpedia.org/ontology/Book> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Chrysanthemum and the Sword"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Ruth_Benedict> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/oclc>
+              "412839"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Houghton_Mifflin_Harcourt> .

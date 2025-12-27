@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Sinaspideretes>
+      a       <http://dbpedia.org/ontology/Animal> , <http://dbpedia.org/ontology/Reptile> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Sinaspideretes"@en ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Trionychidae> ;
+      <http://dbpedia.org/ontology/order>
+              <http://dbpedia.org/resource/Turtle> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Chordate> .

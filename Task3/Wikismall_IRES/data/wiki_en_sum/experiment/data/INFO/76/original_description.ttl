@@ -1,0 +1,26 @@
+<http://dbpedia.org/resource/Alexander_Ivanovich_Sokolov>
+      a       <http://schema.org/Person> , <http://xmlns.com/foaf/0.1/Person> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Artist> , <http://dbpedia.org/ontology/Person> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Alexander Ivanovich Sokolov"@en ;
+      <http://dbpedia.org/ontology/award>
+              <http://dbpedia.org/resource/Meritorious_Artist> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1918-12-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Voronezh_Oblast> , <http://dbpedia.org/resource/Russian_Soviet_Federative_Socialist_Republic> ;
+      <http://dbpedia.org/ontology/deathPlace>
+              <http://dbpedia.org/resource/Leningrad> , <http://dbpedia.org/resource/USSR> ;
+      <http://dbpedia.org/ontology/field>
+              <http://dbpedia.org/resource/Painting> , <http://dbpedia.org/resource/Art_education> ;
+      <http://dbpedia.org/ontology/movement>
+              <http://dbpedia.org/resource/Realist_visual_arts> ;
+      <http://dbpedia.org/ontology/nationality>
+              <http://dbpedia.org/resource/Russians> ;
+      <http://dbpedia.org/ontology/training>
+              <http://dbpedia.org/resource/Imperial_Academy_of_Arts> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Alexander Ivanovich"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Alexander Ivanovich Sokolov"@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Sokolov"@en .

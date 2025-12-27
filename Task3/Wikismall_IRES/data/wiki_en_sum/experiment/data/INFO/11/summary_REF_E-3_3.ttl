@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Tri-Cities_Regional_Airport>
+      a       <http://schema.org/Airport> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Blountville,_Tennessee> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "36.475212"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-82.40742"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Tri-Cities Regional Airport"@en .

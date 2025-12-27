@@ -1,0 +1,34 @@
+<http://dbpedia.org/resource/Stanley_Park_High_School>
+      a       <http://dbpedia.org/ontology/EducationalInstitution> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/School> , <http://schema.org/EducationalOrganization> , <http://schema.org/School> , <http://dbpedia.org/ontology/Organisation> , <http://schema.org/Organization> , <http://www.opengis.net/gml/_Feature> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Stanley Park High School"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Carshalton> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/England> ;
+      <http://dbpedia.org/ontology/county>
+              <http://dbpedia.org/resource/Surrey> ;
+      <http://dbpedia.org/ontology/gender>
+              <http://dbpedia.org/resource/Mixed-sex_education> ;
+      <http://dbpedia.org/ontology/headLabel>
+              "Headmaster"@en ;
+      <http://dbpedia.org/ontology/lowerAge>
+              "11"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/motto>
+              "Igniting a passion for learning."@en ;
+      <http://dbpedia.org/ontology/postalCode>
+              "SM5 3HP"@en ;
+      <http://dbpedia.org/ontology/specialist>
+              "Maths and Computing (Designated)"@en ;
+      <http://dbpedia.org/ontology/upperAge>
+              "18"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://www.georss.org/georss/point>
+              "51.35596 -0.15858"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "51.35596"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-0.15858"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.stanleyparkhigh.co.uk/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Stanley Park High School(SPHS)"@en .

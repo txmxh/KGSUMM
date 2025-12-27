@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Bma_magazine>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Bma magazine"@en ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Street_press> .

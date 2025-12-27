@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Robert_Cooper_%28strategist%29>
+      a       <http://dbpedia.org/ontology/OfficeHolder> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1947-08-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/United_Kingdom> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Robert Cooper"@en .

@@ -1,0 +1,20 @@
+<http://dbpedia.org/resource/Inquiry:_An_Interdisciplinary_Journal_of_Philosophy>
+      a       <http://schema.org/CreativeWork> , <http://dbpedia.org/ontology/WrittenWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/PeriodicalLiterature> , <http://dbpedia.org/ontology/AcademicJournal> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Inquiry: An Interdisciplinary Journal of Philosophy"@en ;
+      <http://dbpedia.org/ontology/academicDiscipline>
+              <http://dbpedia.org/resource/Philosophy> ;
+      <http://dbpedia.org/ontology/firstPublicationYear>
+              "1958"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/frequencyOfPublication>
+              "Bimonthly"@en ;
+      <http://dbpedia.org/ontology/issn>
+              "1502-3923"@en , "0020-174X"@en ;
+      <http://dbpedia.org/ontology/oclc>
+              "1591883"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Routledge> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.tandf.co.uk/journals/routledge/0020174x.html> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Inquiry"@en .

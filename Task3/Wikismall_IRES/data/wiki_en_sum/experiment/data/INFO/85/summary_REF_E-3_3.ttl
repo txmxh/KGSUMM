@@ -1,0 +1,14 @@
+<http://dbpedia.org/resource/Chavakacheri>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Chavakacheri"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.94E7 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Sri_Lanka> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Jaffna_District> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "9.65"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "80.15"^^<http://www.w3.org/2001/XMLSchema#float> .

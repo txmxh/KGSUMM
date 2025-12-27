@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Flame_Bowerbird>
+      a       <http://dbpedia.org/ontology/Bird> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Flame Bowerbird"@en ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Bowerbird> ;
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Sericulus> ;
+      <http://dbpedia.org/ontology/kingdom>
+              <http://dbpedia.org/resource/Animal> .

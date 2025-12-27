@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Marc_B%C3%A9ziat>
+      a       <http://dbpedia.org/ontology/MusicalArtist> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1975-09-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Classical_music> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://marcbeziat.net> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Marc B\\u00E9ziat"@en .

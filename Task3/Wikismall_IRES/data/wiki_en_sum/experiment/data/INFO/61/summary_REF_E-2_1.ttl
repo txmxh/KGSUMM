@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Waikari_River_%28Canterbury%29>
+      a       <http://dbpedia.org/ontology/BodyOfWater> ;
+      <http://dbpedia.org/ontology/sourceCountry>
+              <http://dbpedia.org/resource/New_Zealand> ;
+      <http://www.georss.org/georss/point>
+              "-42.878055555555555 173.0425"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Waikari River"@en .

@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Preobrazhenskaya_Ploshchad>
+      a       <http://dbpedia.org/ontology/Station> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Preobrazhenskaya Ploshchad"@en ;
+      <http://dbpedia.org/ontology/address>
+              "Moscow"@en ;
+      <http://www.georss.org/georss/point>
+              "55.79611111111111 37.715555555555554"@en .

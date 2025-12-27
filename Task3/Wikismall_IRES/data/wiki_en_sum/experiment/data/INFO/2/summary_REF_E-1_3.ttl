@@ -1,0 +1,7 @@
+<http://dbpedia.org/resource/Gampsurus>
+      <http://dbpedia.org/ontology/order>
+              <http://dbpedia.org/resource/Shrimp> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Crustacean> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Gampsurus"@en .

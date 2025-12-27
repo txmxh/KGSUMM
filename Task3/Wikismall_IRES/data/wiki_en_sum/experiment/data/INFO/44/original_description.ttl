@@ -1,0 +1,28 @@
+<http://dbpedia.org/resource/Hiding_Out>
+      a       <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Film> , <http://schema.org/Movie> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Hiding Out"@en ;
+      <http://dbpedia.org/ontology/cinematography>
+              <http://dbpedia.org/resource/Daniel_Pearl_%28cinematographer%29> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Bob_Giraldi> ;
+      <http://dbpedia.org/ontology/distributor>
+              <http://dbpedia.org/resource/De_Laurentiis_Entertainment_Group> ;
+      <http://dbpedia.org/ontology/editing>
+              <http://dbpedia.org/resource/Edward_Warschilka> ;
+      <http://dbpedia.org/ontology/gross>
+              "7020000.0"^^<http://dbpedia.org/datatype/usDollar> ;
+      <http://dbpedia.org/ontology/musicComposer>
+              <http://dbpedia.org/resource/Anne_Dudley> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Jeff_Rothberg> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1987-11-06"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/runtime>
+              "5880.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Annabeth_Gish> , <http://dbpedia.org/resource/Keith_Coogan> , <http://dbpedia.org/resource/Jon_Cryer> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Jeff_Rothberg> , <http://dbpedia.org/resource/Jewey_Goldstein> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Hiding Out"@en .

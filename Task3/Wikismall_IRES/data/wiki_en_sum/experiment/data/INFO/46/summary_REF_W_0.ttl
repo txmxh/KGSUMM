@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Human_Desire>
+      a       <http://dbpedia.org/ontology/Film> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Human Desire"@en ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Fritz_Lang> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/%C3%89mile_Zola> .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/HM_Capital_Partners>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "HM Capital Partners"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Growth_capital> , <http://dbpedia.org/resource/Leveraged_buyout> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.hmcapital.com> .

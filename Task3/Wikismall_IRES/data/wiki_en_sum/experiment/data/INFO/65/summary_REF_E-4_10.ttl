@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Seahpo_Peak>
+      a       <http://dbpedia.org/ontology/Mountain> ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/Washington_%28state%29> ;
+      <http://dbpedia.org/ontology/mountainRange>
+              <http://dbpedia.org/resource/North_Cascades> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Seahpo Peak"@en .

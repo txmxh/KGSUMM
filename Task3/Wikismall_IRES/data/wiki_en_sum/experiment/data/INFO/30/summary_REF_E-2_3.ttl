@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Holly_Avenue_Elementary_School>
+      a       <http://dbpedia.org/ontology/School> ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Arcadia,_California> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Arcadia,_California> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "34.1271"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-118.04521"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Holly Avenue Elementary School"@en .

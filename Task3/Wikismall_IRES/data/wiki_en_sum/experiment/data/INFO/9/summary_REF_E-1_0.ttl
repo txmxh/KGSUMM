@@ -1,0 +1,4 @@
+<http://dbpedia.org/resource/Horse>
+      a       <http://dbpedia.org/ontology/Mammal> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Domestic horse"@en .

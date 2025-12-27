@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Huanipaca_District>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Huanipaca District"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Peru> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Apur%C3%ADmac_Region> .

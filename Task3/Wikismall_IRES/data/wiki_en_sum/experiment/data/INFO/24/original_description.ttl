@@ -1,0 +1,20 @@
+<http://dbpedia.org/resource/Synergy_Group>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Organisation> , <http://schema.org/Organization> , <http://dbpedia.org/ontology/Company> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Synergy Group"@en ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Conglomerate_%28company%29> ;
+      <http://dbpedia.org/ontology/keyPerson>
+              <http://dbpedia.org/resource/Chief_executive_officer> , <http://dbpedia.org/resource/Chairman> , <http://dbpedia.org/resource/Germ%C3%A1n_Efromovich> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Rio_de_Janeiro> , <http://dbpedia.org/resource/Brazil> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Airline> , <http://dbpedia.org/resource/Shipyard> , <http://dbpedia.org/resource/Oil_and_gas> , <http://dbpedia.org/resource/Aerospace> ;
+      <http://dbpedia.org/ontology/revenue>
+              "8.0E9"^^<http://dbpedia.org/datatype/usDollar> ;
+      <http://dbpedia.org/ontology/subsidiary>
+              <http://dbpedia.org/resource/AviancaTaca_Holding> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Privately_held_company> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Grupo Synergy"@en .

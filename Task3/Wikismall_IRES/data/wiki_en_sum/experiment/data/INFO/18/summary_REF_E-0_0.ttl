@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Preobrazhenskaya_Ploshchad>
+      a       <http://dbpedia.org/ontology/Station> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Preobrazhenskaya Ploshchad"@en ;
+      <http://dbpedia.org/ontology/address>
+              "Moscow"@en ;
+      <http://dbpedia.org/ontology/numberOfTracks>
+              "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/openingYear>
+              "1965"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/rebuildingYear>
+              "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .

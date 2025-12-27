@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Hiding_Out>
+      a       <http://dbpedia.org/ontology/Film> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Bob_Giraldi> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Jon_Cryer> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Jeff_Rothberg> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Hiding Out"@en .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Shoshone_Range>
+      a       <http://dbpedia.org/ontology/MountainRange> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Shoshone Range"@en ;
+      <http://dbpedia.org/ontology/district>
+              <http://dbpedia.org/resource/Lander_County,_Nevada> ;
+      <http://dbpedia.org/ontology/maximumElevation>
+              "2674.9248"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/timeZone>
+              <http://dbpedia.org/resource/Pacific_Time_Zone> .

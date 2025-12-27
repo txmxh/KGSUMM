@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Pandemonium%21>
+      a       <http://dbpedia.org/ontology/Album> ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/B2K> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Dance-pop> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Jermaine_Dupri> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "2002-12-10"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Pandemonium!"@en .

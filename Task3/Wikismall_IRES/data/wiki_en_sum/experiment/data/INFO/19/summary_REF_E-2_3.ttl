@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/RAAF_Museum>
+      a       <http://schema.org/Museum> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "RAAF Museum"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "-37.930466"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "144.74907"^^<http://www.w3.org/2001/XMLSchema#float> .

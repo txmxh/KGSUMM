@@ -1,0 +1,16 @@
+<http://dbpedia.org/resource/Robert_Cooper_%28strategist%29>
+      a       <http://schema.org/Person> , <http://xmlns.com/foaf/0.1/Person> , <http://dbpedia.org/ontology/OfficeHolder> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Person> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Robert Cooper (strategist)"@en ;
+      <http://dbpedia.org/ontology/almaMater>
+              <http://dbpedia.org/resource/University_of_Pennsylvania> , <http://dbpedia.org/resource/Worcester_College,_Oxford> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1947-08-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Brentwood,_Essex> , <http://dbpedia.org/resource/United_Kingdom> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Robert"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Robert Cooper"@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Cooper"@en .

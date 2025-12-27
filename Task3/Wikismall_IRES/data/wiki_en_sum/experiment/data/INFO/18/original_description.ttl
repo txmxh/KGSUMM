@@ -1,0 +1,44 @@
+<http://dbpedia.org/resource/Preobrazhenskaya_Ploshchad>
+      a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/Infrastructure> , <http://dbpedia.org/ontology/Station> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Preobrazhenskaya Ploshchad"@en ;
+      <http://dbpedia.org/ontology/address>
+              "Moscow"@en , "Preobrazhenskaya Square"@en , "Preobrazhenskoye District"@en , "Eastern Administrative Okrug"@en ;
+      <http://dbpedia.org/ontology/agencyStationCode>
+              "003"@en ;
+      <http://dbpedia.org/ontology/bicycleInformation>
+              "No"@en ;
+      <http://dbpedia.org/ontology/canBaggageChecked>
+              "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://dbpedia.org/ontology/depth>
+              "8.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/numberOfPlatformLevels>
+              1 ;
+      <http://dbpedia.org/ontology/numberOfTracks>
+              "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/openingDate>
+              "1965-12-31"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/openingYear>
+              "1965"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/otherServingLines>
+              "Trolleybus: 32, 41, 83"@en , "Bus: 34, 52, 80, 86, 171, 230, 716"@en , "Tram: 2, 4, 7, 11, 13, 33, 36, 46"@en ;
+      <http://dbpedia.org/ontology/parkingInformation>
+              "No"@en ;
+      <http://dbpedia.org/ontology/passengersPerYear>
+              "25948215"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/railwayPlatforms>
+              "1 island platform"@en ;
+      <http://dbpedia.org/ontology/rebuildingYear>
+              "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/stationStructure>
+              "Shallow column tri-vault"@en ;
+      <http://dbpedia.org/ontology/visitorStatisticsAsOf>
+              "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://www.georss.org/georss/point>
+              "55.79611111111111 37.715555555555554"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "55.796112"^^<http://www.w3.org/2001/XMLSchema#float> , "55.796112"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "37.715557"^^<http://www.w3.org/2001/XMLSchema#float> , "37.715557"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Preobrazhenskaya Ploshchad"@en .

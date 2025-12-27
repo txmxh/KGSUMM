@@ -1,0 +1,30 @@
+<http://dbpedia.org/resource/Cothill_House>
+      a       <http://dbpedia.org/ontology/EducationalInstitution> , <http://schema.org/EducationalOrganization> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/School> , <http://schema.org/School> , <http://dbpedia.org/ontology/Organisation> , <http://www.opengis.net/gml/_Feature> , <http://schema.org/Organization> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Cothill house"@en , "Cothill House"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/England> ;
+      <http://dbpedia.org/ontology/county>
+              <http://dbpedia.org/resource/Oxfordshire> ;
+      <http://dbpedia.org/ontology/headLabel>
+              "Head Master"@en ;
+      <http://dbpedia.org/ontology/lowerAge>
+              "8"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/motto>
+              "Dum Spiro Spero (While  I Breathe, I Hope)"@en ;
+      <http://dbpedia.org/ontology/postalCode>
+              "OX13 6JL"@en ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Preparatory_school_%28United_Kingdom%29> ;
+      <http://dbpedia.org/ontology/upperAge>
+              "12"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://www.georss.org/georss/point>
+              "51.693 -1.331"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "51.693"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-1.331"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.cothill.net/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Cothill House, Cothill"@en .

@@ -1,0 +1,28 @@
+<http://dbpedia.org/resource/Tri-Cities_Regional_Airport>
+      a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/Infrastructure> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://schema.org/Airport> , <http://dbpedia.org/ontology/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Tri-Cities Regional Airport"@en ;
+      <http://dbpedia.org/ontology/elevation>
+              "463.0"^^<http://www.w3.org/2001/XMLSchema#double> , "462.9912"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/iataLocationIdentifier>
+              "TRI"@en ;
+      <http://dbpedia.org/ontology/icaoLocationIdentifier>
+              "KTRI"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Blountville,_Tennessee> , <http://dbpedia.org/resource/Tennessee> ;
+      <http://dbpedia.org/ontology/runwayDesignation>
+              "9/27"@en , "5/23"@en ;
+      <http://dbpedia.org/ontology/runwayLength>
+              "2438.4"^^<http://www.w3.org/2001/XMLSchema#double> , "1355.0"^^<http://www.w3.org/2001/XMLSchema#double> , "2438.0"^^<http://www.w3.org/2001/XMLSchema#double> , "1355.4456"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/runwaySurface>
+              "Asphalt"@en ;
+      <http://www.georss.org/georss/point>
+              "36.47521388888889 -82.40741944444444"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "36.475212"^^<http://www.w3.org/2001/XMLSchema#float> , "36.475212"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-82.40742"^^<http://www.w3.org/2001/XMLSchema#float> , "-82.40742"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.triflight.com/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Tri-Cities Regional Airport"@en .

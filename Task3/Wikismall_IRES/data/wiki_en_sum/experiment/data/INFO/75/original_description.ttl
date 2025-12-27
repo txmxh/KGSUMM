@@ -1,0 +1,30 @@
+<http://dbpedia.org/resource/Michael_Madigan>
+      a       <http://xmlns.com/foaf/0.1/Person> , <http://schema.org/Person> , <http://dbpedia.org/ontology/OfficeHolder> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Person> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Michael Madigan"@en ;
+      <http://dbpedia.org/ontology/activeYearsEndDate>
+              "1995-01-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/activeYearsStartDate>
+              "1971-01-13"^^<http://www.w3.org/2001/XMLSchema#date> , "1983-01-12"^^<http://www.w3.org/2001/XMLSchema#date> , "1997-01-08"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1942-04-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Chicago,_Illinois> , <http://dbpedia.org/resource/Chicago> ;
+      <http://dbpedia.org/ontology/governor>
+              <http://dbpedia.org/resource/Jim_Edgar> , <http://dbpedia.org/resource/James_R._Thompson> , <http://dbpedia.org/resource/Rod_Blagojevich> , <http://dbpedia.org/resource/Pat_Quinn_%28politician%29> , <http://dbpedia.org/resource/George_Ryan> ;
+      <http://dbpedia.org/ontology/orderInOffice>
+              "Speaker of the Illinois House of Representatives"@en , "67th & 69th"@en ;
+      <http://dbpedia.org/ontology/party>
+              <http://dbpedia.org/resource/Democratic_Party_%28United_States%29> ;
+      <http://dbpedia.org/ontology/profession>
+              <http://dbpedia.org/resource/Lawyer> ;
+      <http://dbpedia.org/ontology/successor>
+              <http://dbpedia.org/resource/Lee_A._Daniels> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Michael J."@en ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://ilga.gov/house/Rep.asp?MemberID=1172> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Michael Madigan"@en , "Michael J. Madigan"@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Madigan"@en .

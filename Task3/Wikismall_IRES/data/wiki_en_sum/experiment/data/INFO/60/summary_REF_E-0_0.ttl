@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/Anderson_Reservoir>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Anderson Reservoir"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/region>
+              <http://dbpedia.org/resource/Santa_Clara_County,_California> ;
+      <http://dbpedia.org/ontology/river>
+              <http://dbpedia.org/resource/Coyote_Creek_%28Santa_Clara_County%29> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Reservoir> .

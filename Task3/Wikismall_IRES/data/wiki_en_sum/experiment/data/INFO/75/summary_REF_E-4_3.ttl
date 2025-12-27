@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Michael_Madigan>
+      a       <http://dbpedia.org/ontology/OfficeHolder> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1942-04-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/party>
+              <http://dbpedia.org/resource/Democratic_Party_%28United_States%29> ;
+      <http://dbpedia.org/ontology/profession>
+              <http://dbpedia.org/resource/Lawyer> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Michael J."@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Madigan"@en .

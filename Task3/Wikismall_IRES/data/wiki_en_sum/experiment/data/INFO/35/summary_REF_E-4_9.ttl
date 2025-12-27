@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/The_Marist_Schools>
+      a       <http://schema.org/EducationalOrganization> ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Sunninghill> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.themaristschools.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Marist Schools"@en .

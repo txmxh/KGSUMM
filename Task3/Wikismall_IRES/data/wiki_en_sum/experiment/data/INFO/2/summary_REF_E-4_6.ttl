@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Gampsurus>
+      a       <http://dbpedia.org/ontology/Animal> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Gampsurus"@en ;
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Malacostraca> ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Incertae_sedis> ;
+      <http://dbpedia.org/ontology/order>
+              <http://dbpedia.org/resource/Decapoda> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Crustacean> .

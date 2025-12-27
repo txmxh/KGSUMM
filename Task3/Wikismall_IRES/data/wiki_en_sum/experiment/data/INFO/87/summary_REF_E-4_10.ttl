@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Sterling_Township,_Blue_Earth_County,_Minnesota>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Sterling Township, Blue Earth County, Minnesota"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/utcOffset>
+              "-6"@en .

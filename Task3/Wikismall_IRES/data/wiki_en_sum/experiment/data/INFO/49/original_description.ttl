@@ -1,0 +1,24 @@
+<http://dbpedia.org/resource/Towelhead_%28film%29>
+      a       <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Film> , <http://schema.org/Movie> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Towelhead (film)"@en ;
+      <http://dbpedia.org/ontology/cinematography>
+              <http://dbpedia.org/resource/Newton_Thomas_Sigel> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Alan_Ball_%28screenwriter%29> ;
+      <http://dbpedia.org/ontology/distributor>
+              <http://dbpedia.org/resource/Warner_Independent_Pictures> ;
+      <http://dbpedia.org/ontology/gross>
+              "675662.0"^^<http://dbpedia.org/datatype/usDollar> ;
+      <http://dbpedia.org/ontology/musicComposer>
+              <http://dbpedia.org/resource/Thomas_Newman> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Steven_M._Rales> , <http://dbpedia.org/resource/Alan_Ball_%28screenwriter%29> , <http://dbpedia.org/resource/Ted_Hope> ;
+      <http://dbpedia.org/ontology/runtime>
+              "7440.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Summer_Bishil> , <http://dbpedia.org/resource/Toni_Collette> , <http://dbpedia.org/resource/Maria_Bello> , <http://dbpedia.org/resource/Peter_Macdissi> , <http://dbpedia.org/resource/Aaron_Eckhart> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Alan_Ball_%28screenwriter%29> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Towelhead"@en .

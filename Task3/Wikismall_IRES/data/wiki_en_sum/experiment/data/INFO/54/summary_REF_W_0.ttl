@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/Nachtmystium_%28EP%29>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Nachtmystium (EP)"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Nachtmystium> ;
+      <http://dbpedia.org/ontology/previousWork>
+              <http://dbpedia.org/resource/Reign_of_the_Malicious> ;
+      <http://dbpedia.org/ontology/recordLabel>
+              <http://dbpedia.org/resource/Painiac_Records> , <http://dbpedia.org/resource/Regimental_Records> , <http://dbpedia.org/resource/Battle_Kommand_Records> , <http://dbpedia.org/resource/Desire_of_Goat_Productions> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Nachtmystium"@en .

@@ -1,0 +1,13 @@
+<http://dbpedia.org/resource/Chavakacheri>
+      <http://dbpedia.org/ontology/areaTotal>
+              1.94E7 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Sri_Lanka> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Northern_Province,_Sri_Lanka> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Town> ;
+      <http://dbpedia.org/ontology/utcOffset>
+              "+5:30"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Chavakacheri"@en .

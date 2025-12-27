@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Berry_railway_station>
+      a       <http://dbpedia.org/ontology/Station> ;
+      <http://www.georss.org/georss/point>
+              "-34.780037 150.696364"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Berry"@en .

@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Arne_Selmosson>
+      a       <http://dbpedia.org/ontology/SoccerPlayer> ;
+      <http://dbpedia.org/ontology/team>
+              <http://dbpedia.org/resource/A.S._Roma> , <http://dbpedia.org/resource/S.S._Lazio> , <http://dbpedia.org/resource/Sweden_national_football_team> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Arne Selmosson"@en .

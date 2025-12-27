@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Hutton_Roof_Crags>
+      a       <http://schema.org/Mountain> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Hutton Roof Crags"@en ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/Cumbria> ;
+      <http://www.georss.org/georss/point>
+              "54.19133 -2.68196"@en .

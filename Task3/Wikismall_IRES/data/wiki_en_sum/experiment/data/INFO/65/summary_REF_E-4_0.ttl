@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Seahpo_Peak>
+      a       <http://dbpedia.org/ontology/Mountain> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Seahpo Peak"@en ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/Whatcom_County,_Washington> ;
+      <http://dbpedia.org/ontology/mountainRange>
+              <http://dbpedia.org/resource/North_Cascades> .

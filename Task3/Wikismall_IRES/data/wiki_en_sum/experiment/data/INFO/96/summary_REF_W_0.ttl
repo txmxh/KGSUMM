@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/The_Chrysanthemum_and_the_Sword>
+      a       <http://dbpedia.org/ontology/Book> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Chrysanthemum and the Sword"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Ruth_Benedict> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Chrysanthemum and the Sword: Patterns of Japanese Culture"@en .

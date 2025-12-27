@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Brockville_Collegiate_Institute>
+      a       <http://dbpedia.org/ontology/School> ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Brockville> ;
+      <http://www.georss.org/georss/point>
+              "44.59583333333333 -75.6825"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Brockville Collegiate Institute"@en .

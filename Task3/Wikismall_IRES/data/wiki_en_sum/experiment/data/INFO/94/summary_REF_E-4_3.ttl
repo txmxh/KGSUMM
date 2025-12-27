@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Europace>
+      a       <http://dbpedia.org/ontology/PeriodicalLiterature> ;
+      <http://dbpedia.org/ontology/abbreviation>
+              "Europace"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Oxford_University_Press> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://europace.oxfordjournals.org/> .

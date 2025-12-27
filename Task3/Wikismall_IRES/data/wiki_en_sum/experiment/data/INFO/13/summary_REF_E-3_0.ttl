@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Agios_Pavlos_General_Hospital>
+      a       <http://dbpedia.org/ontology/Hospital> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Agios Pavlos General Hospital"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Greece> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Kalamaria> ;
+      <http://www.georss.org/georss/point>
+              "40.613838888888885 22.97242222222222"@en .

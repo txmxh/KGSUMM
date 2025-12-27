@@ -1,0 +1,9 @@
+<http://dbpedia.org/resource/TransdevTSL_Brisbane_Ferries>
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Public_transport> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Joint_venture> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.brisbaneferries.com.au/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "TransdevTSL Brisbane Ferries"@en .

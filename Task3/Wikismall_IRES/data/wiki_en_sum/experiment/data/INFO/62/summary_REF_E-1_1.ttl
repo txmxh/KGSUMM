@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Hutton_Roof_Crags>
+      a       <http://dbpedia.org/ontology/Mountain> ;
+      <http://dbpedia.org/ontology/elevation>
+              "274.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/England> ;
+      <http://dbpedia.org/ontology/parentMountainPeak>
+              <http://dbpedia.org/resource/Grayrigg_Forest> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Hutton Roof Crags"@en .

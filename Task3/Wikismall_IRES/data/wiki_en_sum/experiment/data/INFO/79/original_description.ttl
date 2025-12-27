@@ -1,0 +1,24 @@
+<http://dbpedia.org/resource/Robert_Millar_%28soccer%29>
+      a       <http://schema.org/Person> , <http://xmlns.com/foaf/0.1/Person> , <http://dbpedia.org/ontology/SoccerManager> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Person> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Robert Millar (soccer)"@en ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1890-05-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Paisley> , <http://dbpedia.org/resource/Scotland> ;
+      <http://dbpedia.org/ontology/deathDate>
+              "1967-02-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/deathPlace>
+              <http://dbpedia.org/resource/United_States> , <http://dbpedia.org/resource/Staten_Island,_New_York> ;
+      <http://dbpedia.org/ontology/managerClub>
+              <http://dbpedia.org/resource/United_States_men%27s_national_soccer_team> , <http://dbpedia.org/resource/Newark_Skeeters> , <http://dbpedia.org/resource/New_York_Nationals_%28ASL%29> , <http://dbpedia.org/resource/Indiana_Flooring> ;
+      <http://dbpedia.org/ontology/position>
+              "Inside Left"@en ;
+      <http://dbpedia.org/ontology/team>
+              <http://dbpedia.org/resource/United_States_men%27s_national_soccer_team> , <http://dbpedia.org/resource/Disston_A.A.> , <http://dbpedia.org/resource/Philadelphia_Hibernian> , <http://dbpedia.org/resource/Brooklyn_Robins_Dry_Dock> , <http://dbpedia.org/resource/St._Mirren_F.C.> , <http://dbpedia.org/resource/Babcock_and_Wilcox_%28soccer%29> , <http://dbpedia.org/resource/Bethlehem_Steel_F.C.> , <http://dbpedia.org/resource/Brooklyn_Field_Club> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Robert"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Robert Millar"@en , "Bob Millar"@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Millar"@en .

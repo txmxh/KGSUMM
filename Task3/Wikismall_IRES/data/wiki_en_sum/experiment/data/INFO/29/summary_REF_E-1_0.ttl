@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/HTnaturals>
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Clothing> ;
+      <http://dbpedia.org/ontology/parentCompany>
+              <http://dbpedia.org/resource/Naturally_Advanced> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Subsidiary> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.htnaturals.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "HTnaturals Apparel Corp."@en .

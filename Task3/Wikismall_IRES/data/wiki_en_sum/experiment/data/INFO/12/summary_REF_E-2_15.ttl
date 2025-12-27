@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Chickasaw_Municipal_Airport>
+      a       <http://schema.org/Airport> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Grady_County,_Oklahoma> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "35.09722"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-97.9675"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Chickasaw Municipal Airport"@en .

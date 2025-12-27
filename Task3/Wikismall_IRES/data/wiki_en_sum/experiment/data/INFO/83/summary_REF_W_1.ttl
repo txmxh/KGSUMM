@@ -1,0 +1,7 @@
+<http://dbpedia.org/resource/Sabratha>
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Libya> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Az_Zawiyah> , <http://dbpedia.org/resource/Sabratha_Wa_Surman_District> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sabratah"@en .

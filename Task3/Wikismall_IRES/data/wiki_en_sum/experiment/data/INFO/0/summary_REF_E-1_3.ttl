@@ -1,0 +1,7 @@
+<http://dbpedia.org/resource/Olivella_miliola>
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Olivella_%28gastropod%29> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Mollusca> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Olivella miliola"@en .

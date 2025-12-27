@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Dick_Fisher_Airport>
+      a       <http://dbpedia.org/ontology/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Dick Fisher Airport"@en ;
+      <http://dbpedia.org/ontology/faaLocationIdentifier>
+              "69OR"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Gaston,_Oregon> ;
+      <http://dbpedia.org/ontology/runwaySurface>
+              "Turf"@en .

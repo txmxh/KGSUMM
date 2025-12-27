@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Tri-Cities_Regional_Airport>
+      a       <http://dbpedia.org/ontology/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Tri-Cities Regional Airport"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Blountville,_Tennessee> ;
+      <http://www.georss.org/georss/point>
+              "36.47521388888889 -82.40741944444444"@en .

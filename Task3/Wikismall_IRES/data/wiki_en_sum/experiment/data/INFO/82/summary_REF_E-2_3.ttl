@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Tablat>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Algeria> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/M%C3%A9d%C3%A9a_Province> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "36.416668"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "3.3166666"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Tablat"@en .
