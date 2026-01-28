@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/The_Marist_Schools>
+      a       <http://dbpedia.org/ontology/School> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Marist Schools"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Sunninghill> ;
+      <http://dbpedia.org/ontology/foundedBy>
+              <http://dbpedia.org/resource/Marist_Sisters> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "51.4031"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-0.65"^^<http://www.w3.org/2001/XMLSchema#float> .

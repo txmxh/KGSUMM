@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/The_Chrysanthemum_and_the_Sword>
+      a       <http://schema.org/Book> ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Ruth_Benedict> ;
+      <http://dbpedia.org/ontology/language>
+              <http://dbpedia.org/resource/English_language> ;
+      <http://dbpedia.org/ontology/numberOfPages>
+              "324"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Chrysanthemum and the Sword: Patterns of Japanese Culture"@en .

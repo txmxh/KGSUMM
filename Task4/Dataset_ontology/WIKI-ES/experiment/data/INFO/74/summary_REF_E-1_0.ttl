@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Sandy_McCarthy>
+      a       <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+      <http://dbpedia.org/ontology/activeYearsEndYear>
+              "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/activeYearsStartYear>
+              "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/position>
+              "Right wing"@en ;
+      <http://dbpedia.org/ontology/shoots>
+              "Right"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sandy Maccarthy"@en .

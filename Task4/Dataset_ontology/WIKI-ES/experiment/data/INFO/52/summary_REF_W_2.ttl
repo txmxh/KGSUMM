@@ -1,0 +1,16 @@
+<http://dbpedia.org/resource/My_Beautiful_Dark_Twisted_Fantasy>
+      a       <http://schema.org/MusicAlbum> ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Kanye_West> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Hip_hop_music> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Mike_Dean_%28producer%29> , <http://dbpedia.org/resource/Jeff_Bhasker> , <http://dbpedia.org/resource/RZA> , <http://dbpedia.org/resource/No_I.D.> ;
+      <http://dbpedia.org/ontology/recordLabel>
+              <http://dbpedia.org/resource/Roc-A-Fella_Records> ;
+      <http://dbpedia.org/ontology/recordedIn>
+              <http://dbpedia.org/resource/Honolulu> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "2010-11-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "My Beautiful Dark Twisted Fantasy"@en .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/IGrafx>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Computer_software> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Tualatin,_Oregon> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.igrafx.com/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "iGrafx, a division of Corel"@en .

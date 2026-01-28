@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/Bhaupur_Village>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Bhaupur Village"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/India> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Village> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "26.255"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "82.355"^^<http://www.w3.org/2001/XMLSchema#float> .

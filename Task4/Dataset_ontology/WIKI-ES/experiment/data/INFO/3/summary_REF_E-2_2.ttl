@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Sandyback_stingaree>
+      a       <http://dbpedia.org/ontology/Animal> , <http://dbpedia.org/ontology/Fish> ;
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Chondrichthyes> ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Urolophidae> ;
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Urolophidae%23Urolophus> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Chordate> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sandyback stingaree"@en .

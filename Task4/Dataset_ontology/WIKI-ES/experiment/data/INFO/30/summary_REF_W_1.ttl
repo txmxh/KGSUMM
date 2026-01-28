@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Holly_Avenue_Elementary_School>
+      a       <http://schema.org/School> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Holly Avenue Elementary School"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Arcadia,_California> ;
+      <http://dbpedia.org/ontology/district>
+              <http://dbpedia.org/resource/Arcadia_Unified_School_District> ;
+      <http://dbpedia.org/ontology/foundingYear>
+              "1926"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/state>
+              <http://dbpedia.org/resource/California> .

@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Cothill_House>
+      a       <http://schema.org/School> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Cothill House"@en ;
+      <http://dbpedia.org/ontology/county>
+              <http://dbpedia.org/resource/Oxfordshire> ;
+      <http://dbpedia.org/ontology/lowerAge>
+              "8"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/upperAge>
+              "12"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Cothill House, Cothill"@en .

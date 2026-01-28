@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Hiding_Out>
+      a       <http://dbpedia.org/ontology/Film> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Bob_Giraldi> ;
+      <http://dbpedia.org/ontology/distributor>
+              <http://dbpedia.org/resource/De_Laurentiis_Entertainment_Group> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1987-11-06"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Annabeth_Gish> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Hiding Out"@en .

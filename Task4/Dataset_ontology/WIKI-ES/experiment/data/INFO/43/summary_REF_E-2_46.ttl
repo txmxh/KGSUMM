@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Snuff_%28film%29>
+      a       <http://schema.org/Movie> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Snuff (film)"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Michael_Findlay> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Clao_Villanueva> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Michael_Findlay> .

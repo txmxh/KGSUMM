@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Europace>
+      a       <http://dbpedia.org/ontology/AcademicJournal> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Europace"@en ;
+      <http://dbpedia.org/ontology/academicDiscipline>
+              <http://dbpedia.org/resource/Cardiology> ;
+      <http://dbpedia.org/ontology/frequencyOfPublication>
+              "Monthly"@en .

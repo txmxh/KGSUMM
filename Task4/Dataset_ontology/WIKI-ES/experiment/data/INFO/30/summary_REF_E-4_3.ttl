@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Holly_Avenue_Elementary_School>
+      a       <http://dbpedia.org/ontology/School> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Holly Avenue Elementary School"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Arcadia,_California> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.ausd.k12.ca.us/holly/> .

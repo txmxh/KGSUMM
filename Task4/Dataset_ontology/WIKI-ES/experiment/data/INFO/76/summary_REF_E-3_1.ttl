@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Alexander_Ivanovich_Sokolov>
+      a       <http://dbpedia.org/ontology/Artist> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Alexander Ivanovich Sokolov"@en ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1918-12-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Voronezh_Oblast> ;
+      <http://dbpedia.org/ontology/field>
+              <http://dbpedia.org/resource/Painting> ;
+      <http://dbpedia.org/ontology/nationality>
+              <http://dbpedia.org/resource/Russians> .

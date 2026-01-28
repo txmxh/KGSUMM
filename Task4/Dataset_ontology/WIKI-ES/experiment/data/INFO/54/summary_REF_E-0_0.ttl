@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Nachtmystium_%28EP%29>
+      a       <http://schema.org/MusicAlbum> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Nachtmystium (EP)"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Nachtmystium> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Black_metal> ;
+      <http://dbpedia.org/ontology/previousWork>
+              <http://dbpedia.org/resource/Reign_of_the_Malicious> ;
+      <http://dbpedia.org/ontology/subsequentWork>
+              <http://dbpedia.org/resource/Demise_%28album%29> .

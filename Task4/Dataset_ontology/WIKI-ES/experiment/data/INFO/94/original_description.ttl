@@ -1,0 +1,26 @@
+<http://dbpedia.org/resource/Europace>
+      a       <http://schema.org/CreativeWork> , <http://dbpedia.org/ontology/WrittenWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/PeriodicalLiterature> , <http://dbpedia.org/ontology/AcademicJournal> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Europace"@en ;
+      <http://dbpedia.org/ontology/abbreviation>
+              "Europace"@en ;
+      <http://dbpedia.org/ontology/academicDiscipline>
+              <http://dbpedia.org/resource/Cardiology> ;
+      <http://dbpedia.org/ontology/firstPublicationYear>
+              "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/frequencyOfPublication>
+              "Monthly"@en ;
+      <http://dbpedia.org/ontology/impactFactor>
+              "1.839"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/impactFactorAsOf>
+              "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/issn>
+              "1532-2092"@en , "1099-5129"@en ;
+      <http://dbpedia.org/ontology/oclc>
+              "61232412"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Oxford_University_Press> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://europace.oxfordjournals.org/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Europace"@en .

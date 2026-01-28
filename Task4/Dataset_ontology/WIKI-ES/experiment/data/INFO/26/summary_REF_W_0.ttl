@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/ADC_Telecommunications>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "ADC Telecommunications"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Eden_Prairie,_Minnesota> .

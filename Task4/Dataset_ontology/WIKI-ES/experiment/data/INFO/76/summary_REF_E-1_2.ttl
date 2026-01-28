@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Alexander_Ivanovich_Sokolov>
+      a       <http://dbpedia.org/ontology/Artist> ;
+      <http://dbpedia.org/ontology/award>
+              <http://dbpedia.org/resource/Meritorious_Artist> ;
+      <http://dbpedia.org/ontology/field>
+              <http://dbpedia.org/resource/Painting> , <http://dbpedia.org/resource/Art_education> ;
+      <http://dbpedia.org/ontology/nationality>
+              <http://dbpedia.org/resource/Russians> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Alexander Ivanovich"@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Sokolov"@en .

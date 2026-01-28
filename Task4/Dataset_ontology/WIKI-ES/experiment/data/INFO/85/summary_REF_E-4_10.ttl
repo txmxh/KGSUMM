@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Chavakacheri>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.94E7 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Sri_Lanka> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Jaffna_District> ;
+      <http://dbpedia.org/ontology/utcOffset>
+              "+5:30"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Chavakacheri"@en .

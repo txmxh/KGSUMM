@@ -1,0 +1,9 @@
+<http://dbpedia.org/resource/Ribeiroia_ondatrae>
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Trematoda> ;
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Ribeiroia> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Flatworm> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Ribeiroia ondatrae"@en .

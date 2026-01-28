@@ -1,0 +1,26 @@
+<http://dbpedia.org/resource/Kaiyuan,_Yunnan>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/Settlement> , <http://dbpedia.org/ontology/PopulatedPlace> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Kaiyuan, Yunnan"@en ;
+      <http://dbpedia.org/ontology/areaCode>
+              "0873"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.94651E9 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/People%27s_Republic_of_China> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Honghe_Hani_and_Yi_Autonomous_Prefecture> , <http://dbpedia.org/resource/Yunnan> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "299000"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/postalCode>
+              "661600"@en ;
+      <http://www.georss.org/georss/point>
+              "23.711111111111112 103.2461111111111"@en , "23.711 103.246"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "23.711111"^^<http://www.w3.org/2001/XMLSchema#float> , "23.711"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "103.246"^^<http://www.w3.org/2001/XMLSchema#float> , "103.24611"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.ynkaiyuan.gov.cn/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Kaiyuan City"@en .

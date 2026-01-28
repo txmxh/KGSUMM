@@ -1,0 +1,9 @@
+<http://dbpedia.org/resource/The_Curse_%28album%29>
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Atreyu_%28band%29> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Metalcore> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Album> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Curse"@en .

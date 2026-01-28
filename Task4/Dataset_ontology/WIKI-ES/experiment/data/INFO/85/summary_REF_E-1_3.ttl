@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Chavakacheri>
+      a       <http://dbpedia.org/ontology/Town> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Chavakacheri"@en ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Jaffna_District> , <http://dbpedia.org/resource/Northern_Province,_Sri_Lanka> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "21693"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .

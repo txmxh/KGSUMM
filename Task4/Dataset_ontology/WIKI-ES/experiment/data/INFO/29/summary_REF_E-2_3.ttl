@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/HTnaturals>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Clothing> ;
+      <http://dbpedia.org/ontology/locationCountry>
+              <http://dbpedia.org/resource/Canada> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "HTnaturals Apparel Corp."@en .

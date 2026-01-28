@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Hutton_Roof_Crags>
+      a       <http://dbpedia.org/ontology/Mountain> ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/England> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "54.19133"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-2.68196"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Hutton Roof Crags"@en .

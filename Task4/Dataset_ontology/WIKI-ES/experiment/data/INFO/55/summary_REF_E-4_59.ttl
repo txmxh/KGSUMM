@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Pandemonium%21>
+      a       <http://dbpedia.org/ontology/MusicalWork> ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/B2K> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Hip_hop_music> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Bryan-Michael_Cox> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "2002-12-10"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Pandemonium!"@en .

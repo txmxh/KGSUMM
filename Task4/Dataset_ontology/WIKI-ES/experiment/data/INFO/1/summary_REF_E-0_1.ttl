@@ -1,0 +1,7 @@
+<http://dbpedia.org/resource/Pomatiopsis_lapidaria>
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Gastropoda> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Mollusca> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Pomatiopsis lapidaria"@en .

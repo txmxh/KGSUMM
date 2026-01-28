@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/All_the_Young_Dudes>
+      a       <http://schema.org/MusicAlbum> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "All the Young Dudes"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Mott_the_Hoople> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Glam_rock> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/David_Bowie> .

@@ -1,0 +1,14 @@
+<http://dbpedia.org/resource/Lake_Manitoba>
+      a       <http://schema.org/LakeBodyOfWater> ;
+      <http://dbpedia.org/ontology/areaTotal>
+              4.624E9 ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Fairford,_Manitoba> ;
+      <http://dbpedia.org/ontology/length>
+              "200000.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "51.0"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-98.833336"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Lake Manitoba"@en .

@@ -1,0 +1,15 @@
+<http://dbpedia.org/resource/Michael_Madigan>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Michael Madigan"@en ;
+      <http://dbpedia.org/ontology/activeYearsStartDate>
+              "1971-01-13"^^<http://www.w3.org/2001/XMLSchema#date> , "1983-01-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1942-04-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/orderInOffice>
+              "Speaker of the Illinois House of Representatives"@en ;
+      <http://dbpedia.org/ontology/party>
+              <http://dbpedia.org/resource/Democratic_Party_%28United_States%29> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Michael J."@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Madigan"@en .

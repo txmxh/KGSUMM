@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/The_Chrysanthemum_and_the_Sword>
+      a       <http://schema.org/Book> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Chrysanthemum and the Sword"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Ruth_Benedict> ;
+      <http://dbpedia.org/ontology/isbn>
+              "ISBN 0-395-50075-3 9780395500750"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Houghton_Mifflin_Harcourt> .

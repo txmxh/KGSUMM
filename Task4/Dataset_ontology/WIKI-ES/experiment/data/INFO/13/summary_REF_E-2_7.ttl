@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Agios_Pavlos_General_Hospital>
+      a       <http://schema.org/Hospital> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Greece> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "40.61384"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "22.972422"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Agios Pavlos General HospitalSt'Paul's District General Hospital"@en .

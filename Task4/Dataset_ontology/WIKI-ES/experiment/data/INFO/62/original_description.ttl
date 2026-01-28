@@ -1,0 +1,22 @@
+<http://dbpedia.org/resource/Hutton_Roof_Crags>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/NaturalPlace> , <http://schema.org/Mountain> , <http://dbpedia.org/ontology/Mountain> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Hutton Roof Crags"@en ;
+      <http://dbpedia.org/ontology/elevation>
+              "274.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/Cumbria> , <http://dbpedia.org/resource/England> ;
+      <http://dbpedia.org/ontology/nationalTopographicSystemMapNumber>
+              "OS Landranger 97"@en ;
+      <http://dbpedia.org/ontology/parentMountainPeak>
+              <http://dbpedia.org/resource/Grayrigg_Forest> ;
+      <http://dbpedia.org/ontology/prominence>
+              "176.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://www.georss.org/georss/point>
+              "54.19133 -2.68196"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "54.19133"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-2.68196"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Hutton Roof Crags"@en .

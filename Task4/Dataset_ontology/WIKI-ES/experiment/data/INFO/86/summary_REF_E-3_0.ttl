@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Bhaupur_Village>
+      a       <http://dbpedia.org/ontology/AdministrativeRegion> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/India> ;
+      <http://dbpedia.org/ontology/district>
+              <http://dbpedia.org/resource/Ambedkar_Nagar_district> ;
+      <http://www.georss.org/georss/point>
+              "26.255 82.355"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Bhaupur"@en .

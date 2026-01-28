@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Lake_Manitoba>
+      a       <http://dbpedia.org/ontology/Lake> , <http://schema.org/LakeBodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Lake Manitoba"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              4.624E9 ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Manitoba> .

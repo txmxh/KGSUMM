@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Lake_Manitoba>
+      a       <http://schema.org/LakeBodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Lake Manitoba"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Manitoba> ;
+      <http://www.georss.org/georss/point>
+              "51.0 -98.83333333333333"@en .

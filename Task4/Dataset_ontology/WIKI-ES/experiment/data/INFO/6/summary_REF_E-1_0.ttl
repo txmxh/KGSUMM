@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Flame_Bowerbird>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Flame Bowerbird"@en ;
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Bird> .

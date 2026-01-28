@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Brockville_Collegiate_Institute>
+      a       <http://schema.org/School> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Brockville Collegiate Institute"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Brockville> ;
+      <http://dbpedia.org/ontology/numberOfStudents>
+              "541"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/province>
+              <http://dbpedia.org/resource/Ontario> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/High_school%23Canada> .

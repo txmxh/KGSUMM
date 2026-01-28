@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Chung_Ho_Yin>
+      a       <http://dbpedia.org/ontology/SoccerManager> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Chung Ho Yin"@en ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Hong_Kong> ;
+      <http://dbpedia.org/ontology/number>
+              1 ;
+      <http://dbpedia.org/ontology/position>
+              "Goalkeeper"@en ;
+      <http://dbpedia.org/ontology/team>
+              <http://dbpedia.org/resource/South_China_AA> .

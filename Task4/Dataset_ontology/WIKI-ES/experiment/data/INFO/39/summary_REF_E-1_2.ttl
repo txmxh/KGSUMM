@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/DeSales_University>
+      a       <http://schema.org/CollegeOrUniversity> ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Center_Valley,_Pennsylvania> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.desales.edu/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "DeSales University"@en .

@@ -1,0 +1,20 @@
+<http://dbpedia.org/resource/Fullerton_Securities>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Organisation> , <http://schema.org/Organization> , <http://dbpedia.org/ontology/Company> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Fullerton Securities"@en ;
+      <http://dbpedia.org/ontology/formationYear>
+              "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/foundationPlace>
+              <http://dbpedia.org/resource/India> ;
+      <http://dbpedia.org/ontology/numberOfEmployees>
+              "400"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/parentCompany>
+              <http://dbpedia.org/resource/Temasek_Holdings> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Mutual_fund> , <http://dbpedia.org/resource/Financial_plan> , <http://dbpedia.org/resource/Insurance> ;
+      <http://dbpedia.org/ontology/service>
+              <http://dbpedia.org/resource/Financial_plan> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.fullertonsecurities.co.in> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Fullerton Securities"@en .

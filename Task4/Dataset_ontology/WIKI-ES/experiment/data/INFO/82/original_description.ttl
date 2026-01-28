@@ -1,0 +1,24 @@
+<http://dbpedia.org/resource/Tablat>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/Town> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/Settlement> , <http://dbpedia.org/ontology/PopulatedPlace> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Tablat"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Algeria> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/M%C3%A9d%C3%A9a_Province> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "28276"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/timeZone>
+              <http://dbpedia.org/resource/Central_European_Time> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Communes_of_Algeria> ;
+      <http://dbpedia.org/ontology/utcOffset>
+              "+1"@en ;
+      <http://www.georss.org/georss/point>
+              "36.416666666666664 3.3166666666666664"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "36.416668"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "3.3166666"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Tablat"@en .

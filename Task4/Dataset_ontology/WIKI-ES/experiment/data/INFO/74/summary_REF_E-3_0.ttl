@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Sandy_McCarthy>
+      a       <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1972-06-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Toronto> ;
+      <http://dbpedia.org/ontology/position>
+              "Right wing"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sandy Maccarthy"@en .

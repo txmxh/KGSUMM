@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Prospasta>
+      a       <http://dbpedia.org/ontology/Animal> , <http://dbpedia.org/ontology/Insect> ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Sterrhinae> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Arthropod> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Prospasta"@en .

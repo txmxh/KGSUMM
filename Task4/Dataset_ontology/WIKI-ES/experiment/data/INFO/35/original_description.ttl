@@ -1,0 +1,28 @@
+<http://dbpedia.org/resource/The_Marist_Schools>
+      a       <http://dbpedia.org/ontology/EducationalInstitution> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/EducationalOrganization> , <http://dbpedia.org/ontology/School> , <http://schema.org/School> , <http://dbpedia.org/ontology/Organisation> , <http://schema.org/Organization> , <http://www.opengis.net/gml/_Feature> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Marist Schools"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Sunninghill> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/England> ;
+      <http://dbpedia.org/ontology/foundedBy>
+              <http://dbpedia.org/resource/Marist_Sisters> ;
+      <http://dbpedia.org/ontology/foundingYear>
+              "1947"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/motto>
+              "Sub Mariae Nomine - In Mary's Name"@en ;
+      <http://dbpedia.org/ontology/state>
+              <http://dbpedia.org/resource/Berkshire> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Independent_school> ;
+      <http://www.georss.org/georss/point>
+              "51.4031 -0.65"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "51.4031"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-0.65"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.themaristschools.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Marist Schools"@en .

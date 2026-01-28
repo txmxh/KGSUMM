@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Live_Undead>
+      a       <http://schema.org/MusicAlbum> ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Slayer> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Thrash_metal> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Live Undead"@en .

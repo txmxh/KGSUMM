@@ -1,0 +1,14 @@
+<http://dbpedia.org/resource/Flame_Bowerbird>
+      a       <http://dbpedia.org/ontology/Bird> , <http://dbpedia.org/ontology/Animal> ;
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Bird> ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Bowerbird> ;
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Sericulus> ;
+      <http://dbpedia.org/ontology/order>
+              <http://dbpedia.org/resource/Passerine> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Chordate> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Flame Bowerbird"@en .

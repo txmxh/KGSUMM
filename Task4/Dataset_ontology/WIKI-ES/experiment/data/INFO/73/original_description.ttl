@@ -1,0 +1,20 @@
+<http://dbpedia.org/resource/Chung_Ho_Yin>
+      a       <http://xmlns.com/foaf/0.1/Person> , <http://schema.org/Person> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/SoccerManager> , <http://dbpedia.org/ontology/Person> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Chung Ho Yin"@en ;
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Hong_Kong> ;
+      <http://dbpedia.org/ontology/managerClub>
+              <http://dbpedia.org/resource/Eastern_AA> ;
+      <http://dbpedia.org/ontology/number>
+              1 ;
+      <http://dbpedia.org/ontology/position>
+              "Goalkeeper"@en ;
+      <http://dbpedia.org/ontology/team>
+              <http://dbpedia.org/resource/South_China_AA> , <http://dbpedia.org/resource/Double_Flower_FA> , <http://dbpedia.org/resource/Kitchee_SC> , <http://dbpedia.org/resource/Hong_Kong_national_football_team> , <http://dbpedia.org/resource/Kui_Tan> , <http://dbpedia.org/resource/Hong_Kong_Rangers_FC> , <http://dbpedia.org/resource/Eastern_AA> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Ho Yin"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Chung Ho Yin"@en , "\\u937E\\u7693\\u8CE2"@en , "Ho Yin Chung"@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Chung"@en .

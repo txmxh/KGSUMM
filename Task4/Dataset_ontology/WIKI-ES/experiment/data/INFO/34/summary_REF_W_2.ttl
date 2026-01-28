@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Timberlake_High_School>
+      a       <http://schema.org/School> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Spirit_Lake,_Idaho> ;
+      <http://dbpedia.org/ontology/mascot>
+              "Tiger"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Timberlake High School"@en .

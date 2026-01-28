@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Winnie_the_Pooh_and_Christmas_Too>
+      a       <http://schema.org/Movie> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Winnie the Pooh and Christmas Too"@en ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Jamie_Mitchell> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Edan_Gross> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Karl_Geurs> .

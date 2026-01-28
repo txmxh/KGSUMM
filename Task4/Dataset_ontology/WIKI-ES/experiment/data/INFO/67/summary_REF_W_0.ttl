@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Suusamyr_Too>
+      a       <http://dbpedia.org/ontology/MountainRange> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Suusamyr Too"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Kyrgyzstan> ;
+      <http://dbpedia.org/ontology/geology>
+              "Composed of granite, schist of Lower Paleozoic"@en ;
+      <http://dbpedia.org/ontology/maximumElevation>
+              "4048.0"^^<http://www.w3.org/2001/XMLSchema#double> .

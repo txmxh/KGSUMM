@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Chickasaw_Municipal_Airport>
+      a       <http://schema.org/Airport> ;
+      <http://dbpedia.org/ontology/iataLocationIdentifier>
+              "CHK"@en ;
+      <http://dbpedia.org/ontology/icaoLocationIdentifier>
+              "KCHK"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Grady_County,_Oklahoma> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Chickasaw Municipal Airport"@en .

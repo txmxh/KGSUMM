@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/RAAF_Museum>
+      a       <http://schema.org/Museum> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/RAAF_Williams> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.airforce.gov.au/raafmuseum/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "RAAF Museum"@en .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Sandyback_stingaree>
+      a       <http://dbpedia.org/ontology/Species> ;
+      <http://dbpedia.org/ontology/conservationStatusSystem>
+              "IUCN3.1"@en ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Urolophidae> ;
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Urolophidae%23Urolophus> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sandyback stingaree"@en .

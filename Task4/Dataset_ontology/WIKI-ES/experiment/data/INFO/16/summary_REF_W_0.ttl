@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Lotru_Bridge>
+      a       <http://dbpedia.org/ontology/Bridge> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Lotru Bridge"@en ;
+      <http://dbpedia.org/ontology/crosses>
+              <http://dbpedia.org/resource/Olt_River> ;
+      <http://dbpedia.org/ontology/length>
+              "200.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/Dr%C4%83g%C4%83%C5%9Fani> , <http://dbpedia.org/resource/Piatra-Olt> .

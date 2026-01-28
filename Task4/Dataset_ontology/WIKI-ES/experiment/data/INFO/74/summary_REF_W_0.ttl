@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Sandy_McCarthy>
+      a       <http://schema.org/Person> , <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Sandy McCarthy"@en ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1972-06-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/formerTeam>
+              <http://dbpedia.org/resource/Calgary_Flames> , <http://dbpedia.org/resource/New_York_Rangers> , <http://dbpedia.org/resource/Boston_Bruins> , <http://dbpedia.org/resource/Carolina_Hurricanes> , <http://dbpedia.org/resource/Philadelphia_Flyers> , <http://dbpedia.org/resource/Tampa_Bay_Lightning> ;
+      <http://dbpedia.org/ontology/position>
+              "Right wing"@en .

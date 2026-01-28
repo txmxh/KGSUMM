@@ -1,0 +1,22 @@
+<http://dbpedia.org/resource/The_Prophecy_%28novel%29>
+      a       <http://schema.org/CreativeWork> , <http://dbpedia.org/ontology/WrittenWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Book> , <http://dbpedia.org/ontology/Book> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Prophecy (novel)"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Chris_Kuzneski> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/isbn>
+              "014103708"@en ;
+      <http://dbpedia.org/ontology/literaryGenre>
+              <http://dbpedia.org/resource/Thriller_%28genre%29> ;
+      <http://dbpedia.org/ontology/oclc>
+              "423582738"@en ;
+      <http://dbpedia.org/ontology/previousWork>
+              <http://dbpedia.org/resource/The_Lost_Throne> ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/G._P._Putnam%27s_Sons> , <http://dbpedia.org/resource/Penguin_Books> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.chriskuzneski.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Prophecy"@en .

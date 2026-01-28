@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Kaiyuan,_Yunnan>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Kaiyuan, Yunnan"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.94651E9 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/People%27s_Republic_of_China> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "299000"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .

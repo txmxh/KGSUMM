@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Fullerton_Securities>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Fullerton Securities"@en ;
+      <http://dbpedia.org/ontology/formationYear>
+              "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/foundationPlace>
+              <http://dbpedia.org/resource/India> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Mutual_fund> , <http://dbpedia.org/resource/Financial_plan> , <http://dbpedia.org/resource/Insurance> .

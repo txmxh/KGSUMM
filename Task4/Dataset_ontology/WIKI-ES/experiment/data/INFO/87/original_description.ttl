@@ -1,0 +1,34 @@
+<http://dbpedia.org/resource/Sterling_Township,_Blue_Earth_County,_Minnesota>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Town> , <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/Settlement> , <http://dbpedia.org/ontology/PopulatedPlace> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Sterling Township, Blue Earth County, Minnesota"@en ;
+      <http://dbpedia.org/ontology/areaLand>
+              8.91E7 , 8.90955909955584E7 ;
+      <http://dbpedia.org/ontology/areaTotal>
+              9.3239571972096E7 , 9.33E7 ;
+      <http://dbpedia.org/ontology/areaWater>
+              "4200000.0"^^<http://www.w3.org/2001/XMLSchema#double> , "4143980.9765376"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/elevation>
+              "306.0"^^<http://www.w3.org/2001/XMLSchema#double> , "306.0192"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Minnesota> , <http://dbpedia.org/resource/Blue_Earth_County,_Minnesota> ;
+      <http://dbpedia.org/ontology/populationDensity>
+              "3.088817268339567"^^<http://www.w3.org/2001/XMLSchema#double> , "3.1"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "276"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/timeZone>
+              <http://dbpedia.org/resource/Central_Time_Zone_%28North_America%29> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Township_%28United_States%29> ;
+      <http://dbpedia.org/ontology/utcOffset>
+              "-6"@en , "-5"@en ;
+      <http://www.georss.org/georss/point>
+              "43.89527777777778 -94.06916666666666"@en , "43.9060715 -94.0771788"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "43.89528"^^<http://www.w3.org/2001/XMLSchema#float> , "43.90607"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-94.06917"^^<http://www.w3.org/2001/XMLSchema#float> , "-94.07718"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sterling Township, Minnesota"@en .

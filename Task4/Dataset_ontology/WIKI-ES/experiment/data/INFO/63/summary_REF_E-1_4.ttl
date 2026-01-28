@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Yellow_Medicine_River>
+      a       <http://dbpedia.org/ontology/BodyOfWater> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/sourcePlace>
+              <http://dbpedia.org/resource/Shaokatan_Township,_Lincoln_County,_Minnesota> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Yellow Medicine River"@en .

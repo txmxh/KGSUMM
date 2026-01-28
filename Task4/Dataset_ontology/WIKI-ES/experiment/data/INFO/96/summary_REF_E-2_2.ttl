@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/The_Chrysanthemum_and_the_Sword>
+      a       <http://dbpedia.org/ontology/Book> ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Ruth_Benedict> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "The Chrysanthemum and the Sword"@en .

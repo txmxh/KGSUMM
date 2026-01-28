@@ -1,0 +1,26 @@
+<http://dbpedia.org/resource/Anderson_Reservoir>
+      a       <http://dbpedia.org/ontology/BodyOfWater> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/NaturalPlace> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://schema.org/BodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Anderson Reservoir"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Morgan_Hill,_California> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/district>
+              <http://dbpedia.org/resource/Santa_Clara_Valley_Water_District> ;
+      <http://dbpedia.org/ontology/region>
+              <http://dbpedia.org/resource/Santa_Clara_County,_California> ;
+      <http://dbpedia.org/ontology/river>
+              <http://dbpedia.org/resource/Coyote_Creek_%28Santa_Clara_County%29> ;
+      <http://dbpedia.org/ontology/state>
+              <http://dbpedia.org/resource/California> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Reservoir> ;
+      <http://www.georss.org/georss/point>
+              "37.16555555555556 -121.62944444444445"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "37.165554"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-121.62945"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Anderson Reservoir"@en .

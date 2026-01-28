@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/RAAF_Museum>
+      a       <http://schema.org/Museum> ;
+      <http://www.georss.org/georss/point>
+              "-37.930464 144.749073"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "RAAF Museum"@en .

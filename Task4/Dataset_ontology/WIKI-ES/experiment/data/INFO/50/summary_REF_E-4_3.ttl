@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/The_Underground_Tapes>
+      a       <http://schema.org/MusicAlbum> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Underground Tapes"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Saukrates> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Canadian_hip_hop> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Mike_Caren> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1999-06-22"^^<http://www.w3.org/2001/XMLSchema#date> .

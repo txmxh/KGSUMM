@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Beaver,_Utah>
+      a       <http://dbpedia.org/ontology/City> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Beaver, Utah"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Beaver_County,_Utah> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "2454"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/synonym>
+              "The \\\"B\\\" Town"@en .

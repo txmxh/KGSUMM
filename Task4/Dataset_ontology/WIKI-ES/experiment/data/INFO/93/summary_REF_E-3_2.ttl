@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Our_Day_Out_%28musical%29>
+      a       <http://schema.org/Book> ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Willy_Russell> ;
+      <http://dbpedia.org/ontology/isbn>
+              "ISBN 0-435-23301-7 and ISBN 978-0-435233-01-3"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Hutchinson_Education> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Our Day Out"@en .

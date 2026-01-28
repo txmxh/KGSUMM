@@ -1,0 +1,9 @@
+<http://dbpedia.org/resource/Chung_Ho_Yin>
+      <http://dbpedia.org/ontology/birthPlace>
+              <http://dbpedia.org/resource/Hong_Kong> ;
+      <http://dbpedia.org/ontology/team>
+              <http://dbpedia.org/resource/South_China_AA> , <http://dbpedia.org/resource/Eastern_AA> ;
+      <http://xmlns.com/foaf/0.1/givenName>
+              "Ho Yin"@en ;
+      <http://xmlns.com/foaf/0.1/surname>
+              "Chung"@en .

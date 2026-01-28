@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Horse>
+      a       <http://dbpedia.org/ontology/Animal> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Horse"@en ;
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Mammal> ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Equidae> ;
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Equus_%28genus%29> ;
+      <http://dbpedia.org/ontology/species>
+              <http://dbpedia.org/resource/Wild_horse> .

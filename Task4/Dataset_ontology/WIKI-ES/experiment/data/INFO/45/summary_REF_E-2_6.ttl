@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Irma_Vep>
+      a       <http://dbpedia.org/ontology/Film> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Olivier_Assayas> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Nathalie_Richard> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Olivier_Assayas> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Irma Vep"@en .

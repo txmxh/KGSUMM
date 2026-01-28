@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Blippy>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Computer_software> , <http://dbpedia.org/resource/Personal_finance> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Rich_Internet_application> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://blippy.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Blippy"@en .

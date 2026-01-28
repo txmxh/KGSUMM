@@ -1,0 +1,18 @@
+<http://dbpedia.org/resource/Nachtmystium_%28EP%29>
+      a       <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/MusicalWork> , <http://dbpedia.org/ontology/Album> , <http://schema.org/MusicAlbum> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Nachtmystium (EP)"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Nachtmystium> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Black_metal> ;
+      <http://dbpedia.org/ontology/previousWork>
+              <http://dbpedia.org/resource/Reign_of_the_Malicious> ;
+      <http://dbpedia.org/ontology/recordLabel>
+              <http://dbpedia.org/resource/Painiac_Records> , <http://dbpedia.org/resource/Regimental_Records> , <http://dbpedia.org/resource/Battle_Kommand_Records> , <http://dbpedia.org/resource/Desire_of_Goat_Productions> ;
+      <http://dbpedia.org/ontology/runtime>
+              "1440.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/subsequentWork>
+              <http://dbpedia.org/resource/Demise_%28album%29> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Nachtmystium"@en .

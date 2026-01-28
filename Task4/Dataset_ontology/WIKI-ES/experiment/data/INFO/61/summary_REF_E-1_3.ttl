@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Waikari_River_%28Canterbury%29>
+      a       <http://dbpedia.org/ontology/BodyOfWater> ;
+      <http://dbpedia.org/ontology/length>
+              "41000.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/riverMouth>
+              <http://dbpedia.org/resource/Hurunui_River> ;
+      <http://dbpedia.org/ontology/sourceCountry>
+              <http://dbpedia.org/resource/New_Zealand> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Waikari River"@en .

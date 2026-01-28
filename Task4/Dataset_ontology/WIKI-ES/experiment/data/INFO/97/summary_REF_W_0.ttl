@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/The_Northern_Echo>
+      a       <http://dbpedia.org/ontology/Newspaper> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Northern Echo"@en ;
+      <http://dbpedia.org/ontology/headquarters>
+              <http://dbpedia.org/resource/Darlington> , <http://dbpedia.org/resource/England> .

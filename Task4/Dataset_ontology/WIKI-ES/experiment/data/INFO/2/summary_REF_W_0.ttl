@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Gampsurus>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Gampsurus"@en ;
+      <http://dbpedia.org/ontology/order>
+              <http://dbpedia.org/resource/Shrimp> , <http://dbpedia.org/resource/Decapoda> .

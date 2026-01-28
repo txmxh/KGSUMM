@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Anderson_Reservoir>
+      a       <http://schema.org/BodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Anderson Reservoir"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://www.georss.org/georss/point>
+              "37.16555555555556 -121.62944444444445"@en .

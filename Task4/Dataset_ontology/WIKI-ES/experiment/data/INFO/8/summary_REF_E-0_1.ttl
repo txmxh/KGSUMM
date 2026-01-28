@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Sinaspideretes>
+      a       <http://dbpedia.org/ontology/Reptile> ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Trionychidae> ;
+      <http://dbpedia.org/ontology/order>
+              <http://dbpedia.org/resource/Turtle> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Sinaspideretes"@en .

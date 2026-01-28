@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Waikari_River_%28Canterbury%29>
+      a       <http://dbpedia.org/ontology/BodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Waikari River (Canterbury)"@en ;
+      <http://dbpedia.org/ontology/sourceCountry>
+              <http://dbpedia.org/resource/New_Zealand> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "-42.878056"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "173.0425"^^<http://www.w3.org/2001/XMLSchema#float> .

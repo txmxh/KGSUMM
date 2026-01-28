@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Blippy>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Computer_software> , <http://dbpedia.org/resource/Personal_finance> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Palo_Alto,_California> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Blippy"@en .

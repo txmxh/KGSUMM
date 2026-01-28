@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/Villanova_School_of_Business>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Villanova School of Business"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Private_university> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "40.03703"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-75.343315"^^<http://www.w3.org/2001/XMLSchema#float> .

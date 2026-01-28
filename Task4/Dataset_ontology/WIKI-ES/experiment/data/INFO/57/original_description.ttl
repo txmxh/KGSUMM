@@ -1,0 +1,24 @@
+<http://dbpedia.org/resource/Live_Undead>
+      a       <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/MusicalWork> , <http://dbpedia.org/ontology/Album> , <http://schema.org/MusicAlbum> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Live Undead"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Slayer> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Thrash_metal> ;
+      <http://dbpedia.org/ontology/previousWork>
+              <http://dbpedia.org/resource/Haunting_the_Chapel> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Slayer> ;
+      <http://dbpedia.org/ontology/recordLabel>
+              <http://dbpedia.org/resource/Metal_Blade_Records> ;
+      <http://dbpedia.org/ontology/recordedIn>
+              <http://dbpedia.org/resource/New_York_City> ;
+      <http://dbpedia.org/ontology/runtime>
+              "1396.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/subsequentWork>
+              <http://dbpedia.org/resource/Hell_Awaits> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Live_album> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Live Undead"@en .

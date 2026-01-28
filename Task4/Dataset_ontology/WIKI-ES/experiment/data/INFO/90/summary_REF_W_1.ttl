@@ -1,0 +1,7 @@
+<http://dbpedia.org/resource/Russian_Amerika>
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Stoney_Compton> ;
+      <http://dbpedia.org/ontology/literaryGenre>
+              <http://dbpedia.org/resource/Alternate_history> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Russian Amerika"@en .

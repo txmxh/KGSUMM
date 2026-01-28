@@ -1,0 +1,9 @@
+<http://dbpedia.org/resource/Grant_&_Eisenhofer_P.A.>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Grant & Eisenhofer P.A."@en ;
+      <http://dbpedia.org/ontology/foundingYear>
+              "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/headquarter>
+              <http://dbpedia.org/resource/Wilmington,_Delaware> ;
+      <http://dbpedia.org/ontology/numberOfOffices>
+              "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .

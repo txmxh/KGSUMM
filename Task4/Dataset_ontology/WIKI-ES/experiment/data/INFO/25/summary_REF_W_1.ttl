@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Fullerton_Securities>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/foundationPlace>
+              <http://dbpedia.org/resource/India> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Financial_plan> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Fullerton Securities"@en .

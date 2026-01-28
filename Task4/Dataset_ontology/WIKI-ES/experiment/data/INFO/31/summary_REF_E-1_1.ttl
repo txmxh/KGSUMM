@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Brockville_Collegiate_Institute>
+      a       <http://dbpedia.org/ontology/School> ;
+      <http://dbpedia.org/ontology/officialSchoolColour>
+              "Black and Red"@en ;
+      <http://dbpedia.org/ontology/province>
+              <http://dbpedia.org/resource/Ontario> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Brockville Collegiate Institute"@en .

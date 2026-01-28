@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Shoshone_Range>
+      a       <http://dbpedia.org/ontology/MountainRange> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "40.35047"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-116.88454"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Shoshone Range"@en .

@@ -1,0 +1,16 @@
+<http://dbpedia.org/resource/Lotru_Bridge>
+      a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/Infrastructure> , <http://dbpedia.org/ontology/RouteOfTransportation> , <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/Bridge> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Lotru Bridge"@en ;
+      <http://dbpedia.org/ontology/bridgeCarries>
+              "road and railway track"@en ;
+      <http://dbpedia.org/ontology/crosses>
+              <http://dbpedia.org/resource/Olt_River> ;
+      <http://dbpedia.org/ontology/length>
+              "200.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/Dr%C4%83g%C4%83%C5%9Fani> , <http://dbpedia.org/resource/Piatra-Olt> ;
+      <http://dbpedia.org/ontology/openingYear>
+              "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Lotru Bridge"@en .

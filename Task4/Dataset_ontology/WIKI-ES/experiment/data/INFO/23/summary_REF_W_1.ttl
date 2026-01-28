@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Arcadis_AYH>
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/London> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "ARCADIS AYH"@en .

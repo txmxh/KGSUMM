@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Anderson_Reservoir>
+      a       <http://dbpedia.org/ontology/BodyOfWater> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "37.165554"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-121.62945"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Anderson Reservoir"@en .

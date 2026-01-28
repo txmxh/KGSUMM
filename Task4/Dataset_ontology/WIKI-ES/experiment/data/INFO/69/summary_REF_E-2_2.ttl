@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Lake_Manitoba>
+      a       <http://dbpedia.org/ontology/Lake> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Manitoba> ;
+      <http://www.georss.org/georss/point>
+              "51.0 -98.83333333333333"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Lake Manitoba"@en .

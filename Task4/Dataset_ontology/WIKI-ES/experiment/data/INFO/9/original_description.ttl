@@ -1,0 +1,24 @@
+<http://dbpedia.org/resource/Horse>
+      a       <http://dbpedia.org/ontology/Species> , <http://dbpedia.org/ontology/Eukaryote> , <http://dbpedia.org/ontology/Animal> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Mammal> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "HORSE"@en , "Horse"@en ;
+      <http://dbpedia.org/ontology/class>
+              <http://dbpedia.org/resource/Eutheria> , <http://dbpedia.org/resource/Theria> , <http://dbpedia.org/resource/Mammal> ;
+      <http://dbpedia.org/ontology/conservationStatus>
+              "DOM"@en ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Equidae> ;
+      <http://dbpedia.org/ontology/genus>
+              <http://dbpedia.org/resource/Equus_%28genus%29> ;
+      <http://dbpedia.org/ontology/kingdom>
+              <http://dbpedia.org/resource/Animal> ;
+      <http://dbpedia.org/ontology/order>
+              <http://dbpedia.org/resource/Odd-toed_ungulate> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Chordate> ;
+      <http://dbpedia.org/ontology/species>
+              <http://dbpedia.org/resource/Wild_horse> ;
+      <http://dbpedia.org/ontology/synonym>
+              "48"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Domestic horse"@en .

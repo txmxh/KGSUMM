@@ -1,0 +1,34 @@
+<http://dbpedia.org/resource/Brockville_Collegiate_Institute>
+      a       <http://dbpedia.org/ontology/EducationalInstitution> , <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/EducationalOrganization> , <http://dbpedia.org/ontology/School> , <http://schema.org/School> , <http://dbpedia.org/ontology/Organisation> , <http://www.opengis.net/gml/_Feature> , <http://schema.org/Organization> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Brockville Collegiate Institute"@en ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Brockville> ;
+      <http://dbpedia.org/ontology/language>
+              <http://dbpedia.org/resource/Canadian_English> ;
+      <http://dbpedia.org/ontology/mascot>
+              "Norm"@en ;
+      <http://dbpedia.org/ontology/numberOfStudents>
+              "541"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/officialSchoolColour>
+              "Black and Red"@en ;
+      <http://dbpedia.org/ontology/postalCode>
+              "K6V 1P8"@en ;
+      <http://dbpedia.org/ontology/province>
+              <http://dbpedia.org/resource/Ontario> ;
+      <http://dbpedia.org/ontology/schoolBoard>
+              <http://dbpedia.org/resource/Upper_Canada_District_School_Board> ;
+      <http://dbpedia.org/ontology/teamName>
+              "Red Rams"@en ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/High_school%23Canada> ;
+      <http://www.georss.org/georss/point>
+              "44.59583333333333 -75.6825"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "44.595833"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-75.6825"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.ucdsb.on.ca/Schools/School+Directory/Secondary/bci/homepage.htm> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Brockville Collegiate Institute"@en .

@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Huanipaca_District>
+      a       <http://dbpedia.org/ontology/PopulatedPlace> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Huanipaca District"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              4.3262E8 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Peru> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Abancay_Province> ;
+      <http://dbpedia.org/ontology/utcOffset>
+              "-5"@en .

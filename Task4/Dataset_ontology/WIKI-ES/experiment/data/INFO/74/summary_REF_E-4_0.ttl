@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Sandy_McCarthy>
+      a       <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Sandy McCarthy"@en ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1972-06-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/height>
+              "1.905"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/position>
+              "Right wing"@en ;
+      <http://dbpedia.org/ontology/shoots>
+              "Right"@en .

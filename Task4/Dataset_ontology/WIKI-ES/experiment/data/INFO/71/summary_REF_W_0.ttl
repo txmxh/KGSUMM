@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Arne_Selmosson>
+      a       <http://dbpedia.org/ontology/SoccerPlayer> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Arne Selmosson"@en ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1931-03-29"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/deathDate>
+              "2002-02-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/team>
+              <http://dbpedia.org/resource/A.S._Roma> , <http://dbpedia.org/resource/J%C3%B6nk%C3%B6pings_S%C3%B6dra_IF> , <http://dbpedia.org/resource/S.S._Lazio> , <http://dbpedia.org/resource/Udinese_Calcio> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Arne Bengt Selmosson"@en .

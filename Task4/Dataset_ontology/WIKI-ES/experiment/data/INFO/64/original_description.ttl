@@ -1,0 +1,22 @@
+<http://dbpedia.org/resource/Shoshone_Range>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/NaturalPlace> , <http://schema.org/Place> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/MountainRange> , <http://dbpedia.org/ontology/Place> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Shoshone Range"@en ;
+      <http://dbpedia.org/ontology/daylightSavingTimeZone>
+              <http://dbpedia.org/resource/Pacific_Time_Zone> ;
+      <http://dbpedia.org/ontology/district>
+              <http://dbpedia.org/resource/Lander_County,_Nevada> ;
+      <http://dbpedia.org/ontology/maximumElevation>
+              "2674.9248"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/state>
+              <http://dbpedia.org/resource/Nevada> ;
+      <http://dbpedia.org/ontology/timeZone>
+              <http://dbpedia.org/resource/Pacific_Time_Zone> ;
+      <http://www.georss.org/georss/point>
+              "40.3504725 -116.88453972222223"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "40.35047"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-116.88454"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Shoshone Range"@en .

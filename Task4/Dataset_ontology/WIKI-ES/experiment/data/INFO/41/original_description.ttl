@@ -1,0 +1,30 @@
+<http://dbpedia.org/resource/Spawn_%28film%29>
+      a       <http://schema.org/CreativeWork> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Film> , <http://schema.org/Movie> , <http://dbpedia.org/ontology/Work> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Spawn (film)"@en ;
+      <http://dbpedia.org/ontology/basedOn>
+              <http://dbpedia.org/resource/Todd_McFarlane> , <http://dbpedia.org/resource/Spawn_%28comics%29> ;
+      <http://dbpedia.org/ontology/budget>
+              "4.0E7"^^<http://dbpedia.org/datatype/usDollar> ;
+      <http://dbpedia.org/ontology/cinematography>
+              <http://dbpedia.org/resource/Guillermo_Navarro> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/director>
+              <http://dbpedia.org/resource/Mark_A.Z._Dipp%C3%A9> ;
+      <http://dbpedia.org/ontology/distributor>
+              <http://dbpedia.org/resource/New_Line_Cinema> ;
+      <http://dbpedia.org/ontology/gross>
+              "8.7840042E7"^^<http://dbpedia.org/datatype/usDollar> ;
+      <http://dbpedia.org/ontology/musicComposer>
+              <http://dbpedia.org/resource/Graeme_Revell> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1997-08-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/runtime>
+              "5880.0"^^<http://www.w3.org/2001/XMLSchema#double> , "5340.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Nicol_Williamson> , <http://dbpedia.org/resource/Theresa_Randle> , <http://dbpedia.org/resource/John_Leguizamo> , <http://dbpedia.org/resource/D._B._Sweeney> , <http://dbpedia.org/resource/Michael_Jai_White> , <http://dbpedia.org/resource/Martin_Sheen> ;
+      <http://dbpedia.org/ontology/writer>
+              <http://dbpedia.org/resource/Alan_B._McElroy> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Spawn"@en .

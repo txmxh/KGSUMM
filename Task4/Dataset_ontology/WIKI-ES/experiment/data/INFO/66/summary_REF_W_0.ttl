@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Sig%C3%B6ldul%C3%B3n>
+      a       <http://dbpedia.org/ontology/Lake> , <http://schema.org/LakeBodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Sig\\u00F6ldul\\u00F3n"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.4E7 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Iceland> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Reservoir> .

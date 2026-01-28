@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Villanova_School_of_Business>
+      a       <http://schema.org/CollegeOrUniversity> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Villanova School of Business"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/state>
+              <http://dbpedia.org/resource/Pennsylvania> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.villanova.edu/business/> .

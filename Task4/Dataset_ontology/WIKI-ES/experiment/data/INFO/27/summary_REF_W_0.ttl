@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/IGrafx>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "IGrafx"@en ;
+      <http://dbpedia.org/ontology/formationYear>
+              "1987"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Computer_software> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Tualatin,_Oregon> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "iGrafx, a division of Corel"@en .

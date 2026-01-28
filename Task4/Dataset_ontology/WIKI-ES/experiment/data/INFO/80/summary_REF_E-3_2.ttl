@@ -1,0 +1,13 @@
+<http://dbpedia.org/resource/Gostinu>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Gostinu"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Romania> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Giurgiu_County> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "2419"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Communes_of_Romania> ;
+      <http://www.georss.org/georss/point>
+              "44.0 26.116666666666667"@en .

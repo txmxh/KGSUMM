@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Seahpo_Peak>
+      a       <http://dbpedia.org/ontology/Mountain> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Seahpo Peak"@en ;
+      <http://dbpedia.org/ontology/mountainRange>
+              <http://dbpedia.org/resource/North_Cascades> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "48.819443"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-121.548615"^^<http://www.w3.org/2001/XMLSchema#float> .

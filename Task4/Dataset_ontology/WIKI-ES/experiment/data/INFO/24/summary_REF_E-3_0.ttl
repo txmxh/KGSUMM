@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Synergy_Group>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Conglomerate_%28company%29> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Brazil> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Grupo Synergy"@en .

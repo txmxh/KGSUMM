@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Huanipaca_District>
+      a       <http://dbpedia.org/ontology/Settlement> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Peru> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Abancay_Province> , <http://dbpedia.org/resource/Apur%C3%ADmac_Region> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "5257"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Huanipaca"@en .

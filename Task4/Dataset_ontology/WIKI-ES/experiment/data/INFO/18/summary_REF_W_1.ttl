@@ -1,0 +1,6 @@
+<http://dbpedia.org/resource/Preobrazhenskaya_Ploshchad>
+      a       <http://dbpedia.org/ontology/Station> ;
+      <http://dbpedia.org/ontology/address>
+              "Moscow"@en , "Preobrazhenskoye District"@en , "Eastern Administrative Okrug"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Preobrazhenskaya Ploshchad"@en .

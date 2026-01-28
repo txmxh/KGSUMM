@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/Prospasta>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Prospasta"@en ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Geometer_moth> .

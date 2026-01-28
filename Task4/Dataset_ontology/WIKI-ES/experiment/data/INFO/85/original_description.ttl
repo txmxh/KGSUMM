@@ -1,0 +1,28 @@
+<http://dbpedia.org/resource/Chavakacheri>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/Town> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Settlement> , <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/PopulatedPlace> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Chavakacheri"@en ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.94E7 ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Sri_Lanka> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Jaffna_District> , <http://dbpedia.org/resource/Northern_Province,_Sri_Lanka> ;
+      <http://dbpedia.org/ontology/populationDensity>
+              "1116.6074425047536"^^<http://www.w3.org/2001/XMLSchema#double> , "1118.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "21693"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/timeZone>
+              <http://dbpedia.org/resource/Time_zone%23UTC_.2B_6.2C_F> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Town> ;
+      <http://dbpedia.org/ontology/utcOffset>
+              "+5:30"@en ;
+      <http://www.georss.org/georss/point>
+              "9.65 80.15"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "9.65"^^<http://www.w3.org/2001/XMLSchema#float> , "9.65"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "80.15"^^<http://www.w3.org/2001/XMLSchema#float> , "80.15"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "\\u0B9A\\u0BBE\\u0BB5\\u0B95\\u0B9A\\u0BCD\\u0B9A\\u0BC7\\u0BB0\\u0BBF"@en , "\\u0DA2\\u0DCF\\u0DC0\\u0D9A\\u0DA0\\u0DCA\\u0DA0\\u0DDA\\u0DBB\\u0DD2\\u0DBA"@en , "Chavakacheri"@en .

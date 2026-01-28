@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Pandemonium%21>
+      a       <http://dbpedia.org/ontology/Album> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Pandemonium!"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/B2K> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Hip_hop_music> .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Lake_Manitoba>
+      a       <http://dbpedia.org/ontology/Lake> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Lake Manitoba"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Manitoba> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "51.0"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-98.833336"^^<http://www.w3.org/2001/XMLSchema#float> .

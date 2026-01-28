@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Hiding_Out>
+      a       <http://dbpedia.org/ontology/Film> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Hiding Out"@en ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1987-11-06"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/starring>
+              <http://dbpedia.org/resource/Jon_Cryer> .

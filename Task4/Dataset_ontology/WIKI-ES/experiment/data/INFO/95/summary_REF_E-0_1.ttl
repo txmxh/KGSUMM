@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Stone_and_Sun>
+      a       <http://schema.org/Book> ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Graham_Edwards_%28writer%29> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_Kingdom> ;
+      <http://dbpedia.org/ontology/language>
+              <http://dbpedia.org/resource/English_language> ;
+      <http://dbpedia.org/ontology/literaryGenre>
+              <http://dbpedia.org/resource/Fantasy_literature> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Stone and Sun"@en .

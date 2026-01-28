@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Murphy_Lake_%28Cook_County,_Illinois%29>
+      a       <http://schema.org/LakeBodyOfWater> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Murphy Lake (Cook County, Illinois)"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Illinois> .

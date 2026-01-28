@@ -1,0 +1,7 @@
+<http://dbpedia.org/resource/Pomatiopsis_lapidaria>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Pomatiopsis lapidaria"@en ;
+      <http://dbpedia.org/ontology/family>
+              <http://dbpedia.org/resource/Rissooidea> ;
+      <http://dbpedia.org/ontology/phylum>
+              <http://dbpedia.org/resource/Mollusca> .

@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Zgliczyn-Glinki>
+      a       <http://dbpedia.org/ontology/Village> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Zgliczyn-Glinki"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Poland> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Masovian_Voivodeship> .

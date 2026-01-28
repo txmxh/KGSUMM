@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/TransdevTSL_Brisbane_Ferries>
+      a       <http://dbpedia.org/ontology/Company> ;
+      <http://dbpedia.org/ontology/formationYear>
+              "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Public_transport> ;
+      <http://dbpedia.org/ontology/locationCity>
+              <http://dbpedia.org/resource/Brisbane> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "TransdevTSL Brisbane Ferries"@en .

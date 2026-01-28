@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Stanley_Park_High_School>
+      a       <http://schema.org/School> ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Carshalton> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.stanleyparkhigh.co.uk/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Stanley Park High School(SPHS)"@en .

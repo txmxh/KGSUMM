@@ -1,0 +1,18 @@
+<http://dbpedia.org/resource/RAAF_Museum>
+      a       <http://dbpedia.org/ontology/Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Museum> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Museum> , <http://schema.org/Place> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "RAAF Museum"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/RAAF_Williams> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Military_Museum> ;
+      <http://www.georss.org/georss/point>
+              "-37.930464 144.749073"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "-37.930466"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "144.74907"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.airforce.gov.au/raafmuseum/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "RAAF Museum"@en .

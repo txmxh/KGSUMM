@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Lotru_Bridge>
+      a       <http://dbpedia.org/ontology/Bridge> ;
+      <http://dbpedia.org/ontology/bridgeCarries>
+              "road and railway track"@en ;
+      <http://dbpedia.org/ontology/crosses>
+              <http://dbpedia.org/resource/Olt_River> ;
+      <http://dbpedia.org/ontology/locatedInArea>
+              <http://dbpedia.org/resource/Piatra-Olt> ;
+      <http://dbpedia.org/ontology/openingYear>
+              "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Lotru Bridge"@en .

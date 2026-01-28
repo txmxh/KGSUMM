@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/The_Curse_%28album%29>
+      a       <http://dbpedia.org/ontology/Album> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "The Curse (album)"@en ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Atreyu_%28band%29> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Metalcore> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "2004-06-09"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/subsequentWork>
+              <http://dbpedia.org/resource/A_Death-Grip_on_Yesterday> .

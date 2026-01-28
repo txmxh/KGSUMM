@@ -1,0 +1,44 @@
+<http://dbpedia.org/resource/Beaver,_Utah>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/City> , <http://schema.org/Place> , <http://dbpedia.org/ontology/City> , <http://www.opengis.net/gml/_Feature> , <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/Settlement> , <http://dbpedia.org/ontology/PopulatedPlace> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Beaver, Utah"@en ;
+      <http://dbpedia.org/ontology/areaCode>
+              "435"@en ;
+      <http://dbpedia.org/ontology/areaLand>
+              1.19E7 , 1.19139453075456E7 ;
+      <http://dbpedia.org/ontology/areaTotal>
+              1.19E7 , 1.19139453075456E7 ;
+      <http://dbpedia.org/ontology/areaWater>
+              "0.0"^^<http://www.w3.org/2001/XMLSchema#double> , "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/elevation>
+              "1799.0"^^<http://www.w3.org/2001/XMLSchema#double> , "1798.9296"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/foundingDate>
+              "1867-01-10"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/isPartOf>
+              <http://dbpedia.org/resource/Beaver_County,_Utah> , <http://dbpedia.org/resource/Utah> ;
+      <http://dbpedia.org/ontology/populationDensity>
+              "206.9"^^<http://www.w3.org/2001/XMLSchema#double> , "206.7577058994798"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/populationTotal>
+              "2454"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/postalCode>
+              "84713"@en ;
+      <http://dbpedia.org/ontology/synonym>
+              "The \\\"B\\\" Town"@en ;
+      <http://dbpedia.org/ontology/timeZone>
+              <http://dbpedia.org/resource/Mountain_Time_Zone> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/City> ;
+      <http://dbpedia.org/ontology/utcOffset>
+              "-6"@en , "-7"@en ;
+      <http://www.georss.org/georss/point>
+              "38.27638888888889 -112.63888888888889"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "38.27639"^^<http://www.w3.org/2001/XMLSchema#float> , "38.27639"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-112.638885"^^<http://www.w3.org/2001/XMLSchema#float> , "-112.638885"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.beaverutah.net/> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Beaver, Utah"@en .

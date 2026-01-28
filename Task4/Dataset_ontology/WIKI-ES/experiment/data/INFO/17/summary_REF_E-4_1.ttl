@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Interstate_85_in_Virginia>
+      a       <http://dbpedia.org/ontology/Road> ;
+      <http://dbpedia.org/ontology/routeNumber>
+              "85"@en ;
+      <http://dbpedia.org/ontology/routeStart>
+              <http://dbpedia.org/resource/Bracey,_Virginia> ;
+      <http://dbpedia.org/ontology/routeStartDirection>
+              "South"@en ;
+      <http://dbpedia.org/ontology/routeTypeAbbreviation>
+              "I"@en .

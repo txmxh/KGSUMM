@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/All_the_Young_Dudes>
+      a       <http://dbpedia.org/ontology/Album> ;
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Mott_the_Hoople> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Glam_rock> ;
+      <http://dbpedia.org/ontology/releaseDate>
+              "1972-09-08"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "All the Young Dudes"@en .

@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Inquiry:_An_Interdisciplinary_Journal_of_Philosophy>
+      a       <http://dbpedia.org/ontology/AcademicJournal> ;
+      <http://dbpedia.org/ontology/academicDiscipline>
+              <http://dbpedia.org/resource/Philosophy> ;
+      <http://dbpedia.org/ontology/frequencyOfPublication>
+              "Bimonthly"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Inquiry"@en .

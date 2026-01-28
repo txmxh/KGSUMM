@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Robert_Millar_%28soccer%29>
+      a       <http://dbpedia.org/ontology/SoccerManager> ;
+      <http://dbpedia.org/ontology/birthDate>
+              "1890-05-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/deathDate>
+              "1967-02-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      <http://dbpedia.org/ontology/position>
+              "Inside left"@en ;
+      <http://dbpedia.org/ontology/team>
+              <http://dbpedia.org/resource/Disston_A.A.> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Bob Millar"@en .

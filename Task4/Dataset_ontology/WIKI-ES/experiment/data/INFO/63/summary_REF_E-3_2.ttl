@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Yellow_Medicine_River>
+      a       <http://schema.org/BodyOfWater> ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/United_States> ;
+      <http://dbpedia.org/ontology/length>
+              "172521.6768"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Yellow Medicine River"@en .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Dick_Fisher_Airport>
+      a       <http://schema.org/Airport> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Dick Fisher Airport"@en ;
+      <http://dbpedia.org/ontology/location>
+              <http://dbpedia.org/resource/Gaston,_Oregon> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "45.412613"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "-123.13677"^^<http://www.w3.org/2001/XMLSchema#float> .

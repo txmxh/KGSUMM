@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Europace>
+      a       <http://dbpedia.org/ontology/AcademicJournal> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Europace"@en ;
+      <http://dbpedia.org/ontology/academicDiscipline>
+              <http://dbpedia.org/resource/Cardiology> ;
+      <http://dbpedia.org/ontology/issn>
+              "1532-2092"@en , "1099-5129"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/Oxford_University_Press> .

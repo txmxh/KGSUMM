@@ -1,0 +1,8 @@
+<http://dbpedia.org/resource/Villanova_School_of_Business>
+      a       <http://dbpedia.org/ontology/University> ;
+      <http://dbpedia.org/ontology/city>
+              <http://dbpedia.org/resource/Villanova> ;
+      <http://www.georss.org/georss/point>
+              "40.037029 -75.343316"@en ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Villanova School of Business"@en .

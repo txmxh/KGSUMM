@@ -1,0 +1,16 @@
+<http://dbpedia.org/resource/Suusamyr_Too>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://schema.org/Place> , <http://dbpedia.org/ontology/NaturalPlace> , <http://dbpedia.org/ontology/MountainRange> , <http://dbpedia.org/ontology/Place> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Suusamyr Too"@en ;
+      <http://dbpedia.org/ontology/country>
+              <http://dbpedia.org/resource/Kyrgyzstan> ;
+      <http://dbpedia.org/ontology/district>
+              <http://dbpedia.org/resource/Toktogul_District> , <http://dbpedia.org/resource/Jumgal_District> ;
+      <http://dbpedia.org/ontology/geology>
+              "Composed of granite, schist of Lower Paleozoic"@en ;
+      <http://dbpedia.org/ontology/maximumElevation>
+              "4048.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/region>
+              <http://dbpedia.org/resource/Jalal-Abad_Province> , <http://dbpedia.org/resource/Naryn_Province> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Suusamyr Too"@en , "\\u0421\\u0443\\u0443\\u0441\\u0430\\u043C\\u044B\\u0440"@en .

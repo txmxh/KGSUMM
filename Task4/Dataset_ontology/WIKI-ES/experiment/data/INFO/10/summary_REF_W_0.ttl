@@ -1,0 +1,21 @@
+<http://dbpedia.org/resource/New_York_State_Route_281>
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "New York State Route 281"@en ;
+      <http://dbpedia.org/ontology/county>
+              <http://dbpedia.org/resource/Onondaga_County,_New_York> , <http://dbpedia.org/resource/Cortland_County,_New_York> ;
+      <http://dbpedia.org/ontology/length>
+              "26650.73664"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://dbpedia.org/ontology/routeEnd>
+              <http://dbpedia.org/resource/Tully_%28village%29,_New_York> ;
+      <http://dbpedia.org/ontology/routeEndDirection>
+              "North"@en ;
+      <http://dbpedia.org/ontology/routeJunction>
+              <http://dbpedia.org/resource/Homer_%28village%29,_New_York> ;
+      <http://dbpedia.org/ontology/routeNumber>
+              "281"@en ;
+      <http://dbpedia.org/ontology/routeStart>
+              <http://dbpedia.org/resource/Cortlandville,_New_York> ;
+      <http://dbpedia.org/ontology/routeStartDirection>
+              "South"@en ;
+      <http://dbpedia.org/ontology/routeTypeAbbreviation>
+              "NY"@en .

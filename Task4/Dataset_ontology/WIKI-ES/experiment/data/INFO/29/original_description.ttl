@@ -1,0 +1,28 @@
+<http://dbpedia.org/resource/HTnaturals>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Organisation> , <http://schema.org/Organization> , <http://dbpedia.org/ontology/Company> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "HTnaturals"@en ;
+      <http://dbpedia.org/ontology/formationYear>
+              "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/foundationPlace>
+              <http://dbpedia.org/resource/British_Columbia> , <http://dbpedia.org/resource/Vancouver> ;
+      <http://dbpedia.org/ontology/industry>
+              <http://dbpedia.org/resource/Clothing> ;
+      <http://dbpedia.org/ontology/keyPerson>
+              <http://dbpedia.org/resource/Entrepreneur> ;
+      <http://dbpedia.org/ontology/locationCity>
+              <http://dbpedia.org/resource/Vancouver> ;
+      <http://dbpedia.org/ontology/locationCountry>
+              <http://dbpedia.org/resource/Canada> ;
+      <http://dbpedia.org/ontology/parentCompany>
+              <http://dbpedia.org/resource/Naturally_Advanced> ;
+      <http://dbpedia.org/ontology/product>
+              <http://dbpedia.org/resource/Environmentally_friendly> ;
+      <http://dbpedia.org/ontology/regionServed>
+              <http://dbpedia.org/resource/North_America> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Subsidiary> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.htnaturals.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "HTnaturals Apparel Corp."@en .

@@ -1,0 +1,12 @@
+<http://dbpedia.org/resource/Stone_and_Sun>
+      a       <http://dbpedia.org/ontology/Book> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Stone and Sun"@en ;
+      <http://dbpedia.org/ontology/author>
+              <http://dbpedia.org/resource/Graham_Edwards_%28writer%29> ;
+      <http://dbpedia.org/ontology/oclc>
+              "48835206"@en ;
+      <http://dbpedia.org/ontology/publisher>
+              <http://dbpedia.org/resource/HarperCollins> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.grahamedwardsonline.co.uk> .

@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Preobrazhenskaya_Ploshchad>
+      a       <http://dbpedia.org/ontology/Station> ;
+      <http://dbpedia.org/ontology/address>
+              "Moscow"@en ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "55.796112"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "37.715557"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Preobrazhenskaya Ploshchad"@en .

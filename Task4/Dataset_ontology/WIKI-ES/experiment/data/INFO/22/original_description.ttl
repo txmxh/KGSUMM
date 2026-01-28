@@ -1,0 +1,20 @@
+<http://dbpedia.org/resource/Grant_&_Eisenhofer_P.A.>
+      a       <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/Company> , <http://schema.org/Organization> ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Grant & Eisenhofer P.A."@en ;
+      <http://dbpedia.org/ontology/foundingYear>
+              "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+      <http://dbpedia.org/ontology/headquarter>
+              <http://dbpedia.org/resource/Wilmington,_Delaware> ;
+      <http://dbpedia.org/ontology/legalForm>
+              <http://dbpedia.org/resource/Professional_association> ;
+      <http://dbpedia.org/ontology/numberOfLawyers>
+              "50"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/numberOfOffices>
+              "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Professional_association> ;
+      <http://xmlns.com/foaf/0.1/homepage>
+              <http://www.gelaw.com> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Grant & Eisenhofer P.A."@en .

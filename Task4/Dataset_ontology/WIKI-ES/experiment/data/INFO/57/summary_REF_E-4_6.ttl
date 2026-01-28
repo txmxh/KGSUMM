@@ -1,0 +1,13 @@
+<http://dbpedia.org/resource/Live_Undead>
+      <http://dbpedia.org/ontology/artist>
+              <http://dbpedia.org/resource/Slayer> ;
+      <http://dbpedia.org/ontology/genre>
+              <http://dbpedia.org/resource/Thrash_metal> ;
+      <http://dbpedia.org/ontology/producer>
+              <http://dbpedia.org/resource/Slayer> ;
+      <http://dbpedia.org/ontology/recordedIn>
+              <http://dbpedia.org/resource/New_York_City> ;
+      <http://dbpedia.org/ontology/type>
+              <http://dbpedia.org/resource/Live_album> ;
+      <http://xmlns.com/foaf/0.1/name>
+              "Live Undead"@en .
