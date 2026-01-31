@@ -1,15 +1,9 @@
 --- SUMMARY OUTPUT FOR LMDB ---
 
-ENTITY: http://data.linkedmdb.org/resource/film/2274
-   -> http://data.linkedmdb.org/resource/actor/30598
-
 ENTITY: http://data.linkedmdb.org/resource/actor/30598
-   -> http://data.linkedmdb.org/resource/movie/actor
    -> Tom Courtenay (Actor)
    -> 30598
-
-ENTITY: http://data.linkedmdb.org/resource/movie/actor
-   (No neighbors to summarize)
+   -> http://data.linkedmdb.org/resource/movie/actor
 
 ENTITY: Tom Courtenay (Actor)
    (No neighbors to summarize)
@@ -17,22 +11,22 @@ ENTITY: Tom Courtenay (Actor)
 ENTITY: 30598
    (No neighbors to summarize)
 
-ENTITY: http://data.linkedmdb.org/resource/film/16960
+ENTITY: http://data.linkedmdb.org/resource/film/2274
    -> http://data.linkedmdb.org/resource/actor/30598
 
-ENTITY: http://data.linkedmdb.org/resource/film/10336
+ENTITY: http://data.linkedmdb.org/resource/movie/actor
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/film/16960
    -> http://data.linkedmdb.org/resource/actor/30598
 
 ENTITY: Tom Courtenay
    (No neighbors to summarize)
 
-ENTITY: http://data.linkedmdb.org/resource/film/18780
+ENTITY: http://data.linkedmdb.org/resource/film/10336
    -> http://data.linkedmdb.org/resource/actor/30598
 
-ENTITY: http://www.freebase.com/view/guid/9202a8c04000641f800000000012d8fa
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/film/42713
+ENTITY: http://data.linkedmdb.org/resource/film/42230
    -> http://data.linkedmdb.org/resource/actor/30598
 
 ENTITY: http://data.linkedmdb.org/resource/film/2042
@@ -44,16 +38,22 @@ ENTITY: http://data.linkedmdb.org/resource/film/10692
 ENTITY: http://data.linkedmdb.org/resource/film/53197
    -> http://data.linkedmdb.org/resource/actor/30598
 
-ENTITY: http://data.linkedmdb.org/resource/film/42230
+ENTITY: http://data.linkedmdb.org/resource/film/42713
+   -> http://data.linkedmdb.org/resource/actor/30598
+
+ENTITY: http://data.linkedmdb.org/resource/film/18780
    -> http://data.linkedmdb.org/resource/actor/30598
 
 ENTITY: http://data.linkedmdb.org/resource/film/2338
    -> http://data.linkedmdb.org/resource/actor/30598
 
-ENTITY: http://data.linkedmdb.org/resource/performance/74228
+ENTITY: http://www.freebase.com/view/guid/9202a8c04000641f800000000012d8fa
    (No neighbors to summarize)
 
 ENTITY: http://data.linkedmdb.org/resource/performance/54247
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/74228
    (No neighbors to summarize)
 
 ENTITY: http://data.linkedmdb.org/resource/film/41317
@@ -62,92 +62,92 @@ ENTITY: http://data.linkedmdb.org/resource/film/41317
 ENTITY: http://data.linkedmdb.org/resource/film/93349
    -> http://data.linkedmdb.org/resource/actor/30598
 
-ENTITY: http://data.linkedmdb.org/resource/performance/4392
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/113132
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/136030
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/125941
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/38982
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/71338
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/197795
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/30832
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/94391
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/183968
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/film/14368
-   -> http://data.linkedmdb.org/resource/actor/30598
-
-ENTITY: http://data.linkedmdb.org/resource/film/47332
-   -> http://data.linkedmdb.org/resource/actor/30598
-
-ENTITY: http://data.linkedmdb.org/resource/performance/114228
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/film/19656
-   -> http://data.linkedmdb.org/resource/actor/30598
-
-ENTITY: 
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/70920
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/performance/92512
-   (No neighbors to summarize)
-
-ENTITY: http://data.linkedmdb.org/resource/film/61927
-   -> http://data.linkedmdb.org/resource/actor/30598
-
-ENTITY: http://data.linkedmdb.org/resource/film/54618
-   -> http://data.linkedmdb.org/resource/actor/30598
-
-ENTITY: http://data.linkedmdb.org/resource/performance/17700
+ENTITY: http://data.linkedmdb.org/resource/performance/91930
    (No neighbors to summarize)
 
 ENTITY: http://data.linkedmdb.org/resource/performance/70134
    (No neighbors to summarize)
 
+ENTITY: http://data.linkedmdb.org/resource/film/47332
+   -> http://data.linkedmdb.org/resource/actor/30598
+
+ENTITY: http://data.linkedmdb.org/resource/film/19656
+   -> http://data.linkedmdb.org/resource/actor/30598
+
 ENTITY: http://data.linkedmdb.org/resource/film/38576
    -> http://data.linkedmdb.org/resource/actor/30598
 
-ENTITY: http://data.linkedmdb.org/resource/performance/173836
+ENTITY: http://data.linkedmdb.org/resource/performance/94391
    (No neighbors to summarize)
 
-ENTITY: http://data.linkedmdb.org/resource/film/13855
-   -> http://data.linkedmdb.org/resource/actor/30598
-
-ENTITY: http://data.linkedmdb.org/resource/performance/64560
+ENTITY: http://data.linkedmdb.org/resource/performance/114228
    (No neighbors to summarize)
 
-ENTITY: http://xmlns.com/foaf/0.1/Person
+ENTITY: 
    (No neighbors to summarize)
 
-ENTITY: http://data.linkedmdb.org/resource/film/40935
-   -> http://data.linkedmdb.org/resource/actor/30598
-
-ENTITY: http://data.linkedmdb.org/resource/performance/91930
+ENTITY: http://data.linkedmdb.org/resource/performance/4392
    (No neighbors to summarize)
 
 ENTITY: http://data.linkedmdb.org/resource/performance/17432
    (No neighbors to summarize)
 
+ENTITY: http://data.linkedmdb.org/resource/performance/71338
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/38982
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/70920
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/film/61927
+   -> http://data.linkedmdb.org/resource/actor/30598
+
+ENTITY: http://xmlns.com/foaf/0.1/Person
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/136030
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/30832
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/64560
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/92512
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/film/13855
+   -> http://data.linkedmdb.org/resource/actor/30598
+
+ENTITY: http://data.linkedmdb.org/resource/performance/173836
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/film/54618
+   -> http://data.linkedmdb.org/resource/actor/30598
+
+ENTITY: http://data.linkedmdb.org/resource/performance/125941
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/film/14368
+   -> http://data.linkedmdb.org/resource/actor/30598
+
+ENTITY: http://data.linkedmdb.org/resource/performance/197795
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/17700
+   (No neighbors to summarize)
+
 ENTITY: http://data.linkedmdb.org/resource/performance/55450
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/film/40935
+   -> http://data.linkedmdb.org/resource/actor/30598
+
+ENTITY: http://data.linkedmdb.org/resource/performance/113132
+   (No neighbors to summarize)
+
+ENTITY: http://data.linkedmdb.org/resource/performance/183968
    (No neighbors to summarize)

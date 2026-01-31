@@ -1,0 +1,17 @@
+
+========================================
+      FINAL EVALUATION RESULTS
+========================================
+
+>> PROCESSING DATASET: WIKIES
+   Matching Entities: 0 (Preds: 50, GT: 76)
+   ❌ No overlapping entities found (IDs might not match).
+
+>> PROCESSING DATASET: DBpedia
+   ❌ CRITICAL: No Gold Standard file found (gold*.xml/json) in dataset folder.
+
+>> PROCESSING DATASET: FACES
+   ❌ CRITICAL: No Gold Standard file found (gold*.xml/json) in dataset folder.
+
+>> PROCESSING DATASET: LMDB
+   ❌ CRITICAL: No Gold Standard file found (gold*.xml/json) in dataset folder.

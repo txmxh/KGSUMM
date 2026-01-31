@@ -1,16 +1,6 @@
 --- SUMMARY OUTPUT FOR WIKIES ---
 
-ENTITY: Unnamed: 0
-   -> name
-   -> name
-   -> name
-
-ENTITY: name
-   (No neighbors to summarize)
-
 ENTITY: 36602
-   -> Catherine_Deneuve
-   -> Catherine_Deneuve
    -> Catherine_Deneuve
 
 ENTITY: Catherine_Deneuve
@@ -18,15 +8,11 @@ ENTITY: Catherine_Deneuve
 
 ENTITY: 1323904
    -> Jane_Fonda
-   -> Jane_Fonda
-   -> Jane_Fonda
 
 ENTITY: Jane_Fonda
    (No neighbors to summarize)
 
 ENTITY: 565983
-   -> Gertrude_Stein
-   -> Gertrude_Stein
    -> Gertrude_Stein
 
 ENTITY: Gertrude_Stein
@@ -34,15 +20,11 @@ ENTITY: Gertrude_Stein
 
 ENTITY: 1321971
    -> Eva_Perón
-   -> Eva_Perón
-   -> Eva_Perón
 
 ENTITY: Eva_Perón
    (No neighbors to summarize)
 
 ENTITY: 1318480
-   -> Julia_Roberts
-   -> Julia_Roberts
    -> Julia_Roberts
 
 ENTITY: Julia_Roberts
@@ -50,14 +32,11 @@ ENTITY: Julia_Roberts
 
 ENTITY: 808237
    -> Winnie_Madikizela-Mandela
-   -> Winnie_Madikizela-Mandela
 
 ENTITY: Winnie_Madikizela-Mandela
    (No neighbors to summarize)
 
 ENTITY: 678882
-   -> Bella_Thorne
-   -> Bella_Thorne
    -> Bella_Thorne
 
 ENTITY: Bella_Thorne
@@ -65,14 +44,11 @@ ENTITY: Bella_Thorne
 
 ENTITY: 888262
    -> Clementine_Churchill
-   -> Clementine_Churchill
 
 ENTITY: Clementine_Churchill
    (No neighbors to summarize)
 
 ENTITY: 1340076
-   -> Miley_Cyrus
-   -> Miley_Cyrus
    -> Miley_Cyrus
 
 ENTITY: Miley_Cyrus
@@ -80,13 +56,11 @@ ENTITY: Miley_Cyrus
 
 ENTITY: 1701815
    -> Patti_Smith
-   -> Patti_Smith
 
 ENTITY: Patti_Smith
    (No neighbors to summarize)
 
 ENTITY: 1399356
-   -> Nicola_Sturgeon
    -> Nicola_Sturgeon
 
 ENTITY: Nicola_Sturgeon
@@ -94,14 +68,11 @@ ENTITY: Nicola_Sturgeon
 
 ENTITY: 1925616
    -> Sandra_Perković
-   -> Sandra_Perković
 
 ENTITY: Sandra_Perković
    (No neighbors to summarize)
 
 ENTITY: 218672
-   -> Janis_Joplin
-   -> Janis_Joplin
    -> Janis_Joplin
 
 ENTITY: Janis_Joplin
@@ -109,15 +80,11 @@ ENTITY: Janis_Joplin
 
 ENTITY: 64501
    -> Serena_Williams
-   -> Serena_Williams
-   -> Serena_Williams
 
 ENTITY: Serena_Williams
    (No neighbors to summarize)
 
 ENTITY: 652594
-   -> Frances_McDormand
-   -> Frances_McDormand
    -> Frances_McDormand
 
 ENTITY: Frances_McDormand
@@ -125,14 +92,11 @@ ENTITY: Frances_McDormand
 
 ENTITY: 2230132
    -> Selena_Gomez
-   -> Selena_Gomez
-   -> Selena_Gomez
 
 ENTITY: Selena_Gomez
    (No neighbors to summarize)
 
 ENTITY: 754710
-   -> Carolina_Klüft
    -> Carolina_Klüft
 
 ENTITY: Carolina_Klüft
@@ -140,14 +104,11 @@ ENTITY: Carolina_Klüft
 
 ENTITY: 570233
    -> Brooke_Shields
-   -> Brooke_Shields
-   -> Brooke_Shields
 
 ENTITY: Brooke_Shields
    (No neighbors to summarize)
 
 ENTITY: 1372233
-   -> Carli_Lloyd
    -> Carli_Lloyd
 
 ENTITY: Carli_Lloyd
@@ -155,14 +116,11 @@ ENTITY: Carli_Lloyd
 
 ENTITY: 2767
    -> Sigourney_Weaver
-   -> Sigourney_Weaver
-   -> Sigourney_Weaver
 
 ENTITY: Sigourney_Weaver
    (No neighbors to summarize)
 
 ENTITY: 812172
-   -> Shirley_Chisholm
    -> Shirley_Chisholm
 
 ENTITY: Shirley_Chisholm
@@ -170,13 +128,11 @@ ENTITY: Shirley_Chisholm
 
 ENTITY: 54516
    -> Clare_Hollingworth
-   -> Clare_Hollingworth
 
 ENTITY: Clare_Hollingworth
    (No neighbors to summarize)
 
 ENTITY: 1055732
-   -> Tammy_Duckworth
    -> Tammy_Duckworth
 
 ENTITY: Tammy_Duckworth
@@ -184,7 +140,12 @@ ENTITY: Tammy_Duckworth
 
 ENTITY: 868936
    -> Margaret_Fuller
-   -> Margaret_Fuller
 
 ENTITY: Margaret_Fuller
+   (No neighbors to summarize)
+
+ENTITY: 2231209
+   -> Isabel_Allende
+
+ENTITY: Isabel_Allende
    (No neighbors to summarize)
