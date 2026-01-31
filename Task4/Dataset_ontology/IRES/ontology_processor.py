@@ -19,7 +19,7 @@ except ImportError:
         from dgl.nn.pytorch.conv import RelGraphConv
 
 # ==========================================
-# 1. HYBRID HIERARCHY LEARNER (Best of Both Worlds)
+# 1. HYBRID HIERARCHY LEARNER
 # ==========================================
 class UniversalHierarchyLearner:
     def __init__(self):
@@ -35,7 +35,7 @@ class UniversalHierarchyLearner:
             for file in files:
                 file_path = os.path.join(root, file)
                 
-                # --- STRATEGY A: RDF FILES (Aggressive Mode for FACES/DBpedia) ---
+                # A. RDF (DBpedia/FACES)
                 if file.endswith((".nt", ".ttl", ".xml", ".rdf")):
                     try:
                         g = RDFGraph()
@@ -44,19 +44,17 @@ class UniversalHierarchyLearner:
                         for s, p, o in g: self._process_rdf_triple(str(s), str(p), str(o))
                     except: continue
                 
-                # --- STRATEGY B: CSV FILES (Smart Header Mode for WIKIES) ---
+                # B. CSV (WIKIES Attribute Mode)
                 elif file.endswith(".csv"):
                     try:
                         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                             reader = csv.reader(f)
                             headers = next(reader, None)
                             if not headers: continue
-                            
                             header_str = str(headers).lower()
                             
-                            # 1. Is this the WIKIES Attribute File? (1.csv)
+                            # Detect Attribute File (1.csv) vs Edge File
                             if "level3_main_occ" in header_str or "occupation" in header_str:
-                                # Extract classes from the attribute column
                                 try:
                                     id_idx = headers.index("name") if "name" in headers else 0
                                     class_idx = headers.index("level3_main_occ") 
@@ -65,44 +63,23 @@ class UniversalHierarchyLearner:
                                         if len(row) > class_idx:
                                             self._register_class(row[id_idx], row[class_idx])
                                 except: pass
-                            
-                            # 2. Is this a standard Triple CSV?
-                            else:
-                                f.seek(0); next(reader, None) # Reset
-                                for row in reader:
-                                    if len(row) >= 3: self._process_rdf_triple(row[0], row[1], row[2])
-                                    
                     except: continue
         
-        # Calculate Max Freq for Depth normalization
         if self.class_counts:
             self.max_freq = max(self.class_counts.values())
         else:
             self.max_freq = 1
-            print("      [Warning] No classes found even with hybrid strategy.")
-
         print(f"      [Done] Entities: {self.total_entities}, Unique Classes: {len(self.class_counts)}")
 
     def _process_rdf_triple(self, s, p, o):
         if s not in self.entity_types: self.total_entities += 1
-        
-        # --- AGGRESSIVE RDF LOGIC (Restored from the "Aggressive" version) ---
         p_lower = p.lower()
         
-        # 1. Standard RDF
-        if p == str(RDF.type):
-            self._register_class(s, o)
-            return
-
-        # 2. Keyword Matching (Crucial for FACES)
-        # We allow 'type', 'category', 'subject' even if inside a URI
+        # Aggressive Type Detection
         keywords = ["type", "class", "category", "subject", "p31", "instanceof", "isprimarytopicof"]
-        has_keyword = any(k in p_lower for k in keywords)
-        
-        # 3. Exclusions (Don't match 'datatype' or 'image')
         is_bad = any(x in p_lower for x in ["datatype", "mimetype", "image", "file", "label", "name", "date"])
         
-        if has_keyword and not is_bad:
+        if (p == str(RDF.type) or any(k in p_lower for k in keywords)) and not is_bad:
             self._register_class(s, o)
 
     def _register_class(self, entity, cls_name):
@@ -112,7 +89,6 @@ class UniversalHierarchyLearner:
     def get_features(self, entity_uri):
         types = self.entity_types.get(entity_uri, [])
         if not types: return torch.tensor([0.5, 0.5]) 
-        
         best_ic, best_depth = 0.0, 0.0
         for t in types:
             freq = self.class_counts.get(t, 0)
@@ -123,7 +99,7 @@ class UniversalHierarchyLearner:
         return torch.tensor([best_ic, best_depth])
 
 # ==========================================
-# 2. GRAPH PARSER (Filters Bad WIKIES Files)
+# 2. GRAPH PARSER (STRICT NO-LEAK MODE)
 # ==========================================
 class GraphParser:
     def __init__(self):
@@ -143,16 +119,15 @@ class GraphParser:
                         for s, p, o in g: self._add_triple(str(s), str(p), str(o))
                     except: continue
                 
-                # B. CSV (Only read Edges, ignore Attributes)
+                # B. CSV (STRICT FILTER)
                 elif file.endswith(".csv"):
-                    # CRITICAL FILTER for WIKIES: Only read train/test/val files for the GRAPH.
-                    # If it's the "1.csv" (Attribute file), skip it for graph building (avoids the memory freeze).
-                    is_wikies_edge_file = any(x in file for x in ["train", "test", "val"])
+                    # === CRITICAL FIX: ONLY READ "TRAIN" FILES ===
+                    # This ensures the model NEVER sees the "Test" data (Ground Truth).
+                    # WIKIES specific check:
+                    if "wikies" in dataset_path.lower():
+                        if "train" not in file: 
+                            continue 
                     
-                    # If it's NOT a Wikies edge file, and looks like a generic node list, skip.
-                    if not is_wikies_edge_file and "wikies" in dataset_path.lower():
-                        continue 
-
                     try:
                         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                             reader = csv.reader(f)
@@ -274,17 +249,14 @@ def run_hires_pipeline():
                     if not neighbors: 
                         f_out.write("   (No neighbors to summarize)\n")
                         continue
-                    
                     unique_neighbors_map = {}
                     for nid in neighbors:
                         obj_str = parser.id_to_entity[nid]
                         if obj_str not in unique_neighbors_map: unique_neighbors_map[obj_str] = nid
-                    
                     unique_neigh_indices = list(unique_neighbors_map.values())
                     c_subset = c_matrix[unique_neigh_indices]
                     onto_subset = onto_tensor[unique_neigh_indices]
                     summary_indices = select_summary_dpp(c_subset, onto_subset, unique_neigh_indices, k=3)
-                    
                     for idx in summary_indices:
                         actual_node_id = unique_neigh_indices[idx]
                         fact_obj = parser.id_to_entity[actual_node_id]

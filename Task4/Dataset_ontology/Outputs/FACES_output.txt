@@ -3,15 +3,15 @@
 ENTITY: http://dbpedia.org/resource/Baywatch
    -> http://dbpedia.org/resource/Action_(genre)
    -> http://dbpedia.org/resource/Baywatch
-   -> http://dbpedia.org/resource/Baywatch_Nights
+   -> http://dbpedia.org/resource/Action_(fiction)
 
 ENTITY: http://dbpedia.org/resource/Action_(genre)
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/Baywatch_Nights
+ENTITY: http://dbpedia.org/resource/Action_(fiction)
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/Lexington_Broadcast_Services_Company
+ENTITY: http://dbpedia.org/resource/Baywatch_Nights
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/David_Hasselhoff
@@ -26,19 +26,22 @@ ENTITY: http://dbpedia.org/resource/Douglas_Schwartz
 ENTITY: http://dbpedia.org/resource/NBC
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/Action_(fiction)
-   (No neighbors to summarize)
-
-ENTITY: http://www.baywatch.com
+ENTITY: http://dbpedia.org/resource/Lexington_Broadcast_Services_Company
    (No neighbors to summarize)
 
 ENTITY: http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Baywatch_logo.jpg/200px-Baywatch_logo.jpg
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/Broadcast_syndication
+ENTITY: http://www.baywatch.com
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/Santa_Monica,_California
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Broadcast_syndication
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Hawaii
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/Michael_Berk
@@ -47,13 +50,13 @@ ENTITY: http://dbpedia.org/resource/Michael_Berk
 ENTITY: http://dbpedia.org/resource/FremantleMedia
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/Hawaii
-   (No neighbors to summarize)
-
 ENTITY: http://dbpedia.org/resource/Stereophonic_sound
    (No neighbors to summarize)
 
 ENTITY: http://upload.wikimedia.org/wikipedia/commons/6/68/Baywatch_logo.jpg
+   (No neighbors to summarize)
+
+ENTITY: http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Baywatch
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/Monophonic_sound
@@ -62,37 +65,34 @@ ENTITY: http://dbpedia.org/resource/Monophonic_sound
 ENTITY: http://dbpedia.org/resource/Cancellation_(television)
    (No neighbors to summarize)
 
-ENTITY: http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Baywatch
-   (No neighbors to summarize)
-
 ENTITY: http://dbpedia.org/resource/Dramatic_programming
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/Gregory_J._Bonann
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/FremantleMedia_Enterprises
-   (No neighbors to summarize)
-
-ENTITY: http://en.wikipedia.org/wiki/Baywatch?oldid=547105195
-   (No neighbors to summarize)
-
-ENTITY: http://dbpedia.org/resource/4:3
-   (No neighbors to summarize)
-
-ENTITY: http://dbpedia.org/resource/Monaural
-   (No neighbors to summarize)
-
 ENTITY: http://en.wikipedia.org/wiki/Baywatch
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/FremantleMedia_Enterprises
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/Aspect_ratio_(image)
    (No neighbors to summarize)
 
+ENTITY: http://dbpedia.org/resource/Monaural
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/4:3
+   (No neighbors to summarize)
+
+ENTITY: http://en.wikipedia.org/wiki/Baywatch?oldid=547105195
+   (No neighbors to summarize)
+
 ENTITY: http://dbpedia.org/resource/Mortal_Kombat_Trilogy
    -> http://dbpedia.org/resource/Mortal_Kombat
    -> http://dbpedia.org/resource/GT_Interactive_Software
-   -> http://dbpedia.org/resource/Avalanche_Software
+   -> http://dbpedia.org/resource/John_Tobias
 
 ENTITY: http://dbpedia.org/resource/Mortal_Kombat
    (No neighbors to summarize)
@@ -100,10 +100,10 @@ ENTITY: http://dbpedia.org/resource/Mortal_Kombat
 ENTITY: http://dbpedia.org/resource/GT_Interactive_Software
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/Avalanche_Software
+ENTITY: http://dbpedia.org/resource/John_Tobias
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/John_Tobias
+ENTITY: http://dbpedia.org/resource/Avalanche_Software
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/Fighting_game
@@ -115,10 +115,10 @@ ENTITY: http://dbpedia.org/resource/Point_of_View,_Inc.
 ENTITY: http://dbpedia.org/resource/Nintendo_64
    (No neighbors to summarize)
 
-ENTITY: http://upload.wikimedia.org/wikipedia/commons/7/70/MKTBox.jpg
+ENTITY: http://dbpedia.org/resource/CD-ROM
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/CD-ROM
+ENTITY: http://upload.wikimedia.org/wikipedia/commons/7/70/MKTBox.jpg
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/PlayStation_(console)
@@ -127,25 +127,25 @@ ENTITY: http://dbpedia.org/resource/PlayStation_(console)
 ENTITY: http://dbpedia.org/resource/GT_Interactive
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/Personal_computer
+ENTITY: http://dbpedia.org/resource/ROM_cartridge
    (No neighbors to summarize)
 
 ENTITY: http://en.wikipedia.org/wiki/Mortal_Kombat_Trilogy
    (No neighbors to summarize)
 
-ENTITY: http://dbpedia.org/resource/ROM_cartridge
+ENTITY: http://dbpedia.org/resource/Personal_computer
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/SoftBank
+   (No neighbors to summarize)
+
+ENTITY: http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Mortal_Kombat_Trilogy
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/Midway_Games
    (No neighbors to summarize)
 
 ENTITY: http://dbpedia.org/resource/Sega_Saturn
-   (No neighbors to summarize)
-
-ENTITY: http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Mortal_Kombat_Trilogy
    (No neighbors to summarize)
 
 ENTITY: http://upload.wikimedia.org/wikipedia/commons/thumb/7/70/MKTBox.jpg/200px-MKTBox.jpg

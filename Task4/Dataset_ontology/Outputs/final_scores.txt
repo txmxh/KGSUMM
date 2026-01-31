@@ -4,14 +4,15 @@
 ========================================
 
 >> PROCESSING DATASET: WIKIES
-   Matching Entities: 0 (Preds: 50, GT: 76)
-   ❌ No overlapping entities found (IDs might not match).
+   Matching Entities: 2 (Preds: 50, GT: 556)
+   [TOP-5]  F1: 0.0769 | MAP: 0.1000 | NDCG: 0.5000
+   [TOP-10] F1: 0.0769 | MAP: 0.0500 | NDCG: 0.5000
 
 >> PROCESSING DATASET: DBpedia
-   ❌ CRITICAL: No Gold Standard file found (gold*.xml/json) in dataset folder.
+   ⚠️ Skipping: MISSING REAL GOLD STANDARD FILE in /content/KGSUMM/Task4/Dataset_ontology/ESBM/Datasets/dbpedia_data/gold_standard.xml
 
 >> PROCESSING DATASET: FACES
-   ❌ CRITICAL: No Gold Standard file found (gold*.xml/json) in dataset folder.
+   ⚠️ Skipping: MISSING REAL GOLD STANDARD FILE in /content/KGSUMM/Task4/Dataset_ontology/FACES/faces_data/gold.json
 
 >> PROCESSING DATASET: LMDB
-   ❌ CRITICAL: No Gold Standard file found (gold*.xml/json) in dataset folder.
+   ⚠️ Skipping: MISSING REAL GOLD STANDARD FILE in /content/KGSUMM/Task4/Dataset_ontology/ESBM/Datasets/lmdb_data/gold_standard.xml

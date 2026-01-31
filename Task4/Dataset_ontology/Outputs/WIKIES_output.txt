@@ -1,151 +1,151 @@
 --- SUMMARY OUTPUT FOR WIKIES ---
 
-ENTITY: 36602
-   -> Catherine_Deneuve
+ENTITY: 170388
+   -> Angelina_Jolie
 
-ENTITY: Catherine_Deneuve
+ENTITY: Angelina_Jolie
    (No neighbors to summarize)
 
-ENTITY: 1323904
-   -> Jane_Fonda
+ENTITY: 112752
+   -> Salma_Hayek
 
-ENTITY: Jane_Fonda
+ENTITY: Salma_Hayek
    (No neighbors to summarize)
 
-ENTITY: 565983
-   -> Gertrude_Stein
+ENTITY: 1835912
+   -> Jessica_Ennis-Hill
 
-ENTITY: Gertrude_Stein
+ENTITY: Jessica_Ennis-Hill
    (No neighbors to summarize)
 
-ENTITY: 1321971
-   -> Eva_Perón
+ENTITY: 279218
+   -> Amy_Winehouse
 
-ENTITY: Eva_Perón
+ENTITY: Amy_Winehouse
    (No neighbors to summarize)
 
-ENTITY: 1318480
-   -> Julia_Roberts
+ENTITY: 530199
+   -> Shirley_Temple
 
-ENTITY: Julia_Roberts
+ENTITY: Shirley_Temple
    (No neighbors to summarize)
 
-ENTITY: 808237
-   -> Winnie_Madikizela-Mandela
+ENTITY: 466311
+   -> Jennifer_Garner
 
-ENTITY: Winnie_Madikizela-Mandela
+ENTITY: Jennifer_Garner
    (No neighbors to summarize)
 
-ENTITY: 678882
-   -> Bella_Thorne
+ENTITY: 763064
+   -> Marta_(footballer)
 
-ENTITY: Bella_Thorne
+ENTITY: Marta_(footballer)
    (No neighbors to summarize)
 
-ENTITY: 888262
-   -> Clementine_Churchill
+ENTITY: 763020
+   -> Evonne_Goolagong_Cawley
 
-ENTITY: Clementine_Churchill
+ENTITY: Evonne_Goolagong_Cawley
    (No neighbors to summarize)
 
-ENTITY: 1340076
-   -> Miley_Cyrus
+ENTITY: 782463
+   -> Dolley_Madison
 
-ENTITY: Miley_Cyrus
+ENTITY: Dolley_Madison
    (No neighbors to summarize)
 
-ENTITY: 1701815
-   -> Patti_Smith
+ENTITY: 570748
+   -> Jennifer_Lawrence
 
-ENTITY: Patti_Smith
+ENTITY: Jennifer_Lawrence
    (No neighbors to summarize)
 
-ENTITY: 1399356
-   -> Nicola_Sturgeon
+ENTITY: 913579
+   -> Aya_Sameshima
 
-ENTITY: Nicola_Sturgeon
+ENTITY: Aya_Sameshima
    (No neighbors to summarize)
 
-ENTITY: 1925616
-   -> Sandra_Perković
+ENTITY: 479141
+   -> Margaret_Mitchell
 
-ENTITY: Sandra_Perković
+ENTITY: Margaret_Mitchell
    (No neighbors to summarize)
 
-ENTITY: 218672
-   -> Janis_Joplin
+ENTITY: 140923
+   -> Gro_Harlem_Brundtland
 
-ENTITY: Janis_Joplin
+ENTITY: Gro_Harlem_Brundtland
    (No neighbors to summarize)
 
-ENTITY: 64501
-   -> Serena_Williams
+ENTITY: 576781
+   -> Liv_Ullmann
 
-ENTITY: Serena_Williams
+ENTITY: Liv_Ullmann
    (No neighbors to summarize)
 
-ENTITY: 652594
-   -> Frances_McDormand
+ENTITY: 2181414
+   -> Romy_Schneider
 
-ENTITY: Frances_McDormand
+ENTITY: Romy_Schneider
    (No neighbors to summarize)
 
-ENTITY: 2230132
-   -> Selena_Gomez
+ENTITY: 28309
+   -> Doris_Day
 
-ENTITY: Selena_Gomez
+ENTITY: Doris_Day
    (No neighbors to summarize)
 
-ENTITY: 754710
-   -> Carolina_Klüft
+ENTITY: 964564
+   -> Ruth_Beitia
 
-ENTITY: Carolina_Klüft
+ENTITY: Ruth_Beitia
    (No neighbors to summarize)
 
-ENTITY: 570233
-   -> Brooke_Shields
+ENTITY: 634763
+   -> Anna_Paquin
 
-ENTITY: Brooke_Shields
+ENTITY: Anna_Paquin
    (No neighbors to summarize)
 
-ENTITY: 1372233
-   -> Carli_Lloyd
+ENTITY: 1381034
+   -> Dafne_Schippers
 
-ENTITY: Carli_Lloyd
+ENTITY: Dafne_Schippers
    (No neighbors to summarize)
 
-ENTITY: 2767
-   -> Sigourney_Weaver
+ENTITY: 764928
+   -> Tamara_de_Lempicka
 
-ENTITY: Sigourney_Weaver
+ENTITY: Tamara_de_Lempicka
    (No neighbors to summarize)
 
-ENTITY: 812172
-   -> Shirley_Chisholm
+ENTITY: 120511
+   -> Charlotte_Brontë
 
-ENTITY: Shirley_Chisholm
+ENTITY: Charlotte_Brontë
    (No neighbors to summarize)
 
-ENTITY: 54516
-   -> Clare_Hollingworth
+ENTITY: 97193
+   -> Hilary_Duff
 
-ENTITY: Clare_Hollingworth
+ENTITY: Hilary_Duff
    (No neighbors to summarize)
 
-ENTITY: 1055732
-   -> Tammy_Duckworth
+ENTITY: 1462532
+   -> Yulia_Tymoshenko
 
-ENTITY: Tammy_Duckworth
+ENTITY: Yulia_Tymoshenko
    (No neighbors to summarize)
 
-ENTITY: 868936
-   -> Margaret_Fuller
+ENTITY: 1453186
+   -> Paris_Hilton
 
-ENTITY: Margaret_Fuller
+ENTITY: Paris_Hilton
    (No neighbors to summarize)
 
-ENTITY: 2231209
-   -> Isabel_Allende
+ENTITY: 1067640
+   -> Katarina_Johnson-Thompson
 
-ENTITY: Isabel_Allende
+ENTITY: Katarina_Johnson-Thompson
    (No neighbors to summarize)
