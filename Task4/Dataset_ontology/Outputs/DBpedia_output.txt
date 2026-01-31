@@ -1,0 +1,155 @@
+--- SUMMARY OUTPUT FOR DBpedia ---
+
+ENTITY: http://dbpedia.org/resource/Siamese_mud_carp
+   -> http://dbpedia.org/resource/Cypriniformes
+   -> http://dbpedia.org/resource/Animal
+   -> http://dbpedia.org/resource/Henicorhynchus
+
+ENTITY: http://dbpedia.org/resource/Cypriniformes
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Animal
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Henicorhynchus
+   (No neighbors to summarize)
+
+ENTITY: http://commons.wikimedia.org/wiki/Special:FilePath/Mekong_river_location.jpg?width=300
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Chordate
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Henri_Émile_Sauvage
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/ontology/Fish
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Cyprinidae
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Actinopterygii
+   (No neighbors to summarize)
+
+ENTITY: Siamese mud carp
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Fish_of_Laos
+   (No neighbors to summarize)
+
+ENTITY: LC
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Fish_of_Vietnam
+   (No neighbors to summarize)
+
+ENTITY: http://www.wikidata.org/entity/Q19088
+   (No neighbors to summarize)
+
+ENTITY: iucn3.1
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Fish_of_the_Mekong_Basin
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Fish_of_Cambodia
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Fish_of_Thailand
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/ontology/Eukaryote
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/ontology/Animal
+   (No neighbors to summarize)
+
+ENTITY: http://www.wikidata.org/entity/Q152
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Carp
+   (No neighbors to summarize)
+
+ENTITY: http://commons.wikimedia.org/wiki/Special:FilePath/Mekong_river_location.jpg
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/ontology/Species
+   (No neighbors to summarize)
+
+ENTITY: http://www.wikidata.org/entity/Q729
+   (No neighbors to summarize)
+
+ENTITY: http://www.w3.org/2002/07/owl#Thing
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Lygodium_microphyllum
+   -> http://dbpedia.org/resource/Lygodium
+   -> TNC
+   -> http://dbpedia.org/ontology/Plant
+
+ENTITY: http://dbpedia.org/resource/Lygodium
+   (No neighbors to summarize)
+
+ENTITY: TNC
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/ontology/Plant
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Antonio_José_Cavanilles
+   (No neighbors to summarize)
+
+ENTITY: Lygodium microphyllum
+   (No neighbors to summarize)
+
+ENTITY: http://commons.wikimedia.org/wiki/Special:FilePath/ARS_Lygodium_microphyllum_foliage.jpg?width=300
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Schizaeales
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/ontology/Fern
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Pteridophyte
+   (No neighbors to summarize)
+
+ENTITY: *L. scandens (L.)Sw.)
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Flora_of_Fiji
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Flora_of_China
+   (No neighbors to summarize)
+
+ENTITY: G5
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Pteridophyta_of_Asia
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Leptosporangiate_fern
+   (No neighbors to summarize)
+
+ENTITY: *Lygodium scandens (auct.)
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Flora_of_Queensland
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Plants_described_in_1801
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/class/yago/Whole100003553
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Flora_of_the_Ryukyu_Islands
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Flora_of_the_Northwestern_Pacific
+   (No neighbors to summarize)
+
+ENTITY: http://dbpedia.org/resource/Category:Flora_of_Taiwan
+   (No neighbors to summarize)

@@ -9,7 +9,7 @@ import csv
 from rdflib import Graph as RDFGraph, RDF
 from collections import defaultdict
 
-# --- FIX: Robust Import Strategy for DGL 2.x ---
+# --- FIX: Robust Import Strategy ---
 try:
     from dgl.nn import RelGraphConv
 except ImportError:
@@ -36,24 +36,28 @@ class UniversalHierarchyLearner:
             for file in files:
                 file_path = os.path.join(root, file)
                 
-                # --- CASE A: RDF FILES (.nt, .ttl, .xml) ---
                 if file.endswith((".nt", ".ttl", ".xml", ".rdf")):
                     try:
                         g = RDFGraph()
                         fmt = "nt" if file.endswith(".nt") else "turtle" if file.endswith(".ttl") else "xml"
                         g.parse(file_path, format=fmt)
-                        for s, p, o in g:
-                            self._process_triple(str(s), str(p), str(o), global_subjects)
+                        for s, p, o in g: self._process_triple(str(s), str(p), str(o), global_subjects)
                     except: continue
-
-                # --- CASE B: CSV FILES (WIKIES) ---
+                
                 elif file.endswith(".csv"):
                     try:
                         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                             reader = csv.reader(f)
+                            # FIX: Attempt to skip header if it looks like "Unnamed" or "id"
+                            try:
+                                header = next(reader)
+                                if "Unnamed" not in str(header[0]) and "id" not in str(header[0]):
+                                    # If it wasn't a header, reset (this is rough, but safer for mixed files)
+                                    f.seek(0)
+                            except: pass
+                            
                             for row in reader:
-                                if len(row) >= 3: # Assume: Subject, Predicate, Object
-                                    self._process_triple(row[0], row[1], row[2], global_subjects)
+                                if len(row) >= 3: self._process_triple(row[0], row[1], row[2], global_subjects)
                     except: continue
                     
         print(f"      [Done] Entities: {self.total_entities}, Unique Classes: {len(self.class_counts)}")
@@ -62,34 +66,22 @@ class UniversalHierarchyLearner:
         if s not in global_subjects:
             global_subjects.add(s)
             self.total_entities += 1
-        
-        # Heuristic: Treat 'type', 'category', or 'class' relations as Ontology signals
-        # For CSVs, we infer ontology if predicate contains "type" string
         is_type = (p == str(RDF.type)) or ("type" in p.lower())
-        
         if is_type:
             self.class_counts[o] = self.class_counts.get(o, 0) + 1
-            if self.class_counts[o] > self.max_freq:
-                self.max_freq = self.class_counts[o]
+            if self.class_counts[o] > self.max_freq: self.max_freq = self.class_counts[o]
             self.entity_types[s].append(o)
 
     def get_features(self, entity_uri):
         types = self.entity_types.get(entity_uri, [])
         if not types: return torch.tensor([0.0, 0.0])
-        
-        best_ic = 0.0
-        best_depth = 0.0
-        
+        best_ic, best_depth = 0.0, 0.0
         for t in types:
             freq = self.class_counts.get(t, 0)
             prob = freq / (self.total_entities + 1e-9)
             ic = -math.log(prob)
             depth = 1.0 - (freq / (self.max_freq + 1e-9))
-            
-            if depth > best_depth:
-                best_depth = depth
-                best_ic = ic
-                
+            if depth > best_depth: best_depth, best_ic = depth, ic
         return torch.tensor([best_ic, best_depth])
 
 # ==========================================
@@ -97,66 +89,44 @@ class UniversalHierarchyLearner:
 # ==========================================
 class GraphParser:
     def __init__(self):
-        self.entity_to_id = {}
-        self.relation_to_id = {}
-        self.id_to_entity = {}
-        self.triples = []
+        self.entity_to_id = {}; self.relation_to_id = {}; self.id_to_entity = {}; self.triples = []
 
     def parse(self, dataset_path):
-        print(f"   -> Building Graph Structure from: {dataset_path}")
+        print(f"   -> Building Graph from: {dataset_path}")
         for root, dirs, files in os.walk(dataset_path):
             for file in files:
                 file_path = os.path.join(root, file)
-                
-                # --- CASE A: RDF FILES ---
                 if file.endswith((".nt", ".ttl")):
                     try:
-                        g = RDFGraph()
-                        fmt = "nt" if file.endswith(".nt") else "turtle"
+                        g = RDFGraph(); fmt = "nt" if file.endswith(".nt") else "turtle"
                         g.parse(file_path, format=fmt)
-                        for s, p, o in g:
-                            self._add_triple(str(s), str(p), str(o))
+                        for s, p, o in g: self._add_triple(str(s), str(p), str(o))
                     except: continue
-
-                # --- CASE B: CSV FILES (WIKIES) ---
                 elif file.endswith(".csv"):
                     try:
                         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                             reader = csv.reader(f)
+                            try:
+                                header = next(reader)
+                                if "Unnamed" not in str(header[0]) and "id" not in str(header[0]):
+                                    f.seek(0)
+                            except: pass
+                            
                             for row in reader:
-                                if len(row) >= 3:
-                                    self._add_triple(row[0], row[1], row[2])
+                                if len(row) >= 3: self._add_triple(row[0], row[1], row[2])
                     except: continue
         
-        if not self.triples:
-            print("      [Warning] No triples found in this path.")
-            return dgl.graph(([], []))
-
-        src = [t[0] for t in self.triples]
-        dst = [t[2] for t in self.triples]
-        rels = [t[1] for t in self.triples]
-        
+        if not self.triples: return dgl.graph(([], []))
+        src = [t[0] for t in self.triples]; dst = [t[2] for t in self.triples]; rels = [t[1] for t in self.triples]
         g_dgl = dgl.graph((torch.tensor(src), torch.tensor(dst)))
         g_dgl.edata['etype'] = torch.tensor(rels)
         return g_dgl
 
     def _add_triple(self, s, p, o):
-        if s not in self.entity_to_id:
-            self.entity_to_id[s] = len(self.entity_to_id)
-            self.id_to_entity[len(self.entity_to_id)-1] = s
-        
-        if o not in self.entity_to_id:
-            self.entity_to_id[o] = len(self.entity_to_id)
-            self.id_to_entity[len(self.entity_to_id)-1] = o
-            
-        if p not in self.relation_to_id:
-            self.relation_to_id[p] = len(self.relation_to_id)
-            
-        self.triples.append((
-            self.entity_to_id[s],
-            self.relation_to_id[p],
-            self.entity_to_id[o]
-        ))
+        if s not in self.entity_to_id: self.entity_to_id[s] = len(self.entity_to_id); self.id_to_entity[len(self.entity_to_id)-1] = s
+        if o not in self.entity_to_id: self.entity_to_id[o] = len(self.entity_to_id); self.id_to_entity[len(self.entity_to_id)-1] = o
+        if p not in self.relation_to_id: self.relation_to_id[p] = len(self.relation_to_id)
+        self.triples.append((self.entity_to_id[s], self.relation_to_id[p], self.entity_to_id[o]))
 
 # ==========================================
 # 3. HIERARCHICAL IRES MODEL
@@ -169,7 +139,6 @@ class HierarchicalIRES(nn.Module):
         self.rgcn1 = RelGraphConv(hidden_dim * 2, hidden_dim, num_rels)
         self.rgcn2 = RelGraphConv(hidden_dim, num_anticommunities, num_rels)
         self.dropout = nn.Dropout(0.2)
-
     def forward(self, g, ontology_features, edge_types):
         struct_h = self.structure_emb.weight
         onto_h = F.relu(self.ontology_encoder(ontology_features))
@@ -188,32 +157,20 @@ def select_summary_dpp(c_matrix, ontology_features, entity_ids, k=5):
     norm_onto = F.normalize(ontology_features, p=2, dim=1)
     L_sim = torch.mm(norm_onto, norm_onto.t())
     L = torch.outer(quality, quality) * L_sim
-    
     selected = []
-    item_indices = list(range(len(entity_ids)))
-    
+    indices = list(range(len(entity_ids)))
     for _ in range(min(k, len(entity_ids))):
-        best_item = -1
-        best_gain = -1.0
-        
-        for i in item_indices:
+        best = -1; best_g = -1.0
+        for i in indices:
             if i in selected: continue
-            sim_penalty = 0.0
-            for existing in selected:
-                sim_penalty += L[i, existing].item()
-            
-            gain = quality[i].item() - (0.5 * sim_penalty)
-            if gain > best_gain:
-                best_gain = gain
-                best_item = i
-        
-        if best_item != -1:
-            selected.append(best_item)
-            
+            pen = sum(L[i, x].item() for x in selected)
+            gain = quality[i].item() - (0.5 * pen)
+            if gain > best_g: best_g = gain; best = i
+        if best != -1: selected.append(best)
     return selected
 
 # ==========================================
-# 5. MAIN EXECUTION BLOCK
+# 5. MAIN EXECUTION (FIXED SAVING & DE-DUPLICATION)
 # ==========================================
 def run_hires_pipeline():
     datasets = {
@@ -223,6 +180,8 @@ def run_hires_pipeline():
         "WIKIES": "/content/KGSUMM/Task4/Dataset_ontology/WIKIES/data/seed_nodes"
     }
     
+    output_base = "/content/KGSUMM/Task4/Dataset_ontology/Outputs"
+    os.makedirs(output_base, exist_ok=True)
     hidden_dim = 64
     epochs = 50 
     
@@ -233,27 +192,25 @@ def run_hires_pipeline():
             
         print(f"\n{'='*10} PROCESSING DATASET: {name} {'='*10}")
         
+        # A. Learn Ontology
         ontology = UniversalHierarchyLearner()
         ontology.fit(path)
         
+        # B. Build Graph
         parser = GraphParser()
         g_dgl = parser.parse(path)
         num_nodes = g_dgl.num_nodes()
-        
-        if num_nodes == 0:
-            print("   [Skipping] No nodes found.")
-            continue
-            
+        if num_nodes == 0: continue
         num_rels = len(parser.relation_to_id)
-        print(f"   -> Graph Built: {num_nodes} Nodes, {num_rels} Relations")
         
-        print("   -> Generating Ontology Features...")
+        # C. Prepare Features
         features = []
         for i in range(num_nodes):
             uri = parser.id_to_entity[i]
             features.append(ontology.get_features(uri))
         onto_tensor = torch.stack(features) 
         
+        # D. Train Model
         model = HierarchicalIRES(num_nodes, num_rels, hidden_dim)
         optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
         
@@ -261,41 +218,49 @@ def run_hires_pipeline():
         model.train()
         for epoch in range(epochs):
             c_matrix, embeddings = model(g_dgl, onto_tensor, g_dgl.edata['etype'])
-            batch_loss = -torch.mean(torch.sum(c_matrix * torch.log(c_matrix + 1e-9), dim=1))
-            
-            idx = torch.randperm(num_nodes)[:min(100, num_nodes)] 
-            sem_sim = F.cosine_similarity(onto_tensor[idx].unsqueeze(1), onto_tensor[idx].unsqueeze(0), dim=2)
-            emb_sim = F.cosine_similarity(embeddings[idx].unsqueeze(1), embeddings[idx].unsqueeze(0), dim=2)
-            contrastive_loss = torch.mean((emb_sim - sem_sim) ** 2)
-            
-            loss = batch_loss + (0.5 * contrastive_loss)
-            
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-            
-            if epoch % 10 == 0:
-                print(f"      Epoch {epoch}/{epochs} | Loss: {loss.item():.4f}")
+            loss = -torch.mean(torch.sum(c_matrix * torch.log(c_matrix + 1e-9), dim=1))
+            optimizer.zero_grad(); loss.backward(); optimizer.step()
         
-        print("   -> Generating Summaries (DPP)...")
+        # E. GENERATE & SAVE SUMMARIES (NO DUPLICATES)
+        output_file = os.path.join(output_base, f"{name}_output.txt")
+        print(f"   -> Saving Summaries to: {output_file}")
+        
         model.eval()
         with torch.no_grad():
             c_matrix, _ = model(g_dgl, onto_tensor, g_dgl.edata['etype'])
-            for i in range(min(3, num_nodes)):
-                entity_uri = parser.id_to_entity[i]
-                print(f"\n   [Summary for {entity_uri}]")
-                neighbors = g_dgl.successors(i).tolist()
-                if not neighbors: 
-                    print("      (No neighbors to summarize)")
-                    continue
-                neigh_indices = neighbors
-                c_subset = c_matrix[neigh_indices]
-                onto_subset = onto_tensor[neigh_indices]
-                summary_indices = select_summary_dpp(c_subset, onto_subset, neigh_indices, k=3)
-                for idx in summary_indices:
-                    actual_node_id = neigh_indices[idx]
-                    fact_obj = parser.id_to_entity[actual_node_id]
-                    print(f"      -> {fact_obj}")
+            
+            with open(output_file, "w") as f_out:
+                f_out.write(f"--- SUMMARY OUTPUT FOR {name} ---\n")
+                
+                for i in range(min(50, num_nodes)):
+                    entity_uri = parser.id_to_entity[i]
+                    f_out.write(f"\nENTITY: {entity_uri}\n")
+                    
+                    neighbors = g_dgl.successors(i).tolist()
+                    if not neighbors: 
+                        f_out.write("   (No neighbors to summarize)\n")
+                        continue
+                    
+                    # --- FIX: REMOVE DUPLICATE NEIGHBORS (BY STRING) ---
+                    # We group neighbor IDs by their string value to prevent repeats
+                    unique_neighbors_map = {}
+                    for nid in neighbors:
+                        obj_str = parser.id_to_entity[nid]
+                        if obj_str not in unique_neighbors_map:
+                            unique_neighbors_map[obj_str] = nid
+                    
+                    # Use unique list for selection
+                    unique_neigh_indices = list(unique_neighbors_map.values())
+                    
+                    # Select
+                    c_subset = c_matrix[unique_neigh_indices]
+                    onto_subset = onto_tensor[unique_neigh_indices]
+                    summary_indices = select_summary_dpp(c_subset, onto_subset, unique_neigh_indices, k=3)
+                    
+                    for idx in summary_indices:
+                        actual_node_id = unique_neigh_indices[idx]
+                        fact_obj = parser.id_to_entity[actual_node_id]
+                        f_out.write(f"   -> {fact_obj}\n")
 
 if __name__ == "__main__":
     run_hires_pipeline()
