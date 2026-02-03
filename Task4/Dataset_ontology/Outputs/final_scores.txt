@@ -1,18 +1,24 @@
 
 ========================================
-      FINAL EVALUATION RESULTS
+      RAW MATCH EVALUATION RESULTS
 ========================================
 
 >> PROCESSING DATASET: WIKIES
-   Matching Entities: 2 (Preds: 50, GT: 556)
-   [TOP-5]  F1: 0.0769 | MAP: 0.1000 | NDCG: 0.5000
-   [TOP-10] F1: 0.0769 | MAP: 0.0500 | NDCG: 0.5000
-
->> PROCESSING DATASET: DBpedia
-   ⚠️ Skipping: MISSING REAL GOLD STANDARD FILE in /content/KGSUMM/Task4/Dataset_ontology/ESBM/Datasets/dbpedia_data/gold_standard.xml
+   Matching Entities: 493 (Preds: 493, GT: 493)
+   [TOP-5]  F1: 0.1507 | MAP: 0.1200 | NDCG: 0.4272
+   [TOP-10] F1: 0.1507 | MAP: 0.0837 | NDCG: 0.3895
 
 >> PROCESSING DATASET: FACES
-   ⚠️ Skipping: MISSING REAL GOLD STANDARD FILE in /content/KGSUMM/Task4/Dataset_ontology/FACES/faces_data/gold.json
+   Matching Entities: 50 (Preds: 50, GT: 50)
+   [TOP-5]  F1: 0.3467 | MAP: 0.8960 | NDCG: 0.9802
+   [TOP-10] F1: 0.3467 | MAP: 0.4480 | NDCG: 0.9758
+
+>> PROCESSING DATASET: DBpedia
+   Matching Entities: 6 (Preds: 6, GT: 125)
+   [TOP-5]  F1: 0.0000 | MAP: 0.0000 | NDCG: 0.0000
+   [TOP-10] F1: 0.0000 | MAP: 0.0000 | NDCG: 0.0000
 
 >> PROCESSING DATASET: LMDB
-   ⚠️ Skipping: MISSING REAL GOLD STANDARD FILE in /content/KGSUMM/Task4/Dataset_ontology/ESBM/Datasets/lmdb_data/gold_standard.xml
+   Matching Entities: 5 (Preds: 5, GT: 50)
+   [TOP-5]  F1: 0.0000 | MAP: 0.0000 | NDCG: 0.0000
+   [TOP-10] F1: 0.0000 | MAP: 0.0000 | NDCG: 0.0000
