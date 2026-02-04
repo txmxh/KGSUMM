@@ -1,351 +1,351 @@
 --- SUMMARY OUTPUT FOR FACES ---
 
-ENTITY: http://dbpedia.org/resource/Barack_Obama
-   -> http://dbpedia.org/resource/Honolulu
-   -> http://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg
-   -> http://dbpedia.org/resource/Democratic_Party_(United_States)
-   -> http://dbpedia.org/resource/Occidental_College
-   -> http://dbpedia.org/resource/George_W._Bush
+ENTITY: http://dbpedia.org/resource/J._C._Penney
+   -> http://dbpedia.org/resource/United_States
+   -> http://dbpedia.org/resource/Plano,_Texas
+   -> http://dbpedia.org/resource/S&P_500
+   -> http://en.wikipedia.org/wiki/J._C._Penney
+   -> http://dbpedia.org/resource/Retail
 
 ENTITY: http://dbpedia.org/resource/Family_Feud
-   -> http://dbpedia.org/resource/Edd_Kalehoff
    -> http://dbpedia.org/resource/FremantleMedia
-   -> http://dbpedia.org/resource/Paul_Alter
-   -> http://dbpedia.org/resource/CBS
+   -> http://dbpedia.org/resource/Daytime_Emmy_Award_for_Outstanding_Game/Audience_Participation_Show
+   -> http://dbpedia.org/resource/Debmar-Mercury
+   -> http://dbpedia.org/resource/20th_Television
    -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Family_Feud
 
-ENTITY: http://dbpedia.org/resource/Mike_Turner
-   -> http://dbpedia.org/resource/Ohio
-   -> http://dbpedia.org/resource/Dayton,_Ohio
-   -> http://dbpedia.org/resource/Mayor_of_Dayton,_Ohio
-   -> http://dbpedia.org/resource/Republican_Party_(United_States)
-   -> http://dbpedia.org/resource/Presbyterian
+ENTITY: http://dbpedia.org/resource/Love_Me_(Justin_Bieber_song)
+   -> http://en.wikipedia.org/wiki/Love_Me_(Justin_Bieber_song)
+   -> http://dbpedia.org/resource/Synthpop
+   -> http://dbpedia.org/resource/My_World_(EP)
+   -> http://upload.wikimedia.org/wikipedia/commons/9/96/Resized_justin_bieber_love_me_cover.jpg
+   -> http://dbpedia.org/resource/Justin_Bieber
 
-ENTITY: http://dbpedia.org/resource/Nile
-   -> http://en.wikipedia.org/wiki/Nile
-   -> http://dbpedia.org/resource/Blue_Nile
-   -> http://dbpedia.org/resource/Egypt
-   -> http://en.wikipedia.org/wiki/Nile?oldid=547344631
-   -> http://dbpedia.org/resource/Lake_Tana
-
-ENTITY: http://dbpedia.org/resource/Edward_Teller
-   -> http://dbpedia.org/resource/Hydrogen_bomb
-   -> http://dbpedia.org/resource/Physics
-   -> http://dbpedia.org/resource/University_of_Leipzig
-   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Edward_Teller
-   -> http://dbpedia.org/resource/Hungary
-
-ENTITY: http://dbpedia.org/resource/Joe_Biden
-   -> http://dbpedia.org/resource/Pennsylvania
-   -> http://dbpedia.org/resource/John_Kerry
-   -> http://dbpedia.org/resource/United_States_Senate_Committee_on_the_Judiciary
-   -> http://dbpedia.org/resource/Democratic_Party_(United_States)
-   -> http://dbpedia.org/resource/Beau_Biden
-
-ENTITY: http://dbpedia.org/resource/Richard_Mentor_Johnson
-   -> http://dbpedia.org/resource/Democratic_Party_(United_States)
-   -> http://dbpedia.org/resource/Common_law_marriage
-   -> http://dbpedia.org/resource/Vice_President_of_the_United_States
-   -> http://dbpedia.org/resource/Martin_Van_Buren
-   -> http://dbpedia.org/resource/Kentucky
-
-ENTITY: http://dbpedia.org/resource/Crysis_2
-   -> http://upload.wikimedia.org/wikipedia/commons/a/a1/Crysis_2_cover.png
-   -> http://dbpedia.org/resource/CryEngine
-   -> http://dbpedia.org/resource/Xbox_360
-   -> http://dbpedia.org/resource/Crysis_(series)
-   -> http://dbpedia.org/resource/PlayStation_3
-
-ENTITY: http://dbpedia.org/resource/Benjamin_Franklin
-   -> http://dbpedia.org/resource/John_Adams
-   -> http://dbpedia.org/resource/Thomas_Mifflin
-   -> http://dbpedia.org/resource/Boston
-   -> http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BenFranklinDuplessis.jpg/200px-BenFranklinDuplessis.jpg
-   -> http://dbpedia.org/resource/Charles_Biddle
-
-ENTITY: http://dbpedia.org/resource/Total_Recall_(1990_film)
-   -> http://dbpedia.org/resource/Sharon_Stone
-   -> http://dbpedia.org/resource/Jon_Povill
-   -> http://dbpedia.org/resource/Rachel_Ticotin
-   -> http://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Total_recall.jpg/200px-Total_recall.jpg
-   -> http://dbpedia.org/resource/Arnold_Schwarzenegger
+ENTITY: http://dbpedia.org/resource/Manchester_City_F.C.
+   -> http://dbpedia.org/resource/Ferran_Soriano
+   -> http://dbpedia.org/resource/City_of_Manchester_Stadium
+   -> http://dbpedia.org/resource/Wayne_Bridge
+   -> http://dbpedia.org/resource/Micah_Richards
+   -> http://dbpedia.org/resource/Khaldoon_Al_Mubarak
 
 ENTITY: http://dbpedia.org/resource/Ferrari
    -> http://dbpedia.org/resource/Supercar
+   -> http://www.ferrari.com/
+   -> http://en.wikipedia.org/wiki/Ferrari
    -> http://dbpedia.org/resource/Enzo_Ferrari
-   -> http://upload.wikimedia.org/wikipedia/commons/d/d1/Ferrari-Logo.svg
-   -> http://dbpedia.org/resource/Piero_Ferrari
-   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Ferrari
-
-ENTITY: http://dbpedia.org/resource/Albert_Einstein
-   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Albert_Einstein
-   -> http://dbpedia.org/resource/Physics
-   -> http://en.wikipedia.org/wiki/Albert_Einstein?oldid=548308618
-   -> http://dbpedia.org/resource/USA
-   -> http://dbpedia.org/resource/Baden-W%C3%BCrttemberg
-
-ENTITY: http://dbpedia.org/resource/Knight_Rider_(1982_TV_series)
-   -> http://en.wikipedia.org/wiki/Knight_Rider_(1982_TV_series)
-   -> http://dbpedia.org/resource/William_Daniels
-   -> http://dbpedia.org/resource/Glen_A._Larson
-   -> http://dbpedia.org/resource/Code_of_Vengeance
-   -> http://dbpedia.org/resource/Team_Knight_Rider
-
-ENTITY: http://dbpedia.org/resource/Aladdin_(1992_Disney_film)
-   -> http://dbpedia.org/resource/Alan_Menken
-   -> http://dbpedia.org/resource/John_Musker
-   -> http://dbpedia.org/resource/Ron_Clements
-   -> http://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Aladdinposter.jpg/200px-Aladdinposter.jpg
-   -> http://dbpedia.org/resource/Linda_Larkin
-
-ENTITY: http://dbpedia.org/resource/Mortal_Kombat_Trilogy
-   -> http://dbpedia.org/resource/GT_Interactive
-   -> http://dbpedia.org/resource/Avalanche_Software
-   -> http://dbpedia.org/resource/SoftBank
-   -> http://dbpedia.org/resource/Sega_Saturn
-   -> http://dbpedia.org/resource/R-Zone
-
-ENTITY: http://dbpedia.org/resource/Marie_Curie
-   -> http://dbpedia.org/resource/Pierre_Curie
-   -> http://dbpedia.org/resource/Radium
-   -> http://dbpedia.org/resource/ESPCI_ParisTech
-   -> http://dbpedia.org/resource/Henri_Becquerel
-   -> http://dbpedia.org/resource/Physics
-
-ENTITY: http://dbpedia.org/resource/Bill_Gates
-   -> http://dbpedia.org/resource/Microsoft
-   -> http://upload.wikimedia.org/wikipedia/commons/4/4a/BillGates2012.jpg
-   -> http://dbpedia.org/resource/Melinda_Gates
-   -> http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/BillGates2012.jpg/200px-BillGates2012.jpg
-   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Bill_Gates
-
-ENTITY: http://dbpedia.org/resource/Candle_in_the_Wind
-   -> http://dbpedia.org/resource/Step_into_Christmas
-   -> http://dbpedia.org/resource/Gramophone_record
-   -> http://dbpedia.org/resource/Trident_Studios
-   -> http://en.wikipedia.org/wiki/Candle_in_the_Wind?oldid=548314767
-   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Candle_in_the_Wind
-
-ENTITY: http://dbpedia.org/resource/Usain_Bolt
-   -> http://dbpedia.org/resource/2012_Summer_Olympics
-   -> http://dbpedia.org/resource/Jamaica
-   -> http://dbpedia.org/resource/Track_and_field
-   -> http://en.wikipedia.org/wiki/Usain_Bolt
-   -> http://dbpedia.org/resource/Trelawny_Parish,_Jamaica
-
-ENTITY: http://dbpedia.org/resource/Argo_(2012_film)
-   -> http://dbpedia.org/resource/Smokehouse_Pictures
-   -> http://dbpedia.org/resource/Alexandre_Desplat
-   -> http://dbpedia.org/resource/Ben_Affleck
-   -> http://dbpedia.org/resource/Bryan_Cranston
-   -> http://dbpedia.org/resource/Grant_Heslov
-
-ENTITY: http://dbpedia.org/resource/The_Cosby_Show
-   -> http://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Cosby_Show_-_Logo.png/200px-Cosby_Show_-_Logo.png
-   -> http://dbpedia.org/resource/Carsey-Werner_Productions
-   -> http://dbpedia.org/resource/Sitcom
-   -> http://dbpedia.org/resource/Craig_Handy
-   -> http://dbpedia.org/resource/Raven-Symon%C3%A9
-
-ENTITY: http://dbpedia.org/resource/England
-   -> http://dbpedia.org/resource/London
-   -> http://dbpedia.org/resource/Pound_sterling
-   -> http://www.direct.gov.uk/
-   -> http://dbpedia.org/resource/+44
-   -> http://dbpedia.org/resource/English_language
-
-ENTITY: http://dbpedia.org/resource/Baywatch
-   -> http://dbpedia.org/resource/NBC
-   -> http://dbpedia.org/resource/Michael_Berk
-   -> http://www.baywatch.com
-   -> http://dbpedia.org/resource/Action_(fiction)
-   -> http://dbpedia.org/resource/Hawaii
-
-ENTITY: http://dbpedia.org/resource/Walt_Disney
-   -> http://dbpedia.org/resource/The_Walt_Disney_Company
-   -> http://upload.wikimedia.org/wikipedia/commons/0/08/Walt_disney_portrait.jpg
-   -> http://dbpedia.org/resource/Hermosa,_Chicago
-   -> http://dbpedia.org/resource/Congregational_church
-   -> http://dbpedia.org/resource/Congregationalist
+   -> http://dbpedia.org/resource/Automotive_industry
 
 ENTITY: http://dbpedia.org/resource/John_Napier
-   -> http://dbpedia.org/resource/Napier's_bones
-   -> http://dbpedia.org/resource/University_of_St_Andrews
-   -> http://dbpedia.org/resource/Edinburgh
    -> http://dbpedia.org/resource/Mathematician
+   -> http://dbpedia.org/resource/Church_of_Scotland
    -> http://dbpedia.org/resource/Scotland
-
-ENTITY: http://dbpedia.org/resource/J._C._Penney
-   -> http://dbpedia.org/resource/United_States
-   -> http://dbpedia.org/resource/S&P_500
-   -> http://dbpedia.org/resource/Public_company
-   -> http://dbpedia.org/resource/James_Cash_Penney
-   -> http://www.jcpenney.com/
-
-ENTITY: http://dbpedia.org/resource/Seychelles
-   -> http://dbpedia.org/resource/Telephone_numbers_in_Seychelles
-   -> http://dbpedia.org/resource/Capital_(political)
-   -> http://dbpedia.org/resource/Seychellois_rupee
-   -> http://dbpedia.org/resource/Victoria,_Seychelles
-   -> http://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Seychelles.svg
-
-ENTITY: http://dbpedia.org/resource/Texas
-   -> http://dbpedia.org/resource/Austin,_Texas
-   -> http://dbpedia.org/resource/United_States
-   -> http://en.wikipedia.org/wiki/Texas
-   -> http://dbpedia.org/resource/Mitt_Romney
-   -> http://dbpedia.org/resource/Languages_of_Texas
+   -> http://upload.wikimedia.org/wikipedia/commons/e/e3/John_Napier.jpg
+   -> http://dbpedia.org/resource/Edinburgh
 
 ENTITY: http://dbpedia.org/resource/Czech_Republic
-   -> http://dbpedia.org/resource/History_of_the_Czech_lands
-   -> http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg
-   -> http://dbpedia.org/resource/Czech_koruna
-   -> http://dbpedia.org/resource/Petr_Ne%C4%8Das
-   -> http://dbpedia.org/resource/Prague
+   -> http://en.wikipedia.org/wiki/Czech_Republic
+   -> http://dbpedia.org/resource/Miloš_Zeman
+   -> http://dbpedia.org/resource/Chamber_of_Deputies_of_the_Parliament_of_the_Czech_Republic
+   -> http://dbpedia.org/resource/Czechoslovakia
+   -> http://dbpedia.org/resource/Senate_of_the_Parliament_of_the_Czech_Republic
 
-ENTITY: http://dbpedia.org/resource/Rice_University
-   -> http://dbpedia.org/resource/Private_university
-   -> http://dbpedia.org/resource/Conference_USA
-   -> http://dbpedia.org/resource/Division_I_(NCAA)
-   -> http://dbpedia.org/resource/David_Leebron
-   -> http://upload.wikimedia.org/wikipedia/commons/c/c7/Rice_University_seal.svg
+ENTITY: http://dbpedia.org/resource/(What_Is)_Love?
+   -> http://dbpedia.org/resource/Electropop
+   -> http://dbpedia.org/resource/Jennifer_Lopez
+   -> http://dbpedia.org/resource/Love?
+   -> http://dbpedia.org/resource/Wynter_Gordon
+   -> http://dbpedia.org/resource/Music_download
+
+ENTITY: http://dbpedia.org/resource/Usain_Bolt
+   -> http://en.wikipedia.org/wiki/Usain_Bolt
+   -> http://dbpedia.org/resource/Jamaica
+   -> http://dbpedia.org/resource/Sprint_(running)
+   -> http://dbpedia.org/resource/Track_&_Field_News_Athlete_of_the_Year
+   -> http://upload.wikimedia.org/wikipedia/commons/3/33/Usain_Bolt_2012_Olympics_1.jpg
+
+ENTITY: http://dbpedia.org/resource/Yukon_River
+   -> http://dbpedia.org/resource/Alaska
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Dawson_City_Lookout_Yukon_River_3264px.jpg/200px-Dawson_City_Lookout_Yukon_River_3264px.jpg
+   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Yukon_River
+   -> http://dbpedia.org/resource/British_Columbia
+   -> http://dbpedia.org/resource/Wade_Hampton_Census_Area,_Alaska
 
 ENTITY: http://dbpedia.org/resource/Friedrich_Engel_(mathematician)
-   -> http://dbpedia.org/resource/University_of_Greifswald
-   -> http://dbpedia.org/resource/Saxony
-   -> http://dbpedia.org/resource/Hessen
-   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Friedrich_Engel_(mathematician)
+   -> http://dbpedia.org/resource/Germany
+   -> http://dbpedia.org/resource/University_of_Leipzig
    -> http://dbpedia.org/resource/Mathematics
-
-ENTITY: http://dbpedia.org/resource/Never_Let_You_Go_(Justin_Bieber_song)
-   -> http://dbpedia.org/resource/Bryan-Michael_Cox
-   -> http://dbpedia.org/resource/Justin_Bieber
-   -> http://dbpedia.org/resource/My_World_2.0
-   -> http://upload.wikimedia.org/wikipedia/commons/5/54/Neverletyougocover.jpg
-   -> http://dbpedia.org/resource/Teen_pop
-
-ENTITY: http://dbpedia.org/resource/Friends
-   -> http://upload.wikimedia.org/wikipedia/commons/8/86/Friends_titles.jpg
-   -> http://dbpedia.org/resource/David_Crane_(producer)
-   -> http://dbpedia.org/resource/NBC
-   -> http://en.wikipedia.org/wiki/Friends?oldid=547882844
-   -> http://warnervideo.com/friends15/
-
-ENTITY: http://dbpedia.org/resource/Charles_Darwin
-   -> http://dbpedia.org/resource/University_of_Cambridge
-   -> http://dbpedia.org/resource/Royal_Medal
-   -> http://dbpedia.org/resource/Kent
-   -> http://dbpedia.org/resource/Shrewsbury
-   -> http://en.wikipedia.org/wiki/Charles_Darwin?oldid=547325692
-
-ENTITY: http://dbpedia.org/resource/Henry_IV_of_France
-   -> http://dbpedia.org/resource/Kingdom_of_Navarre
-   -> http://dbpedia.org/resource/Jeanne_d'Albret
-   -> http://dbpedia.org/resource/Henry_III_of_France
-   -> http://dbpedia.org/resource/Jeanne_III_of_Navarre
-   -> http://dbpedia.org/resource/Roman_Catholicism
-
-ENTITY: http://dbpedia.org/resource/Norway
-   -> http://dbpedia.org/resource/Norwegian_krone
-   -> http://dbpedia.org/resource/Central_European_Time
-   -> http://en.wikipedia.org/wiki/Norway
-   -> http://dbpedia.org/resource/Norwegians
-   -> http://dbpedia.org/resource/Oslo
-
-ENTITY: http://dbpedia.org/resource/Alan_Turing
-   -> http://dbpedia.org/resource/Royal_Society
-   -> http://dbpedia.org/resource/Maida_Vale
-   -> http://en.wikipedia.org/wiki/Alan_Turing
-   -> http://dbpedia.org/resource/The_Chemical_Basis_of_Morphogenesis
-   -> http://dbpedia.org/resource/Turing_pattern
+   -> http://dbpedia.org/resource/German_Confederation
+   -> http://en.wikipedia.org/wiki/Friedrich_Engel_(mathematician)?oldid=546766827
 
 ENTITY: http://dbpedia.org/resource/Ann_Arbor,_Michigan
    -> http://dbpedia.org/resource/Eastern_Time_Zone
+   -> http://dbpedia.org/resource/City_manager
    -> http://dbpedia.org/resource/Council-Manager
+   -> http://dbpedia.org/resource/John_Hieftje
    -> http://www.a2gov.org/
-   -> http://dbpedia.org/resource/Washtenaw_County,_Michigan
-   -> http://dbpedia.org/resource/Eastern_Daylight_Time
 
-ENTITY: http://dbpedia.org/resource/Original_Sin_(2001_film)
-   -> http://dbpedia.org/resource/Antonio_Banderas
-   -> http://dbpedia.org/resource/Cornell_Woolrich
-   -> http://en.wikipedia.org/wiki/Original_Sin_(2001_film)?oldid=540251179
-   -> http://dbpedia.org/resource/Angelina_Jolie
-   -> http://dbpedia.org/resource/Michael_Cristofer
+ENTITY: http://dbpedia.org/resource/Walt_Disney
+   -> http://dbpedia.org/resource/Lillian_Disney
+   -> http://dbpedia.org/resource/The_Walt_Disney_Company
+   -> http://dbpedia.org/resource/Mickey_Mouse
+   -> http://dbpedia.org/resource/Cecil_B._DeMille_Award
+   -> http://dbpedia.org/resource/Roy_E._Disney
 
-ENTITY: http://dbpedia.org/resource/Bruce_Lee
-   -> http://dbpedia.org/resource/United_States
-   -> http://dbpedia.org/resource/Hong_Kong
-   -> http://www.brucelee.com/
-   -> http://dbpedia.org/resource/Shannon_Lee
-   -> http://dbpedia.org/resource/British_Hong_Kong
+ENTITY: http://dbpedia.org/resource/Never_Let_You_Go_(Justin_Bieber_song)
+   -> http://dbpedia.org/resource/Justin_Bieber
+   -> http://dbpedia.org/resource/My_World_2.0
+   -> http://dbpedia.org/resource/Island_Records
+   -> http://dbpedia.org/resource/Teen_pop
+   -> http://dbpedia.org/resource/Bryan-Michael_Cox
 
-ENTITY: http://dbpedia.org/resource/Yukon_River
-   -> http://dbpedia.org/resource/United_States
-   -> http://dbpedia.org/resource/Alaska
-   -> http://dbpedia.org/resource/Canada
-   -> http://dbpedia.org/resource/Wade_Hampton_Census_Area,_Alaska
-   -> http://dbpedia.org/resource/British_Columbia
-
-ENTITY: http://dbpedia.org/resource/Poland
+ENTITY: http://dbpedia.org/resource/Marie_Curie
+   -> http://dbpedia.org/resource/University_of_Paris
+   -> http://dbpedia.org/resource/Physics
+   -> http://upload.wikimedia.org/wikipedia/commons/7/71/Marie_Curie_c1920.png
    -> http://dbpedia.org/resource/Warsaw
-   -> http://dbpedia.org/resource/National_Assembly_(Poland)
-   -> http://dbpedia.org/resource/Central_European_Time
-   -> http://dbpedia.org/resource/.pl
-   -> http://dbpedia.org/resource/Polish_language
+   -> http://dbpedia.org/resource/Chemistry
 
-ENTITY: http://dbpedia.org/resource/Reign_of_Fire_(film)
-   -> http://dbpedia.org/resource/Touchstone_Pictures
-   -> http://dbpedia.org/resource/Edward_Shearmur
-   -> http://dbpedia.org/resource/Republic_of_Ireland
-   -> http://en.wikipedia.org/wiki/Reign_of_Fire_(film)?oldid=540286162
-   -> http://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Reign_of_Fire_movie.jpg/200px-Reign_of_Fire_movie.jpg
+ENTITY: http://dbpedia.org/resource/Charles_Darwin
+   -> http://dbpedia.org/resource/British_nationality_law
+   -> http://dbpedia.org/resource/Shropshire
+   -> http://dbpedia.org/resource/University_of_Cambridge
+   -> http://dbpedia.org/resource/Down_House
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/200px-Charles_Darwin_seated_crop.jpg
 
-ENTITY: http://dbpedia.org/resource/Amsterdam
-   -> http://dbpedia.org/resource/Labour_Party_(Netherlands)
-   -> http://dbpedia.org/resource/Eberhard_van_der_Laan
-   -> http://www.amsterdam.nl/
-   -> http://dbpedia.org/resource/Central_European_Time
-   -> http://dbpedia.org/resource/Netherlands
+ENTITY: http://dbpedia.org/resource/Crysis_2
+   -> http://en.wikipedia.org/wiki/Crysis_2
+   -> http://dbpedia.org/resource/Microsoft_Windows
+   -> http://dbpedia.org/resource/Richard_K._Morgan
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Crysis_2_cover.png/200px-Crysis_2_cover.png
+   -> http://dbpedia.org/resource/Crytek_UK
 
-ENTITY: http://dbpedia.org/resource/Manchester_City_F.C.
-   -> http://dbpedia.org/resource/Premier_League
-   -> http://dbpedia.org/resource/2011%E2%80%9312_Premier_League
-   -> http://dbpedia.org/resource/Ferran_Soriano
-   -> http://dbpedia.org/resource/Khaldoon_Al_Mubarak
-   -> http://dbpedia.org/resource/City_of_Manchester_Stadium
+ENTITY: http://dbpedia.org/resource/Norway
+   -> http://dbpedia.org/resource/Constitutional_monarchy
+   -> http://dbpedia.org/resource/Harald_V_of_Norway
+   -> http://dbpedia.org/resource/Norwegian_krone
+   -> http://dbpedia.org/resource/Oslo
+   -> http://dbpedia.org/resource/Supreme_Court_of_Norway
 
-ENTITY: http://dbpedia.org/resource/Love_Me_(Justin_Bieber_song)
-   -> http://en.wikipedia.org/wiki/Love_Me_(Justin_Bieber_song)?oldid=547160061
-   -> http://dbpedia.org/resource/RBMG
-   -> http://dbpedia.org/resource/Electropop
-   -> http://dbpedia.org/resource/Denver
-   -> http://dbpedia.org/resource/Cincinnati,_Ohio
+ENTITY: http://dbpedia.org/resource/Argo_(2012_film)
+   -> http://dbpedia.org/resource/Ben_Affleck
+   -> http://dbpedia.org/resource/Warner_Bros.
+   -> http://dbpedia.org/resource/Alan_Arkin
+   -> http://dbpedia.org/resource/Bryan_Cranston
+   -> http://en.wikipedia.org/wiki/Argo_(2012_film)
+
+ENTITY: http://dbpedia.org/resource/Friends
+   -> http://dbpedia.org/resource/Sitcom
+   -> http://dbpedia.org/resource/Jennifer_Aniston
+   -> http://dbpedia.org/resource/Marta_Kauffman
+   -> http://upload.wikimedia.org/wikipedia/commons/8/86/Friends_titles.jpg
+   -> http://dbpedia.org/resource/Wil_Calhoun
+
+ENTITY: http://dbpedia.org/resource/Alan_Turing
+   -> http://dbpedia.org/resource/Officer_of_the_Order_of_the_British_Empire
+   -> http://dbpedia.org/resource/Fellow_of_the_Royal_Society
+   -> http://dbpedia.org/resource/Manchester
+   -> http://dbpedia.org/resource/Paddington
+   -> http://dbpedia.org/resource/Computer_science
+
+ENTITY: http://dbpedia.org/resource/Albert_Einstein
+   -> http://dbpedia.org/resource/Physicist
+   -> http://en.wikipedia.org/wiki/Albert_Einstein?oldid=548308618
+   -> http://dbpedia.org/resource/Physics
+   -> http://dbpedia.org/resource/Kingdom_of_Württemberg
+   -> http://dbpedia.org/resource/Einstein_family
+
+ENTITY: http://dbpedia.org/resource/Rice_University
+   -> http://dbpedia.org/resource/Houston
+   -> http://dbpedia.org/resource/David_Leebron
+   -> http://www.rice.edu/
+   -> http://dbpedia.org/resource/United_States
+   -> http://dbpedia.org/resource/Sammy_the_Owl
+
+ENTITY: http://dbpedia.org/resource/Mortal_Kombat_Trilogy
+   -> http://dbpedia.org/resource/Mortal_Kombat
+   -> http://dbpedia.org/resource/GT_Interactive_Software
+   -> http://dbpedia.org/resource/PlayStation_(console)
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/7/70/MKTBox.jpg/200px-MKTBox.jpg
+   -> http://dbpedia.org/resource/Fighting_game
+
+ENTITY: http://dbpedia.org/resource/Candle_in_the_Wind
+   -> http://dbpedia.org/resource/Glam_rock
+   -> http://dbpedia.org/resource/Pop_rock
+   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Candle_in_the_Wind
+   -> http://dbpedia.org/resource/Elton_John
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Elton_John_-_Candle_in_the_Wind_(1986).jpg/200px-Elton_John_-_Candle_in_the_Wind_(1986).jpg
 
 ENTITY: http://dbpedia.org/resource/Beverly_Hills,_90210
+   -> http://dbpedia.org/resource/Melrose_Place
+   -> http://dbpedia.org/resource/Multichannel_television_sound
    -> http://dbpedia.org/resource/Teen_drama
-   -> http://dbpedia.org/resource/Soap_opera
-   -> http://en.wikipedia.org/wiki/Beverly_Hills,_90210
    -> http://en.wikipedia.org/wiki/Beverly_Hills,_90210?oldid=548486808
-   -> http://dbpedia.org/resource/Worldvision_Enterprises
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/8/82/90210Logo.jpg/200px-90210Logo.jpg
+
+ENTITY: http://dbpedia.org/resource/Aladdin_(1992_Disney_film)
+   -> http://dbpedia.org/resource/Academy_Award_for_Best_Original_Song
+   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Aladdin_(1992_Disney_film)
+   -> http://dbpedia.org/resource/Walt_Disney_Pictures
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Aladdinposter.jpg/200px-Aladdinposter.jpg
+   -> http://dbpedia.org/resource/Walt_Disney_Animation_Studios
+
+ENTITY: http://dbpedia.org/resource/Total_Recall_(1990_film)
+   -> http://dbpedia.org/resource/Andrew_G._Vajna
+   -> http://dbpedia.org/resource/Jerry_Goldsmith
+   -> http://dbpedia.org/resource/Michael_Ironside
+   -> http://dbpedia.org/resource/Ronald_Shusett
+   -> http://dbpedia.org/resource/Jost_Vacano
+
+ENTITY: http://dbpedia.org/resource/Nile
+   -> http://dbpedia.org/resource/Lake_Tana
+   -> http://dbpedia.org/resource/Mediterranean_Sea
+   -> http://en.wikipedia.org/wiki/Nile
+   -> http://dbpedia.org/resource/Ethiopia
+   -> http://dbpedia.org/resource/Cairo
+
+ENTITY: http://dbpedia.org/resource/Henry_IV_of_France
+   -> http://dbpedia.org/resource/Kingdom_of_Navarre
+   -> http://dbpedia.org/resource/Henry_III_of_France
+   -> http://dbpedia.org/resource/Louis_XIII_of_France
+   -> http://dbpedia.org/resource/List_of_Navarrese_monarchs
+   -> http://www.henri4.culture.fr/index.php?lang=en&module=uc&fichier=00#/en/uc/00
+
+ENTITY: http://dbpedia.org/resource/Benjamin_Franklin
+   -> http://dbpedia.org/resource/Continental_Congress
+   -> http://dbpedia.org/resource/Independent_(politician)
+   -> http://upload.wikimedia.org/wikipedia/commons/c/cc/BenFranklinDuplessis.jpg
+   -> http://en.wikipedia.org/wiki/Benjamin_Franklin
+   -> http://dbpedia.org/resource/Province_of_Massachusetts_Bay
+
+ENTITY: http://dbpedia.org/resource/Reign_of_Fire_(film)
+   -> http://dbpedia.org/resource/Edward_Shearmur
+   -> http://dbpedia.org/resource/Richard_D._Zanuck
+   -> http://dbpedia.org/resource/Rob_Bowman_(director)
+   -> http://dbpedia.org/resource/Gary_Barber
+   -> http://en.wikipedia.org/wiki/Reign_of_Fire_(film)?oldid=540286162
+
+ENTITY: http://dbpedia.org/resource/Texas
+   -> http://dbpedia.org/resource/Houston
+   -> http://en.wikipedia.org/wiki/Texas
+   -> http://dbpedia.org/resource/Central_Time_Zone_(North_America)
+   -> http://dbpedia.org/resource/Austin,_Texas
+   -> http://dbpedia.org/resource/United_States
+
+ENTITY: http://dbpedia.org/resource/England
+   -> http://dbpedia.org/resource/William_Shakespeare
+   -> http://dbpedia.org/resource/Prime_Minister_of_the_United_Kingdom
+   -> http://dbpedia.org/resource/English_language
+   -> http://dbpedia.org/resource/Parliament_of_the_United_Kingdom
+   -> http://dbpedia.org/resource/Monarchy_of_the_United_Kingdom
+
+ENTITY: http://dbpedia.org/resource/Amsterdam
+   -> http://dbpedia.org/resource/Andrée_van_Es
+   -> http://dbpedia.org/resource/Carolien_Gehrels
+   -> http://dbpedia.org/resource/Pieter_Hilhorst
+   -> http://dbpedia.org/resource/Amsterdam-West
+   -> http://dbpedia.org/resource/Stadsdeel
+
+ENTITY: http://dbpedia.org/resource/Bruce_Lee
+   -> http://dbpedia.org/resource/China
+   -> http://dbpedia.org/resource/Fist_of_Fury
+   -> http://www.brucelee.com/
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/BruceLeecard.jpg/200px-BruceLeecard.jpg
+   -> http://dbpedia.org/resource/Kowloon
+
+ENTITY: http://dbpedia.org/resource/Seychelles
+   -> http://dbpedia.org/resource/Seychellois_rupee
+   -> http://dbpedia.org/resource/Danny_Faure
+   -> http://dbpedia.org/resource/Republic
+   -> http://dbpedia.org/resource/World_Meteorological_Organization
+   -> http://dbpedia.org/resource/+248
+
+ENTITY: http://dbpedia.org/resource/Original_Sin_(2001_film)
+   -> http://dbpedia.org/resource/Michael_Cristofer
+   -> http://dbpedia.org/resource/Metro-Goldwyn-Mayer
+   -> http://dbpedia.org/resource/Angelina_Jolie
+   -> http://dbpedia.org/resource/English_language
+   -> http://dbpedia.org/resource/United_States
+
+ENTITY: http://dbpedia.org/resource/Poland
+   -> http://en.wikipedia.org/wiki/Poland
+   -> http://www.poland.travel/en
+   -> http://dbpedia.org/resource/Donald_Tusk
+   -> http://dbpedia.org/resource/Bronisław_Komorowski
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Flag_of_Poland_(normative).svg/200px-Flag_of_Poland_(normative).svg.png
 
 ENTITY: http://dbpedia.org/resource/Lexus
-   -> http://dbpedia.org/resource/Toyota
    -> http://dbpedia.org/resource/Eiji_Toyoda
+   -> http://dbpedia.org/resource/Financial_services
+   -> http://dbpedia.org/resource/Toyota
+   -> http://dbpedia.org/resource/Automobiles
    -> http://dbpedia.org/resource/Japan
-   -> http://dbpedia.org/resource/Nagoya
-   -> http://dbpedia.org/resource/Automobile
 
 ENTITY: http://dbpedia.org/resource/Vladimir_Putin
+   -> http://dbpedia.org/resource/Dmitry_Medvedev
    -> http://dbpedia.org/resource/Russian_Orthodox
-   -> http://dbpedia.org/resource/Independent_(politician)
-   -> http://en.wikipedia.org/wiki/Vladimir_Putin
-   -> http://eng.putin.kremlin.ru/
-   -> http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vladimir_Putin_12015.jpg/200px-Vladimir_Putin_12015.jpg
+   -> http://dbpedia.org/resource/Soviet_Union
+   -> http://dbpedia.org/resource/Boris_Gryzlov
+   -> http://dbpedia.org/resource/Master_of_Sports
 
-ENTITY: http://dbpedia.org/resource/(What_Is)_Love%3F
-   -> http://dbpedia.org/resource/Music_download
-   -> http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/(promo_cover).jpg/200px-(promo_cover).jpg
-   -> http://dbpedia.org/resource/Love%3F
-   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/(What_Is)_Love%3F
-   -> http://dbpedia.org/resource/Promotional_recording
+ENTITY: http://dbpedia.org/resource/The_Cosby_Show
+   -> http://dbpedia.org/resource/Sitcom
+   -> http://en.wikipedia.org/wiki/The_Cosby_Show
+   -> http://dbpedia.org/resource/Phylicia_Rashād
+   -> http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/The_Cosby_Show
+   -> http://dbpedia.org/resource/English_language
+
+ENTITY: http://dbpedia.org/resource/Richard_Mentor_Johnson
+   -> http://dbpedia.org/resource/Frankfort,_Kentucky
+   -> http://en.wikipedia.org/wiki/Richard_Mentor_Johnson
+   -> http://dbpedia.org/resource/Vice_President_of_the_United_States
+   -> http://dbpedia.org/resource/Robert_L._McHatton
+   -> http://dbpedia.org/resource/Democratic-Republican_Party
+
+ENTITY: http://dbpedia.org/resource/Edward_Teller
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/EdwardTeller1958_fewer_smudges.jpg/200px-EdwardTeller1958_fewer_smudges.jpg
+   -> http://dbpedia.org/resource/Harvey_Prize
+   -> http://dbpedia.org/resource/Austria-Hungary
+   -> http://en.wikipedia.org/wiki/Edward_Teller
+   -> http://dbpedia.org/resource/Stanford,_California
+
+ENTITY: http://dbpedia.org/resource/Barack_Obama
+   -> http://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg
+   -> http://dbpedia.org/resource/Lawyer
+   -> http://www.barackobama.com
+   -> http://dbpedia.org/resource/Illinois_Senate
+   -> http://dbpedia.org/resource/Occidental_College
+
+ENTITY: http://dbpedia.org/resource/Knight_Rider_(1982_TV_series)
+   -> http://en.wikipedia.org/wiki/Knight_Rider_(1982_TV_series)
+   -> http://dbpedia.org/resource/David_Hasselhoff
+   -> http://dbpedia.org/resource/Morton_Stevens
+   -> http://upload.wikimedia.org/wikipedia/commons/3/31/Knightlogo.png
+   -> http://en.wikipedia.org/wiki/Knight_Rider_(1982_TV_series)?oldid=544395569
+
+ENTITY: http://dbpedia.org/resource/Baywatch
+   -> http://dbpedia.org/resource/Michael_Berk
+   -> http://dbpedia.org/resource/Action_(fiction)
+   -> http://dbpedia.org/resource/Hawaii
+   -> http://dbpedia.org/resource/Santa_Monica,_California
+   -> http://dbpedia.org/resource/NBC
+
+ENTITY: http://dbpedia.org/resource/Mike_Turner
+   -> http://turner.house.gov/
+   -> http://dbpedia.org/resource/Case_Western_Reserve_University
+   -> http://dbpedia.org/resource/Dayton,_Ohio
+   -> http://en.wikipedia.org/wiki/Mike_Turner?oldid=548318013
+   -> http://upload.wikimedia.org/wikipedia/commons/a/ac/Mike_Turner,_Official_Portrait,_c112th_Congress.jpg
+
+ENTITY: http://dbpedia.org/resource/Joe_Biden
+   -> http://dbpedia.org/resource/Lawyer
+   -> http://dbpedia.org/resource/Joe_Biden__6
+   -> http://dbpedia.org/resource/Democratic_Party_(United_States)
+   -> http://dbpedia.org/resource/Scranton,_Pennsylvania
+   -> http://dbpedia.org/resource/Jill_Biden
+
+ENTITY: http://dbpedia.org/resource/Bill_Gates
+   -> http://dbpedia.org/resource/Harvard_University
+   -> http://dbpedia.org/resource/Microsoft
+   -> http://dbpedia.org/resource/List_of_billionaires
+   -> http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/BillGates2012.jpg/200px-BillGates2012.jpg
+   -> http://en.wikipedia.org/wiki/Bill_Gates

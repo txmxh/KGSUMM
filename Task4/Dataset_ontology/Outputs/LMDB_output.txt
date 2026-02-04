@@ -1,11 +1,348 @@
 --- SUMMARY OUTPUT FOR LMDB ---
 
-ENTITY: 120
+ENTITY: http://data.linkedmdb.org/resource/film/7348
+   -> 1983
+   -> Bill: On His Own
+   -> http://data.linkedmdb.org/resource/movie/film
+   -> http://data.linkedmdb.org/resource/performance/4367
+   -> http://data.linkedmdb.org/resource/actor/30837
 
-ENTITY: 114
+ENTITY: http://data.linkedmdb.org/resource/director/8669
+   -> http://data.linkedmdb.org/resource/film/64122
+   -> 8669
+   -> Ringo Lam
+   -> Ringo Lam (Director)
+   -> http://www.freebase.com/view/guid/9202a8c04000641f80000000000ac6c9
 
-ENTITY: 136
+ENTITY: http://data.linkedmdb.org/resource/film/6213
+   -> 6213
+   -> http://data.linkedmdb.org/resource/performance/31803
+   -> http://data.linkedmdb.org/resource/producer/11068
+   -> http://data.linkedmdb.org/resource/music_contributor/4082
+   -> http://data.linkedmdb.org/resource/film_cut/6866
+
+ENTITY: http://data.linkedmdb.org/resource/film/2572
+   -> http://data.linkedmdb.org/resource/actor/47098
+   -> http://data.linkedmdb.org/resource/director/9690
+   -> 2002-01-11
+   -> http://data.linkedmdb.org/resource/actor/29669
+   -> http://data.linkedmdb.org/resource/film_cut/867
+
+ENTITY: http://data.linkedmdb.org/resource/actor/29369
+   -> http://xmlns.com/foaf/0.1/Person
+   -> http://data.linkedmdb.org/resource/performance/108170
+   -> http://data.linkedmdb.org/resource/performance/130707
+   -> Arnold Schwarzenegger (Actor)
+   -> http://data.linkedmdb.org/resource/movie/actor
 
 ENTITY: 108
 
+ENTITY: http://data.linkedmdb.org/resource/actor/36141
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Francis Ng
+   -> http://www.freebase.com/view/guid/9202a8c04000641f80000000004d578b
+   -> 36141
+   -> Francis Ng (Actor)
+
+ENTITY: 100
+
+ENTITY: http://data.linkedmdb.org/resource/actor/32500
+   -> Byron Long (Actor)
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> http://www.freebase.com/view/guid/9202a8c04000641f800000000026d739
+   -> Byron Long
+   -> 32500
+
+ENTITY: http://data.linkedmdb.org/resource/film/1338
+   -> http://data.linkedmdb.org/resource/film_genre/31
+   -> http://data.linkedmdb.org/resource/movie/film
+   -> 1998-10-23
+   -> Soldier
+   -> http://data.linkedmdb.org/resource/producer/612
+
 ENTITY: 109
+
+ENTITY: 91
+
+ENTITY: 92
+
+ENTITY: 120
+
+ENTITY: http://data.linkedmdb.org/resource/film/14438
+   -> http://data.linkedmdb.org/resource/movie/film
+   -> http://data.linkedmdb.org/resource/director/10044
+   -> http://data.linkedmdb.org/resource/actor/31101
+   -> http://data.linkedmdb.org/resource/actor/33082
+   -> http://data.linkedmdb.org/resource/actor/32040
+
+ENTITY: http://data.linkedmdb.org/resource/actor/30598
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Tom Courtenay (Actor)
+   -> 30598
+   -> http://www.freebase.com/view/guid/9202a8c04000641f800000000012d8fa
+   -> http://data.linkedmdb.org/resource/performance/74228
+
+ENTITY: http://data.linkedmdb.org/resource/film/70866
+   -> http://data.linkedmdb.org/resource/production_company/368
+   -> 2006
+   -> http://data.linkedmdb.org/resource/director/812
+   -> http://data.linkedmdb.org/resource/actor/59936
+   -> http://data.linkedmdb.org/resource/actor/60322
+
+ENTITY: http://data.linkedmdb.org/resource/film/41573
+   -> http://data.linkedmdb.org/resource/director/9077
+   -> 1954
+   -> Broken Lance
+   -> http://www.freebase.com/view/guid/9202a8c04000641f8000000000567f08
+   -> http://data.linkedmdb.org/resource/editor/1708
+
+ENTITY: http://data.linkedmdb.org/resource/actor/30569
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> http://data.linkedmdb.org/resource/performance/20716
+   -> Elsa Lanchester
+   -> Elsa Lanchester (Actor)
+   -> http://www.freebase.com/view/guid/9202a8c04000641f800000000012b866
+
+ENTITY: 99
+
+ENTITY: 88
+
+ENTITY: http://data.linkedmdb.org/resource/director/416
+   -> http://data.linkedmdb.org/resource/movie/director
+   -> http://data.linkedmdb.org/resource/film/55669
+   -> http://data.linkedmdb.org/resource/film/8672
+   -> http://data.linkedmdb.org/resource/film/66469
+   -> http://data.linkedmdb.org/resource/film/44849
+
+ENTITY: http://data.linkedmdb.org/resource/actor/52869
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Sara Berner
+   -> http://data.linkedmdb.org/resource/performance/145337
+   -> http://www.freebase.com/view/guid/9202a8c04000641f8000000006b4f1f3
+   -> Sara Berner (Actor)
+
+ENTITY: http://data.linkedmdb.org/resource/film/14299
+   -> Briana Loves Jenna
+   -> 14299
+   -> http://data.linkedmdb.org/resource/performance/70953
+   -> http://data.linkedmdb.org/resource/performance/55464
+   -> 2001,2001-11-27
+
+ENTITY: http://data.linkedmdb.org/resource/actor/31707
+   -> http://data.linkedmdb.org/resource/performance/37390
+   -> Margaret Colin
+   -> Margaret Colin (Actor)
+   -> 31707
+   -> http://data.linkedmdb.org/resource/movie/actor
+
+ENTITY: http://data.linkedmdb.org/resource/film/4501
+   -> 1994-07-09
+   -> http://data.linkedmdb.org/resource/performance/4415
+   -> http://data.linkedmdb.org/resource/performance/4412
+   -> http://data.linkedmdb.org/resource/movie/film
+   -> http://data.linkedmdb.org/resource/actor/1545
+
+ENTITY: http://data.linkedmdb.org/resource/film/49
+   -> http://data.linkedmdb.org/resource/director/43
+   -> http://data.linkedmdb.org/resource/editor/30
+   -> 1927,1927-04-29
+   -> http://www.freebase.com/view/guid/9202a8c04000641f80000000000560b5
+   -> http://data.linkedmdb.org/resource/producer/37
+
+ENTITY: http://data.linkedmdb.org/resource/film/41408
+   -> http://data.linkedmdb.org/resource/actor/33562
+   -> http://data.linkedmdb.org/resource/movie/film
+   -> http://data.linkedmdb.org/resource/director/8475
+   -> 41408
+   -> http://data.linkedmdb.org/resource/actor/32009
+
+ENTITY: http://data.linkedmdb.org/resource/film/6468
+   -> http://data.linkedmdb.org/resource/director/11328
+   -> http://data.linkedmdb.org/resource/movie/film
+   -> Magnum, P.I.
+   -> http://www.rottentomatoes.com/alias?type=imdbid&s=0756681
+   -> http://data.linkedmdb.org/resource/writer/17242
+
+ENTITY: http://data.linkedmdb.org/resource/actor/38225
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Dante Basco (Actor)
+   -> http://www.freebase.com/view/guid/9202a8c04000641f8000000000646474
+   -> Dante Basco
+   -> 38225
+
+ENTITY: 64
+
+ENTITY: http://data.linkedmdb.org/resource/actor/33137
+   -> http://www.freebase.com/view/guid/9202a8c04000641f80000000002dddf0
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Maurice LaMarche (Actor)
+   -> 
+   -> 33137
+
+ENTITY: 136
+
+ENTITY: 49
+
+ENTITY: 50
+
+ENTITY: http://data.linkedmdb.org/resource/director/10846
+   -> http://data.linkedmdb.org/resource/film/84412
+   -> http://xmlns.com/foaf/0.1/Person
+   -> http://www.freebase.com/view/guid/9202a8c04000641f800000000073a82c
+   -> http://data.linkedmdb.org/resource/movie/director
+   -> http://data.linkedmdb.org/resource/film/85570
+
+ENTITY: http://data.linkedmdb.org/resource/actor/47469
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Alice Braga (Actor)
+   -> http://www.freebase.com/view/guid/9202a8c04000641f8000000000dc5776
+   -> Alice Braga
+   -> http://data.linkedmdb.org/resource/performance/59117
+
+ENTITY: http://data.linkedmdb.org/resource/actor/38875
+   -> http://data.linkedmdb.org/resource/performance/42430
+   -> http://data.linkedmdb.org/resource/performance/4330
+   -> http://data.linkedmdb.org/resource/performance/114242
+   -> 
+   -> http://data.linkedmdb.org/resource/performance/103177
+
+ENTITY: http://data.linkedmdb.org/resource/film/2108
+   -> http://data.linkedmdb.org/resource/director/1193
+   -> http://www.lingvoj.org/lingvo/en
+   -> http://data.linkedmdb.org/resource/producer/14177
+   -> http://data.linkedmdb.org/resource/performance/9657
+   -> http://data.linkedmdb.org/resource/performance/70982
+
+ENTITY: http://data.linkedmdb.org/resource/film/44555
+   -> http://data.linkedmdb.org/resource/actor/39854
+   -> http://data.linkedmdb.org/resource/director/1723
+   -> http://data.linkedmdb.org/resource/performance/18188
+   -> http://data.linkedmdb.org/resource/performance/87999
+   -> http://data.linkedmdb.org/resource/performance/85656
+
+ENTITY: http://data.linkedmdb.org/resource/actor/34577
+   -> http://www.freebase.com/view/guid/9202a8c04000641f80000000003be85d
+   -> http://data.linkedmdb.org/resource/performance/178186
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> http://xmlns.com/foaf/0.1/Person
+   -> 34577
+
+ENTITY: http://data.linkedmdb.org/resource/film/12398
+   -> http://data.linkedmdb.org/resource/film_genre/4
+   -> http://data.linkedmdb.org/resource/director/82
+   -> http://data.linkedmdb.org/resource/actor/728
+   -> http://data.linkedmdb.org/resource/actor/61226
+   -> http://data.linkedmdb.org/resource/actor/44076
+
+ENTITY: 85
+
+ENTITY: 114
+
+ENTITY: http://data.linkedmdb.org/resource/director/14418
+   -> Mack V. Wright
+   -> http://data.linkedmdb.org/resource/movie/director
+   -> http://data.linkedmdb.org/resource/film/45182
+   -> http://data.linkedmdb.org/resource/film/24459
+   -> http://xmlns.com/foaf/0.1/Person
+
+ENTITY: http://data.linkedmdb.org/resource/director/8424
+   -> http://data.linkedmdb.org/resource/film/72
+   -> http://data.linkedmdb.org/resource/movie/director
+   -> http://data.linkedmdb.org/resource/film/556
+   -> James Cameron (Director)
+   -> http://data.linkedmdb.org/resource/film/38151
+
+ENTITY: http://data.linkedmdb.org/resource/actor/32648
+   -> Tomokazu Seki
+   -> http://data.linkedmdb.org/resource/performance/132536
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> http://data.linkedmdb.org/resource/performance/127572
+   -> http://www.freebase.com/view/guid/9202a8c04000641f800000000028c1a8
+
+ENTITY: http://data.linkedmdb.org/resource/film/7963
+   -> http://www.imdb.com/title/tt0758789
+   -> http://data.linkedmdb.org/resource/editor/1709
+   -> http://data.linkedmdb.org/resource/director/11682
+   -> The Aftermath
+   -> http://data.linkedmdb.org/resource/performance/29133
+
+ENTITY: http://data.linkedmdb.org/resource/actor/67878
+   -> Devyn Foster (Actor)
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> http://xmlns.com/foaf/0.1/Person
+   -> Devyn Foster
+   -> http://data.linkedmdb.org/resource/performance/190526
+
+ENTITY: http://data.linkedmdb.org/resource/film/2381
+   -> http://data.linkedmdb.org/resource/director/13237
+   -> http://data.linkedmdb.org/resource/actor/36799
+   -> 1965
+   -> http://data.linkedmdb.org/resource/film_subject/375
+   -> http://data.linkedmdb.org/resource/writer/13288
+
+ENTITY: http://data.linkedmdb.org/resource/actor/62725
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Rod Daily (Actor)
+   -> 62725
+   -> http://data.linkedmdb.org/resource/performance/158778
+   -> Rod Daily
+
+ENTITY: http://data.linkedmdb.org/resource/actor/47032
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Columbus Short (Actor)
+   -> http://www.freebase.com/view/guid/9202a8c04000641f8000000000d56ae3
+   -> Columbus Short
+   -> http://data.linkedmdb.org/resource/performance/45160
+
+ENTITY: http://data.linkedmdb.org/resource/actor/39725
+   -> Tom Hollander (Actor)
+   -> http://www.freebase.com/view/guid/9202a8c04000641f800000000072977e
+   -> http://data.linkedmdb.org/resource/movie/actor
+   -> Tom Hollander
+   -> http://data.linkedmdb.org/resource/performance/85137
+
+ENTITY: http://data.linkedmdb.org/resource/film/5232
+   -> 1942-10-23
+   -> http://data.linkedmdb.org/resource/actor/36482
+   -> The Mummy's Tomb
+   -> 5232
+   -> http://data.linkedmdb.org/resource/production_company/30
+
+ENTITY: http://data.linkedmdb.org/resource/actor/30423
+   -> http://data.linkedmdb.org/resource/performance/49737
+   -> http://data.linkedmdb.org/resource/performance/11653
+   -> http://data.linkedmdb.org/resource/performance/41087
+   -> 30423
+   -> http://data.linkedmdb.org/resource/performance/16031
+
+ENTITY: http://data.linkedmdb.org/resource/film/12710
+   -> http://data.linkedmdb.org/resource/performance/70367
+   -> Megaville
+   -> http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Megaville
+   -> http://data.linkedmdb.org/resource/actor/10117
+   -> http://data.linkedmdb.org/resource/actor/589
+
+ENTITY: http://data.linkedmdb.org/resource/director/10100
+   -> http://data.linkedmdb.org/resource/film/12281
+   -> http://data.linkedmdb.org/resource/film/63785
+   -> http://data.linkedmdb.org/resource/film/40146
+   -> http://data.linkedmdb.org/resource/film/1159
+   -> http://www.freebase.com/view/guid/9202a8c04000641f8000000000535fbd
+
+ENTITY: http://data.linkedmdb.org/resource/film/5089
+   -> http://data.linkedmdb.org/resource/producer/10678
+   -> http://data.linkedmdb.org/resource/director/13995
+   -> http://data.linkedmdb.org/resource/country/AU
+   -> http://data.linkedmdb.org/resource/music_contributor/4984
+   -> 91
+
+ENTITY: http://data.linkedmdb.org/resource/film/16986
+   -> http://data.linkedmdb.org/resource/movie/film
+   -> http://data.linkedmdb.org/resource/director/8590
+   -> http://data.linkedmdb.org/resource/producer/11463
+   -> http://data.linkedmdb.org/resource/writer/14754
+   -> http://www.rottentomatoes.com/alias?type=imdbid&s=0048954/
+
+ENTITY: 61
+
+ENTITY: 95

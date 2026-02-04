@@ -1,13 +1,852 @@
 --- SUMMARY OUTPUT FOR DBpedia ---
 
-ENTITY: 7
+ENTITY: http://dbpedia.org/resource/Sketchy_EP_1
+   -> http://dbpedia.org/resource/Acoustic_music
+   -> http://dbpedia.org/ontology/Work
+   -> http://dbpedia.org/ontology/Album
+   -> http://dbpedia.org/resource/Jonah_Matranga
+   -> Sketchy EP #1
 
-ENTITY: 68
+ENTITY: http://dbpedia.org/resource/Schistura_jarutanini
+   -> http://dbpedia.org/resource/Nemacheilidae
+   -> Schistura jarutanini
+   -> http://dbpedia.org/resource/Category:Fish_of_Thailand
+   -> http://dbpedia.org/resource/Actinopterygii
+   -> http://dbpedia.org/ontology/Fish
 
-ENTITY: 13
+ENTITY: http://dbpedia.org/resource/Andrew_Kippis
+   -> http://dbpedia.org/class/yago/FellowsOfTheRoyalSociety
+   -> http://dbpedia.org/resource/Category:People_from_Nottingham
+   -> http://dbpedia.org/class/yago/EnglishChristianMinisters
+   -> British minister
+   -> http://dbpedia.org/resource/Category:Fellows_of_the_Royal_Society
 
-ENTITY: 36
+ENTITY: http://dbpedia.org/resource/2013_Slovak_Cup_Final
+   -> http://dbpedia.org/resource/MŠK_Žilina
+   -> http://dbpedia.org/resource/Ružomberok
+   -> http://dbpedia.org/resource/Štadión_pod_Čebraťom
+   -> http://dbpedia.org/resource/ŠK_Slovan_Bratislava
+   -> 2013-05-01
+
+ENTITY: http://dbpedia.org/resource/Lucy_Ward_(musician)
+   -> 1989
+   -> http://dbpedia.org/resource/Category:English_singer-songwriters
+   -> http://dbpedia.org/resource/Folk_music
+   -> http://dbpedia.org/resource/Derbyshire
+   -> 1989-12-12
+
+ENTITY: http://dbpedia.org/resource/Fabrice_Gautrat
+   -> http://dbpedia.org/resource/Atlanta_Silverbacks
+   -> http://dbpedia.org/resource/Defender_(association_football)
+   -> http://dbpedia.org/resource/Category:United_Soccer_League_players
+   -> 5
+   -> 1987
+
+ENTITY: http://dbpedia.org/resource/Foppt_den_Dämon!
+   -> Foppt den Dämon!
+   -> http://www.w3.org/2002/07/owl#Thing
+   -> http://dbpedia.org/resource/Album
+   -> http://www.wikidata.org/entity/Q2188189
+   -> http://dbpedia.org/resource/Medieval_folk_rock
+
+ENTITY: http://dbpedia.org/resource/The_Crowd_Snores
+   -> http://dbpedia.org/resource/Walter_Lantz
+   -> http://dbpedia.org/resource/Pooch_the_Pup
+   -> http://dbpedia.org/resource/Category:Films_about_dogs
+   -> http://dbpedia.org/ontology/HollywoodCartoon
+   -> http://dbpedia.org/resource/Category:1932_animated_films
+
+ENTITY: http://dbpedia.org/resource/The_Honolulu_Advertiser
+   -> http://dbpedia.org/resource/Honolulu
+   -> http://dbpedia.org/class/yago/Work104599396
+   -> http://dbpedia.org/resource/United_States
+   -> http://dbpedia.org/class/yago/Medium106254669
+   -> http://www.honoluluadvertiser.com
 
 ENTITY: 5
 
+ENTITY: http://dbpedia.org/resource/Enallagma_truncatum
+   -> http://dbpedia.org/ontology/Animal
+   -> http://dbpedia.org/ontology/Insect
+   -> http://www.w3.org/2002/07/owl#Thing
+   -> http://dbpedia.org/ontology/Eukaryote
+   -> http://dbpedia.org/ontology/Species
+
+ENTITY: http://dbpedia.org/resource/Balanites
+   -> http://dbpedia.org/resource/Flowering_plant
+   -> http://dbpedia.org/resource/Zygophyllaceae
+   -> http://dbpedia.org/ontology/Plant
+   -> http://dbpedia.org/ontology/Eukaryote
+   -> http://dbpedia.org/ontology/Species
+
+ENTITY: http://dbpedia.org/resource/Chitita
+   -> http://dbpedia.org/resource/Chile
+   -> http://dbpedia.org/ontology/Village
+   -> Chitita
+   -> http://dbpedia.org/resource/Category:Populated_places_in_Arica_Province
+   -> http://dbpedia.org/resource/Arica_y_Parinacota_Region
+
+ENTITY: http://dbpedia.org/resource/Richmond–Petersburg_Turnpike
+   -> http://www.wikidata.org/entity/Q34442
+   -> I
+   -> http://dbpedia.org/class/yago/TollRoadsInVirginia
+   -> 56327.04
+   -> http://dbpedia.org/resource/Category:Former_toll_roads_in_Virginia
+
+ENTITY: http://dbpedia.org/resource/Sauxillanges
+   -> 24900000.0
+   -> http://dbpedia.org/ontology/PopulatedPlace
+   -> Sauxillanges
+   -> http://dbpedia.org/resource/France
+   -> 1151
+
+ENTITY: http://dbpedia.org/resource/Battle_on_the_Elster
+   -> http://dbpedia.org/resource/Category:Battles_involving_Bohemia
+   -> http://dbpedia.org/resource/Category:Battles_involving_the_Holy_Roman_Empire
+   -> Military victory for Rudolf, political victory for Henry
+   -> 1080-10-14
+   -> http://dbpedia.org/resource/Category:Battles_involving_Saxony
+
+ENTITY: http://dbpedia.org/resource/You_Better_Run
+   -> http://dbpedia.org/resource/Pat_Benatar
+   -> http://dbpedia.org/ontology/Single
+   -> You Better Run
+   -> http://dbpedia.org/resource/The_Rascals
+   -> http://dbpedia.org/class/yago/TheRascalsSongs
+
+ENTITY: http://dbpedia.org/resource/Battle_of_Sampur
+   -> 33 killed (SLA claim)
+   -> 18pxMilitary of Sri Lanka
+   -> http://dbpedia.org/resource/Sri_Lankan_Civil_War
+   -> http://dbpedia.org/resource/Category:Conflicts_in_2006
+   -> http://dbpedia.org/ontology/MilitaryConflict
+
+ENTITY: http://dbpedia.org/resource/Yayoidai_Station
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Sagami-railway-izumino-line-Yayoidai-station-south-entrance.jpg?width=300
+   -> http://dbpedia.org/resource/Category:Railway_stations_in_Yokohama
+   -> 5-2 Yayoidai
+   -> http://dbpedia.org/resource/Sagami_Railway
+   -> http://dbpedia.org/resource/Sagami_Railway_Izumino_Line
+
+ENTITY: http://dbpedia.org/resource/It's_Still_Rock_and_Roll_to_Me
+   -> It's Still Rock and Roll to Me
+   -> Platinum (RIAA)
+   -> http://dbpedia.org/resource/Phil_Ramone
+   -> http://dbpedia.org/resource/Billy_Joel
+   -> http://dbpedia.org/resource/Rock_music
+
+ENTITY: http://dbpedia.org/resource/Fleckistock
+   -> http://dbpedia.org/class/yago/NaturalElevation109366317
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Sustenhorn.b.Oct.2010.JPG
+   -> http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+   -> 46.70736
+   -> 761.0
+
+ENTITY: http://dbpedia.org/resource/E._K._Mawlong
+   -> E.K. Mawlong
+   -> http://dbpedia.org/resource/Category:Chief_Ministers_of_Meghalaya
+   -> 1946-02-01
+   -> 1946
+   -> http://schema.org/Person
+
+ENTITY: http://dbpedia.org/resource/Kings_Ripton
+   -> http://www.wikidata.org/entity/Q486972
+   -> http://dbpedia.org/resource/Category:Huntingdonshire
+   -> http://dbpedia.org/resource/Category:Villages_in_Cambridgeshire
+   -> http://dbpedia.org/resource/United_Kingdom
+   -> http://dbpedia.org/class/yago/Village108672738
+
+ENTITY: http://dbpedia.org/resource/Sting_Me
+   -> http://www.wikidata.org/entity/Q2188189
+   -> http://dbpedia.org/resource/Category:Songs_written_by_Chris_Robinson_(singer)
+   -> http://dbpedia.org/class/yago/BillboardHotMainstreamRockTracksNumber-oneSingles
+   -> http://dbpedia.org/resource/Blues_rock
+   -> http://dbpedia.org/resource/The_Southern_Harmony_and_Musical_Companion
+
+ENTITY: http://dbpedia.org/resource/Hiroshi_Mori_(writer)
+   -> http://dbpedia.org/resource/Mystery_fiction
+   -> http://dbpedia.org/class/yago/JapaneseNovelists
+   -> http://dbpedia.org/class/yago/PeopleFromAichiPrefecture
+   -> http://dbpedia.org/class/yago/JapaneseMysteryWriters
+   -> http://dbpedia.org/resource/Ellery_Queen
+
+ENTITY: http://dbpedia.org/resource/392_(album)
+   -> 392
+   -> 2011-09-01
+   -> http://dbpedia.org/resource/Japanese_language
+   -> http://dbpedia.org/resource/CNBLUE
+   -> http://dbpedia.org/ontology/Album
+
+ENTITY: 168
+
+ENTITY: http://dbpedia.org/resource/Stemonoporus_laevifolius
+   -> http://dbpedia.org/resource/Eudicots
+   -> http://dbpedia.org/ontology/Plant
+   -> http://dbpedia.org/resource/Malvales
+   -> http://dbpedia.org/resource/Plant
+   -> http://dbpedia.org/resource/Stemonoporus
+
+ENTITY: http://dbpedia.org/resource/2009–10_Swiss_Cup
+   -> 19:00 CET
+   -> 16:30 CEST
+   -> http://dbpedia.org/resource/Category:2009–10_in_Swiss_football
+   -> http://dbpedia.org/resource/Category:Swiss_Cup
+   -> http://www.football.ch/sfv/chcup/de/start.aspx
+
+ENTITY: http://dbpedia.org/resource/If_(Glasvegas_song)
+   -> If
+   -> http://dbpedia.org/resource/Later...When_the_TV_Turns_to_Static
+   -> http://dbpedia.org/resource/James_Allan_(musician)
+   -> http://dbpedia.org/resource/Indie_rock
+   -> 2013-07-08
+
+ENTITY: http://dbpedia.org/resource/Wide_Awake_Drunk
+   -> http://dbpedia.org/resource/Atlanta
+   -> http://dbpedia.org/resource/Greg_Connors
+   -> http://dbpedia.org/resource/Indie_folk
+   -> http://www.wikidata.org/entity/Q2188189
+   -> http://dbpedia.org/resource/Fluke_EP
+
+ENTITY: http://dbpedia.org/resource/Battle_of_Bregalnica
+   -> http://dbpedia.org/ontology/MilitaryConflict
+   -> 1913-07-08
+   -> Battle of Bregalnica
+   -> Serbian victory
+   -> http://dbpedia.org/class/yago/BattlesOfTheSecondBalkanWar
+
+ENTITY: http://dbpedia.org/resource/Juhan_Muks
+   -> Muks, Juhan
+   -> http://dbpedia.org/resource/Category:1899_births
+   -> http://schema.org/Person
+   -> http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson
+   -> 1899
+
+ENTITY: http://dbpedia.org/resource/2011_Sparta_Prague_Open
+   -> 2011 Sparta Prague Open
+   -> http://www.wikidata.org/entity/Q13219666
+   -> http://dbpedia.org/ontology/TennisTournament
+   -> http://dbpedia.org/resource/Magdaléna_Rybáriková
+   -> 100000.0
+
+ENTITY: http://dbpedia.org/resource/Pseudanos_trimaculatus
+   -> http://dbpedia.org/ontology/Eukaryote
+   -> http://dbpedia.org/resource/Category:Fish_of_Peru
+   -> http://dbpedia.org/resource/Characiformes
+   -> http://dbpedia.org/resource/Animal
+   -> http://dbpedia.org/resource/Chordate
+
+ENTITY: http://dbpedia.org/resource/William_Anthony_Hughes
+   -> 1921-09-23
+   -> Prelateof theRoman Catholic Church
+   -> William Anthony Hughes
+   -> 1921
+   -> William Anthony
+
+ENTITY: http://dbpedia.org/resource/Pe_Maung_Tin
+   -> http://dbpedia.org/resource/Mon_people
+   -> http://dbpedia.org/resource/Bamar_people
+   -> http://dbpedia.org/resource/Yangon_Region
+   -> Ba Tin
+   -> http://dbpedia.org/class/yago/Scholar110557854
+
+ENTITY: http://dbpedia.org/resource/Darreh_Dang
+   -> http://dbpedia.org/resource/Iran
+   -> Darreh Dang
+   -> http://dbpedia.org/ontology/Location
+   -> http://dbpedia.org/ontology/Village
+   -> http://dbpedia.org/resource/Lorestan_Province
+
+ENTITY: http://dbpedia.org/resource/2008_Copa_del_Rey_Final
+   -> http://dbpedia.org/resource/Getafe_CF
+   -> 2008 Copa del Rey Final
+   -> 2008-04-16
+   -> http://dbpedia.org/resource/Valencia_CF
+   -> http://dbpedia.org/ontology/FootballMatch
+
+ENTITY: http://dbpedia.org/resource/Simon_(2004_film)
+   -> http://schema.org/Movie
+   -> Simon (2004 film)
+   -> http://dbpedia.org/resource/Cees_Geel
+   -> http://dbpedia.org/resource/Marcel_Hensema
+   -> http://dbpedia.org/resource/Eddy_Terstall
+
+ENTITY: http://dbpedia.org/resource/Nemapogon_nigralbella
+   -> http://dbpedia.org/resource/Category:Moths_described_in_1859
+   -> Nemapogon nigralbella
+   -> http://dbpedia.org/resource/Nemapogon
+   -> http://dbpedia.org/ontology/Insect
+   -> http://dbpedia.org/resource/Tineidae
+
+ENTITY: http://dbpedia.org/resource/Convoy_HX_156
+   -> 52 merchant ships
+   -> 25pxGermany
+   -> 25pxUnited Kingdom
+   -> http://dbpedia.org/resource/Admiral
+   -> http://dbpedia.org/ontology/MilitaryConflict
+
+ENTITY: http://dbpedia.org/resource/Drama_City
+   -> http://dbpedia.org/resource/Korean_language
+   -> http://dbpedia.org/resource/Lee_Min-ki
+   -> http://dbpedia.org/resource/Lee_Pil-mo
+   -> http://dbpedia.org/resource/South_Korea
+   -> http://dbpedia.org/resource/Kim_Ji-woo
+
+ENTITY: http://dbpedia.org/resource/Inverted_repeat-lacking_clade
+   -> *Temperate herbaceous clade
+   -> http://dbpedia.org/resource/Faboideae
+   -> http://dbpedia.org/resource/Plant
+   -> http://dbpedia.org/ontology/Plant
+   -> http://dbpedia.org/resource/Eudicots
+
+ENTITY: http://dbpedia.org/resource/Muławki
+   -> http://dbpedia.org/resource/Warmian-Masurian_Voivodeship
+   -> http://dbpedia.org/resource/Poland
+   -> 21.33639
+   -> http://dbpedia.org/resource/Village
+   -> 54.051945
+
+ENTITY: http://dbpedia.org/resource/Cindy_Mackey
+   -> http://www.wikidata.org/entity/Q13156709
+   -> http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+   -> 1961-04-02
+   -> 1961
+   -> http://dbpedia.org/resource/Category:Georgia_Bulldogs_women's_golfers
+
+ENTITY: http://dbpedia.org/resource/Silence_Is_Easy_(song)
+   -> http://dbpedia.org/resource/Silence_Is_Easy
+   -> http://dbpedia.org/resource/Starsailor_(band)
+   -> http://dbpedia.org/resource/Phil_Spector
+   -> http://dbpedia.org/resource/Alternative_rock
+   -> http://dbpedia.org/ontology/MusicalWork
+
+ENTITY: 113
+
+ENTITY: http://dbpedia.org/resource/Burgery_ambush
+   -> http://dbpedia.org/resource/Dungarvan
+   -> Royal Irish Constabulary
+   -> http://dbpedia.org/resource/Irish_War_of_Independence
+   -> 2 dead
+   -> http://dbpedia.org/resource/County_Waterford
+
+ENTITY: http://dbpedia.org/resource/Gonyosoma_hodgsoni
+   -> http://dbpedia.org/resource/Gonyosoma
+   -> http://dbpedia.org/ontology/Species
+   -> http://dbpedia.org/class/yago/Reptile101661091
+   -> http://www.wikidata.org/entity/Q729
+   -> http://dbpedia.org/resource/Animal
+
+ENTITY: http://dbpedia.org/resource/Bornean_mountain_ground_squirrel
+   -> http://dbpedia.org/resource/Squirrel
+   -> http://dbpedia.org/resource/Red-cheeked_squirrel
+   -> http://dbpedia.org/resource/Oldfield_Thomas
+   -> Bornean Mountain Ground Squirrel
+   -> http://dbpedia.org/ontology/Mammal
+
+ENTITY: http://dbpedia.org/resource/Touch_of_Death_(1961_film)
+   -> http://dbpedia.org/ontology/Film
+   -> http://dbpedia.org/resource/William_Lucas_(actor)
+   -> http://dbpedia.org/resource/Lance_Comfort
+   -> http://dbpedia.org/resource/United_Kingdom
+   -> http://dbpedia.org/resource/Johnny_Douglas_(conductor)
+
+ENTITY: http://dbpedia.org/resource/Intensive_Care_Medicine_(journal)
+   -> 1975
+   -> Intensive Care Medicine (journal)
+   -> Monthly
+   -> http://dbpedia.org/resource/Springer_Science+Business_Media
+   -> http://dbpedia.org/ontology/AcademicJournal
+
+ENTITY: http://dbpedia.org/resource/Eastern_Sumatran_rhinoceros
+   -> http://dbpedia.org/resource/Category:Mammals_of_Malaysia
+   -> http://dbpedia.org/resource/Rhinoceros
+   -> EW
+   -> Eastern Sumatran rhinoceros
+   -> iucn3.1
+
+ENTITY: http://dbpedia.org/resource/Battle_of_Rottofreddo
+   -> http://dbpedia.org/resource/Category:1746_in_Italy
+   -> http://dbpedia.org/resource/Italy
+   -> http://dbpedia.org/resource/Rottofreno
+   -> http://dbpedia.org/resource/Category:Conflicts_in_1746
+   -> http://dbpedia.org/resource/Jean-Baptiste_Francois_des_Marets,_marquis_de_Maillebois
+
+ENTITY: http://dbpedia.org/resource/Adrian_Griffin
+   -> American basketball player-coach
+   -> http://dbpedia.org/resource/Orlando_Magic
+   -> 2008
+   -> 1974
+   -> 1996
+
+ENTITY: http://dbpedia.org/resource/Tchonoro
+   -> http://dbpedia.org/resource/Kachin_State
+   -> http://www.wikidata.org/entity/Q486972
+   -> 1.2666667
+   -> http://dbpedia.org/resource/Coordinated_Universal_Time
+   -> http://dbpedia.org/class/yago/GeographicalArea108574314
+
+ENTITY: http://dbpedia.org/resource/1967_Italian_Grand_Prix
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Monza_1957.jpg
+   -> http://dbpedia.org/resource/Autodromo_Nazionale_Monza
+   -> 68
+   -> http://dbpedia.org/ontology/SportsEvent
+   -> 1967 Italian Grand Prix
+
+ENTITY: http://dbpedia.org/resource/Uelsby
+   -> 10600000.0
+   -> 461
+   -> http://dbpedia.org/ontology/Settlement
+   -> http://www.amt-suedangeln.de/
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Uelsby_Wappen.png
+
+ENTITY: http://dbpedia.org/resource/Operation_Hump
+   -> http://dbpedia.org/resource/Category:Battles_of_the_Vietnam_War_involving_the_United_States
+   -> http://dbpedia.org/resource/Category:Battles_of_the_Vietnam_War_involving_New_Zealand
+   -> http://dbpedia.org/resource/Category:Battles_of_the_Vietnam_War_involving_Australia
+   -> Total Force around 400
+   -> 1965-11-08
+
+ENTITY: 68
+
+ENTITY: http://dbpedia.org/resource/Stara_Bučka
+   -> http://dbpedia.org/ontology/Settlement
+   -> 45.9213 15.306447222222221
+   -> http://dbpedia.org/resource/Municipality_of_Škocjan
+   -> 262.2
+   -> http://dbpedia.org/resource/Southeast_Slovenia_Statistical_Region
+
+ENTITY: 101
+
+ENTITY: http://dbpedia.org/resource/Trichoscypha_cavalliensis
+   -> http://dbpedia.org/resource/Plant
+   -> http://dbpedia.org/resource/Anacardiaceae
+   -> http://dbpedia.org/resource/Flowering_plant
+   -> Trichoscypha cavalliensis
+   -> http://dbpedia.org/resource/Eudicots
+
+ENTITY: http://dbpedia.org/resource/Najmadin_Shukr_Rauf
+   -> http://dbpedia.org/resource/Category:Iraqi_Kurdish_people
+   -> http://dbpedia.org/resource/Ba'athist_Iraq
+   -> 1985
+   -> http://dbpedia.org/resource/Kirkuk_Governorate
+   -> http://dbpedia.org/resource/Category:Kurdish_guerrillas
+
+ENTITY: http://dbpedia.org/resource/Time_(Dave_Clark_album)
+   -> http://dbpedia.org/ontology/Album
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/-_The_Album_1986.jpg
+   -> Time (Dave Clark album)
+   -> http://dbpedia.org/resource/Pop_rock
+   -> http://dbpedia.org/resource/Capitol_Records
+
+ENTITY: http://dbpedia.org/resource/Ludwigsburg_University
+   -> Pädagogische Hochschule Ludwigsburg (Ludwigsburg University of Education)
+   -> http://www.ph-ludwigsburg.de/
+   -> Ludwigsburg University
+   -> http://dbpedia.org/resource/Category:Universities_and_colleges_in_Baden-Württemberg
+   -> http://dbpedia.org/resource/Ludwigsburg
+
+ENTITY: http://dbpedia.org/resource/Edmund_Smith_Conklin
+   -> 1942-10-06
+   -> http://dbpedia.org/resource/Category:Clark_University_alumni
+   -> 1884-04-19
+   -> Conklin
+   -> http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson
+
+ENTITY: http://dbpedia.org/resource/Roque_Ceruti
+   -> http://dbpedia.org/resource/Category:18th-century_classical_composers
+   -> http://dbpedia.org/resource/Category:Italian_male_composers
+   -> Roque Ceruti
+   -> http://dbpedia.org/resource/Category:Italian_classical_composers
+   -> http://dbpedia.org/resource/Category:Baroque_composers
+
+ENTITY: http://dbpedia.org/resource/Hilarographa_excellens
+   -> http://dbpedia.org/resource/Hilarographa
+   -> http://dbpedia.org/resource/Tortricidae
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/03-Thaumatographa_excellens_Pagenstecher,_1900.JPG
+   -> http://dbpedia.org/resource/Insect
+   -> http://dbpedia.org/resource/Animal
+
+ENTITY: http://dbpedia.org/resource/2012–13_UEFA_Champions_League
+   -> 19:45BST
+   -> UEFA Champions League
+   -> http://dbpedia.org/ontology/SportsEvent
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Wembley_Stadium,_illuminated.jpg?width=300
+   -> http://dbpedia.org/resource/Category:UEFA_Champions_League_seasons
+
+ENTITY: http://dbpedia.org/resource/Kotumachagi
+   -> +5:30
+   -> http://dbpedia.org/class/yago/YagoGeoEntity
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/KotumachagiVillageTemple.jpg?width=300
+   -> 75.77102
+   -> http://dbpedia.org/class/yago/Village108672738
+
+ENTITY: http://dbpedia.org/resource/Ashot_I_of_Iberia
+   -> http://dbpedia.org/resource/Adarnase_I_of_Tao-Klarjeti
+   -> http://dbpedia.org/ontology/Royalty
+   -> Ashot 01 Of Iberia
+   -> http://dbpedia.org/resource/Nigali_valley
+   -> 0830
+
+ENTITY: http://dbpedia.org/resource/Melaleuca_sheathiana
+   -> http://dbpedia.org/resource/Rosids
+   -> http://dbpedia.org/ontology/Eukaryote
+   -> http://dbpedia.org/resource/Myrtales
+   -> http://dbpedia.org/resource/Category:Flora_of_Western_Australia
+   -> http://dbpedia.org/ontology/Plant
+
+ENTITY: http://dbpedia.org/resource/Phong_Thạnh_Tây
+   -> Phong Thạnh Tây
+   -> http://dbpedia.org/resource/Vietnam
+   -> http://dbpedia.org/ontology/Village
+   -> http://dbpedia.org/resource/Bạc_Liêu_Province
+   -> http://dbpedia.org/resource/UTC+07:00
+
+ENTITY: http://dbpedia.org/resource/King_of_the_Mountain_(film)
+   -> http://dbpedia.org/resource/Noel_Nosseck
+   -> 1981-05-01
+   -> http://schema.org/Movie
+   -> http://dbpedia.org/resource/Jack_Frost_Sanders
+   -> 5400.0
+
+ENTITY: http://dbpedia.org/resource/Momchil_Tsvetanov
+   -> http://dbpedia.org/ontology/SoccerPlayer
+   -> http://dbpedia.org/resource/Midfielder
+   -> 1990-12-03
+   -> Momchil Emilov Tsvetanov
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Momchil_Cvetanov.JPG
+
+ENTITY: http://dbpedia.org/resource/Roderick_Carr
+   -> http://dbpedia.org/resource/Secretary_of_State_for_Transport
+   -> http://dbpedia.org/ontology/MilitaryPerson
+   -> Sir Charles Roderick Carr
+   -> 1971-12-15
+   -> 1891-08-31
+
+ENTITY: 7
+
+ENTITY: http://dbpedia.org/resource/A._Scott_Sloan
+   -> American politician
+   -> 1895
+   -> Sloan, Andrew Scott
+   -> Andrew Scott
+   -> http://dbpedia.org/resource/Beaver_Dam,_Wisconsin
+
+ENTITY: http://dbpedia.org/resource/Storme_Warren
+   -> Storme Warren
+   -> http://dbpedia.org/class/yago/YagoLegalActor
+   -> http://dbpedia.org/class/yago/Object100002684
+   -> http://dbpedia.org/resource/United_States
+   -> http://dbpedia.org/class/yago/PhysicalEntity100001930
+
+ENTITY: http://dbpedia.org/resource/African_grey_hornbill
+   -> http://dbpedia.org/resource/Tockus
+   -> http://dbpedia.org/resource/Hornbill
+   -> http://dbpedia.org/resource/Animal
+   -> http://dbpedia.org/resource/Bird
+   -> African grey hornbill
+
+ENTITY: http://dbpedia.org/resource/Battle_of_Zacatecas_(1914)
+   -> http://dbpedia.org/resource/Zacatecas
+   -> http://dbpedia.org/resource/Mexican_Revolution
+   -> 1914-06-23
+   -> over 20,000 (estimate)
+   -> 7,000-15,000 (most likely 12,000)
+
+ENTITY: http://dbpedia.org/resource/Jalalia,_Khyber_Pakhtunkhwa
+   -> Jalalia, Khyber Pakhtunkhwa
+   -> http://dbpedia.org/resource/Pakistan
+   -> http://dbpedia.org/resource/Category:Populated_places_in_Abbottabad_District
+   -> 73.06
+   -> http://dbpedia.org/resource/Khyber_Pakhtunkhwa
+
+ENTITY: http://dbpedia.org/resource/Wehlaberg
+   -> http://dbpedia.org/ontology/Place
+   -> http://dbpedia.org/resource/Germany
+   -> http://dbpedia.org/ontology/NaturalPlace
+   -> http://dbpedia.org/resource/Category:Hills_of_Brandenburg
+   -> http://schema.org/Mountain
+
+ENTITY: http://dbpedia.org/resource/Triathlon_at_the_2000_Summer_Olympics_–_Men's
+   -> http://dbpedia.org/resource/Triathlon_at_the_2004_Summer_Olympics_–_Men's
+   -> http://dbpedia.org/resource/Category:Triathlon_at_the_2000_Summer_Olympics
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Triathlon_pictogram.svg?width=300
+   -> http://dbpedia.org/resource/Simon_Whitfield
+   -> http://dbpedia.org/ontology/Olympics
+
+ENTITY: http://dbpedia.org/resource/Siamese_mud_carp
+   -> http://dbpedia.org/resource/Category:Fish_of_Cambodia
+   -> http://dbpedia.org/resource/Cyprinidae
+   -> http://www.wikidata.org/entity/Q152
+   -> http://dbpedia.org/resource/Category:Fish_of_the_Mekong_Basin
+   -> http://dbpedia.org/ontology/Eukaryote
+
+ENTITY: http://dbpedia.org/resource/Politiken
+   -> http://dbpedia.org/resource/Jyllands-Posten
+   -> http://dbpedia.org/resource/Danish_language
+   -> http://dbpedia.org/resource/JP/Politikens_Hus
+   -> http://dbpedia.org/ontology/Newspaper
+   -> http://politiken.dk/
+
+ENTITY: http://dbpedia.org/resource/Reamer_Barn
+   -> 1897
+   -> http://dbpedia.org/ontology/HistoricPlace
+   -> http://dbpedia.org/resource/Ohio_State_Route_511
+   -> Reamer Barn
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Reamer_Barn.jpg
+
+ENTITY: http://dbpedia.org/resource/Amphisbaena_ridleyi
+   -> http://dbpedia.org/ontology/Animal
+   -> http://dbpedia.org/resource/Squamata
+   -> http://dbpedia.org/resource/Vertebrate
+   -> http://dbpedia.org/resource/Amphisbaenia
+   -> http://dbpedia.org/resource/Amphisbaenidae
+
+ENTITY: http://dbpedia.org/resource/Saint-Raphaël,_Var
+   -> Saint-Raphaël, Var
+   -> 89590000.0
+   -> 43.4252
+   -> 560.0
+   -> 0.0
+
+ENTITY: http://dbpedia.org/resource/3WAY_FM
+   -> http://schema.org/RadioStation
+   -> http://dbpedia.org/resource/Victoria_(Australia)
+   -> http://dbpedia.org/resource/Warrnambool
+   -> 3WAY FM
+   -> http://dbpedia.org/resource/Community_radio
+
+ENTITY: http://dbpedia.org/resource/2013_Gulf_Cup_of_Nations
+   -> http://dbpedia.org/resource/Category:2012–13_in_Kuwaiti_football
+   -> http://dbpedia.org/resource/Category:2012–13_in_Saudi_Arabian_football
+   -> http://dbpedia.org/ontology/SportsEvent
+   -> http://dbpedia.org/resource/Category:2012–13_in_Omani_football
+   -> http://dbpedia.org/resource/Category:2012–13_in_Iraqi_football
+
+ENTITY: http://dbpedia.org/resource/Our_Leading_Citizen_(1939_film)
+   -> http://dbpedia.org/resource/Bob_Burns_(comedian)
+   -> http://dbpedia.org/resource/Susan_Hayward
+   -> Our Leading Citizen (1939 film)
+   -> http://dbpedia.org/ontology/Film
+   -> http://dbpedia.org/resource/Alfred_Santell
+
+ENTITY: http://dbpedia.org/resource/Kuleh_Bayan
+   -> http://dbpedia.org/ontology/Location
+   -> http://dbpedia.org/resource/Kurdestan_Province
+   -> Kuleh Bayan
+   -> http://dbpedia.org/resource/Iran
+   -> http://dbpedia.org/ontology/Village
+
+ENTITY: 36
+
+ENTITY: http://dbpedia.org/resource/Lineatriton_orchimelas
+   -> http://dbpedia.org/resource/Caudata
+   -> EN
+   -> http://dbpedia.org/resource/Lineatriton
+   -> http://dbpedia.org/class/yago/Animal100015388
+   -> Lineatriton orchimelas
+
+ENTITY: http://dbpedia.org/resource/Rubus_arizonensis
+   -> http://www.wikidata.org/entity/Q756
+   -> http://dbpedia.org/resource/Category:Plants_described_in_1914
+   -> http://dbpedia.org/resource/Category:Flora_of_the_Southwestern_United_States
+   -> http://dbpedia.org/resource/Wilhelm_Olbers_Focke
+   -> http://dbpedia.org/ontology/Eukaryote
+
+ENTITY: http://dbpedia.org/resource/Gerbil_mouse
+   -> http://dbpedia.org/resource/Mammal
+   -> http://dbpedia.org/resource/Category:Animals_described_in_1834
+   -> http://dbpedia.org/resource/Category:Nesomyid_rodents
+   -> http://dbpedia.org/resource/Rodent
+   -> http://dbpedia.org/resource/Nesomyidae
+
+ENTITY: http://dbpedia.org/resource/Massacre_on_34th_Street
+   -> http://dbpedia.org/resource/New_York_City
+   -> 2000-12-03
+   -> http://dbpedia.org/ontology/SportsEvent
+   -> http://dbpedia.org/resource/November_to_Remember
+   -> http://dbpedia.org/resource/Extreme_Championship_Wrestling
+
+ENTITY: http://dbpedia.org/resource/Zarudcze
+   -> http://dbpedia.org/resource/Village
+   -> http://dbpedia.org/resource/Category:Villages_in_Sandomierz_County
+   -> 50.56666666666667 21.616666666666667
+   -> 21.616667
+   -> http://dbpedia.org/resource/Poland
+
+ENTITY: http://dbpedia.org/resource/Battle_of_Calicut_(1502)
+   -> 20 large ships
+   -> 10 carracks
+   -> http://dbpedia.org/resource/India
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/Flag_Portugal_(1495).svg?width=300
+   -> http://dbpedia.org/resource/Vasco_da_Gama
+
+ENTITY: http://dbpedia.org/resource/Terrorist_Threats
+   -> http://dbpedia.org/resource/West_Coast_hip_hop
+   -> http://dbpedia.org/resource/Fredwreck
+   -> 3081.0
+   -> Terrorist Threats
+   -> http://schema.org/MusicAlbum
+
+ENTITY: http://dbpedia.org/resource/Hagar_Wilde
+   -> http://dbpedia.org/ontology/Writer
+   -> http://dbpedia.org/class/yago/WomenScreenwriters
+   -> http://dbpedia.org/class/yago/AmericanTelevisionWriters
+   -> 1905-07-07
+   -> American writer
+
+ENTITY: http://dbpedia.org/resource/2011_Kor_Royal_Cup
+   -> http://dbpedia.org/resource/Bangkok
+   -> http://dbpedia.org/ontology/FootballMatch
+   -> 2011-01-30
+   -> http://dbpedia.org/resource/Chonburi_F.C.
+   -> http://dbpedia.org/resource/Muangthong_United_F.C.
+
+ENTITY: http://dbpedia.org/resource/Rebel_Love_Song
+   -> 2011-08-22
+   -> http://dbpedia.org/ontology/Single
+   -> http://dbpedia.org/resource/Glam_metal
+   -> http://dbpedia.org/resource/Black_Veil_Brides
+   -> http://dbpedia.org/ontology/MusicalWork
+
+ENTITY: http://dbpedia.org/resource/Wernshausen
+   -> http://www.wikidata.org/entity/Q486972
+   -> http://dbpedia.org/resource/Schmalkalden-Meiningen
+   -> http://wernshausen.de/
+   -> http://dbpedia.org/resource/Germany
+   -> http://dbpedia.org/resource/Schmalkalden
+
+ENTITY: http://dbpedia.org/resource/Ayrovo
+   -> http://dbpedia.org/ontology/Village
+   -> http://dbpedia.org/resource/Kardzhali_Province
+   -> http://dbpedia.org/resource/Kardzhali_Municipality
+   -> Ayrovo
+   -> http://dbpedia.org/resource/Bulgaria
+
+ENTITY: http://dbpedia.org/resource/Thaia_saprophytica
+   -> http://dbpedia.org/resource/Epidendroideae
+   -> http://dbpedia.org/resource/Category:Orchids_of_Thailand
+   -> Thaia
+   -> http://dbpedia.org/resource/Flowering_plant
+   -> http://dbpedia.org/ontology/Plant
+
+ENTITY: http://dbpedia.org/resource/North_Haledon,_New_Jersey
+   -> http://dbpedia.org/resource/Borough_(New_Jersey)
+   -> http://dbpedia.org/resource/Eastern_Time_Zone
+   -> http://dbpedia.org/resource/United_States
+   -> 40.963618 -74.185281
+   -> Borough of North Haledon
+
+ENTITY: http://dbpedia.org/resource/Akalwadi
+   -> +5:30
+   -> http://dbpedia.org/resource/Category:Villages_in_Bijapur_district
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/KarnatakaBijapur.png
+   -> http://commons.wikimedia.org/wiki/Special:FilePath/KarnatakaBijapur.png?width=300
+   -> http://dbpedia.org/ontology/Village
+
+ENTITY: http://dbpedia.org/resource/Kaalpurush
+   -> http://dbpedia.org/resource/Buddhadeb_Dasgupta
+   -> http://dbpedia.org/class/yago/2008Films
+   -> http://dbpedia.org/resource/Sameera_Reddy
+   -> http://dbpedia.org/resource/Category:Films_directed_by_Buddhadev_Dasgupta
+   -> http://dbpedia.org/class/yago/SocialEvent107288639
+
+ENTITY: http://dbpedia.org/resource/Bryotropha_plantariella
+   -> http://dbpedia.org/resource/Bryotropha
+   -> Bryotropha plantariella
+   -> http://dbpedia.org/ontology/Insect
+   -> http://dbpedia.org/resource/Gelechiidae
+   -> http://dbpedia.org/resource/Lepidoptera
+
+ENTITY: http://dbpedia.org/resource/Henlow
+   -> http://dbpedia.org/resource/England
+   -> http://dbpedia.org/ontology/PopulatedPlace
+   -> 3084
+   -> http://dbpedia.org/resource/United_Kingdom
+   -> 52.03245 -0.28714
+
+ENTITY: http://dbpedia.org/resource/Pinnacle_Mountain_(South_Carolina)
+   -> 35.03361
+   -> http://dbpedia.org/resource/South_Carolina
+   -> Pinnacle Mountain
+   -> -82.74139
+   -> http://www.wikidata.org/entity/Q8502
+
+ENTITY: http://dbpedia.org/resource/1960_Glover_Trophy
+   -> http://dbpedia.org/resource/Cooper_Car_Company
+   -> http://schema.org/SportsEvent
+   -> http://dbpedia.org/resource/Category:1960_Formula_One_races
+   -> 3862.4256
+   -> http://dbpedia.org/resource/Chris_Bristow
+
+ENTITY: 13
+
+ENTITY: http://dbpedia.org/resource/Lepiota_helveola
+   -> http://dbpedia.org/resource/Fungus
+   -> http://dbpedia.org/resource/Giacomo_Bresadola
+   -> http://dbpedia.org/resource/Category:Fungi_of_Europe
+   -> http://dbpedia.org/resource/Category:Fungi_described_in_1882
+   -> http://dbpedia.org/resource/Agaricaceae
+
 ENTITY: 42
+
+ENTITY: http://dbpedia.org/resource/Can_U_Get_wit_It
+   -> http://dbpedia.org/resource/LaFace_Records
+   -> Can U Get wit It
+   -> http://dbpedia.org/resource/DeVante_Swing
+   -> http://dbpedia.org/resource/Slow_jam
+   -> http://dbpedia.org/resource/Call_Me_a_Mack
+
+ENTITY: http://dbpedia.org/resource/Raid_on_Griessie
+   -> United Kingdom
+   -> http://dbpedia.org/resource/Category:1807_in_Asia
+   -> 22px|link=Kingdom of Holland
+   -> 1807-12-11
+   -> Raid on Griessie
+
+ENTITY: http://dbpedia.org/resource/Trachelipus_dimorphus
+   -> http://dbpedia.org/resource/Category:Woodlice_of_Europe
+   -> http://dbpedia.org/resource/Malacostraca
+   -> http://dbpedia.org/ontology/Eukaryote
+   -> http://dbpedia.org/resource/Trachelipodidae
+   -> http://dbpedia.org/resource/Isopoda
+
+ENTITY: http://dbpedia.org/resource/Ovophis
+   -> * Ovophis Burger
+   -> http://dbpedia.org/resource/Snake
+   -> http://dbpedia.org/ontology/Eukaryote
+   -> http://dbpedia.org/resource/Viperidae
+   -> http://dbpedia.org/resource/Squamata
+
+ENTITY: http://dbpedia.org/resource/Anthony_Beaumont-Dark
+   -> 2006-04-02
+   -> http://dbpedia.org/resource/Category:Members_of_the_Parliament_of_the_United_Kingdom_for_English_constituencies
+   -> http://schema.org/Person
+   -> 1932
+   -> British politician
+
+ENTITY: http://dbpedia.org/resource/Sky_(Faye_Wong_album)
+   -> http://dbpedia.org/resource/Mandopop
+   -> 1994-11-10
+   -> http://dbpedia.org/resource/Sony_Music_Entertainment
+   -> http://dbpedia.org/resource/Faye_Wong
+   -> http://schema.org/MusicAlbum
+
+ENTITY: http://dbpedia.org/resource/2008_Copa_América_–_FIFA_Futsal
+   -> http://dbpedia.org/ontology/SportsEvent
+   -> http://schema.org/SportsEvent
+   -> http://dbpedia.org/resource/Category:Copa_América_de_Futsal
+   -> 2008 Copa América – FIFA Futsal
+   -> 17:00
+
+ENTITY: http://dbpedia.org/resource/Svyatoslav_Tanasov
+   -> http://dbpedia.org/ontology/Person
+   -> http://dbpedia.org/ontology/SoccerPlayer
+   -> 1989-08-02
+   -> Svyatoslav Tanasov
+   -> 1.78
+
+ENTITY: http://dbpedia.org/resource/2010_Belgian_Super_Cup
+   -> http://dbpedia.org/ontology/FootballMatch
+   -> http://dbpedia.org/resource/K.A.A._Gent
+   -> 2010 Belgian Super Cup
+   -> 2010-07-23
+   -> http://dbpedia.org/resource/R.S.C._Anderlecht
